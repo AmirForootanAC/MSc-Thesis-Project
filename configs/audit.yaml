@@ -1,0 +1,63 @@
+# ============================================================
+# Patient Trace Audit Configuration
+# ============================================================
+
+project:
+  name: "COde Patient Trace Audit"
+  version: "v1"
+
+paths:
+  dataset_root: "data/raw/COde-Dataset"
+  metadata_file: "data/raw/COde-Dataset/complete_dataset.csv"
+  output_dir: "results/patient_trace_audit"
+
+
+audit:
+  force: false
+
+  # Number of multi-visit patients to inspect manually.
+  sample_multi_visit_patients: 20
+
+  # Number of rows to display in summary outputs.
+  preview_rows: 20
+
+
+radiograph_keywords:
+  general:
+    - "radiograph"
+    - "radiographic"
+    - "x-ray"
+    - "xray"
+    - "x ray"
+
+  panoramic:
+    - "opg"
+    - "panoramic"
+    - "panoramic radiograph"
+    - "orthopantomogram"
+
+  local:
+    - "periapical"
+    - "bitewing"
+    - "intraoral"
+
+  jaw:
+    - "maxilla"
+    - "mandible"
+    - "upper jaw"
+    - "lower jaw"
+
+  tooth:
+    - "tooth"
+
+
+data:
+  image_root: "data/raw/COde-Dataset/Images"
+
+
+output:
+  patient_image_duplication_dir: 
+    "results/patient_image_duplication_audit"
+
+  patient_cross_visit_characterization_dir:
+    "results/patient_cross_visit_characterization"

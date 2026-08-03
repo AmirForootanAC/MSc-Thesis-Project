@@ -1,0 +1,18 @@
+{
+    "num_reused_visit_pair_rows": 1589,
+    "num_unique_patients_with_reuse": 826,
+    "num_photograph_reuse_pairs": 909,
+    "num_radiograph_reuse_pairs": 680,
+    "num_same_treatment_pairs": 2,
+    "num_different_treatment_pairs": 47,
+    "num_exact_tooth_overlap_pairs": 43,
+    "num_partial_tooth_overlap_pairs": 190,
+    "num_no_tooth_overlap_pairs": 226,
+    "num_likely_same_episode_pairs": 111,
+    "num_possible_same_episode_pairs": 773,
+    "num_likely_different_episode_pairs": 1,
+    "num_same_day_reuse_pairs": 0,
+    "num_long_term_reuse_pairs": 12,
+    "num_patients_with_different_treatment_reuse": 31,
+    "num_patients_with_same_treatment_reuse": 1
+}

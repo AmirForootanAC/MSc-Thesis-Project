@@ -1,0 +1,40 @@
+visit,keyword,frequency
+visit_2,extraction:extract,389
+visit_1,periodontal:scaling,354
+visit_2,extraction:extraction,345
+visit_2,periodontal:scaling,312
+visit_2,restoration:restoration,279
+visit_2,restoration:filling,185
+visit_1,extraction:extract,180
+visit_1,orthodontic:orthodontic,167
+visit_1,extraction:extraction,163
+visit_1,restoration:restoration,156
+visit_1,restoration:filling,115
+visit_1,crown:crown,94
+visit_2,orthodontic:orthodontic,94
+visit_1,endodontic:root canal,88
+visit_2,crown:crown,86
+visit_2,endodontic:root canal,79
+visit_2,restoration:composite,74
+visit_2,implant:implant,71
+visit_2,periodontal:root planing,42
+visit_1,restoration:composite,39
+visit_1,implant:implant,32
+visit_1,periodontal:periodontal,31
+visit_2,periodontal:periodontal,29
+visit_1,periodontal:root planing,29
+visit_2,prosthesis:prosthesis,16
+visit_2,prosthesis:denture,15
+visit_2,prosthesis:bridge,11
+visit_1,endodontic:pulpectomy,8
+visit_1,prosthesis:denture,8
+visit_2,surgery:surgical,5
+visit_1,surgery:surgical,5
+visit_2,endodontic:pulpotomy,4
+visit_2,surgery:surgery,4
+visit_1,prosthesis:bridge,3
+visit_1,endodontic:endodontic,2
+visit_1,orthodontic:braces,2
+visit_2,endodontic:pulpectomy,2
+visit_2,endodontic:endodontic,2
+visit_1,endodontic:pulpotomy,1

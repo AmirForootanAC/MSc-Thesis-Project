@@ -1,0 +1,10 @@
+{
+    "num_patients": 4800,
+    "num_image_references": 57994,
+    "num_unique_image_files": 57994,
+    "num_hashed_files": 57994,
+    "num_cross_visit_duplicate_pairs": 5541,
+    "patients_with_any_cross_visit_duplication": 826,
+    "patients_with_photograph_duplication": 775,
+    "patients_with_radiograph_duplication": 587
+}

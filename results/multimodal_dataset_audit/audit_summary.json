@@ -1,0 +1,12 @@
+{
+    "num_rows": 8775,
+    "num_columns": 35,
+    "num_unique_patients": 4800,
+    "num_unique_visits": 8775,
+    "visits_with_clinical_text": 8775,
+    "visits_with_photographs": 8772,
+    "visits_with_radiographs": 4256,
+    "visits_with_all_modalities": 4255,
+    "patients_with_any_photograph": 4799,
+    "patients_with_any_radiograph": 2846
+}

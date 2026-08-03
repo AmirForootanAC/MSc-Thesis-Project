@@ -1,0 +1,11 @@
+{
+    "num_consecutive_reused_visit_pairs": 1480,
+    "num_images_reused_across_3plus_visits": 217,
+    "num_non_consecutive_reused_visit_pairs": 109,
+    "num_patients_with_3plus_visit_reuse": 46,
+    "num_patients_with_any_duplication": 826,
+    "num_patients_with_photograph_reuse": 775,
+    "num_patients_with_radiograph_reuse": 587,
+    "num_reused_visit_pairs": 980,
+    "num_unique_duplicated_images": 4959
+}
