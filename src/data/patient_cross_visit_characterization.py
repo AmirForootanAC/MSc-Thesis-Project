@@ -175,7 +175,8 @@ def build_duplicated_image_summary(
     """
     Build one row per unique duplicated image.
 
-    Duplication is defined strictly within the same patient.
+    Duplication is defined strictly within the same patient
+    and modality.
     """
 
     records = []
@@ -269,6 +270,13 @@ def build_visit_pair_reuse(
     Build one row per patient/modality/visit-pair.
 
     Only intra-patient visit pairs are included.
+
+    The resulting table is intentionally kept at the
+    patient × modality × visit-pair level.
+
+    Higher-level unique visit-pair metrics must be computed
+    after deduplicating modality, using:
+        patient_id + visit_1 + visit_2
     """
 
     pair_df = (
@@ -354,12 +362,8 @@ def build_visit_pair_reuse(
     )
 
     pair_df["temporal_gap_days"] = (
-        pair_df[
-            "visit_2_datetime"
-        ]
-        - pair_df[
-            "visit_1_datetime"
-        ]
+        pair_df["visit_2_datetime"]
+        - pair_df["visit_1_datetime"]
     ).dt.days.abs()
 
     return pair_df.sort_values(
@@ -375,6 +379,108 @@ def build_visit_pair_reuse(
 
 
 # ============================================================
+# Unique Visit-Pair Views
+# ============================================================
+
+def build_unique_visit_pair_view(
+    visit_pair_reuse: pd.DataFrame,
+) -> pd.DataFrame:
+    """
+    Build one row per unique patient/visit-pair.
+
+    This is the canonical patient-level visit-pair unit.
+
+    If the same pair of visits reused both photographs and
+    radiographs, it is counted exactly once here.
+    """
+
+    if visit_pair_reuse.empty:
+        return pd.DataFrame(
+            columns=[
+                "patient_id",
+                "visit_1",
+                "visit_2",
+                "visit_1_number",
+                "visit_2_number",
+                "visit_number_gap",
+                "visit_relationship",
+                "num_reused_modalities",
+                "reused_modalities",
+                "num_shared_images_total",
+                "visit_1_datetime",
+                "visit_2_datetime",
+                "temporal_gap_days",
+            ]
+        )
+
+    unique_pairs = (
+        visit_pair_reuse
+        .groupby(
+            [
+                "patient_id",
+                "visit_1",
+                "visit_2",
+            ],
+            as_index=False,
+        )
+        .agg(
+            visit_1_number=(
+                "visit_1_number",
+                "first",
+            ),
+            visit_2_number=(
+                "visit_2_number",
+                "first",
+            ),
+            visit_number_gap=(
+                "visit_number_gap",
+                "first",
+            ),
+            visit_relationship=(
+                "visit_relationship",
+                "first",
+            ),
+            num_reused_modalities=(
+                "modality",
+                "nunique",
+            ),
+            reused_modalities=(
+                "modality",
+                lambda values: "|".join(
+                    sorted(set(values))
+                ),
+            ),
+            num_shared_images_total=(
+                "num_shared_images",
+                "sum",
+            ),
+            visit_1_datetime=(
+                "visit_1_datetime",
+                "first",
+            ),
+            visit_2_datetime=(
+                "visit_2_datetime",
+                "first",
+            ),
+            temporal_gap_days=(
+                "temporal_gap_days",
+                "first",
+            ),
+        )
+    )
+
+    return unique_pairs.sort_values(
+        [
+            "patient_id",
+            "visit_1_number",
+            "visit_2_number",
+        ]
+    ).reset_index(
+        drop=True
+    )
+
+
+# ============================================================
 # Patient Longitudinal Reuse
 # ============================================================
 
@@ -383,6 +489,10 @@ def build_patient_longitudinal_reuse(
     visit_pair_reuse: pd.DataFrame,
 ) -> pd.DataFrame:
     """Build patient-level longitudinal reuse summary."""
+
+    unique_visit_pairs = build_unique_visit_pair_view(
+        visit_pair_reuse
+    )
 
     patient_ids = sorted(
         set(
@@ -409,8 +519,8 @@ def build_patient_longitudinal_reuse(
         )
 
         patient_pairs = (
-            visit_pair_reuse[
-                visit_pair_reuse[
+            unique_visit_pairs[
+                unique_visit_pairs[
                     "patient_id"
                 ]
                 == patient_id
@@ -425,18 +535,22 @@ def build_patient_longitudinal_reuse(
                     patient_images.shape[0]
                 ),
 
-                "num_reused_visit_pairs": int(
-                    patient_pairs[
-                        [
-                            "visit_1",
-                            "visit_2",
-                        ]
-                    ]
-                    .drop_duplicates()
-                    .shape[0]
+                "num_unique_reused_visit_pairs": int(
+                    patient_pairs.shape[0]
                 ),
 
-                "num_consecutive_reused_pairs": int(
+                "num_unique_reused_patient_modality_pairs": int(
+                    visit_pair_reuse[
+                        (
+                            visit_pair_reuse[
+                                "patient_id"
+                            ]
+                            == patient_id
+                        )
+                    ].shape[0]
+                ),
+
+                "num_consecutive_reused_visit_pairs": int(
                     (
                         patient_pairs[
                             "visit_relationship"
@@ -445,7 +559,7 @@ def build_patient_longitudinal_reuse(
                     ).sum()
                 ),
 
-                "num_non_consecutive_reused_pairs": int(
+                "num_non_consecutive_reused_visit_pairs": int(
                     (
                         patient_pairs[
                             "visit_relationship"
@@ -623,7 +737,28 @@ def build_audit_summary(
     visit_pair_reuse: pd.DataFrame,
     patient_longitudinal_reuse: pd.DataFrame,
 ) -> dict:
-    """Build characterization audit summary."""
+    """
+    Build characterization audit summary.
+
+    Important counting units:
+
+    1. Unique reused visit pair:
+       Patient × Visit 1 × Visit 2
+
+    2. Unique reused patient-modality pair:
+       Patient × Modality × Visit 1 × Visit 2
+
+    3. Consecutive/non-consecutive visit pairs:
+       Counted at the unique patient × visit-pair level,
+       not at the modality-row level.
+
+    This prevents the same visit pair from being counted
+    multiple times simply because multiple modalities were reused.
+    """
+
+    unique_visit_pairs = build_unique_visit_pair_view(
+        visit_pair_reuse
+    )
 
     return {
         "num_unique_duplicated_images": int(
@@ -639,21 +774,21 @@ def build_audit_summary(
             ).sum()
         ),
 
+        # ----------------------------------------------------
+        # Patient × Visit Pair level
+        # ----------------------------------------------------
+
+        "num_unique_reused_visit_pairs": int(
+            unique_visit_pairs.shape[0]
+        ),
+
         "num_reused_visit_pairs": int(
-            visit_pair_reuse[
-                [
-                    "patient_id",
-                    "visit_1",
-                    "visit_2",
-                ]
-            ]
-            .drop_duplicates()
-            .shape[0]
+            unique_visit_pairs.shape[0]
         ),
 
         "num_consecutive_reused_visit_pairs": int(
             (
-                visit_pair_reuse[
+                unique_visit_pairs[
                     "visit_relationship"
                 ]
                 == "consecutive"
@@ -662,12 +797,24 @@ def build_audit_summary(
 
         "num_non_consecutive_reused_visit_pairs": int(
             (
-                visit_pair_reuse[
+                unique_visit_pairs[
                     "visit_relationship"
                 ]
                 == "non_consecutive"
             ).sum()
         ),
+
+        # ----------------------------------------------------
+        # Patient × Modality × Visit Pair level
+        # ----------------------------------------------------
+
+        "num_unique_reused_patient_modality_pairs": int(
+            visit_pair_reuse.shape[0]
+        ),
+
+        # ----------------------------------------------------
+        # Multi-visit image reuse
+        # ----------------------------------------------------
 
         "num_images_reused_across_3plus_visits": int(
             duplicated_image_summary[
@@ -681,6 +828,10 @@ def build_audit_summary(
             ].sum()
         ),
 
+        # ----------------------------------------------------
+        # Modality-specific patient-level reuse
+        # ----------------------------------------------------
+
         "num_patients_with_photograph_reuse": int(
             (
                 duplicated_image_summary[
@@ -688,8 +839,7 @@ def build_audit_summary(
                         "modality"
                     ]
                     == "photographs"
-                ]
-                [
+                ][
                     "patient_id"
                 ]
                 .nunique()
@@ -703,8 +853,7 @@ def build_audit_summary(
                         "modality"
                     ]
                     == "radiographs"
-                ]
-                [
+                ][
                     "patient_id"
                 ]
                 .nunique()
@@ -913,17 +1062,22 @@ def main(
     )
 
     print(
-        f"Reused visit pairs: "
-        f"{audit_summary['num_reused_visit_pairs']:,}"
+        f"Unique reused visit pairs: "
+        f"{audit_summary['num_unique_reused_visit_pairs']:,}"
     )
 
     print(
-        f"Consecutive reused pairs: "
+        f"Unique reused patient-modality pairs: "
+        f"{audit_summary['num_unique_reused_patient_modality_pairs']:,}"
+    )
+
+    print(
+        f"Consecutive reused visit pairs: "
         f"{audit_summary['num_consecutive_reused_visit_pairs']:,}"
     )
 
     print(
-        f"Non-consecutive reused pairs: "
+        f"Non-consecutive reused visit pairs: "
         f"{audit_summary['num_non_consecutive_reused_visit_pairs']:,}"
     )
 
