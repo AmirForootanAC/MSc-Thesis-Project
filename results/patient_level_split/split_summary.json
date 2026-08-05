@@ -1,0 +1,20 @@
+{
+    "seed": 42,
+    "split_ratios": {
+        "train": 0.7,
+        "validation": 0.15,
+        "test": 0.15
+    },
+    "patient_counts": {
+        "train": 3360,
+        "test": 720,
+        "validation": 720
+    },
+    "visit_counts": {
+        "train": 6129,
+        "validation": 1330,
+        "test": 1316
+    },
+    "total_patients": 4800,
+    "total_visits": 8775
+}
