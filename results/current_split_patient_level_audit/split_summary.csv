@@ -1,0 +1,6 @@
+split,source_file,num_samples,num_unique_patients,num_unique_visits,num_unique_images,split_role
+train,train.json,24497,4472,8173,54642,train
+train_cls,train-cls.json,14696,4129,6861,46374,train
+train_diagnostic,train-diagnostic.json,9801,3648,5813,37386,train
+test_cls,test_cls.json,1793,572,600,2965,test
+test_diagnostic,test_diagnostic.json,1799,572,600,2965,test

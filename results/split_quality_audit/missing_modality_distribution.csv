@@ -1,0 +1,11 @@
+split,modality_state,count,percentage
+test,full_multimodal,640,48.632218844984806
+test,missing_radiograph,667,50.6838905775076
+test,photo_only,9,0.6838905775075987
+train,clinical_only,2,0.0326317506934247
+train,full_multimodal,2969,48.44183390438897
+train,missing_photo,1,0.01631587534671235
+train,missing_radiograph,3145,51.31342796541034
+train,photo_only,12,0.19579050416054822
+validation,full_multimodal,642,48.27067669172933
+validation,missing_radiograph,688,51.72932330827068

@@ -1,0 +1,8 @@
+{
+    "patient_overlap_count": 0,
+    "visit_overlap_count": 0,
+    "photograph_overlap_count": 0,
+    "radiograph_overlap_count": 0,
+    "assignment_validation": "PASS",
+    "status": "SAFE"
+}

@@ -1,0 +1,4 @@
+split,patients,visits,photographs,radiographs,clinical_records
+test,720,1316,7431,1233,1307
+train,3360,6129,34726,5618,6117
+validation,720,1330,7781,1205,1330

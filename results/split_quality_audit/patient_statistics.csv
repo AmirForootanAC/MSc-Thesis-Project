@@ -1,0 +1,4 @@
+split,patients,single_visit_patients,multi_visit_patients,mean_visits_per_patient,median_visits_per_patient,max_visits_per_patient
+test,720,368,352,1.8277777777777777,1.0,9
+train,3360,1726,1634,1.824107142857143,1.0,11
+validation,720,367,353,1.8472222222222223,1.0,8

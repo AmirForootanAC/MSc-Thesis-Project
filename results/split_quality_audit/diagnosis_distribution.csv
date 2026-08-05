@@ -1,0 +1,7 @@
+split,diagnosis_available,count,percentage
+test,False,178,13.5258358662614
+test,True,1138,86.47416413373861
+train,False,803,13.101647903410019
+train,True,5326,86.89835209658997
+validation,False,191,14.360902255639097
+validation,True,1139,85.63909774436091
