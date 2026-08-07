@@ -69,7 +69,7 @@ class COdeDataset(Dataset):
                 row["radiographs"]
             ),
 
-            clinical_text=self.text_loader.load(
+            clinical_text=self._load_clinical_text(
                 row
             ),
 
@@ -89,6 +89,29 @@ class COdeDataset(Dataset):
 
         return sample
 
+    def _load_clinical_text(
+        self,
+        row,
+    ):
+        """
+        Load clinical text and remove empty fields.
+
+        A visit is considered to have clinical text
+        only if at least one field contains meaningful content.
+        """
+
+        text = self.text_loader.load(
+            row
+        )
+
+        cleaned_text = {
+            key: value.strip()
+            for key, value in text.items()
+            if isinstance(value, str)
+            and value.strip()
+        }
+
+        return cleaned_text
 
     @staticmethod
     def _parse_images(

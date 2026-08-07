@@ -1,0 +1,22 @@
+{
+    "sample_count": {
+        "total_samples": 8775
+    },
+    "modalities": {
+        "samples_with_photographs": 8772,
+        "samples_with_radiographs": 4256,
+        "samples_with_clinical_text": 8775
+    },
+    "missingness": {
+        "photographs_missing": 3,
+        "radiographs_missing": 4519,
+        "clinical_text_missing": 0
+    },
+    "patient_assignment": {
+        "patients_with_split_leakage": 0
+    },
+    "deterministic": {
+        "deterministic": true,
+        "checked_samples": 10
+    }
+}

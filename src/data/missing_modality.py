@@ -11,14 +11,36 @@ not imputed or removed.
 from src.data.sample import MultimodalSample
 
 
+EMPTY_VALUES = {
+    "",
+    "nan",
+    "none",
+    "null",
+    "na",
+    "n/a",
+}
+
+
+
+def is_empty_text(value) -> bool:
+    """
+    Check whether a text value should be considered missing.
+    """
+
+    if value is None:
+        return True
+
+    normalized = str(value).strip().lower()
+
+    return normalized in EMPTY_VALUES
+
+
+
 def generate_missing_flags(
     sample: MultimodalSample,
 ) -> dict[str, bool]:
     """
     Generate missing modality indicators for a sample.
-
-    Missingness is represented explicitly and preserved
-    for future multimodal learning experiments.
     """
 
     photographs_missing = (
@@ -32,16 +54,18 @@ def generate_missing_flags(
     clinical_text_missing = (
         len(sample.clinical_text) == 0
         or all(
-            not str(value).strip()
+            is_empty_text(value)
             for value in sample.clinical_text.values()
         )
     )
+
 
     return {
         "photographs_missing": photographs_missing,
         "radiographs_missing": radiographs_missing,
         "clinical_text_missing": clinical_text_missing,
     }
+
 
 
 def attach_missing_flags(
