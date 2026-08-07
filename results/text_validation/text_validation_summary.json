@@ -1,0 +1,20 @@
+{
+    "total_rows": 8775,
+    "validated_fields": 12,
+    "fields": [
+        "patient_record",
+        "chief_complaint",
+        "present_illness",
+        "past_medical_record",
+        "examination",
+        "radiographs_examination",
+        "treatment_plan",
+        "treatment_recommendations",
+        "management",
+        "medical_instructions",
+        "remarks",
+        "anomalies_en"
+    ],
+    "total_missing_values": 36022,
+    "overall_missing_rate": 34.21
+}
