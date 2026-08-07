@@ -1,0 +1,9 @@
+{
+    "total_samples": 8775,
+    "photographs_missing": 3,
+    "radiographs_missing": 4519,
+    "clinical_text_missing": 207,
+    "photographs_missing_rate": 0.03,
+    "radiographs_missing_rate": 51.5,
+    "clinical_text_missing_rate": 2.36
+}
