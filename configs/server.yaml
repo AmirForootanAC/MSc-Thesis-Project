@@ -1,0 +1,7 @@
+# Server configuration placeholder.
+#
+# This file intentionally contains only values that differ from base.yaml.
+# It will be completed once the target server hardware is available.
+
+runtime:
+  device: cuda
