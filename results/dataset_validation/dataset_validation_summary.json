@@ -1,0 +1,9 @@
+{
+    "summary": {
+        "total_samples": 8775,
+        "samples_with_photographs": 8772,
+        "samples_with_radiographs": 4256,
+        "samples_with_clinical_text": 8775
+    },
+    "errors": []
+}
