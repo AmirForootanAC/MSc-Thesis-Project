@@ -1,0 +1,3262 @@
+TOTAL SAMPLES: 14696
+TOTAL LABELS: 14696
+UNIQUE LABELS: 3258
+
+'牙龈炎': 1358
+'Gingivitis': 1347
+'Class II Malocclusion': 1114
+'Ⅱ类错颌': 1104
+'牙体缺损': 692
+'Tooth Structure Loss': 654
+'Class I Malocclusion': 254
+'Ⅰ类错颌': 235
+'龋齿': 181
+'Dental Caries': 165
+'Pulpitis': 151
+'牙髓炎': 149
+'Dental Crowding': 121
+'Tooth Loss': 99
+'Ⅲ类错颌': 97
+'Class III Malocclusion': 90
+'牙齿缺失': 88
+'Periapical Periodontitis': 87
+'根尖周炎': 85
+'Periodontitis,Tooth Mobility,Gingivitis': 69
+'牙周炎,牙龈炎': 69
+'Periodontitis,Gingivitis': 65
+'牙周炎,牙齿松动,牙龈炎': 61
+'Dental Fluorosis,Dental Caries': 59
+'Ⅱ类错颌,龋齿': 58
+'乳牙滞留': 55
+'Periodontitis': 54
+'氟斑牙,龋齿': 54
+'牙齿拥挤': 52
+'Ⅱ类错颌,凸面型,牙齿拥挤': 52
+'Dental Fluorosis': 51
+'Retained Primary Tooth': 50
+'牙列不齐': 50
+'牙龈炎,色素附着': 49
+'Class II Malocclusion,Dental Caries': 49
+'牙周炎': 47
+'Class II Malocclusion,Convex Profile,Dental Crowding': 46
+'氟斑牙': 45
+'Gingivitis,Pigment Deposition': 44
+'凸面型,牙齿拥挤': 40
+'Malocclusion': 35
+'Convex Profile,Dental Crowding': 34
+'Class II Malocclusion,Mandibular Skeletal Asymmetry,Convex Profile,Deep Overbite,Deep Overjet,Dental Crowding': 34
+'Wedge-Shaped Defect': 30
+'牙体缺损,牙齿缺失': 30
+'Pulpitis,Dental Caries': 30
+'Tooth Structure Loss,Dental Caries': 29
+'错颌': 27
+'Ⅱ类错颌,凸面型': 26
+'Ⅱ类错颌,下颌骨性偏斜,凸面型,深覆合,深覆盖,牙齿拥挤': 25
+'Tooth Structure Loss,Tooth Loss': 24
+'楔状缺损': 24
+'牙齿拥挤,龋齿': 24
+'牙髓炎,龋齿': 23
+'牙体缺损,龋齿': 22
+'Gingivitis,Dental Caries': 21
+'Class II Malocclusion,Convex Profile': 21
+'氟斑牙,牙体缺损': 21
+'Class II Malocclusion,High-Angle Mandible,Convex Profile,Dental Crowding': 19
+'牙龈炎,龋齿': 19
+'Periodontitis,Tooth Mobility': 19
+'Class II Malocclusion,Deep Overbite': 19
+'Ⅱ类错颌,下颌高角,凸面型,牙齿拥挤': 19
+'Ⅰ类错颌,龋齿': 19
+'Class II Malocclusion,Mandibular Skeletal Asymmetry,Convex Profile,Dental Crowding': 18
+'Dental Crowding,Dental Caries': 18
+'Restoration Defect': 18
+'Class II Malocclusion,Dental Crowding': 16
+'修复体缺损': 16
+'Ⅱ类错颌,牙齿拥挤': 15
+'Deep Overbite': 15
+'Tooth Fracture': 15
+'Deep Fissures': 14
+'深窝沟': 14
+'Spacing': 13
+'Ⅱ类错颌,牙列不齐': 13
+'牙周炎,牙齿松动': 13
+'Ⅱ类错颌,下颌骨性偏斜,凸面型,深覆合,牙齿拥挤': 13
+'Ⅱ类错颌,下颌骨性偏斜,凸面型,牙齿拥挤': 12
+'阻生齿': 12
+'牙位滞留': 12
+'根尖周炎,牙体缺损': 12
+'Periodontitis,Gingival Recession': 12
+'深覆合': 12
+'Class II Malocclusion,Mandibular Skeletal Asymmetry,Convex Profile,Deep Overjet,Dental Crowding': 11
+'Periapical Periodontitis,Periodontitis': 11
+'Periodontitis,Gingivitis,Subgingival Calculus': 11
+'Class II Malocclusion,Mandibular Skeletal Asymmetry,Convex Profile,Incisor Protrusion,Deep Overbite,Deep Overjet,Dental Crowding': 11
+'外源性黄牙': 10
+'牙周炎,牙龈炎,龈下牙石': 10
+'Class II Malocclusion,Mandibular Skeletal Asymmetry,Convex Profile,Deep Overbite,Dental Crowding': 10
+'Class II Malocclusion,Mandibular Skeletal Asymmetry,High-Angle Mandible,Convex Profile,Deep Overbite,Deep Overjet,Dental Crowding': 9
+'Gingivitis,Pigment Deposition,Dental Caries': 9
+'Dental Fluorosis,Tooth Structure Loss,Dental Caries': 9
+'Maxillary Expansion': 9
+'Class I Malocclusion,Dental Caries': 9
+'Dental Fluorosis,Tooth Structure Loss': 9
+'Retained Tooth': 9
+'Extrinsic Tooth Stain': 9
+'Wedge-Shaped Defect,Pulpitis': 9
+'Ⅱ类错颌,深覆合': 9
+'Class III Malocclusion,Dental Crowding': 9
+'牙龈炎,色素附着,龋齿': 9
+'Periapical Periodontitis,Tooth Structure Loss': 9
+'牙体缺损,牙龈炎': 8
+'下颌骨性偏斜,凸面型,深覆合,深覆盖,牙齿拥挤': 8
+'氟斑牙,牙体缺损,龋齿': 8
+'Crossbite': 8
+'根尖周炎,牙周炎': 8
+'楔状缺损,牙龈炎': 8
+'Class II Malocclusion,Low-Angle Mandible,Convex Profile,Dental Crowding': 8
+'Impacted Tooth': 8
+'Class II Malocclusion,Convex Profile,Deep Overbite': 8
+'Dental Fluorosis,Pulpitis,Dental Caries': 8
+'Ⅲ类错颌,下颌高角,凸面型,牙齿拥挤': 8
+'牙合异常': 7
+'Ⅲ类错颌,牙齿拥挤': 7
+'Periodontitis,Subgingival Calculus': 7
+'Pigment Deposition': 7
+'Class II Malocclusion,Low-Angle Mandible,Mandibular Skeletal Asymmetry,Convex Profile,Deep Overbite,Deep Overjet,Dental Crowding': 7
+'内源性黄牙': 7
+'Wedge-Shaped Defect,Dental Caries': 7
+'Periapical Periodontitis,Tooth Structure Loss,Dental Caries': 7
+'Class II Malocclusion,Convex Profile,Deep Overbite,Deep Overjet,Dental Crowding': 7
+'Class III Malocclusion,Mandibular Skeletal Asymmetry,Dental Crowding': 7
+'Ⅲ类错颌,下颌高角,凹面型,牙齿拥挤': 7
+'多生牙': 7
+'Ⅰ类错颌,Ⅱ类错颌,凸面型': 7
+'Mandibular Skeletal Asymmetry,Convex Profile,Deep Overbite,Deep Overjet,Dental Crowding': 7
+'肯氏I类缺失': 7
+'深窝沟,龋齿': 7
+'色素附着': 7
+'牙列不齐,龋齿': 7
+'Dry Root Canal,Pulpitis': 7
+'散隙': 6
+'Periapical Periodontitis,Pulpitis': 6
+'Ⅲ类错颌,下颌骨性偏斜,凸面型,深覆合,深覆盖,牙齿拥挤': 6
+'Ⅲ类错颌,龋齿': 6
+'牙龈炎,近中阻生': 6
+'氟斑牙,牙髓炎,龋齿': 6
+'牙列不齐,牙齿拥挤': 6
+'牙周炎,牙髓炎,龋齿': 6
+'Ⅱ类错颌,下颌骨性偏斜,凸面型,前突,深覆合,深覆盖,牙齿拥挤': 6
+'Ⅱ类错颌,下颌骨性偏斜,牙齿拥挤': 6
+'Class II Malocclusion,Maxillary Expansion': 6
+'Convex Profile': 6
+'Tooth Structure Loss,Pulpitis': 6
+'Mandibular Skeletal Asymmetry,Convex Profile,Deep Overbite,Dental Crowding': 6
+'Class I Malocclusion,Convex Profile,Dental Crowding': 6
+'Intrinsic Tooth Discoloration': 6
+'牙周炎,牙齿缺失': 6
+'Dry Root Canal,Tooth Structure Loss,Pulpitis': 6
+'桩核冠': 6
+'牙折断': 6
+'Class III Malocclusion,Dental Caries': 6
+'牙髓炎,牙齿缺失': 6
+'下颌高角,凸面型,牙齿拥挤': 6
+'上凸下缩': 6
+'根尖周炎,牙体缺损,牙龈炎': 6
+'肯氏III类缺失': 6
+'牙体缺损,牙髓炎': 6
+'根尖周炎,牙髓炎': 6
+'Class II Malocclusion,High-Angle Mandible,Dental Crowding': 5
+'Ⅱ类错颌,下颌骨性偏斜,凸面型,深覆盖,牙齿拥挤': 5
+'Dental Fluorosis,Dental Crowding': 5
+'Ⅰ类错颌,凸面型,牙齿拥挤': 5
+'牙周炎,龈下牙石': 5
+'Ⅲ类错颌,下颌骨性偏斜,牙齿拥挤': 5
+'Class III Malocclusion,Mandibular Skeletal Asymmetry,Convex Profile,Deep Overjet,Dental Crowding': 5
+'Class II Malocclusion,High-Angle Mandible,Convex Profile,Deep Overjet,Dental Crowding': 5
+'Periapical Periodontitis,Tooth Loss': 5
+'替牙期错颌': 5
+'Ⅲ类错颌,下颌骨性偏斜,凸面型,牙齿拥挤': 5
+'Class II Malocclusion,Convex Profile,Deep Overbite,Deep Overjet': 5
+'Periodontitis,Tooth Loss,Gingivitis': 5
+'Ⅲ类错颌,下颌骨性偏斜,凸面型,牙反合,牙齿拥挤': 5
+'Class II Malocclusion,Mandibular Skeletal Asymmetry,Convex Profile,Incisor Protrusion,Dental Crowding': 5
+'Ⅱ类错颌,下颌高角,凸面型,深覆盖,牙齿拥挤': 5
+'Convex Profile,Crossbite,Dental Crowding': 5
+'Class II Malocclusion,Mandibular Skeletal Asymmetry,Deep Overbite,Deep Overjet,Dental Crowding': 5
+'楔状缺损,龋齿': 5
+'Class III Malocclusion,High-Angle Mandible,Concave Profile,Dental Crowding': 5
+'Ⅲ类错颌,凸面型,牙齿拥挤': 5
+'Class I Malocclusion,Deep Overbite': 5
+'Mandibular Skeletal Asymmetry,Convex Profile,Incisor Protrusion,Deep Overbite,Deep Overjet,Dental Crowding': 5
+'Class II Malocclusion,Convex Profile,Deep Overjet,Dental Crowding': 5
+'Ⅱ类错颌,凸面型,深覆合': 5
+'Ⅰ类错颌,凸面型,深覆合': 5
+'Ⅰ类错颌,凸面型': 5
+'根管内无新鲜渗出,牙髓炎': 5
+'牙龈炎,牙龈萎缩': 5
+'Tooth Structure Loss,Gingivitis': 5
+'Ⅱ类错颌,下颌骨性偏斜,深覆合,深覆盖,牙齿拥挤': 5
+'Ⅲ类错颌,下颌骨性偏斜,凸面型,前突,深覆盖,牙齿拥挤': 5
+'牙龈炎,龈下牙石': 5
+'Concave Profile,Dental Crowding': 5
+'牙髓坏死': 5
+'Wedge-Shaped Defect,Dental Fluorosis': 5
+'Dry Root Canal': 5
+'Visible diseases in dental or oral images:\nPeriodontitis,Tooth Mobility,Gingivitis': 4
+'Class II Malocclusion,Mandibular Skeletal Asymmetry,Convex Profile,Deep Overbite,Deep Overjet': 4
+'Class III Malocclusion,Mandibular Skeletal Asymmetry,Anterior Crossbite,Dental Crowding': 4
+'下颌骨性偏斜,凸面型,前突,深覆合,深覆盖,牙齿拥挤': 4
+'患者患有的口腔疾病:\n牙周炎,牙龈炎': 4
+'Occlusal Abnormality': 4
+'Gingivitis,Mesioangular Impaction': 4
+'阻生齿,龋齿': 4
+'Ⅲ类错颌,下颌骨性偏斜,牙反合,牙齿拥挤': 4
+'Maxillary Protrusion': 4
+'Dental Crowding,Gingivitis': 4
+'Ⅱ类错颌,凸面型,深覆盖,牙齿拥挤': 4
+'牙龈炎,阻生齿': 4
+'Pulpitis,Tooth Mobility,Dental Caries': 4
+'Ⅱ类错颌,下颌高角,凸面型,深覆合,牙齿拥挤': 4
+'牙列不齐,牙龈炎': 4
+'Class III Malocclusion,High-Angle Mandible,Dental Crowding': 4
+'Hyperemia,Impacted Tooth': 4
+'High-Angle Mandible,Convex Profile,Dental Crowding': 4
+'凸面型': 4
+'Gingivitis,Impacted Tooth': 4
+'Ⅲ类错颌,下颌高角,牙齿拥挤': 4
+'Class II Malocclusion,Mandibular Skeletal Asymmetry,Dental Crowding': 4
+'牙髓炎,牙齿松动,龋齿': 4
+'Tooth Mobility': 4
+'Wedge-Shaped Defect,Gingivitis': 4
+'Dental Fluorosis,Tooth Fracture': 4
+'桩核冠,氟斑牙,牙体缺损,牙髓炎,阻生齿,龋齿': 4
+'口腔-牙科疾病列表:\n牙周炎,牙齿松动,牙龈炎': 4
+'Detected oral abnormalities or diseases:\nPeriodontitis,Tooth Mobility,Gingivitis': 4
+'根尖周炎,牙周炎,牙龈炎': 4
+'Ⅱ类错颌,下颌骨性偏斜,凸面型,前突,牙齿拥挤': 4
+'检测到的口腔异常或疾病:\nⅡ类错颌,龋齿': 4
+'Class II Malocclusion,Mandibular Skeletal Asymmetry,Anterior Crossbite,Dental Crowding': 4
+'牙周炎,牙龈萎缩': 4
+'Dental Fluorosis,Tooth Wear,Enamel Hypoplasia,Dental Caries': 4
+'Ⅱ类错颌,阻生齿': 4
+'Mandibular Skeletal Asymmetry,Deep Overbite,Dental Crowding': 4
+'Ⅱ类错颌,上颌扩弓': 4
+'Microdontia': 4
+'识别的异常和口腔健康状况:\nⅡ类错颌,凸面型,牙齿拥挤': 4
+'Ⅱ类错颌,牙齿拥挤,龋齿': 4
+'氟斑牙,牙隐裂': 4
+'下颌骨性偏斜,凸面型,深覆合,牙齿拥挤': 4
+'Class III Malocclusion,High-Angle Mandible,Convex Profile,Dental Crowding': 4
+'Periapical Periodontitis,Tooth Structure Loss,Gingivitis': 4
+'Class I Malocclusion,Convex Profile': 4
+'Ⅲ类错颌,凹面型,牙齿拥挤': 4
+'Class III Malocclusion,Mandibular Skeletal Asymmetry,Concave Profile': 4
+'龈下牙石': 4
+'Retained Tooth,Dental Caries': 4
+'下颌骨性偏斜,凸面型,前突,深覆合,牙齿拥挤': 4
+'牙反颌': 4
+'根尖周炎,牙周炎,牙髓炎,牙龈炎': 4
+'根管内无新鲜渗出': 4
+'Ⅱ类错颌,凸面型,深覆合,牙齿拥挤': 3
+'Deep Overbite,Dental Crowding': 3
+'Class III Malocclusion,Dental Fluorosis,Dental Crowding,Dental Crowding,Dental Caries': 3
+'Class II Malocclusion,Demineralization': 3
+'Dens Evaginatus,Periapical Periodontitis,Retained Tooth': 3
+'Lost Filling,Periapical Periodontitis,Post And Core Crown,Dental Fluorosis,Tooth Structure Loss,Pulpitis,Gingivitis,Dental Caries': 3
+'Ⅲ类错颌,下颌骨性偏斜,下颌高角,凸面型,牙反合,牙齿拥挤': 3
+'Class I Malocclusion,Class III Malocclusion,Wedge-Shaped Defect,Dental Crowding,Dental Crowding,Microdontia': 3
+'Ⅰ类错颌,牙列不齐': 3
+'下颌骨性偏斜,牙反合,牙齿拥挤': 3
+'Periodontitis,Gingival Recession,Subgingival Calculus': 3
+'Class III Malocclusion,Convex Profile': 3
+'Detected oral abnormalities or diseases:\nDental Crowding,Dental Caries': 3
+'这些图像中存在的异常列表如下:\nⅡ类错颌,深覆合': 3
+'楔状缺损,氟斑牙': 3
+'氟斑牙,脱矿,龋齿': 3
+'Extrinsic Tooth Stain,Dental Fluorosis': 3
+'Periodontitis,Pulpitis,Gingivitis,Dental Caries': 3
+'Tooth Structure Loss,Tooth Loss,Dental Caries': 3
+'Detected oral abnormalities or diseases:\nClass II Malocclusion,Convex Profile,Dental Crowding': 3
+'Gingivitis,Impacted Tooth,Dental Caries': 3
+'影响患者口腔的疾病:\n牙龈炎,色素附着': 3
+'Ⅱ类错颌,下颌骨性偏斜,深覆盖,牙齿拥挤': 3
+'Class III Malocclusion,Mandibular Skeletal Asymmetry,Concave Profile,Deep Overbite,Deep Overjet,Dental Crowding': 3
+'牙周炎,牙龈炎,龋齿': 3
+'Periapical Periodontitis,Dental Fluorosis,Tooth Structure Loss,Dental Caries': 3
+'Ⅱ类错颌,深覆合,深覆盖,牙齿拥挤': 3
+'Tooth Loss,Dental Caries': 3
+'牙反颌,牙龈炎': 3
+'脱矿,龋齿': 3
+'Tooth Rotation': 3
+'牙体缺损,牙齿缺失,龋齿': 3
+'Class III Malocclusion,Mandibular Skeletal Asymmetry,Convex Profile,Anterior Crossbite,Dental Crowding': 3
+'氟斑牙,牙磨耗,牙釉质发育不全,龋齿': 3
+'Diagnosed diseases based on images:\nClass II Malocclusion,Dental Caries': 3
+'Ⅱ类错颌,下颌骨性偏斜,下颌高角,凸面型,深覆合,牙齿拥挤': 3
+'Class III Malocclusion,High-Angle Mandible,Anterior Crossbite,Dental Crowding': 3
+'Class II Malocclusion,Mandibular Skeletal Asymmetry,High-Angle Mandible,Convex Profile,Deep Overjet,Dental Crowding': 3
+'患者患有的口腔疾病:\n牙龈炎,色素附着': 3
+'Class III Malocclusion,Mandibular Skeletal Asymmetry,Convex Profile,Deep Overbite,Dental Crowding': 3
+'内源性黄牙,外源性黄牙': 3
+'这些图像中存在的异常列表如下:\n牙周炎,牙齿松动,牙龈炎': 3
+'Class II Malocclusion,Low-Angle Mandible,Convex Profile': 3
+'影响口腔健康的疾病:\n牙周炎,牙龈炎': 3
+'Class III Malocclusion,Maxillary Expansion': 3
+'Detected diseases and anomalies:\nConvex Profile,Dental Crowding': 3
+'影响患者口腔健康的疾病包括:\n牙周炎,牙龈炎': 3
+'影响患者的牙科疾病列表:\n凸面型,牙齿拥挤': 3
+'Periapical Periodontitis,Post And Core Crown,Dental Fluorosis,Tooth Structure Loss,Dental Caries': 3
+'Class II Malocclusion,Class III Malocclusion,Mandibular Skeletal Asymmetry,Dental Crowding': 3
+'患者患有的口腔疾病:\n牙周炎,牙齿松动,牙龈炎': 3
+'基于图像诊断的疾病:\n牙龈炎,龋齿': 3
+'Detected oral abnormalities or diseases:\nDental Fluorosis,Dental Caries': 3
+'Ⅱ类错颌,下颌骨性偏斜,凸面型': 3
+'识别的口腔疾病和牙科状况:\nⅡ类错颌,龋齿': 3
+'Class II Malocclusion,High-Angle Mandible,Convex Profile,Deep Overbite,Dental Crowding': 3
+'牙齿变色,牙齿松动': 3
+'Class II Malocclusion,Retained Primary Tooth,Dental Caries': 3
+'Mandibular Skeletal Asymmetry,High-Angle Mandible,Convex Profile,Deep Overjet,Dental Crowding': 3
+'Wedge-Shaped Defect,Tooth Wear,Gingival Recession,Dental Caries': 3
+'下颌骨性偏斜,深覆合,深覆盖,牙齿拥挤': 3
+'Periapical Periodontitis,Tooth Structure Loss,Pulpitis,Dental Caries': 3
+'Ⅲ类错颌,下颌骨性偏斜,下颌高角,牙反合,牙齿拥挤': 3
+'Ⅲ类错颌,凸面型': 3
+'乳牙滞留,牙反颌': 3
+'Subgingival Calculus': 3
+'Tooth Structure Loss,Pulpitis,Dental Caries': 3
+'Dental Fluorosis,Tooth Loss': 3
+'Ⅲ类错颌,牙列不齐': 3
+'发现的口腔健康问题和疾病如下:\nⅡ类错颌,凸面型,牙齿拥挤': 3
+'Ⅱ类错颌,下颌骨性偏斜,凹面型,牙齿拥挤': 3
+'Ⅱ类错颌,牙龈炎': 3
+'牙隐裂': 3
+'下颌骨性偏斜,牙列不齐,牙齿拥挤': 3
+'Periapical Periodontitis,Periodontitis,Gingivitis': 3
+'Ⅲ类错颌,下颌骨性偏斜,深覆合,牙齿拥挤': 3
+'Deep Fissures,Dental Caries': 3
+'Here is the list of abnormalities that are present in the images:\nPeriodontitis,Tooth Mobility,Gingivitis': 3
+'牙周炎,牙龈炎,牙龈萎缩': 3
+'Oral health conditions identified include:\nPeriodontitis,Gingivitis': 3
+'楔状缺损,牙周炎,牙龈炎': 3
+'Yes, the patient has the following diseases:\nPeriodontitis,Gingivitis': 3
+'Class III Malocclusion,Mandibular Skeletal Asymmetry,Deep Overbite,Dental Crowding': 3
+'Tooth Structure Loss,Post Implant Status': 3
+'检测到的口腔异常或疾病:\nⅡ类错颌,下颌骨性偏斜,凸面型,深覆合,深覆盖,牙齿拥挤': 3
+'Names of visible diseases:\nClass II Malocclusion,Dental Caries': 3
+'下颌骨性偏斜,下颌高角,凸面型,深覆合,深覆盖,牙齿拥挤': 3
+'Class II Malocclusion,Pigment Deposition': 3
+'远中根尖区透射影像': 3
+'牙科图像中可见的疾病:\n凸面型,牙齿拥挤': 3
+'Periodontitis,Gingivitis,Dental Caries': 3
+'Class II Malocclusion,Mandibular Skeletal Asymmetry,High-Angle Mandible,Convex Profile,Deep Overbite,Dental Crowding': 3
+'Periodontitis,Pulpitis,Gingivitis,Subgingival Calculus': 3
+'Dental Crowding,Dental Crowding': 3
+'是的，患者患有以下疾病:\n牙周炎,牙齿松动,牙龈炎': 3
+'可见的疾病和异常包括:\nⅡ类错颌,龋齿': 3
+'患者患有的口腔疾病:\nⅡ类错颌,龋齿': 3
+'氟斑牙,牙列不齐,龋齿': 3
+'Pulp Necrosis,Pulpitis,Dental Caries': 3
+'修复体缺损,根尖周炎': 3
+'Dental Fluorosis,Periodontitis': 3
+'过小牙': 3
+'Class III Malocclusion,Mandibular Skeletal Asymmetry,Convex Profile,Incisor Protrusion,Deep Overbite,Dental Crowding': 3
+'Periodontitis,Pulpitis,Dental Caries': 3
+'凸面型,牙反颌,牙齿拥挤': 3
+'上颌扩弓': 3
+'Ⅱ类错颌,下颌骨性偏斜,下颌高角,凸面型,深覆盖,牙齿拥挤': 3
+'High-Angle Mandible,Dental Crowding': 3
+'乳牙滞留,深窝沟,龋齿': 3
+'Post And Core Crown': 3
+'Tooth Wear,Enamel Hypoplasia,Dental Caries': 3
+'可见的疾病和状况:\n牙周炎,牙齿松动,牙龈炎': 3
+'Convex Profile,Deep Overbite,Dental Crowding': 3
+'根管内无新鲜渗出,牙周炎': 3
+'根尖周炎,牙体缺损,牙髓炎,龋齿': 3
+'Ⅱ类错颌,下颌低角,凸面型,牙齿拥挤': 3
+'Mandibular Skeletal Asymmetry,Convex Profile,Deep Overbite,Dental Crowding,Dental Crowding': 3
+'牙体缺损,牙周炎,牙齿松动,牙龈炎': 3
+'根管内无新鲜渗出,牙体缺损,牙髓炎': 3
+'Oral diseases patient is suffering from:\nClass I Malocclusion,Convex Profile,Deep Overbite': 2
+'Impacted Tooth,Dental Caries': 2
+'观察到的异常和疾病如下:\n牙龈炎,色素附着': 2
+'Class II Malocclusion,Class III Malocclusion,Mandibular Skeletal Asymmetry,Anterior Crossbite,Dental Crowding,Obstructive Sleep Apnea Syndrome': 2
+'Pulpitis,Gingivitis,Impacted Tooth': 2
+'Class II Malocclusion,Mandibular Skeletal Asymmetry,Convex Profile,Spacing,Deep Overbite,Deep Overjet': 2
+'Cracked Tooth': 2
+'Class II Malocclusion,Convex Profile,Spacing,Deep Curve Of Spee,Deep Overjet,Deep Overbite,Dental Crowding,Dental Crowding': 2
+'Ⅱ类错颌,下颌骨性偏斜,下颌高角,深覆合,牙齿拥挤': 2
+'List of dental diseases affecting the patient:\nClass II Malocclusion,Convex Profile': 2
+'可见的疾病和异常包括:\nⅡ类错颌,下颌骨性偏斜,凸面型,深覆合,牙齿拥挤': 2
+'Mandibular Skeletal Asymmetry,Convex Profile,Deep Overbite,Dental Crowding,Anterior Crossbite,Dental Crowding': 2
+'氟斑牙,牙列不齐': 2
+'Restoration Defect,Dental Caries': 2
+'牙科异常列表:\nⅡ类错颌,龋齿': 2
+'牙反颌,高角': 2
+'Class II Malocclusion,Mandibular Skeletal Asymmetry,High-Angle Mandible,Convex Profile,Incisor Protrusion,Dental Crowding': 2
+'Class I Malocclusion,Dental Crowding': 2
+'楔状缺损,氟斑牙,龋齿': 2
+'Determined disease types based on images:\nPeriodontitis,Tooth Mobility,Gingivitis': 2
+'下颌骨性偏斜': 2
+'Ⅱ类错颌,下颌低角,下颌骨性偏斜,凸面型,深覆合,深覆盖,牙齿拥挤': 2
+'牙髓炎,牙龈炎': 2
+'Ectopic Tooth,Gingivitis': 2
+'Class III Malocclusion,Mandibular Skeletal Asymmetry,High-Angle Mandible,Concave Profile,Dental Crowding': 2
+'基于图像诊断的疾病:\nⅡ类错颌,龋齿': 2
+'High-Angle Mandible,Convex Profile,Crossbite,Dental Crowding': 2
+'Ⅱ类错颌,Ⅲ类错颌,下颌骨性偏斜,凸面型,深覆合,深覆盖,牙齿拥挤': 2
+'牙龈萎缩': 2
+'影响牙科健康的疾病:\n牙周炎,牙龈炎': 2
+'Diseases affecting dental health:\nMandibular Skeletal Asymmetry,Convex Profile,Deep Overbite,Dental Crowding': 2
+'检测到的口腔异常或疾病:\n牙周炎,牙龈炎': 2
+'Kennedy Class III Edentulism': 2
+'Mandibular Skeletal Asymmetry,Dental Crowding': 2
+'Ⅲ类错颌,下颌高角,牙反合,牙齿拥挤': 2
+'Periodontitis,Tooth Rotation,Tooth Loss,Subgingival Calculus': 2
+'可见的口腔健康问题和牙科疾病:\n牙周炎,牙龈炎': 2
+'Gingivitis,Subgingival Calculus': 2
+'Diagnosed diseases:\nPeriodontitis,Tooth Mobility,Gingivitis': 2
+'Diseases affecting the patient’s oral health include:\nClass II Malocclusion,Dental Caries': 2
+'牙科图像中可见的疾病:\n牙龈炎,色素附着': 2
+'牙科或口腔图像中可见的疾病:\n牙周炎,牙齿松动,牙龈炎': 2
+'Visible oral health conditions identified:\nGingivitis,Pigment Deposition': 2
+'识别出的疾病:\nⅡ类错颌,龋齿': 2
+'Class I Malocclusion,High-Angle Mandible,Convex Profile,Dental Crowding': 2
+'Determined disease types based on images:\nRestoration Defect,Tooth Structure Loss': 2
+'牙石': 2
+'List of dental issues:\nClass II Malocclusion,Dental Caries': 2
+'Identified dental anomalies based on data:\nClass II Malocclusion,Convex Profile,Dental Crowding': 2
+'识别的异常和口腔健康状况:\n氟斑牙,龋齿': 2
+'乳牙滞留,牙位滞留': 2
+'Ⅱ类错颌,牙石,龋齿': 2
+'Ⅰ类错颌,Ⅲ类错颌,下前牙舌倾,楔状缺损,牙列不齐,牙齿拥挤,过小牙': 2
+'Supernumerary Tooth,Dental Crowding': 2
+'诊断的疾病:\n牙髓炎,龋齿': 2
+'检测到的疾病和异常:\n牙龈炎,色素附着': 2
+'深覆合,牙列不齐': 2
+'Comprehensive list of oral diseases detected:\nTooth Structure Loss,Gingivitis': 2
+'Detected anomalies and diseases:\nGingivitis,Pigment Deposition': 2
+'牙周炎,牙髓炎,牙龈炎,龋齿': 2
+'识别的口腔健康状况包括:\nⅡ类错颌,下颌骨性偏斜,凸面型,深覆合,深覆盖,牙齿拥挤': 2
+'牙龈萎缩,龈下牙石': 2
+'可见的口腔健康问题和牙科疾病:\nⅠ类错颌,龋齿': 2
+'牙体缺损,牙周炎,牙齿缺失': 2
+'Diseases and anomalies present:\nClass II Malocclusion,Mandibular Skeletal Asymmetry,Convex Profile,Deep Overbite,Deep Overjet,Dental Crowding': 2
+'Kennedy Class I Edentulism': 2
+'牙折断,牙髓炎,牙龈炎,龋齿': 2
+'Class I Malocclusion,Class II Malocclusion,Left Maxillary Midline Deviation,Right Mandibular Midline Deviation,Deep Curve Of Spee,Deep Overbite,Dental Crowding,Dental Crowding,Mesioangular Impaction': 2
+'Diseases affecting oral health:\nGingivitis,Pigment Deposition': 2
+'Determined disease type:\nDental Fluorosis,Dental Caries': 2
+'Class III Malocclusion,Mandibular Skeletal Asymmetry,Concave Profile,Dental Crowding': 2
+'正畸治疗牙,龋齿': 2
+'乳牙滞留,牙列不齐,牙齿拥挤': 2
+'Ⅲ类错颌,下颌低角,凹面型,牙齿拥挤': 2
+'Tooth Structure Loss,Pulpitis,Gingivitis,Dental Caries': 2
+'Oral diseases and dental conditions identified:\nClass II Malocclusion,Mandibular Skeletal Asymmetry,Convex Profile,Deep Overbite,Dental Crowding': 2
+'Class I Malocclusion,Class II Malocclusion,Congenitally Missing Tooth,Deep Overbite,Dental Crowding,Dental Crowding,Mesioangular Impaction': 2
+'Diseases affecting the patient’s oral health include:\nDry Root Canal,Pulpitis': 2
+'Ⅱ类错颌,下颌高角,凸面型,深覆合,深覆盖,牙齿拥挤': 2
+'这些图像中存在的异常列表如下:\n凸面型,牙齿拥挤': 2
+'牙科图像中可见的疾病:\nⅢ类错颌,下颌高角,凸面型,前突,牙反合,牙齿拥挤': 2
+'当前的口腔或牙科状况:\n氟斑牙,龋齿': 2
+'基于图像诊断的疾病:\n牙周炎,牙龈炎': 2
+'Deep Overjet': 2
+'内源性黄牙,牙齿松动': 2
+'Diseases and anomalies present:\nPeriodontitis,Tooth Mobility,Gingivitis': 2
+'Ⅲ类错颌,乳牙滞留': 2
+'Ⅱ类错颌,深覆盖,牙反颌,牙齿拥挤,高角': 2
+'牙髓炎,牙龈炎,阻生齿': 2
+'Class III Malocclusion,Mandibular Skeletal Asymmetry,Convex Profile,Dental Crowding': 2
+'氟斑牙,牙体缺损,牙齿缺失,牙龈炎': 2
+'Diagnosed diseases:\nClass II Malocclusion,Mandibular Skeletal Asymmetry,Convex Profile,Deep Overbite,Deep Overjet,Dental Crowding': 2
+'Oral diseases or issues detected are:\nClass II Malocclusion,Mandibular Skeletal Asymmetry,Convex Profile,Deep Overbite,Dental Crowding': 2
+'Tooth Wear': 2
+'楔状缺损,牙隐裂,牙龈炎,龋齿': 2
+'Classified diseases in the oral cavity:\nWedge-Shaped Defect,Dental Fluorosis': 2
+'根尖周炎,牙齿松动': 2
+'基于图像诊断的疾病:\n牙周炎,牙齿松动,牙龈炎': 2
+'Class III Malocclusion,Deep Overjet,Dental Crowding': 2
+'基于数据识别的牙科异常:\n牙体缺损,龋齿': 2
+'下颌骨性偏斜,凸面型,牙体缺损,牙齿拥挤': 2
+'Detected anomalies and diseases:\nClass II Malocclusion,Convex Profile,Dental Crowding': 2
+'Oral diseases and dental conditions identified:\nPeriodontitis,Tooth Mobility,Gingivitis': 2
+'牙列不齐,阻生齿,龋齿': 2
+'检测到的口腔异常或疾病:\n牙体缺损,龋齿': 2
+'Ⅱ类错颌,凸面型,深覆合,牙列不齐': 2
+'Visible diseases in dental or oral images:\nGingivitis,Pigment Deposition': 2
+'Class III Malocclusion,Low-Angle Mandible,Concave Profile,Anterior Crossbite,Dental Crowding': 2
+'存在的疾病和异常:\n牙周炎,牙龈炎': 2
+'Oral diseases and dental conditions identified:\nClass II Malocclusion,Dental Crowding': 2
+'检测到的口腔疾病综合列表:\n凸面型,牙齿拥挤': 2
+'Current oral or dental conditions:\nGingivitis,Pigment Deposition': 2
+'检测到的口腔疾病或问题如下:\n氟斑牙,龋齿': 2
+'下颌骨性偏斜,深覆盖,牙齿拥挤': 2
+'Names of diseases the patient has:\nPeriodontitis,Gingivitis': 2
+'牙科异常列表:\n牙周炎,牙齿松动,牙龈炎': 2
+'Visible oral health conditions identified:\nPeriapical Periodontitis,Periodontitis': 2
+'Classification of diseases present:\nDental Fluorosis,Dental Caries': 2
+'牙科异常列表:\nⅡ类错颌,牙列不齐': 2
+'Mixed Dentition Malocclusion': 2
+'Dental anomalies:\nGingivitis,Pigment Deposition': 2
+'可见的口腔健康问题和牙科疾病:\n牙周炎,牙齿松动': 2
+'Class II Malocclusion,Gingivitis': 2
+'图像中存在的疾病:\nⅡ类错颌,下颌骨性偏斜,凸面型,深覆合,牙齿拥挤': 2
+'Disease(s) identified in oral images:\nPeriodontitis,Tooth Mobility,Gingivitis': 2
+'确定的疾病类型:\n牙龈炎,色素附着': 2
+'牙周炎,牙龈萎缩,龈下牙石': 2
+'Tooth Structure Loss,Dental Crowding,Dental Caries': 2
+'楔状缺损,牙周炎,牙髓炎': 2
+'Retained Primary Tooth,Palatal Pigmentation': 2
+'Class II Malocclusion,Mandibular Skeletal Asymmetry,Deep Overbite,Dental Crowding,Dental Caries': 2
+'Class II Malocclusion,Low-Angle Mandible,Mandibular Skeletal Asymmetry,Dental Crowding': 2
+'Diseases and anomalies present:\nPeriodontitis,Gingivitis': 2
+'下颌高角,牙齿拥挤': 2
+'识别的可见口腔健康状况:\nⅡ类错颌,龋齿': 2
+'Detected dental conditions include:\nPeriodontitis,Gingivitis': 2
+'患者患有的疾病名称:\n氟斑牙,龋齿': 2
+'患者患有的口腔疾病:\n牙髓炎,龋齿': 2
+'基于图像诊断的疾病:\n牙龈炎,色素附着': 2
+'根尖周炎,氟斑牙,牙体缺损,龋齿': 2
+'牙科异常:\n牙周炎,牙龈炎': 2
+'识别出的疾病:\n牙髓炎,龋齿': 2
+'Class II Malocclusion,Convex Profile,Dental Crowding,Dental Crowding': 2
+'Class III Malocclusion,Low-Angle Mandible,Concave Profile,Dental Crowding': 2
+'Demineralization,Dental Caries': 2
+'Periapical Periodontitis,Tooth Structure Loss,Periodontitis': 2
+'已识别的详细牙科疾病列表:\n牙龈炎,色素附着': 2
+'List of oro-dental diseases:\nClass II Malocclusion,Convex Profile,Dental Crowding': 2
+'检测到的异常和健康状况:\nⅡ类错颌,龋齿': 2
+'Class III Malocclusion,Mandibular Skeletal Asymmetry,Convex Profile,Deep Overbite,Deep Overjet,Dental Crowding': 2
+'Yes, the patient has the following diseases:\nClass II Malocclusion,Convex Profile,Dental Crowding': 2
+'Ⅲ类错颌,下颌骨性偏斜,下颌高角,深覆合,牙齿拥挤': 2
+'List of oro-dental diseases:\nPeriodontitis,Gingivitis': 2
+'深覆合,深覆盖,牙列不齐,牙齿拥挤': 2
+'Visible diseases and conditions:\nGingivitis,Pigment Deposition': 2
+'图像中存在的疾病:\n牙龈炎,色素附着': 2
+'Diseases affecting the patient’s mouth:\nClass II Malocclusion,Dental Caries': 2
+'检测到的口腔异常或疾病:\n氟斑牙,龋齿': 2
+'Short Labial Frenum,Dental Crowding': 2
+'Ⅱ类错颌,下颌高角,牙齿拥挤': 2
+'Identified dental anomalies based on data:\nPeriodontitis,Gingivitis': 2
+'Crossbite,Pulpitis,Dental Caries': 2
+'Cracked Tooth,Dental Caries': 2
+'根尖周炎,牙髓炎,近中阻生,龋齿': 2
+'Class I Malocclusion,Low-Angle Mandible,Convex Profile,Dental Crowding': 2
+'Class II Malocclusion,Mandibular Skeletal Asymmetry,High-Angle Mandible,Dental Crowding,Dental Caries': 2
+'Identified oral diseases:\nClass III Malocclusion,High-Angle Mandible,Convex Profile,Dental Crowding': 2
+'Mandibular Skeletal Asymmetry,Convex Profile,Incisor Protrusion,Deep Overbite,Dental Crowding': 2
+'Diagnosed diseases based on images:\nDental Fluorosis,Dental Caries': 2
+'Detected oral abnormalities or diseases:\nClass II Malocclusion,Class III Malocclusion,Convex Profile,Dental Crowding': 2
+'Retained Primary Tooth,Convex Profile,Buccally Displaced Tooth,Dental Crowding,Dental Crowding': 2
+'氟斑牙,牙周炎': 2
+'牙体缺损,牙近中倾斜': 2
+'Tooth Structure Loss,Periodontitis,Pulpitis': 2
+'修复体缺损,根尖周炎,牙齿松动,牙齿缺失,牙龈炎': 2
+'Ⅲ类错颌,下颌骨性偏斜,下颌高角,凹面型,开合咬合,牙反颌,牙齿拥挤': 2
+'氟斑牙,牙齿缺失,龋齿': 2
+'Ⅲ类错颌,下颌骨性偏斜,开合咬合,散隙': 2
+'Ⅲ类错颌,下颌骨性偏斜,下颌高角,牙齿拥挤': 2
+'Class II Malocclusion,Incisor Protrusion,Dental Crowding': 2
+'牙列中线偏斜': 2
+'Mandibular Skeletal Asymmetry,Dental Crowding,Dental Crowding': 2
+'检测到的疾病和异常:\nⅡ类错颌,凸面型,牙齿拥挤': 2
+'患者患有的疾病名称:\n牙周炎,牙齿松动,牙龈炎': 2
+'Class II Malocclusion,Low-Angle Mandible,Mandibular Skeletal Asymmetry,Convex Profile,Spacing,Deep Overjet,Deep Overbite': 2
+'Class II Malocclusion,Class III Malocclusion,Mandibular Retrusion,Convex Profile,Dental Crowding': 2
+'Class I Malocclusion,Demineralization': 2
+'Dental Fluorosis,Cracked Tooth': 2
+'咬下唇不良习惯,牙齿拥挤': 2
+'Mandibular Skeletal Asymmetry,Convex Profile,Deep Overjet,Dental Crowding,Dental Crowding': 2
+'Mandibular Skeletal Asymmetry,Concave Profile,Dental Crowding,Dental Crowding': 2
+'口腔中疾病的分类:\n牙龈炎,色素附着': 2
+'Class III Malocclusion,Mandibular Skeletal Asymmetry,High-Angle Mandible,Anterior Crossbite,Dental Crowding': 2
+'充填物脱落,根尖周炎,桩核冠,氟斑牙,牙体缺损,牙髓炎,牙龈炎,龋齿': 2
+'观察到的异常和疾病如下:\n氟斑牙,龋齿': 2
+'Diseases present in the images:\nConvex Profile,Dental Crowding': 2
+'Diseases affecting dental health:\nClass II Malocclusion,Dental Caries': 2
+'下颌骨性偏斜,凸面型,前突,牙列不齐,牙齿拥挤': 2
+'Wedge-Shaped Defect,Tooth Fracture,Cracked Tooth,Dental Caries': 2
+'Observed abnormalities and diseases are:\nClass II Malocclusion,Convex Profile': 2
+'Diseases affecting dental health:\nPeriodontitis,Gingivitis': 2
+'Class II Malocclusion,Supernumerary Tooth': 2
+'牙齿松动,牙齿缺失': 2
+'Here is the list of abnormalities that are present in the images:\nPeriodontitis,Gingivitis': 2
+'Edge-To-Edge Bite': 2
+'修复体缺损,龋齿': 2
+'脱矿': 2
+'牙科图像中可见的疾病:\nⅡ类错颌,龋齿': 2
+'Detailed list of dental diseases identified:\nClass II Malocclusion,High-Angle Mandible,Convex Profile,Dental Crowding': 2
+'List of oro-dental diseases:\nDental Crowding,Dental Caries': 2
+'患者患有的疾病名称:\nⅡ类错颌,凸面型,牙齿拥挤': 2
+'内源性黄牙,牙体缺损': 2
+'Diseases affecting the patient’s mouth:\nPeriodontitis,Gingivitis': 2
+'Dry Root Canal,Tooth Structure Loss': 2
+'Class III Malocclusion,Mandibular Skeletal Asymmetry,Convex Profile': 2
+'Malocclusion,Dental Caries': 2
+'充血,牙体缺损,龋齿': 2
+'凸面型,深覆合': 2
+'牙位滞留,龋齿': 2
+'Deep Fissures,Tooth Structure Loss,Dental Caries': 2
+'检测到的异常和健康状况:\n牙髓炎,龋齿': 2
+'牙髓坏死,牙龈炎,龋齿': 2
+'Calculus,Gingivitis': 2
+'Ⅰ类错颌,Ⅱ类错颌,上前牙舌倾,下前牙舌倾,深覆颌,牙齿拥挤,龋齿': 2
+'Temporary Restoration': 2
+'Oral health problems and diseases found:\nGingivitis,Pigment Deposition': 2
+'确定的疾病类型:\nⅡ类错颌,凸面型,牙齿拥挤': 2
+'Detected abnormalities and health conditions:\nClass II Malocclusion,Mandibular Skeletal Asymmetry,High-Angle Mandible,Convex Profile,Deep Overbite,Dental Crowding': 2
+'Identified abnormalities and oral health conditions:\nPulpitis,Dental Caries': 2
+'存在的疾病和异常:\n牙周炎,牙齿松动,牙龈炎': 2
+'Ⅲ类错颌,深覆合': 2
+'患者患有的口腔疾病:\nⅠ类错颌,龋齿': 2
+'Observed abnormalities and diseases are:\nConvex Profile,Dental Crowding': 2
+'Supernumerary Tooth': 2
+'List of diseases:\nGingivitis,Pigment Deposition': 2
+'前牙开合,散隙,牙齿缺失,龋齿': 2
+'Wedge-Shaped Defect,Dental Fluorosis,Dental Caries': 2
+'Here is the list of anomalies and diseases that the patient have:\nPeriodontitis,Tooth Mobility,Gingivitis': 2
+'Mandibular Skeletal Asymmetry,Convex Profile,Anterior Crossbite,Dental Crowding': 2
+'Periodontitis,Tooth Loss': 2
+'Ⅱ类错颌,下颌低角,下颌骨性偏斜,凸面型,深覆盖,牙齿拥挤': 2
+'Lost Filling,Periapical Periodontitis,Dental Caries': 2
+'图像中存在的疾病:\n牙体缺损,牙齿缺失': 2
+'Periodontitis,Tooth Mobility,Gingivitis,Impacted Tooth': 2
+'楔状缺损,牙体缺损,龋齿': 2
+'基于图像诊断的疾病:\n根尖周炎,桩核冠,氟斑牙,牙体缺损,龋齿': 2
+'Class II Malocclusion,Low-Angle Mandible,Mandibular Skeletal Asymmetry,Convex Profile,Incisor Protrusion,Deep Overbite,Deep Overjet,Dental Crowding,Dental Crowding': 2
+'充填物脱落,牙体缺损,龋齿': 2
+'Class II Malocclusion,Convex Profile,Deep Overbite,Dental Crowding': 2
+'正畸治疗牙': 2
+'Ⅱ类错颌,上颌扩弓,龋齿': 2
+'Ⅰ类错颌,凸面型,前牙开合,牙列不齐,牙齿拥挤': 2
+'内源性黄牙,氟斑牙': 2
+'识别出的疾病:\nⅡ类错颌,凸面型,深覆合': 2
+'Ⅲ类错颌,下颌骨性偏斜,凸面型,前突,深覆合': 2
+'Here is the list of abnormalities that are present in the images:\nGingivitis,Dental Caries': 2
+'Observed abnormalities and diseases are:\nClass II Malocclusion,Dental Caries': 2
+'检测到的口腔疾病综合列表:\nⅡ类错颌,凸面型': 2
+'Pulpitis,Tooth Loss': 2
+'Detected anomalies and diseases:\nClass II Malocclusion,Mandibular Skeletal Asymmetry,Convex Profile,Incisor Protrusion,Deep Overbite,Deep Overjet,Dental Crowding': 2
+'Ⅱ类错颌,Ⅲ类错颌,下颌骨性偏斜,凸面型,深覆盖,牙齿拥挤,牙齿缺失': 2
+'Class II Malocclusion,Maxillary Protrusion,Mandibular Skeletal Asymmetry,High-Angle Mandible,Deep Overbite,Dental Crowding,Dental Crowding': 2
+'检测到的牙科状况包括:\n牙体缺损,龋齿': 2
+'已识别的详细牙科疾病列表:\n牙龈炎,龋齿': 2
+'前牙深覆颌,牙列不齐,牙齿拥挤': 2
+'Periapical Periodontitis,Periodontitis,Tooth Mobility,Gingivitis,Gingival Recession': 2
+'Visible diseases in the dental images:\nDental Fluorosis,Dental Caries': 2
+'Class II Malocclusion,Mandibular Skeletal Asymmetry,Convex Profile,Incisor Protrusion,Deep Overjet,Dental Crowding': 2
+'Determined disease types based on images:\nGingivitis,Dental Caries': 2
+'深覆合,牙列不齐,龋齿': 2
+'Ⅰ类错颌,下颌骨性偏斜,凸面型,深覆盖,牙齿拥挤': 2
+'识别出的口腔图像中的疾病:\n牙周炎,牙齿松动,牙龈炎': 2
+'牙齿松动': 2
+'根尖周炎,根管内无新鲜渗出,牙周炎,牙髓炎,牙齿变色,牙龈炎': 2
+'Periapical Periodontitis,Wedge-Shaped Defect,Dental Fluorosis,Pulpitis,Impacted Tooth,Dental Caries': 2
+'患者患有的口腔疾病:\n氟斑牙,龋齿': 2
+'List of dental diseases:\nPeriodontitis,Tooth Mobility,Gingivitis': 2
+'Class II Malocclusion,Mandibular Skeletal Asymmetry,High-Angle Mandible,Convex Profile,Dental Crowding': 2
+'Ⅱ类错颌,Ⅲ类错颌,下颌骨性偏斜,牙齿拥挤': 2
+'Ⅱ类错颌,下颌骨性偏斜,凸面型,深覆合,深覆盖': 2
+'根尖周炎,色素附着,龋齿': 2
+'当前的口腔或牙科状况:\n牙髓炎,龋齿': 2
+'Class II Malocclusion,Dental Crowding,Dental Caries': 2
+'Class III Malocclusion,Mandibular Skeletal Asymmetry,Deep Overbite': 2
+'这是患者患有的异常和疾病列表:\n牙周炎,牙龈炎': 2
+'Class II Malocclusion,Mandibular Skeletal Asymmetry,Deep Overbite,Dental Crowding': 2
+'识别出的疾病:\nⅡ类错颌,下颌骨性偏斜,凸面型,牙齿拥挤': 2
+'Tooth Structure Loss,Periodontitis': 2
+'Restoration Defect,Tooth Structure Loss,Subgingival Calculus': 2
+'Observed abnormalities and diseases are:\nDental Fluorosis,Tooth Structure Loss': 2
+'牙磨耗,牙齿缺失': 2
+'Retained Primary Tooth,Deep Fissures,Dental Caries': 2
+'Ⅲ类错颌,下颌骨性偏斜,下颌高角,凹面型,牙反合,牙齿拥挤': 2
+'Identified diseases from images:\nClass II Malocclusion,Dental Crowding': 2
+'氟斑牙,牙周炎,牙齿松动,牙齿缺失,牙龈炎,龈下牙石': 2
+'Ⅱ类错颌,下唇黏膜溃疡': 2
+'Class III Malocclusion,Tooth Structure Loss,Dental Crowding': 2
+'Class III Malocclusion,Convex Profile,Dental Crowding': 2
+'Restoration Defect,Periapical Periodontitis,Periodontitis': 2
+'Periodontitis,Tooth Mobility,Gingivitis,Dental Caries': 2
+'识别出的口腔疾病:\n牙周炎,牙齿松动,牙龈炎': 2
+'Class III Malocclusion,Mandibular Skeletal Asymmetry,High-Angle Mandible,Convex Profile,Deep Overbite,Deep Overjet,Dental Crowding': 2
+'Oral disease(s) patient is suffering from:\nDental Fluorosis,Dental Caries': 2
+'已识别的详细牙科疾病列表:\n牙周炎,牙龈炎': 2
+'Restoration Defect,Periodontitis,Gingivitis,Subgingival Calculus': 2
+'List of dental anomalies:\nTooth Structure Loss,Tooth Loss': 2
+'基于数据识别的牙科异常:\n牙周炎,牙龈炎': 2
+'Visible diseases and anomalies are:\nPulpitis,Dental Caries': 2
+'Current oral or dental conditions:\nPeriodontitis,Tooth Mobility,Gingivitis': 2
+'Oral diseases patient is suffering from:\nPeriodontitis,Gingivitis': 2
+'Class I Malocclusion,Dental Fluorosis,Dental Crowding': 2
+'检测到的口腔异常或疾病:\n根管内无新鲜渗出,牙髓炎': 2
+'Retained Primary Tooth,Tooth Structure Loss': 2
+'外源性黄牙,氟斑牙': 2
+'Class II Malocclusion,Mandibular Skeletal Asymmetry,Concave Profile,Dental Crowding': 2
+'Class II Malocclusion,Mandibular Skeletal Asymmetry,Convex Profile,Deep Overbite,Deep Overjet,Anterior Crossbite,Dental Crowding': 2
+'检测到的异常和健康状况:\nⅡ类错颌,深覆合': 2
+'Ⅱ类错颌,下颌骨性偏斜,凸面型,深覆合': 2
+'可见的疾病和异常包括:\n牙体缺损,龋齿': 2
+'Class I Malocclusion,Class II Malocclusion,Proclined Upper Incisors,Retained Primary Tooth,Convex Profile,Ramus Height Discrepancy,Deep Curve Of Spee,Deep Overjet,Deep Overbite,Dental Midline Deviation,Dental Crowding,Chin Deviated Right,Dental Caries': 2
+'楔状缺损,牙髓炎': 2
+'Dental Fluorosis,Periodontitis,Gingivitis,Dental Caries': 2
+'牙科或口腔图像中可见的疾病:\n氟斑牙,龋齿': 2
+'Oral diseases or issues detected are:\nClass II Malocclusion,Convex Profile,Dental Crowding': 2
+'Here is the list of abnormalities that are present in the images:\nClass II Malocclusion,Convex Profile,Dental Crowding': 2
+'诊断的疾病:\nⅡ类错颌,凸面型,牙齿拥挤': 2
+'Dry Root Canal,Pulp Necrosis,Dental Caries': 2
+'凸面型,口呼吸,牙列不齐': 2
+'充血,阻生齿': 2
+'检测到的异常和疾病:\n牙周炎,牙龈炎': 2
+'Ⅲ类错颌,凹面型,牙反颌,牙齿拥挤': 2
+'Calculus': 2
+'Class III Malocclusion,Mandibular Skeletal Asymmetry,Concave Profile,Anterior Crossbite': 2
+'识别的异常和口腔健康状况:\nⅡ类错颌,龋齿': 2
+'Observed abnormalities and diseases are:\nPeriodontitis,Gingivitis': 2
+'Class II Malocclusion,Abnormal Palatal Groove,Pigment Deposition,Dental Caries': 2
+'检测到的疾病和异常:\n牙列不齐,龋齿': 2
+'牙体缺损,牙列不齐': 2
+'Pulp Necrosis,Gingivitis,Dental Caries': 2
+'Class II Malocclusion,Deep Overbite,Dental Crowding': 2
+'牙科疾病列表:\n氟斑牙,龋齿': 2
+'Deep Fissures,Pulpitis,Dental Caries': 2
+'影响患者口腔健康的疾病包括:\nⅡ类错颌,牙齿拥挤': 2
+'牙磨耗': 2
+'根尖周炎,牙体缺损,牙髓炎': 2
+'图像中存在的疾病:\n凸面型,牙齿拥挤': 2
+'牙科或口腔图像中可见的疾病:\n牙体缺损,牙齿缺失': 2
+'Oral health issues and dental diseases visible:\nPulpitis,Dental Caries': 2
+'图像中存在的疾病:\nⅡ类错颌,下颌骨性偏斜,凸面型,深覆合,深覆盖,牙齿拥挤': 2
+'Diseases present in images:\nDental Fluorosis,Tooth Structure Loss': 2
+'诊断的疾病:\nⅢ类错颌,下颌高角,牙齿拥挤': 2
+'检测到的口腔异常或疾病:\nⅡ类错颌,下颌骨性偏斜,凸面型,深覆合,牙齿拥挤': 2
+'影响患者的牙科疾病列表:\n氟斑牙,龋齿': 2
+'牙科或口腔图像中可见的疾病:\nⅡ类错颌,凸面型,牙齿拥挤': 2
+'Diseases present in the images:\nGingivitis,Dental Caries': 2
+'Class III Malocclusion,Mandibular Skeletal Asymmetry,Impacted Tooth': 2
+'Ⅲ类错颌,下颌骨性偏斜,凸面型,前突,深覆合,深覆盖,牙齿拥挤': 2
+'Retained Primary Tooth,Tooth Loss': 2
+'Identified dental anomalies based on data:\nTooth Structure Loss,Tooth Loss': 2
+'Tooth Structure Loss,Tooth Loss,Gingivitis,Dental Caries': 2
+'牙髓炎,牙齿松动,牙龈炎': 2
+'牙齿缺失,龋齿': 2
+'Disease(s) identified in oral images:\nPulpitis,Dental Caries': 2
+'图像中存在的疾病:\n牙龈炎,龈下牙石': 2
+'患者患有的疾病名称:\n牙龈炎,色素附着': 2
+'伸舌吞咽习惯,前突,牙齿拥挤': 2
+'Class I Malocclusion,Class II Malocclusion,Convex Profile': 2
+'牙位滞留,牙体缺损': 2
+'确定的疾病类型:\n根尖周炎,牙髓炎': 2
+'Periodontitis,Gingivitis,Gingival Recession': 2
+'这是患者患有的异常和疾病列表:\nⅡ类错颌,凸面型,牙齿拥挤': 2
+'Ⅱ类错颌,Ⅲ类错颌,下颌骨性偏斜,凸面型,深覆盖,牙齿拥挤': 2
+'Dental Fluorosis,Tooth Wear': 2
+'是的，患者患有以下疾病:\nⅡ类错颌,凸面型,牙齿拥挤': 2
+'Yes, the patient has the following diseases:\nDental Crowding,Dental Caries': 2
+'Class III Malocclusion,Mandibular Skeletal Asymmetry,Deep Overbite,Anterior Crossbite,Dental Crowding': 2
+'检测到的异常和疾病:\nⅡ类错颌,下颌骨性偏斜,深覆合,深覆盖,牙齿拥挤': 2
+'楔状缺损,牙体缺损,牙齿缺失': 2
+'Class II Malocclusion,Low-Angle Mandible,Mandibular Skeletal Asymmetry,Convex Profile,Tooth Structure Loss,Dental Crowding': 2
+'Pulpitis,Tooth Loss,Dental Caries': 2
+'检测到的异常和健康状况:\nⅡ类错颌,凸面型,牙齿拥挤': 2
+'Class II Malocclusion,Mandibular Skeletal Asymmetry,High-Angle Mandible,Convex Profile': 2
+'牙周炎,牙髓炎,牙齿松动,牙龈炎': 2
+'Lost Filling,Dental Caries': 2
+'牙周炎,牙齿松动,牙龈炎,龋齿': 2
+'Ⅱ类错颌,下颌骨性偏斜,下颌高角,凸面型,深覆合,深覆盖,牙齿拥挤': 2
+'Class II Malocclusion,Class III Malocclusion,Mandibular Skeletal Asymmetry,Deep Overbite': 2
+'牙体缺损,牙周炎,牙齿松动,牙龈炎,龋齿': 2
+'Ⅲ类错颌,下颌骨性偏斜,下颌高角,凸面型,深覆盖,牙列不齐': 2
+'Ⅲ类错颌,下颌高角,凹面型,牙反合,牙齿拥挤': 2
+'这些图像中存在的异常列表如下:\nⅡ类错颌,凸面型': 2
+'牙科或口腔图像中可见的疾病:\n牙周炎,龈下牙石': 2
+'患者患有的疾病名称:\nⅡ类错颌,龋齿': 2
+'Determined disease types based on images:\nPeriodontitis,Gingivitis': 2
+'Mandibular Skeletal Asymmetry,Deep Overbite,Dental Crowding,Malocclusion': 2
+'Detected abnormalities and health conditions:\nGingivitis,Dental Caries': 2
+'疾病列表:\nⅡ类错颌,龋齿': 2
+'Oral health problems and diseases found:\nPeriodontitis,Gingivitis': 2
+'Class III Malocclusion,High-Angle Mandible,Concave Profile,Anterior Crossbite,Dental Crowding': 2
+'Maxillary Protrusion,Dental Crowding': 2
+'Wedge-Shaped Defect,Periodontitis,Gingivitis': 2
+'Tooth Structure Loss,Periodontitis,Tooth Mobility,Gingivitis,Dental Caries': 2
+'Oral health issues and dental diseases visible:\nClass III Malocclusion,High-Angle Mandible,Dental Crowding': 1
+'Ⅲ类错颌,下颌骨性偏斜,深覆颌': 1
+'根尖周炎,桩核冠,楔状缺损,氟斑牙,牙髓炎,龋齿': 1
+'患者患有的疾病名称:\n修复体缺损,根尖周炎,牙齿松动,牙齿缺失,牙龈炎': 1
+'List of diseases:\nClass II Malocclusion,Convex Profile': 1
+'根尖周炎,根管内无新鲜渗出,牙体缺损,牙周炎,牙髓炎': 1
+'List of dental diseases affecting the patient:\nGingivitis,Pigment Deposition': 1
+'牙周炎,牙齿松动,龋齿': 1
+'牙齿松动,牙龈炎': 1
+'Detected oral abnormalities or diseases:\nDeep Overjet,Crossbite,Dental Crowding': 1
+'List of oro-dental diseases:\nClass I Malocclusion,Convex Profile,Deep Overbite': 1
+'Class III Malocclusion,Low-Angle Mandible,Mandibular Skeletal Asymmetry,Concave Profile,Edge-To-Edge Bite,Dental Crowding,Dental Crowding,Impacted Tooth,Dental Caries': 1
+'Identified diseases from images:\nWedge-Shaped Defect,Pulpitis': 1
+'检测到的异常和健康状况:\n牙周炎,牙龈炎': 1
+'患者患有的口腔疾病:\n氟斑牙,牙体缺损': 1
+'Current oral or dental conditions:\nDental Fluorosis,Dental Crowding,Dental Caries': 1
+'Deep Overbite,Dental Caries': 1
+'List of oro-dental diseases:\nDental Fluorosis,Tooth Structure Loss,Dental Caries': 1
+'Ⅱ类错颌,牙釉质发育不全': 1
+'Gingival Recession': 1
+'口腔中疾病的分类:\n深覆合,深覆颌': 1
+'基于数据识别的牙科异常:\nⅡ类错颌,龋齿': 1
+'Identified diseases from images:\nConvex Profile,Dental Crowding': 1
+'Oral diseases the patient is suffering from:\nTooth Structure Loss,Periodontitis,Gingivitis': 1
+'List of dental diseases:\nDental Fluorosis,Dental Caries': 1
+'Oral diseases the patient is suffering from:\nConvex Profile,Dental Crowding': 1
+'Classification of diseases present:\nClass II Malocclusion,Mandibular Skeletal Asymmetry,Convex Profile,Deep Overbite,Deep Overjet,Dental Crowding': 1
+'影响患者口腔健康的疾病包括:\n牙髓炎,牙齿松动,龋齿': 1
+'可见疾病的名称:\n下颌骨性偏斜,下颌高角,深覆合,牙齿拥挤,错颌': 1
+'检测到的口腔疾病综合列表:\n深窝沟,牙体发育异常,龋齿': 1
+'可见的疾病和状况:\nⅢ类错颌,下颌高角,凸面型,牙反颌,牙齿拥挤': 1
+'Periapical Periodontitis,Tooth Fracture,Pulpitis': 1
+'图像中存在的疾病:\n牙列不齐,牙周炎,牙齿松动,牙龈炎': 1
+'下颌骨性偏斜,下颌高角,牙齿拥挤': 1
+'牙科异常:\n急性冠周炎,根尖周炎,牙龈炎': 1
+'Oral health conditions identified include:\nClass II Malocclusion,Mandibular Skeletal Asymmetry,High-Angle Mandible,Convex Profile,Deep Overbite,Dental Crowding': 1
+'List of diseases:\nPeriodontitis,Tooth Mobility,Gingivitis': 1
+'Class III Malocclusion,Mandibular Skeletal Asymmetry,Post Cleft Repair,Deep Overbite,Dental Crowding,Obstructive Sleep Apnea Syndrome': 1
+'Determined disease type:\nTooth Structure Loss,Dental Caries': 1
+'识别出的口腔疾病:\n牙周炎,牙髓炎,龋齿': 1
+'Diseases affecting the patient’s mouth:\nClass I Malocclusion,Class II Malocclusion,Mandibular Skeletal Asymmetry,Convex Profile,Deep Overbite,Deep Overjet,Dental Crowding,Dental Crowding': 1
+'检测到的口腔异常或疾病:\n根尖周炎,牙列不齐,牙龈炎': 1
+'患者患有的口腔疾病:\nⅡ类错颌,下颌高角,凸面型,牙齿拥挤': 1
+'Ⅰ类错颌,Ⅱ类错颌,凸面型,牙列不齐,牙反颌,牙齿拥挤': 1
+'修复体缺损,牙体缺损': 1
+'List of dental issues:\nTooth Structure Loss,Gingivitis': 1
+'图像中存在的疾病:\nⅡ类错颌,上前牙舌倾,右侧面部增宽,深 SPEE 曲线,深覆颌': 1
+'图像中存在的疾病:\nⅡ类错颌,下颌骨性偏斜,下颌高角,凸面型,深覆合,深覆盖,牙齿拥挤': 1
+'患者患有的口腔疾病:\n根尖周炎,牙齿松动': 1
+'可见的疾病和异常包括:\n内源性黄牙,牙体缺损': 1
+'Classification of diseases present:\nPeriapical Periodontitis,Tooth Structure Loss': 1
+'检测到的口腔疾病综合列表:\n下颌骨性偏斜,牙齿拥挤,错颌': 1
+'Oral disease(s) patient is suffering from:\nMandibular Skeletal Asymmetry,Convex Profile,Incisor Protrusion,Dental Crowding': 1
+'Visible diseases and anomalies are:\nClass II Malocclusion,Deep Overbite': 1
+'牙科疾病列表:\n根尖周炎,牙髓炎,龋齿': 1
+'Classified diseases in the oral cavity:\nClass II Malocclusion,Deep Overbite': 1
+'Identified dental anomalies based on data:\nClass II Malocclusion,High-Angle Mandible,Convex Profile,Dental Crowding': 1
+'Oral diseases or issues detected are:\nClass III Malocclusion,Anterior Crossbite,Dental Crowding,Dental Caries': 1
+'可见的口腔健康问题和牙科疾病:\n楔状缺损,龋齿': 1
+'可见的疾病和异常包括:\n楔状缺损,牙体缺损': 1
+'可见疾病的名称:\nⅡ类错颌,凸面型': 1
+'存在的疾病和异常:\nⅢ类错颌,下颌骨性偏斜,深覆合,牙列不齐,牙齿拥挤': 1
+'Visible diseases and anomalies are:\nPeriapical Periodontitis,Dental Caries': 1
+'识别的异常和口腔健康状况:\n牙周炎,牙龈萎缩': 1
+'发现的口腔健康问题和疾病如下:\n牙龈炎,龋齿': 1
+'发现的口腔健康问题和疾病如下:\nⅡ类错颌,下颌骨性偏斜,下颌高角,深覆盖': 1
+'Oral health issues and dental diseases visible:\nClass II Malocclusion,Mandibular Skeletal Asymmetry,Convex Profile,Incisor Protrusion,Dental Crowding': 1
+'Mandibular Skeletal Asymmetry,High-Angle Mandible,Deep Overbite,Dental Crowding,Malocclusion': 1
+'Here is the list of anomalies and diseases that the patient have:\nMandibular Skeletal Asymmetry,Anterior Crossbite': 1
+'可见的疾病和状况:\nⅢ类错颌,下颌高角,牙齿拥挤': 1
+'Yes, the patient has the following diseases:\nPeriodontitis,Tooth Mobility,Gingivitis': 1
+'Ⅲ类错颌,下颌高角,凸面型,牙反颌,牙齿拥挤': 1
+'可见疾病的名称:\n根尖周炎,根管内无新鲜渗出,牙周炎,牙髓炎,牙齿变色,牙龈炎': 1
+'Oral diseases or issues detected are:\nExtrinsic Tooth Stain,Dental Fluorosis': 1
+'Ⅱ类错颌,Ⅲ类错颌,下颌骨性偏斜,凸面型,深覆合,深覆盖,牙反合,牙齿拥挤': 1
+'观察到的异常和疾病如下:\n牙列不齐,牙龈炎': 1
+'识别出的口腔疾病:\n根尖周炎,牙隐裂': 1
+'存在的疾病和异常:\n牙髓炎,龋齿': 1
+'Detected abnormalities and health conditions:\nDental Fluorosis,Dental Caries': 1
+'牙科异常:\nⅡ类错颌,凸面型': 1
+'基于图像诊断的疾病:\n氟斑牙,龋齿': 1
+'牙科问题列表:\n氟斑牙,牙列不齐,龋齿': 1
+'Current oral or dental conditions:\nTooth Structure Loss,Tooth Loss': 1
+'Diseases affecting dental health:\nDental Fluorosis,Demineralization,Pigment Deposition,Dental Caries': 1
+'发现的口腔健康问题和疾病如下:\n牙周炎,牙龈炎': 1
+'影响牙科健康的疾病:\nⅡ类错颌,下颌骨性偏斜,凸面型,牙齿拥挤': 1
+'根据图像确定的疾病类型:\n下颌骨性偏斜,下颌高角,凸面型,牙列不齐,牙反合,牙齿拥挤': 1
+'存在疾病的分类:\nⅡ类错颌,凸面型': 1
+'Oral health problems and diseases found:\nClass II Malocclusion,Mandibular Skeletal Asymmetry,Convex Profile,Incisor Protrusion,Dental Crowding': 1
+'Class III Malocclusion,Retroclined Upper Incisors,Retroclined Lower Incisors,Crossbite,Dental Caries': 1
+'The patient has the following types of diseases:\nWedge-Shaped Defect,Dental Caries': 1
+'检测到的牙科状况包括:\n牙龈炎,龋齿': 1
+'检测到的口腔异常或疾病:\n根尖周炎,牙周炎,牙齿变色': 1
+'牙体缺损,牙石,牙龈炎': 1
+'口腔中疾病的分类:\n氟斑牙,龋齿': 1
+'患者患有的口腔疾病:\n牙体缺损,牙周炎,牙隐裂': 1
+'基于图像诊断的疾病:\nⅢ类错颌,下颌低角,凹面型,牙反合,牙齿拥挤': 1
+'根尖周炎,楔状缺损,牙体缺损,牙髓炎,龋齿': 1
+'Detected dental conditions include:\nPeriapical Periodontitis,Periodontitis': 1
+'检测到的异常和疾病:\n修复体缺损,氟斑牙,龈下牙石': 1
+'基于数据识别的牙科异常:\n牙列不齐,牙齿拥挤': 1
+'Names of diseases the patient has:\nClass II Malocclusion,Dental Crowding': 1
+'List of dental diseases affecting the patient:\nTooth Structure Loss,Dental Caries': 1
+'观察到的异常和疾病如下:\n牙体缺损,牙列不齐': 1
+'Detected abnormalities and health conditions:\nClass I Malocclusion,Convex Profile': 1
+'List of dental anomalies:\nClass III Malocclusion,Dental Crowding': 1
+'Identified oral diseases:\nDental Fluorosis,Dental Caries': 1
+'口腔-牙科疾病列表:\n牙周炎,牙龈炎': 1
+'List of oro-dental diseases:\nClass II Malocclusion,Low-Angle Mandible,Dental Crowding': 1
+'Ⅰ类错颌,下颌骨性偏斜,凸面型,深覆合,牙齿拥挤': 1
+'Retained Primary Tooth,Malocclusion': 1
+'Diseases diagnosed from images:\nClass III Malocclusion,Mandibular Skeletal Asymmetry,Deep Overbite,Anterior Crossbite,Dental Crowding': 1
+'口腔-牙科疾病列表:\n牙龈炎,色素附着': 1
+'检测到的疾病和异常:\n根管内无新鲜渗出,牙髓炎': 1
+'Pulpitis,Impacted Tooth': 1
+'Detected dental conditions include:\nClass III Malocclusion,Dental Crowding': 1
+'观察到的异常和疾病如下:\nⅡ类错颌,牙列不齐': 1
+'牙科异常列表:\nⅢ类错颌,下颌低角,凹面型,牙齿拥挤': 1
+'识别的口腔疾病和牙科状况:\n牙列不齐,牙龈炎': 1
+'发现的口腔健康问题和疾病如下:\nⅡ类错颌,下颌骨性偏斜,凸面型,深覆盖,牙齿拥挤': 1
+'患者患有的疾病名称:\n凹面型,深覆合,牙齿拥挤': 1
+'发现的口腔健康问题和疾病如下:\n牙髓炎,牙齿缺失': 1
+'Ⅱ类错颌,下颌高角,凸面型,前突,牙齿拥挤': 1
+'识别出的口腔疾病:\n修复体缺损,牙体缺损,牙龈萎缩': 1
+'Deep Overbite,Dental Crowding,Dental Crowding': 1
+'是的，患者患有以下疾病:\nⅡ类错颌,牙列不齐': 1
+'影响患者的牙科疾病列表:\nⅡ类错颌,深覆颌': 1
+'患者患有的口腔疾病:\nⅠ类错颌,牙列不齐': 1
+'List of dental issues:\nClass II Malocclusion,Maxillary Protrusion,High-Angle Mandible': 1
+'Diseases present in the images:\nClass II Malocclusion,Dental Crowding': 1
+'Periapical Periodontitis,Dry Root Canal,Tooth Structure Loss,Periodontitis,Pulpitis,Tooth Mobility,Gingivitis': 1
+'Visible diseases in dental or oral images:\nPeriodontitis,Pulpitis,Dental Caries': 1
+'Ⅲ类错颌,下颌骨性偏斜,深覆盖,牙齿拥挤': 1
+'Diagnosed diseases:\nPeriapical Periodontitis,Tooth Structure Loss,Dental Crowding': 1
+'Periodontitis,Subgingival Calculus,Dental Caries': 1
+'牙周炎,牙髓炎,牙龈炎,牙龈萎缩,肯氏III类缺失': 1
+'List of dental diseases affecting the patient:\nClass III Malocclusion,Mandibular Skeletal Asymmetry,Crossbite,Dental Crowding': 1
+'Visible diseases and conditions:\nTooth Structure Loss,Tooth Loss': 1
+'可见的疾病和异常包括:\nⅠ类错颌,龋齿': 1
+'检测到的口腔异常或疾病:\nⅢ类错颌,下颌骨性偏斜,下颌高角,凸面型,开合咬合,深覆盖,牙齿拥挤': 1
+'Diseases affecting oral health:\nWedge-Shaped Defect,Pulpitis': 1
+'Class I Malocclusion,Class II Malocclusion,Convex Profile,Dental Crowding,Crossbite,Dental Crowding': 1
+'可见疾病的名称:\n下颌骨性偏斜,凸面型,深覆合,深覆盖,牙齿拥挤': 1
+'确定的疾病类型:\n牙反颌,色素附着': 1
+'List of dental diseases affecting the patient:\nDental Fluorosis,Dental Caries': 1
+'Oral diseases and dental conditions identified:\nWedge-Shaped Defect,Pulpitis': 1
+'Dental Fluorosis,Gingivitis': 1
+'存在疾病的分类:\nⅡ类错颌,龋齿': 1
+'List of dental issues:\nMandibular Skeletal Asymmetry,Convex Profile,Deep Overbite,Dental Crowding': 1
+'牙科疾病列表:\n根尖周炎,牙齿缺失': 1
+'识别的口腔健康状况包括:\nⅡ类错颌,下颌高角,凸面型,牙齿拥挤': 1
+'Diseases affecting oral health:\nClass I Malocclusion,Dental Caries': 1
+'Class I Malocclusion,Mandibular Skeletal Asymmetry,Deep Overbite,Dental Crowding': 1
+'影响牙科健康的疾病:\nⅡ类错颌,凸面型,牙齿拥挤': 1
+'Diseases present in images:\nClass II Malocclusion,Mandibular Skeletal Asymmetry,Convex Profile,Dental Crowding': 1
+'根据图像确定的疾病类型:\nⅢ类错颌,下颌高角,凹面型,牙反合,牙齿拥挤': 1
+'Diagnosed diseases based on images:\nClass III Malocclusion,Tooth Structure Loss,Dental Crowding': 1
+'Detailed list of dental diseases identified:\nPulpitis,Dental Caries': 1
+'Ⅱ类错颌,下颌低角,下颌骨性偏斜,凸面型,深覆合,牙齿拥挤': 1
+'这些图像中存在的异常列表如下:\n楔状缺损,牙龈炎': 1
+'基于图像诊断的疾病:\nⅡ类错颌,牙列不齐': 1
+'Comprehensive list of oral diseases detected:\nConcave Profile,Dental Crowding': 1
+'口腔-牙科疾病列表:\nⅡ类错颌,凸面型': 1
+'Mandibular Skeletal Asymmetry,Convex Profile,Deep Overbite,Dental Crowding,Dental Caries': 1
+'观察到的异常和疾病如下:\n乳牙滞留,深窝沟,龋齿': 1
+'影响患者口腔的疾病:\n氟斑牙,牙周炎,牙龈炎,牙龈萎缩,龋齿': 1
+'已识别的详细牙科疾病列表:\nⅢ类错颌,下颌骨性偏斜,牙反合,牙齿拥挤': 1
+'楔状缺损,氟斑牙,牙齿缺失,龋齿': 1
+'根据图像确定的疾病类型:\nⅢ类错颌,下颌高角,牙反合,牙齿拥挤': 1
+'识别出的口腔图像中的疾病:\n牙龈炎,龋齿': 1
+'识别的口腔健康状况包括:\n下颌骨性偏斜,凸面型,深覆合,深覆盖,牙齿拥挤': 1
+'患者患有的口腔疾病:\n氟斑牙,牙体缺损,龋齿': 1
+'患者患有以下类型的疾病:\nⅡ类错颌,凸面型,牙齿拥挤': 1
+'Ⅲ类错颌,下颌骨性偏斜,凹面型,深覆合,深覆盖,牙齿拥挤': 1
+'List of dental anomalies:\nPulpitis,Dental Caries': 1
+'影响口腔健康的疾病:\nⅡ类错颌,凸面型,前突,深覆合,深覆盖': 1
+'List of dental diseases affecting the patient:\nClass II Malocclusion,Dental Caries': 1
+'Periapical Periodontitis,Tooth Structure Loss,Dental Crowding,Dental Caries': 1
+'Detected anomalies and diseases:\nPulpitis,Dental Caries': 1
+'Class I Malocclusion,Calculus,Gingivitis,Demineralization': 1
+'深窝沟,牙体缺损,龋齿': 1
+'Class III Malocclusion,Low-Angle Mandible,Mandibular Skeletal Asymmetry,Convex Profile': 1
+'确定的疾病类型:\nⅠ类错颌,Ⅱ类错颌,下前牙舌倾,下颌中线偏右,先天缺失,散隙,牙列不齐,牙反颌,牙齿拥挤,颏部偏右': 1
+'基于图像诊断的疾病:\nⅢ类错颌,下颌骨性偏斜,下颌高角,凸面型,深覆合,深覆盖,牙列不齐,牙齿拥挤': 1
+'当前的口腔或牙科状况:\n下颌骨性偏斜,凸面型,牙齿拥挤': 1
+'患者患有的口腔疾病:\nⅢ类错颌,牙齿拥挤': 1
+'Diagnosed diseases based on images:\nDental Fluorosis,Tooth Loss,Dental Caries': 1
+'是的，患者患有以下疾病:\n乳牙滞留,多生牙,阻生齿': 1
+'存在疾病的分类:\n楔状缺损,氟斑牙,龋齿': 1
+'Detailed list of dental diseases identified:\nClass II Malocclusion,Mandibular Skeletal Asymmetry,Dental Crowding': 1
+'诊断的疾病:\n修复体缺损,根尖周炎,牙髓炎': 1
+'Poor Oral Hygiene,Dental Caries': 1
+'List of diseases:\nDental Fluorosis,Tooth Structure Loss,Dental Caries': 1
+'The patient has the following types of diseases:\nDental Fluorosis,Pulpitis,Dental Caries': 1
+'这是患者患有的异常和疾病列表:\nⅢ类错颌,下颌骨性偏斜,牙反合,牙齿拥挤': 1
+'牙科异常:\nⅡ类错颌,下颌骨性偏斜,凸面型,深覆合,深覆盖,牙齿拥挤': 1
+'Oral diseases and dental conditions identified:\nClass II Malocclusion,Maxillary Protrusion,Mandibular Skeletal Asymmetry,High-Angle Mandible,Deep Overbite,Dental Crowding,Dental Crowding': 1
+'图像中存在的疾病:\n牙周炎,牙龈炎,龈下牙石': 1
+'Tongue Thrust,Incisor Protrusion,Dental Crowding': 1
+'Disease(s) identified in oral images:\nTooth Structure Loss,Periodontitis,Tooth Mobility,Gingivitis': 1
+'影响口腔健康的疾病:\nⅡ类错颌,凸面型,深覆合': 1
+'发现的口腔健康问题和疾病如下:\nⅡ类错颌,Ⅲ类错颌,凸面型,深覆合,深覆盖,牙齿拥挤': 1
+'Detected diseases and anomalies:\nClass II Malocclusion,Dental Caries': 1
+'可见的疾病和异常包括:\n牙体缺损,牙齿缺失': 1
+'Identified oral diseases:\nPeriodontitis,Subgingival Calculus': 1
+'List of dental anomalies:\nTooth Rotation,Tooth Loss': 1
+'Ⅰ类错颌,Ⅱ类错颌,上前牙唇倾,乳牙滞留,凸面型,双侧升支高度不一致,深 SPEE 曲线,深覆盖,深覆颌,牙列中线偏斜,牙齿拥挤,颏部偏右,龋齿': 1
+'Detected dental conditions include:\nPeriodontitis,Tooth Mobility,Gingivitis': 1
+'这是患者患有的异常和疾病列表:\nⅡ类错颌,脱矿,色素附着,近中阻生': 1
+'Ⅱ类错颌,下颌低角,凸面型': 1
+'Restoration Defect,Deep Overbite,Dental Crowding': 1
+'Identified oral diseases:\nClass II Malocclusion,Dental Caries': 1
+'List of dental diseases:\nClass II Malocclusion,Dental Caries': 1
+'基于图像诊断的疾病:\n牙齿松动,牙齿缺失': 1
+'口腔中疾病的分类:\n牙体缺损,牙列不齐,龋齿': 1
+'牙科疾病列表:\n下颌骨性偏斜,前突': 1
+'诊断的疾病:\nⅡ类错颌,下颌高角,凸面型,深覆盖,牙齿拥挤': 1
+'患者患有的疾病名称:\n牙周炎,牙龈萎缩': 1
+'Identified diseases from images:\nPeriodontitis,Tooth Mobility': 1
+'Oral diseases or issues detected are:\nPeriapical Periodontitis,Gingivitis': 1
+'检测到的牙科状况包括:\n牙体缺损,牙周炎': 1
+'List of dental issues:\nPeriodontitis,Tooth Mobility,Gingivitis': 1
+'Class II Malocclusion,Mandibular Skeletal Asymmetry,Convex Profile,Deep Overbite,Deep Overjet,Dental Crowding,Dental Crowding': 1
+'Oral diseases the patient is suffering from:\nClass II Malocclusion,Mandibular Skeletal Asymmetry,Convex Profile,Deep Overbite,Dental Crowding': 1
+'下颌后缩,深覆盖': 1
+'Determined disease types based on images:\nClass I Malocclusion,Class II Malocclusion,Congenitally Missing Tooth,Deep Overbite,Dental Crowding,Dental Crowding,Mesioangular Impaction': 1
+'牙科异常列表:\nⅡ类错颌,下颌骨性偏斜,凸面型,深覆合': 1
+'Ⅱ类错颌,畸形腭沟,色素附着,龋齿': 1
+'Oral disease(s) patient is suffering from:\nDental Fluorosis,Tooth Structure Loss,Dental Caries': 1
+'当前的口腔或牙科状况:\nⅡ类错颌,凸面型,牙齿拥挤': 1
+'Diseases affecting oral health:\nGingivitis,Dental Caries': 1
+'Oral diseases and dental conditions identified:\nPeriapical Periodontitis,Periodontitis': 1
+'牙科疾病列表:\nⅡ类错颌,上颌扩弓': 1
+'List of dental diseases:\nGingivitis,Pigment Deposition': 1
+'Diseases affecting the patient’s oral health include:\nDental Crowding,Dental Caries': 1
+'Identified dental anomalies based on data:\nPeriodontitis,Gingival Recession,Subgingival Calculus,Dental Caries': 1
+'口腔-牙科疾病列表:\n牙髓炎,牙龈炎,阻生齿': 1
+'确定的疾病类型:\nⅡ类错颌,下颌骨性偏斜,凸面型,深覆合,深覆盖,牙齿拥挤': 1
+'Names of diseases the patient has:\nClass II Malocclusion,High-Angle Mandible,Convex Profile,Dental Crowding': 1
+'发现的口腔健康问题和疾病如下:\n楔状缺损,牙龈炎,龋齿': 1
+'Diseases affecting the patient’s mouth:\nGingivitis,Pigment Deposition,Dental Caries': 1
+'Here is the list of anomalies and diseases that the patient have:\nPeriodontitis,Tooth Mobility,Gingivitis,Dental Caries': 1
+'Current oral or dental conditions:\nPeriapical Periodontitis,Dental Fluorosis,Dental Caries': 1
+'Class I Malocclusion,Wedge-Shaped Defect': 1
+'识别的口腔健康状况包括:\nⅠ类错颌,凸面型,前突,牙列不齐,阻生齿': 1
+'识别的可见口腔健康状况:\n氟斑牙,龋齿': 1
+'Oral health conditions identified include:\nClass II Malocclusion,Convex Profile': 1
+'牙周炎,牙齿松动,牙龈萎缩,龈下牙石': 1
+'基于图像诊断的疾病:\nⅡ类错颌,下颌骨性偏斜,凸面型,牙齿拥挤': 1
+'患者患有以下类型的疾病:\n牙体缺损,牙列不齐,龋齿': 1
+'Class III Malocclusion,Mandibular Skeletal Asymmetry,Convex Profile,Crossbite': 1
+'已识别的详细牙科疾病列表:\nⅠ类错颌,牙列不齐': 1
+'Determined disease types based on images:\nClass III Malocclusion,Mandibular Skeletal Asymmetry,High-Angle Mandible,Concave Profile,Dental Crowding': 1
+'牙折断,牙龈炎,龋齿': 1
+'Restoration Defect,Tooth Structure Loss': 1
+'Visible oral health conditions identified:\nRestoration Defect,Periapical Periodontitis,Pulpitis': 1
+'开合咬合,异常舌习惯': 1
+'识别的异常和口腔健康状况:\nⅢ类错颌,牙齿拥挤': 1
+'List of dental anomalies:\nPeriodontitis,Tooth Mobility,Gingivitis': 1
+'Detected oral abnormalities or diseases:\nClass III Malocclusion,Retroclined Upper Incisors,Retroclined Lower Incisors,Right Mandibular Midline Deviation,Crossbite,Chin Deviated Right,Dental Caries': 1
+'氟斑牙,牙周炎,牙龈炎,龋齿': 1
+'牙科疾病列表:\nⅡ类错颌,凸面型,深覆盖,牙齿拥挤': 1
+'List of diseases:\nClass III Malocclusion,Mandibular Skeletal Asymmetry,Convex Profile,Spacing,Deep Overjet': 1
+'Class III Malocclusion,Mandibular Skeletal Asymmetry,Incisor Protrusion,Deep Overbite,Deep Overjet,Anterior Crossbite,Dental Crowding': 1
+'影响患者口腔的疾病:\n牙体缺损,牙齿缺失,牙龈炎,龋齿': 1
+'Visible diseases in dental or oral images:\nDental Crowding,Dental Caries': 1
+'口腔中疾病的分类:\n牙周炎,牙龈炎': 1
+'影响牙科健康的疾病:\nⅡ类错颌,下颌骨性偏斜,凸面型,前突,深覆合,深覆盖,牙齿拥挤': 1
+'观察到的异常和疾病如下:\nⅡ类错颌,深覆合': 1
+'发现的口腔健康问题和疾病如下:\n凸面型,牙齿拥挤': 1
+'Names of diseases the patient has:\nPulpitis,Tooth Mobility,Dental Caries': 1
+'Determined disease types based on images:\nClass III Malocclusion,Mandibular Skeletal Asymmetry,Convex Profile,Deep Overbite,Deep Overjet,Dental Crowding,Dental Crowding': 1
+'Diseases affecting dental health:\nMalocclusion,Dental Caries': 1
+'Visible diseases in the dental images:\nGingivitis,Pigment Deposition': 1
+'Low-Angle Mandible,Concave Profile,Dental Crowding': 1
+'Detected oral abnormalities or diseases:\nClass II Malocclusion,Mandibular Skeletal Asymmetry,Convex Profile,Deep Overbite,Deep Overjet,Dental Crowding': 1
+'Diseases affecting oral health:\nClass III Malocclusion,Mandibular Skeletal Asymmetry,Convex Profile,Deep Overjet,Dental Crowding': 1
+'检测到的口腔疾病或问题如下:\nⅡ类错颌,下颌高角,凸面型,牙齿拥挤': 1
+'凸面型,深覆合,牙齿拥挤': 1
+'Detailed list of dental diseases identified:\nPeriodontitis,Gingivitis': 1
+'Diseases present in the images:\nPeriodontitis,Pulpitis,Dental Caries': 1
+'Ⅲ类错颌,下颌骨性偏斜,凸面型,深覆合,牙齿拥挤': 1
+'List of dental anomalies:\nClass II Malocclusion,Convex Profile,Dental Crowding': 1
+'Detected dental conditions include:\nClass III Malocclusion,Convex Profile': 1
+'Here is the list of anomalies and diseases that the patient have:\nGingivitis,Pigment Deposition': 1
+'Dens Evaginatus,Periapical Periodontitis,Dental Fluorosis': 1
+'Ⅲ类错颌,下颌骨性偏斜,凸面型': 1
+'可见疾病的名称:\n楔状缺损,氟斑牙': 1
+'Mandibular Skeletal Asymmetry,Convex Profile,Incisor Protrusion,Dental Crowding': 1
+'Detailed list of dental diseases identified:\nClass II Malocclusion,Mandibular Skeletal Asymmetry,Convex Profile,Incisor Protrusion,Dental Crowding,Impacted Tooth': 1
+'基于图像诊断的疾病:\nⅡ类错颌,凸面型,牙齿拥挤': 1
+'异位牙,牙龈炎': 1
+'Class III Malocclusion,Dental Crowding,Dental Crowding': 1
+'Detected anomalies and diseases:\nClass II Malocclusion,Excessive Overbite': 1
+'图像中存在的疾病:\nⅡ类错颌,下颌低角,下颌骨性偏斜,凸面型,深覆盖,牙齿拥挤': 1
+'Names of diseases the patient has:\nPost And Core Crown,Dental Fluorosis,Tooth Structure Loss,Pulpitis,Impacted Tooth,Dental Caries': 1
+'检测到的口腔异常或疾病:\n楔状缺损,牙髓炎,龋齿': 1
+'识别出的疾病:\nⅡ类错颌,下颌高角,凸面型,多生牙,牙齿拥挤': 1
+'患者患有的疾病名称:\n牙龈炎,色素附着,龋齿': 1
+'Detected dental conditions include:\nClass III Malocclusion,High-Angle Mandible,Concave Profile,Dental Crowding': 1
+'识别出的口腔疾病:\n牙扭转,牙齿缺失': 1
+'口腔-牙科疾病列表:\n深覆合,深覆颌': 1
+'List of dental diseases:\nDental Fluorosis,Tooth Structure Loss,Gingivitis,Demineralization': 1
+'识别的口腔疾病和牙科状况:\n牙体缺损,牙周炎,牙齿松动,牙齿缺失,牙龈炎,龋齿': 1
+'检测到的口腔疾病或问题如下:\n牙周炎,牙龈炎': 1
+'High-Angle Mandible,Anterior Crossbite,Dental Crowding': 1
+'Class I Malocclusion,Class II Malocclusion,Convex Profile,Dental Crowding': 1
+'基于图像诊断的疾病:\nⅡ类错颌,上颌扩弓': 1
+'是的，患者患有以下疾病:\n修复体缺损,氟斑牙': 1
+'Oral diseases or issues detected are:\nClass III Malocclusion,Mandibular Skeletal Asymmetry,Deep Overbite,Dental Crowding': 1
+'牙体缺损,牙周炎,牙齿松动,牙齿缺失,牙龈炎,龋齿': 1
+'Visible diseases and conditions:\nDental Fluorosis,Tooth Wear,Enamel Hypoplasia,Dental Caries': 1
+'是的，患者患有以下疾病:\n牙周炎,牙龈炎': 1
+'Names of diseases the patient has:\nRestoration Defect,Periapical Periodontitis,Pulpitis': 1
+'基于图像诊断的疾病:\nⅡ类错颌,下颌骨性偏斜,下颌高角,凸面型,牙齿拥挤': 1
+'图像中存在的疾病:\nⅠ类错颌,凸面型,牙齿拥挤': 1
+'Visible diseases and anomalies are:\nClass III Malocclusion,Mandibular Skeletal Asymmetry,High-Angle Mandible,Anterior Crossbite,Dental Crowding': 1
+'Oral disease(s) patient is suffering from:\nClass II Malocclusion,Mandibular Skeletal Asymmetry,Convex Profile,Incisor Protrusion,Dental Crowding': 1
+'楔状缺损,牙磨耗,牙龈萎缩,龋齿': 1
+'Oral diseases or issues detected are:\nClass I Malocclusion,Class II Malocclusion,Proclined Upper Incisors,Supernumerary Tooth,Deep Curve Of Spee,Deep Overjet,Deep Overbite,Dental Crowding,Dental Crowding': 1
+'Identified abnormalities and oral health conditions:\nDental Fluorosis,Gingivitis': 1
+'存在的疾病和异常:\n下颌骨性偏斜,凸面型,深覆合,牙齿拥挤,错颌': 1
+'List of diseases:\nDental Fluorosis,Pulpitis,Dental Caries': 1
+'Oral disease(s) patient is suffering from:\nDental Crowding,Dental Caries': 1
+'Visible diseases in dental or oral images:\nClass II Malocclusion,High-Angle Mandible,Convex Profile,Dental Crowding': 1
+'观察到的异常和疾病如下:\n牙列不齐,龋齿': 1
+'Detected diseases and anomalies:\nClass III Malocclusion,Mandibular Skeletal Asymmetry,Convex Profile,Incisor Protrusion,Deep Overbite,Deep Overjet,Dental Crowding': 1
+'Detected dental conditions include:\nGingivitis,Dental Caries': 1
+'Oral disease(s) patient is suffering from:\nClass II Malocclusion,Mandibular Skeletal Asymmetry,Convex Profile,Incisor Protrusion,Deep Overbite,Dental Crowding': 1
+'当前的口腔或牙科状况:\n牙体缺损,龋齿': 1
+'Diseases present in images:\nClass III Malocclusion,Mandibular Skeletal Asymmetry,Dental Crowding': 1
+'牙科疾病列表:\n牙周炎,牙龈炎': 1
+'Periodontitis,Tooth Mobility,Gingivitis,Gingival Recession,Jaw Trauma': 1
+'Visible oral health conditions identified:\nDeep Fissures,Gingivitis,Dental Caries': 1
+'Class III Malocclusion,High-Angle Mandible,Convex Profile,Crossbite,Dental Crowding': 1
+'Class I Malocclusion,Class II Malocclusion,Proclined Upper Incisors,Supernumerary Tooth,Deep Curve Of Spee,Deep Overjet,Deep Overbite,Dental Crowding,Dental Crowding': 1
+'可见的口腔健康问题和牙科疾病:\n氟斑牙,牙体缺损': 1
+'Deep Overbite,Deep Overbite': 1
+'List of dental issues:\nExtrinsic Tooth Stain,Pigment Deposition': 1
+'Visible diseases in dental or oral images:\nClass II Malocclusion,Mandibular Skeletal Asymmetry,Convex Profile,Incisor Protrusion,Deep Overbite,Deep Overjet,Dental Crowding': 1
+'确定的疾病类型:\nⅠ类错颌,Ⅱ类错颌,牙齿拥挤,腭侧异位萌出,高角': 1
+'患者患有的疾病名称:\n牙体缺损,牙齿缺失': 1
+'牙科疾病列表:\nⅡ类错颌,阻生齿,龋齿': 1
+'检测到的牙科状况包括:\nⅢ类错颌,凹面型,牙齿拥挤': 1
+'Ⅰ类错颌,Ⅱ类错颌,前磨牙畸形中央尖,深 SPEE 曲线,牙列不齐,牙齿拥挤': 1
+'识别的可见口腔健康状况:\n牙龈炎,龋齿': 1
+'牙反颌,色素附着': 1
+'List of dental issues:\nClass III Malocclusion,Concave Profile,Dental Crowding,Dental Crowding': 1
+'Class III Malocclusion,Mandibular Skeletal Asymmetry,High-Angle Mandible,Convex Profile,Dental Crowding,Anterior Crossbite,Dental Crowding': 1
+'充填物脱落,根尖周炎,龋齿': 1
+'Visible oral health conditions identified:\nHigh-Angle Mandible,Convex Profile,Dental Crowding': 1
+'Detected dental conditions include:\nDeep Overjet,Dental Crowding': 1
+'可见疾病的名称:\n氟斑牙,牙髓炎,龋齿': 1
+'下颌骨性偏斜,下颌高角,凸面型,牙齿拥挤': 1
+'患者患有以下类型的疾病:\nⅡ类错颌,深覆合,深覆盖,牙齿拥挤': 1
+'检测到的异常和健康状况:\n牙列不齐,牙齿拥挤': 1
+'影响患者的牙科疾病列表:\nⅡ类错颌,下颌骨性偏斜,凸面型,深覆合,深覆盖,牙齿拥挤': 1
+'List of dental diseases:\nPulpitis,Tooth Loss': 1
+'Class II Malocclusion,Mandibular Skeletal Asymmetry,Congenitally Missing Tooth,Convex Profile,Deep Overbite,Dental Crowding': 1
+'患者患有的口腔疾病:\n楔状缺损,牙髓炎,龋齿': 1
+'Oral diseases patient is suffering from:\nClass II Malocclusion,Class III Malocclusion,Mandibular Skeletal Asymmetry,Concave Profile,Deep Overbite,Anterior Crossbite,Dental Crowding': 1
+'患者患有以下类型的疾病:\n楔状缺损,牙周炎,牙龈炎': 1
+'检测到的疾病和异常:\n牙龈炎,阻生齿,龋齿': 1
+'Oral diseases or issues detected are:\nClass II Malocclusion,Mandibular Skeletal Asymmetry,Convex Profile,Dental Crowding': 1
+'Comprehensive list of oral diseases detected:\nDens Evaginatus,Periapical Periodontitis,Dental Fluorosis': 1
+'Convex Profile,Dental Crowding,Dental Crowding': 1
+'Periodontitis,Tooth Mobility,Gingivitis,Kennedy Class III Edentulism': 1
+'疾病列表:\nⅢ类错颌,凸面型,牙齿拥挤,牙龈炎': 1
+'发现的口腔健康问题和疾病如下:\nⅡ类错颌,下颌骨性偏斜,凸面型,深覆合,深覆盖,牙齿拥挤': 1
+'图像中存在的疾病:\n根尖周炎,牙齿松动': 1
+'Current oral or dental conditions:\nWedge-Shaped Defect,Gingivitis': 1
+'Diseases affecting oral health:\nClass II Malocclusion,Dental Caries': 1
+'检测到的异常和健康状况:\n牙周炎,牙齿松动,牙龈炎': 1
+'Class III Malocclusion,Maxillary Protrusion,Mandibular Skeletal Asymmetry,Deep Overbite,Deep Overjet,Dental Crowding': 1
+'Identified dental anomalies based on data:\nPulpitis,Dental Caries': 1
+'Open Bite,Abnormal Tongue Habit': 1
+'Diseases affecting dental health:\nDry Root Canal,Pulpitis': 1
+'牙科异常列表:\nⅡ类错颌,凸面型,面型扁平,高角,龋齿': 1
+'检测到的口腔疾病综合列表:\n深覆盖,深覆颌,牙槽骨水平吸收': 1
+'Ⅱ类错颌,下颌骨性偏斜,下颌高角,凸面型,牙反颌,牙齿拥挤': 1
+'List of diseases:\nClass I Malocclusion,Convex Profile,Deep Overjet,Deep Overbite,Dental Crowding,Dental Crowding,Dental Caries': 1
+'Class II Malocclusion,Angle Class II Molar Relationship,Dental Crowding,Dental Crowding,Dental Caries': 1
+'Names of visible diseases:\nClass II Malocclusion,Mandibular Skeletal Asymmetry,High-Angle Mandible': 1
+'检测到的口腔异常或疾病:\nⅡ类错颌,凸面型': 1
+'患者患有的口腔疾病:\n牙体缺损,牙齿缺失': 1
+'乳牙滞留,多生牙,阻生齿': 1
+'口腔-牙科疾病列表:\n氟斑牙,牙体缺损,牙龈炎,脱矿': 1
+'Detected diseases and anomalies:\nClass II Malocclusion,Dental Crowding': 1
+'Detected diseases and anomalies:\nClass II Malocclusion,Convex Profile,Spacing,Deep Curve Of Spee,Deep Overjet,Deep Overbite,Dental Crowding,Dental Crowding': 1
+'Diseases diagnosed from images:\nClass II Malocclusion,Low-Angle Mandible,Mandibular Skeletal Asymmetry,Dental Crowding': 1
+'牙周炎,牙齿松动,牙龈炎,阻生齿': 1
+'已识别的详细牙科疾病列表:\nⅡ类错颌,下颌骨性偏斜,下颌高角,凸面型,深覆合,深覆盖,牙齿拥挤': 1
+'影响患者口腔的疾病:\nⅡ类错颌,牙齿拥挤,龋齿': 1
+'观察到的异常和疾病如下:\nⅡ类错颌,下颌骨性偏斜,下颌高角,凸面型,深覆合,深覆盖,牙齿拥挤': 1
+'Diagnosed diseases:\nDental Fluorosis,Dental Caries': 1
+'Detected anomalies and diseases:\nPeriodontitis,Tooth Mobility,Gingivitis': 1
+'当前的口腔或牙科状况:\n楔状缺损,牙髓炎': 1
+'基于图像诊断的疾病:\nⅢ类错颌,下颌骨性偏斜,凸面型,深覆合,牙齿拥挤': 1
+'确定的疾病类型:\nⅡ类错颌,凸面型,深覆合': 1
+'诊断的疾病:\n牙龈炎,阻生齿,龋齿': 1
+'Visible diseases and conditions:\nMandibular Skeletal Asymmetry,Convex Profile,Spacing,Deep Overjet,Deep Overbite': 1
+'可见的疾病和状况:\n错颌,龋齿': 1
+'Determined disease type:\nDental Fluorosis,Pulpitis,Dental Caries': 1
+'Visible diseases in dental or oral images:\nClass III Malocclusion,Mandibular Skeletal Asymmetry,Dental Crowding': 1
+'Diseases present in images:\nDental Fluorosis,Dental Crowding': 1
+'影响患者口腔的疾病:\n牙体缺损,牙周炎,牙齿松动,牙龈炎': 1
+'口腔-牙科疾病列表:\n凸面型,牙齿拥挤': 1
+'Oral health problems and diseases found:\nClass II Malocclusion,Class III Malocclusion,Low-Angle Mandible,Mandibular Skeletal Asymmetry,Anterior Crossbite,Dental Crowding': 1
+'诊断的疾病:\n根尖周炎,牙体缺损,牙髓炎,龋齿': 1
+'Here is the list of abnormalities that are present in the images:\nClass I Malocclusion,Convex Profile': 1
+'Names of visible diseases:\nPeriodontitis,Tooth Mobility,Gingivitis': 1
+'基于图像诊断的疾病:\n牙体缺损,牙齿缺失,龋齿': 1
+'Tooth Structure Loss,Calculus,Gingivitis': 1
+'牙科或口腔图像中可见的疾病:\nⅡ类错颌,牙列不齐': 1
+'Ⅰ类错颌,下颌骨性偏斜,下颌高角,凸面型,深覆合,深覆盖,牙列不齐,牙齿拥挤': 1
+'这些图像中存在的异常列表如下:\n氟斑牙,牙体缺损,龋齿': 1
+'Oral diseases patient is suffering from:\nDental Fluorosis,Cracked Tooth': 1
+'牙科问题列表:\n牙龈炎,色素附着,龋齿': 1
+'可见的疾病和异常包括:\nⅡ类错颌,凸面型': 1
+'List of dental diseases affecting the patient:\nClass III Malocclusion,Mandibular Skeletal Asymmetry,High-Angle Mandible,Convex Profile,Anterior Crossbite,Dental Crowding': 1
+'Visible oral health conditions identified:\nClass I Malocclusion,Impacted Tooth,Dental Caries': 1
+'Ⅲ类错颌,下颌骨性偏斜,下颌高角,深覆盖,牙齿拥挤': 1
+'牙科异常:\nⅡ类错颌,下颌骨性偏斜,深覆合,牙齿拥挤': 1
+'识别出的口腔疾病:\n乳牙滞留,深窝沟,龋齿': 1
+'Observed abnormalities and diseases are:\nPulpitis,Dental Caries': 1
+'深覆合,龋齿': 1
+'Names of diseases the patient has:\nClass III Malocclusion,Mandibular Skeletal Asymmetry,High-Angle Mandible,Convex Profile,Anterior Crossbite,Dental Crowding': 1
+'Diseases present in images:\nClass III Malocclusion,Mandibular Skeletal Asymmetry,High-Angle Mandible,Concave Profile,Anterior Crossbite,Dental Crowding': 1
+'Determined disease type:\nPeriodontitis,Tooth Mobility,Gingivitis': 1
+'Identified abnormalities and oral health conditions:\nClass III Malocclusion,Mandibular Skeletal Asymmetry,Convex Profile,Incisor Protrusion,Deep Overbite': 1
+'Determined disease types based on images:\nClass II Malocclusion,Mandibular Skeletal Asymmetry,High-Angle Mandible,Convex Profile,Deep Overjet,Dental Crowding': 1
+'The patient has the following types of diseases:\nDental Fluorosis,Tooth Structure Loss': 1
+'Periapical Radiolucency,Wedge-Shaped Defect,Periodontitis,Tooth Mobility': 1
+'Here is the list of abnormalities that are present in the images:\nDental Fluorosis,Periodontitis': 1
+'Names of visible diseases:\nTooth Structure Loss,Pulpitis,Gingivitis,Dental Caries': 1
+'牙科异常:\n修复体缺损,氟斑牙': 1
+'Diseases affecting the patient’s oral health include:\nTooth Structure Loss,Dental Caries': 1
+'患者患有的口腔疾病:\nⅠ类错颌,下颌骨性偏斜,凸面型,前突,深覆合,牙齿拥挤': 1
+'影响患者口腔的疾病:\n牙龈炎,龋齿': 1
+'口腔-牙科疾病列表:\n牙周炎,牙齿缺失': 1
+'诊断的疾病:\n根管内无新鲜渗出,牙周炎,牙龈炎': 1
+'患者患有的口腔疾病:\n深覆盖,牙齿拥挤': 1
+'检测到的异常和疾病:\nⅠ类错颌,龋齿': 1
+'Disease(s) identified in oral images:\nPeriapical Periodontitis,Tooth Mobility,Tooth Loss': 1
+'基于数据识别的牙科异常:\nⅡ类错颌,下颌骨性偏斜,凸面型,深覆合,深覆盖,牙齿拥挤': 1
+'根管内无新鲜渗出,牙体缺损': 1
+'口腔-牙科疾病列表:\n下颌骨性偏斜,凸面型,前突,牙齿拥挤': 1
+'Ⅰ类错颌,Ⅱ类错颌,下颌骨性偏斜,凸面型,深覆合,深覆盖,牙列不齐,牙齿拥挤': 1
+'Diseases present in the images:\nClass II Malocclusion,Mandibular Skeletal Asymmetry,High-Angle Mandible,Convex Profile,Incisor Protrusion,Deep Overbite,Deep Overjet,Dental Crowding': 1
+'基于图像诊断的疾病:\nⅡ类错颌,下颌骨性偏斜,下颌高角,牙齿拥挤': 1
+'Oral health problems and diseases found:\nPeriodontitis,Tooth Mobility,Gingivitis': 1
+'Identified abnormalities and oral health conditions:\nPeriapical Periodontitis,Dental Caries': 1
+'Class I Malocclusion,Impacted Tooth': 1
+'Identified dental anomalies based on data:\nClass III Malocclusion,Mandibular Skeletal Asymmetry,High-Angle Mandible,Convex Profile,Deep Overjet,Dental Crowding': 1
+'牙科图像中可见的疾病:\n桩核冠,氟斑牙,牙体缺损,牙髓炎,阻生齿,龋齿': 1
+'确定的疾病类型:\nⅡ类错颌,牙列不齐': 1
+'充填物脱落': 1
+'Retained Primary Tooth,Crossbite': 1
+'患者患有的口腔疾病:\n根尖周炎,牙周炎,牙齿松动,牙龈炎,牙龈萎缩': 1
+'当前的口腔或牙科状况:\nⅡ类错颌,龋齿': 1
+'Classified diseases in the oral cavity:\nDental Crowding,Gingivitis': 1
+'Detected anomalies and diseases:\nClass II Malocclusion,Mandibular Skeletal Asymmetry,Convex Profile,Deep Overbite,Deep Overjet,Dental Crowding': 1
+'Oral diseases patient is suffering from:\nPeriodontitis,Tooth Mobility,Gingivitis': 1
+'Names of visible diseases:\nClass III Malocclusion,Mandibular Skeletal Asymmetry,Deep Overbite,Dental Crowding': 1
+'Oral diseases or issues detected are:\nTooth Structure Loss,Periodontitis,Cracked Tooth': 1
+'Diseases diagnosed from images:\nGingivitis,Pigment Deposition': 1
+'患者患有的口腔疾病:\nⅡ类错颌,下颌低角,下颌骨性偏斜,凸面型,深覆合,深覆盖,牙齿拥挤': 1
+'多生牙,牙列不齐': 1
+'牙周炎,牙齿缺失,牙龈萎缩': 1
+'牙科或口腔图像中可见的疾病:\nⅡ类错颌,下颌骨性偏斜,凸面型,前突,深覆合,深覆盖,牙齿拥挤': 1
+'Visible oral health conditions identified:\nPeriapical Periodontitis,Pulpitis': 1
+'Oral health issues and dental diseases visible:\nDental Fluorosis,Tooth Structure Loss': 1
+'牙科问题列表:\nⅢ类错颌,下颌骨性偏斜,阻生齿': 1
+'Classification of diseases present:\nClass II Malocclusion,Deep Overbite': 1
+'影响患者的牙科疾病列表:\nⅢ类错颌,下颌骨性偏斜,牙反合,牙齿拥挤': 1
+'Oral health conditions identified include:\nDental Crowding,Gingivitis': 1
+'Ⅲ类错颌,下颌骨性偏斜,凸面型,前突,牙反合,牙齿拥挤': 1
+'Ⅲ类错颌,下颌骨性偏斜,凹面型,牙齿拥挤': 1
+'牙科疾病列表:\nⅡ类错颌,Ⅲ类错颌,下颌骨性偏斜,凸面型,深覆合,深覆盖,牙齿拥挤': 1
+'Detailed list of dental diseases identified:\nRestoration Defect,Wedge-Shaped Defect,Gingivitis,Dental Caries': 1
+'口腔-牙科疾病列表:\nⅡ类错颌,龋齿': 1
+'这是患者患有的异常和疾病列表:\nⅡ类错颌,下颌骨性偏斜,下颌高角,凸面型,深覆盖,牙齿拥挤': 1
+'Visible oral health conditions identified:\nClass II Malocclusion,Dental Crowding': 1
+'Tooth Structure Loss,Periodontitis,Tooth Mobility,Tooth Loss,Gingivitis,Dental Caries': 1
+'Oral health problems and diseases found:\nWedge-Shaped Defect,Periodontitis,Tooth Mobility,Gingivitis': 1
+'牙科疾病列表:\nⅢ类错颌,下颌骨性偏斜,下颌高角,凸面型,牙反合,牙齿拥挤': 1
+'检测到的口腔异常或疾病:\nⅡ类错颌,凸面型,散隙': 1
+'Tooth Structure Loss,Dental Trauma,Jaw Trauma': 1
+'当前的口腔或牙科状况:\n下颌后缩,深覆盖': 1
+'识别的口腔健康状况包括:\n牙体缺损,龋齿': 1
+'影响患者口腔的疾病:\nⅡ类错颌,龋齿': 1
+'Dental anomalies:\nClass II Malocclusion,Mandibular Skeletal Asymmetry,Deep Overbite,Deep Overjet,Dental Crowding': 1
+'Class II Malocclusion,Mandibular Skeletal Asymmetry,High-Angle Mandible,Deep Overjet': 1
+'疾病列表:\n牙龈炎,色素附着': 1
+'Detailed list of dental diseases identified:\nDemineralization,Dental Caries': 1
+'Detailed list of dental diseases identified:\nPeriodontitis,Tooth Mobility': 1
+'Diseases diagnosed from images:\nTooth Structure Loss,Tooth Loss': 1
+'修复体缺损,牙龈炎': 1
+'Class II Malocclusion,Concave Profile,Dental Crowding': 1
+'Diseases affecting oral health:\nClass III Malocclusion,Mandibular Skeletal Asymmetry,Convex Profile,Deep Overbite,Deep Overjet,Dental Crowding': 1
+'Determined disease type:\nClass II Malocclusion,Mandibular Skeletal Asymmetry,Convex Profile,Incisor Protrusion,Dental Crowding': 1
+'Class III Malocclusion,Low-Angle Mandible,Mandibular Skeletal Asymmetry,Deep Overbite,Dental Crowding': 1
+'根尖周炎,牙体缺损,牙周炎,牙齿缺失,龋齿': 1
+'Oral diseases the patient is suffering from:\nPeriapical Periodontitis,Tooth Structure Loss,Dental Caries': 1
+'Dental Crowding,Gingivitis,Pigment Deposition': 1
+'影响患者口腔的疾病:\n下颌高角,凸面型,牙齿拥挤': 1
+'可见的口腔健康问题和牙科疾病:\nⅠ类错颌,牙齿变色': 1
+'Determined disease type:\nClass I Malocclusion,Class II Malocclusion,Proclined Upper Incisors,Retained Primary Tooth,Convex Profile,Ramus Height Discrepancy,Deep Curve Of Spee,Deep Overjet,Deep Overbite,Dental Midline Deviation,Dental Crowding,Chin Deviated Right,Dental Caries': 1
+'Diseases present in the images:\nClass II Malocclusion,High-Angle Mandible,Convex Profile,Deep Overbite,Deep Overjet,Dental Crowding': 1
+'影响患者口腔健康的疾病包括:\n氟斑牙,龋齿': 1
+'Oral diseases or issues detected are:\nPeriodontitis,Pulpitis,Tooth Mobility': 1
+'Tooth Structure Loss,Periodontitis,Pigment Deposition': 1
+'Current oral or dental conditions:\nClass II Malocclusion,Low-Angle Mandible,Convex Profile,Dental Crowding': 1
+'Diseases and anomalies present:\nClass II Malocclusion,Convex Profile,Incisor Protrusion,Deep Overbite,Deep Overjet,Dental Crowding': 1
+'检测到的异常和疾病:\n氟斑牙,牙体缺损': 1
+'检测到的异常和健康状况:\nⅢ类错颌,下颌骨性偏斜,凸面型,深覆合,深覆盖,牙齿拥挤': 1
+'可见的疾病和状况:\nⅢ类错颌,下颌骨性偏斜,凹面型,牙齿拥挤': 1
+'Classified diseases in the oral cavity:\nClass II Malocclusion,Mandibular Skeletal Asymmetry,High-Angle Mandible,Convex Profile,Deep Overbite,Deep Overjet,Dental Crowding': 1
+'存在疾病的分类:\n牙体缺损,阻生齿': 1
+'Visible diseases and conditions:\nPeriapical Periodontitis,Periodontitis': 1
+'检测到的口腔疾病或问题如下:\n根尖周炎,氟斑牙,牙体缺损,龋齿': 1
+'List of diseases:\nDental Crowding,Dental Caries': 1
+'Diseases present in the images:\nRetained Tooth,Dental Caries': 1
+'Names of visible diseases:\nPeriodontitis,Gingivitis,Subgingival Calculus': 1
+'Determined disease type:\nConvex Profile,Dental Crowding': 1
+'确定的疾病类型:\n牙列不齐,牙齿拥挤': 1
+'Oral health issues and dental diseases visible:\nClass II Malocclusion,Dental Crowding': 1
+'可见的疾病和异常包括:\nⅡ类错颌,下颌骨性偏斜,深覆合,牙齿拥挤': 1
+'Oral diseases and dental conditions identified:\nGingivitis,Mesioangular Impaction,Impacted Tooth,Dental Caries': 1
+'Ⅱ类错颌,色素附着': 1
+'Periapical Periodontitis,Dry Root Canal,Tooth Structure Loss,Periodontitis,Pulpitis': 1
+'Dental anomalies:\nLabial Inclination,Excessive Overjet': 1
+'影响口腔健康的疾病:\n下颌骨性偏斜,凸面型,深覆合': 1
+'检测到的疾病和异常:\n深覆盖,牙齿拥挤': 1
+'Detected anomalies and diseases:\nClass II Malocclusion,Dental Caries': 1
+'存在疾病的分类:\nⅢ类错颌,下颌高角,牙齿拥挤': 1
+'Disease(s) identified in oral images:\nClass II Malocclusion,Retained Primary Tooth,Convex Profile,Deep Overbite,Deep Overjet,Dental Crowding': 1
+'Mandibular Skeletal Asymmetry,Incisor Protrusion': 1
+'Visible oral health conditions identified:\nClass I Malocclusion,Convex Profile,Dental Crowding': 1
+'List of dental anomalies:\nPeriapical Periodontitis,Periodontitis,Tooth Fracture': 1
+'疾病列表:\n牙体缺损,龋齿': 1
+'Identified abnormalities and oral health conditions:\nClass I Malocclusion,Mandibular Skeletal Asymmetry,Convex Profile,Dental Crowding': 1
+'Oral diseases and dental conditions identified:\nPeriapical Periodontitis,Dental Fluorosis,Dental Caries': 1
+'牙科图像中可见的疾病:\n牙周炎,牙齿松动,牙龈炎': 1
+'Here is the list of anomalies and diseases that the patient have:\nClass III Malocclusion,Mandibular Skeletal Asymmetry,Concave Profile,Dental Crowding': 1
+'牙科异常列表:\nⅡ类错颌,深覆颌,牙釉质发育不全,牙齿拥挤': 1
+'Periapical Periodontitis,Tooth Fracture': 1
+'Visible diseases in the dental images:\nClass II Malocclusion,Convex Profile': 1
+'识别的口腔健康状况包括:\n楔状缺损,牙周炎,牙龈炎': 1
+'诊断的疾病:\n牙周炎,牙齿松动,牙龈炎,牙龈萎缩': 1
+'Diseases diagnosed from images:\nPeriodontitis,Tooth Mobility,Gingivitis': 1
+'Oral health problems and diseases found:\nClass III Malocclusion,Low-Angle Mandible,Mandibular Skeletal Asymmetry,Deep Overbite,Dental Crowding': 1
+'影响患者口腔的疾病:\nⅡ类错颌,牙齿拥挤': 1
+'疾病列表:\n牙周炎,牙齿松动,牙龈炎': 1
+'患者患有以下类型的疾病:\n牙齿拥挤,龋齿': 1
+'Classified diseases in the oral cavity:\nClass III Malocclusion,Mandibular Skeletal Asymmetry,Deep Overbite,Dental Crowding': 1
+'Demineralization': 1
+'Observed abnormalities and diseases are:\nPeriapical Periodontitis,Tooth Fracture,Tooth Mobility,Dental Caries': 1
+'图像中存在的疾病:\n牙列不齐,牙齿拥挤': 1
+'Comprehensive list of oral diseases detected:\nClass II Malocclusion,Dental Caries': 1
+'List of diseases:\nClass II Malocclusion,Gingivitis': 1
+'根据图像确定的疾病类型:\n牙龈炎,龋齿': 1
+'识别出的疾病:\n根管内无新鲜渗出,牙体缺损': 1
+'口腔中疾病的分类:\nⅠ类错颌,Ⅱ类错颌,凸面型,深 SPEE 曲线,深覆盖,牙列不齐,牙齿拥挤': 1
+'检测到的牙科状况包括:\n牙周炎,牙齿松动,牙龈炎,肯氏III类缺失': 1
+'图像中存在的疾病:\nⅡ类错颌,龋齿': 1
+'牙科或口腔图像中可见的疾病:\n内源性黄牙,氟斑牙': 1
+'疾病列表:\nⅡ类错颌,下颌骨性偏斜,凸面型,深覆合,深覆盖,牙齿拥挤': 1
+'Classification of diseases present:\nClass II Malocclusion,Mandibular Skeletal Asymmetry,High-Angle Mandible,Deep Overjet,Dental Crowding,Dental Caries': 1
+'Detected diseases and anomalies:\nCrossbite,Pulpitis,Dental Caries': 1
+'识别出的口腔疾病:\nⅡ类错颌,下颌高角,凸面型,开合咬合,牙齿拥挤': 1
+'根据图像确定的疾病类型:\nⅡ类错颌,凸面型,牙列不齐,牙齿拥挤': 1
+'Identified dental anomalies based on data:\nDry Root Canal,Tooth Structure Loss,Pulpitis': 1
+'List of diseases:\nWedge-Shaped Defect,Gingivitis': 1
+'图像中存在的疾病:\n氟斑牙,牙体缺损,龋齿': 1
+'这是患者患有的异常和疾病列表:\n根尖周炎,牙体缺损': 1
+'Diseases diagnosed from images:\nMandibular Skeletal Asymmetry,Convex Profile,Dental Crowding': 1
+'Identified oral diseases:\nDry Root Canal,Pulpitis': 1
+'可见疾病的名称:\n牙体缺损,牙齿缺失': 1
+'牙科问题列表:\n内源性黄牙,外源性黄牙': 1
+'检测到的牙科状况包括:\nⅡ类错颌,下颌骨性偏斜,先天缺失,深覆合,牙齿拥挤': 1
+'Names of diseases the patient has:\nClass II Malocclusion,Mandibular Skeletal Asymmetry,Convex Profile,Deep Overbite,Deep Overjet,Dental Crowding': 1
+'Disease(s) identified in oral images:\nClass III Malocclusion,Mandibular Skeletal Asymmetry,High-Angle Mandible,Convex Profile,Deep Overjet,Dental Crowding': 1
+'识别的口腔健康状况包括:\n牙体缺损,牙齿缺失': 1
+'存在的疾病和异常:\n氟斑牙,牙周炎': 1
+'Current oral or dental conditions:\nPulpitis,Dental Caries': 1
+'Class I Malocclusion,Mandibular Skeletal Asymmetry': 1
+'Dental anomalies:\nClass I Malocclusion,Dental Caries': 1
+'存在疾病的分类:\n根尖周炎,根管内无新鲜渗出,牙体缺损,牙周炎,牙髓炎,牙齿松动,牙龈炎': 1
+'识别的可见口腔健康状况:\n牙周炎,牙齿松动,牙龈炎': 1
+'影响患者的牙科疾病列表:\n根管内无新鲜渗出,牙髓炎': 1
+'Oral health issues and dental diseases visible:\nRestoration Defect,Dental Caries': 1
+'患者患有的口腔疾病:\n下颌骨性偏斜,凸面型,深覆合,牙齿拥挤': 1
+'Ⅰ类错颌,Ⅱ类错颌,下颌骨性偏斜,下颌高角,乳牙滞留,凸面型,深覆合,深覆盖,牙齿拥挤': 1
+'深覆合,深覆盖,牙齿拥挤': 1
+'Ⅱ类错颌,深覆合,龋齿': 1
+'识别出的口腔图像中的疾病:\n牙石,牙龈炎': 1
+'Diagnosed diseases:\nClass II Malocclusion,Proclined Upper Incisors,Narrow Maxillary Arch,Right Mandibular Midline Deviation,Deep Curve Of Spee,Deep Overjet,Deep Overbite,Dental Crowding,Dental Crowding': 1
+'Ⅲ类错颌,下颌骨性偏斜,下颌高角': 1
+'Diseases affecting the patient’s oral health include:\nPeriapical Periodontitis,Tooth Loss,Dental Caries': 1
+'识别的异常和口腔健康状况:\nⅡ类错颌,下颌高角,凸面型,牙列不齐,牙齿拥挤': 1
+'影响患者的牙科疾病列表:\nⅡ类错颌,下颌高角,凸面型,深覆合,牙齿拥挤': 1
+'The patient has the following types of diseases:\nGingivitis,Subgingival Calculus,Dental Caries': 1
+'影响患者的牙科疾病列表:\nⅡ类错颌,Ⅲ类错颌,下颌高角,凹面型,牙反颌,牙齿拥挤': 1
+'Yes, the patient has the following diseases:\nPeriapical Periodontitis,Crossbite,Dental Caries': 1
+'Diagnosed diseases:\nConvex Profile,Dental Crowding': 1
+'Classified diseases in the oral cavity:\nClass I Malocclusion,Mandibular Skeletal Asymmetry,Deep Overbite,Deep Overjet,Dental Crowding': 1
+'List of dental issues:\nClass III Malocclusion,Dental Caries': 1
+'患者患有的口腔疾病:\n凸面型,牙齿拥挤': 1
+'可见的口腔健康问题和牙科疾病:\nⅡ类错颌,凹面型,牙齿拥挤': 1
+'Ⅱ类错颌,下颌骨性偏斜,下颌高角,牙齿拥挤': 1
+'可见疾病的名称:\n口腔卫生不良,龋齿': 1
+'可见疾病的名称:\nⅡ类错颌,牙龈炎': 1
+'当前的口腔或牙科状况:\nⅡ类错颌,下颌高角,凸面型,前突,牙齿拥挤': 1
+'Visible diseases in dental or oral images:\nClass II Malocclusion,Dental Caries': 1
+'Mandibular Skeletal Asymmetry,Convex Profile,Dental Crowding': 1
+'Tooth Structure Loss,Tooth Wear': 1
+'患者患有以下类型的疾病:\n牙龈炎,色素附着': 1
+'Determined disease type:\nClass II Malocclusion,Maxillary Expansion': 1
+'牙科问题列表:\nⅡ类错颌,脱矿': 1
+'发现的口腔健康问题和疾病如下:\nⅢ类错颌,龋齿': 1
+'可见疾病的名称:\n根尖周炎,牙周炎,牙髓炎,牙龈炎': 1
+'Ⅱ类错颌,下颌骨性偏斜,凸面型,前突,牙齿拥挤,阻生齿': 1
+'Oral health issues and dental diseases visible:\nClass II Malocclusion,Dental Caries': 1
+'Oral disease(s) patient is suffering from:\nClass I Malocclusion,Dental Caries': 1
+'牙科问题列表:\n牙周炎,牙龈炎': 1
+'氟斑牙,牙体缺损,牙周炎,牙隐裂': 1
+'发现的口腔健康问题和疾病如下:\n牙体缺损,牙列不齐,牙齿拥挤': 1
+'影响患者口腔健康的疾病包括:\n充填物脱落,桩核冠,氟斑牙,牙体缺损,龋齿': 1
+'可见的疾病和异常包括:\nⅠ类错颌,凹面型,牙反合,牙齿拥挤': 1
+'检测到的牙科状况包括:\nⅡ类错颌,下颌骨性偏斜,凸面型,深覆盖,牙齿拥挤': 1
+'Identified abnormalities and oral health conditions:\nClass I Malocclusion,Impacted Tooth,Dental Caries': 1
+'牙科异常:\n楔状缺损,龋齿': 1
+'检测到的牙科状况包括:\n修复体缺损,根尖周炎': 1
+'Determined disease type:\nClass II Malocclusion,Mandibular Skeletal Asymmetry,Convex Profile,Dental Crowding': 1
+'Classification of diseases present:\nClass III Malocclusion,Mandibular Skeletal Asymmetry,Convex Profile,Deep Overbite,Dental Crowding': 1
+'基于数据识别的牙科异常:\n乳牙滞留,凸面型,前突,氟斑牙,牙髓坏死': 1
+'识别出的疾病:\n充血,阻生齿': 1
+'Names of visible diseases:\nClass I Malocclusion,Class II Malocclusion,Convex Profile,Dental Crowding': 1
+'Detected diseases and anomalies:\nDental Fluorosis,Gingivitis': 1
+'检测到的口腔异常或疾病:\n乳牙滞留,牙列不齐,牙齿拥挤': 1
+'Detailed list of dental diseases identified:\nRestoration Defect,Tooth Structure Loss': 1
+'检测到的口腔异常或疾病:\n牙周炎,牙齿松动': 1
+'Detected abnormalities and health conditions:\nPeriodontitis,Pulp Necrosis,Tooth Mobility,Gingivitis,Dental Caries': 1
+'识别出的口腔疾病:\n氟斑牙,龋齿': 1
+'Classification of diseases present:\nDry Root Canal,Pulpitis': 1
+'Diagnosed diseases:\nClass III Malocclusion,High-Angle Mandible,Dental Crowding': 1
+'Identified dental anomalies based on data:\nGingivitis,Pigment Deposition': 1
+'Diseases affecting dental health:\nClass III Malocclusion,Mandibular Skeletal Asymmetry,Deep Overbite,Dental Crowding': 1
+'Wedge-Shaped Defect,Gingivitis,Dental Caries': 1
+'Classified diseases in the oral cavity:\nGingivitis,Pigment Deposition': 1
+'Mandibular Skeletal Asymmetry,Convex Profile,Deep Overjet,Dental Crowding': 1
+'牙体发育异常,牙髓炎,龋齿': 1
+'Classification of diseases present:\nPeriodontitis,Gingivitis,Subgingival Calculus': 1
+'Class I Malocclusion,Class II Malocclusion,Deep Curve Of Spee,Deep Overbite,Dental Crowding,Dental Crowding': 1
+'Diagnosed diseases based on images:\nWedge-Shaped Defect,Gingivitis': 1
+'List of dental anomalies:\nPeriodontitis,Gingivitis': 1
+'Determined disease types based on images:\nClass II Malocclusion,Maxillary Expansion': 1
+'Detected dental conditions include:\nClass III Malocclusion,Mandibular Skeletal Asymmetry,Convex Profile,Deep Overbite,Deep Overjet,Dental Crowding': 1
+'Diseases and anomalies present:\nClass II Malocclusion,Convex Profile,Dental Crowding': 1
+'影响口腔健康的疾病:\nⅡ类错颌,凸面型,牙齿拥挤': 1
+'Oral disease(s) patient is suffering from:\nMandibular Skeletal Asymmetry,Anterior Crossbite,Dental Crowding': 1
+'Dental anomalies:\nClass II Malocclusion,Mandibular Skeletal Asymmetry,Convex Profile,Deep Overbite,Deep Overjet,Dental Crowding': 1
+'Diseases and anomalies present:\nGingivitis,Impacted Tooth': 1
+'基于图像诊断的疾病:\nⅡ类错颌,下颌高角,凸面型,深覆盖,牙齿拥挤': 1
+'影响口腔健康的疾病:\n牙周炎,牙齿松动': 1
+'牙周炎,牙齿松动,牙齿缺失': 1
+'影响患者的牙科疾病列表:\n根尖周炎,楔状缺损,牙体缺损,牙髓炎,龋齿': 1
+'List of diseases:\nClass I Malocclusion,Convex Profile,Dental Crowding': 1
+'影响口腔健康的疾病:\n凸面型,深覆盖': 1
+'Diseases affecting the patient’s oral health include:\nPeriodontitis,Tooth Mobility': 1
+'影响牙科健康的疾病:\n外源性黄牙,氟斑牙': 1
+'Diseases present in images:\nHigh-Angle Mandible,Dental Crowding': 1
+'Names of diseases the patient has:\nConvex Profile,Dental Crowding': 1
+'口腔中疾病的分类:\n牙齿拥挤,龋齿': 1
+'已识别的详细牙科疾病列表:\n下颌骨性偏斜,凸面型,深覆合,牙齿拥挤,龋齿': 1
+'上凸下缩,腭侧异位萌出,过大覆盖': 1
+'List of dental diseases:\nClass I Malocclusion,Class II Malocclusion,Deep Curve Of Spee,Deep Overbite,Dental Crowding,Dental Crowding': 1
+'Visible diseases in dental or oral images:\nPeriapical Periodontitis,Dry Root Canal': 1
+'疾病列表:\nⅡ类错颌,牙齿拥挤': 1
+'识别的口腔疾病和牙科状况:\n凸面型,牙齿拥挤': 1
+'Ⅰ类错颌,口腔卫生不良,深覆盖,深覆颌,牙列不齐,牙齿拥挤': 1
+'凸面型,牙反合,牙齿拥挤': 1
+'可见的疾病和状况:\n内源性黄牙,氟斑牙': 1
+'Observed abnormalities and diseases are:\nCalculus,Gingival Recession,Dental Caries': 1
+'List of dental diseases:\nTooth Rotation,Dental Caries': 1
+'Deep Overjet,Crossbite,Dental Crowding': 1
+'可见的口腔健康问题和牙科疾病:\n牙髓炎,龋齿': 1
+'Class II Malocclusion,Class III Malocclusion,Low-Angle Mandible,Mandibular Skeletal Asymmetry,Anterior Crossbite,Dental Crowding': 1
+'检测到的口腔异常或疾病:\nⅠ类错颌,牙龈炎,脱矿': 1
+'已识别的详细牙科疾病列表:\n牙周炎,牙齿松动,牙龈炎': 1
+'Diseases affecting the patient’s oral health include:\nClass III Malocclusion,Mandibular Skeletal Asymmetry,Deep Overbite,Dental Crowding': 1
+'List of dental diseases:\nDental Fluorosis,Tooth Structure Loss,Gingivitis': 1
+'Determined disease type:\nClass II Malocclusion,Deep Overbite': 1
+'牙科异常列表:\nⅢ类错颌,下颌骨性偏斜,牙反合,牙齿拥挤': 1
+'氟斑牙,牙周炎,牙龈炎,牙龈萎缩,龋齿': 1
+'List of dental diseases:\nClass II Malocclusion,Mandibular Skeletal Asymmetry,Deep Overbite,Deep Overjet,Dental Crowding': 1
+'影响牙科健康的疾病:\nⅠ类错颌,脱矿': 1
+'List of dental diseases:\nClass II Malocclusion,Mandibular Skeletal Asymmetry,High-Angle Mandible,Convex Profile,Deep Overbite,Deep Overjet,Dental Crowding': 1
+'Ⅰ类错颌,Ⅲ类错颌,凸面型,牙反颌,牙齿拥挤,龋齿': 1
+'深覆合,深覆颌': 1
+'Retained Primary Tooth,Dental Caries': 1
+'Diagnosed diseases based on images:\nClass III Malocclusion,Mandibular Skeletal Asymmetry,Dental Crowding': 1
+'List of dental anomalies:\nClass II Malocclusion,Retained Primary Tooth,Convex Profile,Dental Crowding': 1
+'可见的疾病和状况:\nⅠ类错颌,Ⅱ类错颌,下颌骨性偏斜,下颌高角,乳牙滞留,凸面型,深覆合,深覆盖,牙齿拥挤': 1
+'Oral disease(s) patient is suffering from:\nClass II Malocclusion,Dental Caries': 1
+'诊断的疾病:\nⅢ类错颌,下颌骨性偏斜,深覆盖,牙齿拥挤': 1
+'Determined disease types based on images:\nTooth Structure Loss,Dental Caries': 1
+'Identified diseases from images:\nMandibular Skeletal Asymmetry,Concave Profile,Dental Crowding,Dental Crowding': 1
+'牙科问题列表:\n牙龈炎,色素附着': 1
+'The patient has the following types of diseases:\nClass III Malocclusion,Mandibular Skeletal Asymmetry,Anterior Crossbite,Dental Crowding': 1
+'Visible diseases and anomalies are:\nDental Crowding,Gingivitis,Dental Caries': 1
+'影响患者口腔的疾病:\nⅢ类错颌,下颌高角,牙反合,牙齿拥挤': 1
+'患者患有的口腔疾病:\n牙列不齐,龋齿': 1
+'Restoration Defect,Periapical Periodontitis,Tooth Mobility,Tooth Loss,Gingivitis': 1
+'Ⅰ类错颌,凸面型,深覆合,深覆颌,牙齿缺失': 1
+'影响口腔健康的疾病:\nⅡ类错颌,牙齿缺失': 1
+'Class I Malocclusion,Mandibular Skeletal Asymmetry,High-Angle Mandible,Dental Crowding': 1
+'Periapical Periodontitis,Cracked Tooth': 1
+'Class II Malocclusion,Convex Profile,Mesioangular Impaction': 1
+'Names of diseases the patient has:\nPeriodontitis,Tooth Mobility': 1
+'Diseases diagnosed from images:\nGingivitis,Dental Caries': 1
+'Ⅲ类错颌,下颌骨性偏斜': 1
+'氟斑牙,牙龈炎': 1
+'确定的疾病类型:\n牙髓炎,龋齿': 1
+'Identified oral diseases:\nClass II Malocclusion,Convex Profile,Deep Overbite': 1
+'Classified diseases in the oral cavity:\nClass II Malocclusion,Dental Crowding': 1
+'Ⅲ类错颌,下颌骨性偏斜,深覆合,牙反合,牙齿拥挤': 1
+'是的，患者患有以下疾病:\nⅡ类错颌,下颌高角,凸面型,深覆盖,牙齿拥挤': 1
+'检测到的牙科状况包括:\nⅡ类错颌,下颌高角,凸面型,深覆盖': 1
+'Yes, the patient has the following diseases:\nPost And Core Crown,Dental Fluorosis,Tooth Structure Loss,Pulpitis,Impacted Tooth,Dental Caries': 1
+'识别的口腔健康状况包括:\n牙列不齐,龋齿': 1
+'Oral health problems and diseases found:\nClass II Malocclusion,High-Angle Mandible,Concave Profile,Anterior Crossbite,Dental Crowding': 1
+'Crossbite,Pigment Deposition': 1
+'Class II Malocclusion,Impacted Tooth': 1
+'识别出的口腔疾病:\n牙周炎,牙龈炎': 1
+'Ⅰ类错颌,凸面型,牙反颌,牙齿拥挤': 1
+'患者患有以下类型的疾病:\n牙周炎,牙龈炎,龈下牙石,龋齿': 1
+'Diseases present in the images:\nPeriodontitis,Tooth Mobility,Gingivitis': 1
+'患者患有以下类型的疾病:\n牙周炎,龈下牙石': 1
+'发现的口腔健康问题和疾病如下:\nⅡ类错颌,凸面型': 1
+'Diseases diagnosed from images:\nTooth Structure Loss,Dental Caries': 1
+'Detected oral abnormalities or diseases:\nClass II Malocclusion,Dental Caries': 1
+'Detected anomalies and diseases:\nMandibular Skeletal Asymmetry,Deep Overbite,Deep Overjet,Anterior Crossbite,Dental Crowding': 1
+'Diseases affecting dental health:\nConvex Profile,Incisor Protrusion,Chin Retrusion': 1
+'Oral diseases patient is suffering from:\nClass II Malocclusion,Mandibular Skeletal Asymmetry,Convex Profile,Incisor Protrusion,Deep Overbite,Dental Crowding': 1
+'是的，患者患有以下疾病:\n根尖周炎,牙齿松动,牙齿缺失': 1
+'The patient has the following types of diseases:\nConvex Profile,Incisor Protrusion': 1
+'Visible oral health conditions identified:\nPulpitis,Dental Caries': 1
+'Diagnosed diseases based on images:\nClass II Malocclusion,Mandibular Skeletal Asymmetry,Convex Profile,Deep Overbite,Deep Overjet,Dental Crowding': 1
+'Oral disease(s) patient is suffering from:\nDemineralization,Dental Caries': 1
+'患者患有的口腔疾病:\n牙髓炎,牙龈炎': 1
+'牙科问题列表:\nⅡ类错颌,上凸下缩,下颌低角,下颌骨性偏斜,凸面型,深覆合,深覆盖,牙齿拥挤': 1
+'检测到的异常和疾病:\nⅡ类错颌,龋齿': 1
+'检测到的口腔疾病或问题如下:\n牙周炎,牙髓炎,牙龈炎,龋齿': 1
+'Diseases diagnosed from images:\nHigh-Angle Mandible,Convex Profile,Dental Crowding': 1
+'发现的口腔健康问题和疾病如下:\n牙髓炎,龋齿': 1
+'Here is the list of anomalies and diseases that the patient have:\nClass I Malocclusion,Convex Profile,Dental Crowding,Dental Crowding,Dental Caries': 1
+'可见的疾病和异常包括:\nⅡ类错颌,下颌骨性偏斜,深覆合': 1
+'Comprehensive list of oral diseases detected:\nGingivitis,Impacted Tooth': 1
+'影响患者的牙科疾病列表:\n下颌骨性偏斜,牙反合': 1
+'这是患者患有的异常和疾病列表:\n牙龈炎,色素附着': 1
+'Detailed list of dental diseases identified:\nClass I Malocclusion,Convex Profile': 1
+'牙科或口腔图像中可见的疾病:\n凸面型,牙齿拥挤': 1
+'Visible diseases in dental or oral images:\nClass II Malocclusion,Convex Profile': 1
+'影响患者口腔的疾病:\n乳牙滞留,凸面型,前突,氟斑牙,牙髓坏死': 1
+'疾病列表:\nⅢ类错颌,下颌骨性偏斜,下颌高角,牙反合,牙齿拥挤': 1
+'Visible diseases in dental or oral images:\nWedge-Shaped Defect,Periodontitis,Tooth Mobility,Gingivitis': 1
+'Diagnosed diseases:\nTooth Structure Loss,Gingivitis': 1
+'根尖周炎,牙反颌,龋齿': 1
+'影响牙科健康的疾病:\nⅢ类错颌,下颌骨性偏斜,凸面型,深覆合,深覆盖,牙齿拥挤': 1
+'图像中存在的疾病:\nⅡ类错颌,凸面型,牙齿拥挤': 1
+'Ⅰ类错颌,凸面型,前突,牙体缺损,牙列不齐,牙齿拥挤,龋齿': 1
+'当前的口腔或牙科状况:\n修复体缺损,牙体缺损,牙周炎,牙齿松动,牙龈炎,龋齿': 1
+'影响患者口腔健康的疾病包括:\nⅡ类错颌,下颌骨性偏斜,凹面型,牙齿拥挤': 1
+'Visible diseases in dental or oral images:\nClass III Malocclusion,Mandibular Skeletal Asymmetry,Deep Overjet,Dental Crowding': 1
+'根尖周炎,牙体缺损,牙龈炎,龋齿': 1
+'Detected oral abnormalities or diseases:\nGingivitis,Pigment Deposition': 1
+'牙科异常列表:\n牙体缺损,牙龈炎': 1
+'检测到的口腔疾病或问题如下:\nⅠ类错颌,深覆颌,牙列不齐,牙齿拥挤,龋齿': 1
+'图像中存在的疾病:\nⅢ类错颌,下颌低角,凸面型,牙齿拥挤,牙龈炎': 1
+'Class II Malocclusion,Deep Overbite,Deep Overjet,Dental Crowding,Anterior Crossbite': 1
+'Names of visible diseases:\nTooth Structure Loss,Tooth Loss,Dental Caries': 1
+'牙科问题列表:\n下颌骨性偏斜,深覆合,牙齿拥挤': 1
+'牙科问题列表:\n根尖周炎,牙齿缺失,牙龈炎,阻生齿': 1
+'Ⅱ类错颌,下颌低角,牙齿拥挤': 1
+'Visible oral health conditions identified:\nGingivitis,Dental Caries': 1
+'Ⅰ类错颌,Ⅱ类错颌,深 SPEE 曲线,深覆颌,牙列不齐,牙齿拥挤': 1
+'识别的口腔健康状况包括:\n牙周炎,牙齿松动,牙龈炎': 1
+'Detected oral abnormalities or diseases:\nHyperemia,Tooth Structure Loss,Dental Caries': 1
+'Diseases diagnosed from images:\nPeriapical Periodontitis,Tooth Structure Loss,Gingivitis': 1
+'牙科异常:\n内源性黄牙,氟斑牙': 1
+'患者患有以下类型的疾病:\n凸面型,深覆合': 1
+'口腔中疾病的分类:\nⅢ类错颌,下颌骨性偏斜,下颌高角,凸面型,深覆合,深覆盖,牙列不齐,牙齿拥挤': 1
+'检测到的疾病和异常:\n牙体缺损,牙齿缺失': 1
+'Classified diseases in the oral cavity:\nClass II Malocclusion,Mandibular Skeletal Asymmetry,High-Angle Mandible,Convex Profile,Crossbite,Dental Crowding': 1
+'Oral health conditions identified include:\nImpacted Tooth,Dental Caries': 1
+'是的，患者患有以下疾病:\n下颌骨性偏斜,凸面型,前突,深覆合,深覆盖,牙反合,牙齿拥挤': 1
+'Diseases present in the images:\nClass II Malocclusion,Convex Profile,Deep Overbite': 1
+'Periodontitis,Tooth Fracture': 1
+'识别的口腔疾病和牙科状况:\n牙髓炎,牙齿缺失': 1
+'检测到的牙科状况包括:\nⅠ类错颌,凸面型,牙齿拥挤': 1
+'牙周炎,牙齿缺失,牙龈炎': 1
+'Classification of diseases present:\nGingivitis,Mesioangular Impaction': 1
+'Detailed list of dental diseases identified:\nRestoration Defect,Periodontitis,Gingival Recession': 1
+'口腔-牙科疾病列表:\n牙体缺损,龋齿': 1
+'识别的口腔疾病和牙科状况:\nⅡ类错颌,凸面型,牙齿拥挤': 1
+'上凸下缩,牙齿缺失': 1
+'Observed abnormalities and diseases are:\nClass II Malocclusion,High-Angle Mandible,Convex Profile,Deep Overjet,Dental Crowding': 1
+'牙科异常列表:\nⅡ类错颌,下颌骨性偏斜,凸面型,深覆合,深覆盖,牙齿拥挤': 1
+'List of dental diseases affecting the patient:\nConvex Profile,Dental Crowding': 1
+'Detected oral abnormalities or diseases:\nPeriodontitis,Gingivitis': 1
+'Diseases diagnosed from images:\nGingivitis,Pigment Deposition,Dental Caries': 1
+'Current oral or dental conditions:\nTooth Structure Loss,Periodontitis,Tooth Mobility,Gingivitis,Dental Caries': 1
+'疾病列表:\n根尖周炎,牙体缺损,龋齿': 1
+'Identified oral diseases:\nDental Fluorosis,Tooth Wear': 1
+'可见的口腔健康问题和牙科疾病:\n根尖周炎,错颌': 1
+'Diseases affecting the patient’s oral health include:\nPeriapical Periodontitis,Tooth Fracture,Pulpitis': 1
+'影响口腔健康的疾病:\nⅡ类错颌,下颌骨性偏斜,凸面型,深覆合,深覆盖,牙齿拥挤': 1
+'当前的口腔或牙科状况:\n牙体缺损,牙齿缺失': 1
+'图像中存在的疾病:\nⅠ类错颌,前突,牙列不齐': 1
+'患者患有以下类型的疾病:\n阻生齿,龋齿': 1
+'Dental anomalies:\nRestoration Defect,Periapical Periodontitis,Pulpitis': 1
+'Ⅲ类错颌,下颌低角,下颌骨性偏斜,凸面型,深覆合,牙齿拥挤': 1
+'Post Orthodontic Relapse': 1
+'存在的疾病和异常:\nⅡ类错颌,下颌低角,凸面型': 1
+'Diagnosed diseases based on images:\nClass II Malocclusion,Convex Profile,Dental Crowding': 1
+'Determined disease type:\nPulpitis,Dental Caries': 1
+'Oral diseases and dental conditions identified:\nDental Fluorosis,Dental Caries': 1
+'影响患者口腔健康的疾病包括:\n根管内无新鲜渗出,牙髓炎': 1
+'The patient has the following types of diseases:\nRetained Primary Tooth,Retained Tooth': 1
+'List of dental diseases affecting the patient:\nTooth Structure Loss,Subgingival Calculus': 1
+'检测到的口腔疾病综合列表:\nⅢ类错颌,下颌低角,下颌骨性偏斜,凸面型,深覆合,牙齿拥挤': 1
+'Diseases affecting the patient’s mouth:\nClass II Malocclusion,Low-Angle Mandible,Convex Profile,Dental Crowding': 1
+'患者患有的口腔疾病:\n氟斑牙,颊向错位': 1
+'Oral diseases the patient is suffering from:\nCrossbite,Gingivitis': 1
+'观察到的异常和疾病如下:\nⅡ类错颌,凸面型,深覆合': 1
+'识别出的口腔图像中的疾病:\nⅡ类错颌,下颌骨性偏斜,下颌高角,凸面型,深覆合,深覆盖,牙齿拥挤': 1
+'Names of visible diseases:\nDental Fluorosis,Dental Caries': 1
+'Convex Profile,Incisor Protrusion': 1
+'存在疾病的分类:\n牙髓炎,龋齿': 1
+'Diseases and anomalies present:\nPulpitis,Dental Caries': 1
+'识别出的口腔图像中的疾病:\n根尖周炎,深覆合,牙列不齐': 1
+'诊断的疾病:\n牙齿拥挤,龋齿': 1
+'患者患有的口腔疾病:\n牙体缺损,牙龈炎': 1
+'Ⅰ类错颌,Ⅱ类错颌,凸面型,牙齿拥挤': 1
+'Visible diseases in the dental images:\nGingivitis,Dental Caries': 1
+'Class II Malocclusion,Convex Profile,Deep Overjet,Dental Crowding,High-Angle Mandible': 1
+'Ⅱ类错颌,下颌骨性偏斜,凸面型,深覆合,深覆盖,牙列不齐,牙齿拥挤': 1
+'Oral health conditions identified include:\nGingivitis,Pigment Deposition': 1
+'List of dental issues:\nClass II Malocclusion,Mandibular Skeletal Asymmetry,Deep Overbite,Deep Overjet,Dental Crowding': 1
+'Here is the list of abnormalities that are present in the images:\nClass II Malocclusion,Mandibular Skeletal Asymmetry,Dental Crowding': 1
+'患者患有以下类型的疾病:\nⅡ类错颌,下颌骨性偏斜,凸面型,深覆合,牙齿拥挤': 1
+'图像中存在的疾病:\n氟斑牙,龋齿': 1
+'影响牙科健康的疾病:\n牙周炎,牙齿松动,牙龈炎': 1
+'Class III Malocclusion,Dental Crowding,Crossbite,Tooth Fracture,Dental Crowding': 1
+'Class III Malocclusion,Anterior Crossbite,Dental Caries': 1
+'Diseases present in images:\nImpacted Tooth,Dental Caries': 1
+'识别的可见口腔健康状况:\nⅠ类错颌,凸面型': 1
+'根充不致密,牙周炎,牙槽骨吸收,牙龈炎,龈下牙石,龋齿': 1
+'检测到的口腔异常或疾病:\nⅡ类错颌,凸面型,深覆盖,牙齿拥挤': 1
+'识别出的口腔疾病:\n牙体缺损,牙列不齐': 1
+'Identified dental anomalies based on data:\nClass III Malocclusion,Mandibular Skeletal Asymmetry,Convex Profile,Deep Overbite': 1
+'Ⅰ类错颌,楔状缺损': 1
+'Diseases and anomalies present:\nClass II Malocclusion,Mandibular Skeletal Asymmetry,Convex Profile,Dental Crowding': 1
+'Oral diseases or issues detected are:\nGingivitis,Pigment Deposition': 1
+'影响患者的牙科疾病列表:\n下颌高角,凸面型,开合咬合,牙列不齐,牙齿拥挤': 1
+'List of dental diseases affecting the patient:\nPeriodontitis,Tooth Mobility,Gingivitis': 1
+'Determined disease types based on images:\nMalocclusion,Impacted Tooth,Dental Caries': 1
+'Diseases present in the images:\nPeriapical Periodontitis,Periodontitis': 1
+'牙磨耗,牙釉质发育不全,龋齿': 1
+'Ⅲ类错颌,下颌低角,下颌骨性偏斜,深覆合,牙齿拥挤': 1
+'Yes, the patient has the following diseases:\nPeriapical Periodontitis,Post And Core Crown,Dental Fluorosis,Tooth Structure Loss,Dental Caries': 1
+'发现的口腔健康问题和疾病如下:\n牙周炎,牙齿缺失': 1
+'识别出的口腔图像中的疾病:\nⅡ类错颌,下颌高角,凸面型,深覆合,牙齿拥挤': 1
+'Diseases affecting dental health:\nDental Fluorosis,Tooth Structure Loss,Dental Caries': 1
+'Class I Malocclusion,Mandibular Skeletal Asymmetry,Convex Profile,Dental Crowding': 1
+'牙体缺损,牙周炎,牙隐裂': 1
+'基于图像诊断的疾病:\nⅡ类错颌,凸面型': 1
+'识别的异常和口腔健康状况:\n牙周炎,牙齿松动,牙齿缺失': 1
+'Diseases affecting the patient’s oral health include:\nClass III Malocclusion,High-Angle Mandible,Concave Profile,Anterior Crossbite,Dental Crowding': 1
+'检测到的口腔异常或疾病:\n牙体缺损,牙龈炎': 1
+'患者患有的口腔疾病:\nⅢ类错颌,龋齿': 1
+'Class III Malocclusion,Low-Angle Mandible,Mandibular Skeletal Asymmetry,Convex Profile,Dental Crowding': 1
+'Visible oral health conditions identified:\nClass III Malocclusion,High-Angle Mandible,Dental Crowding': 1
+'检测到的口腔疾病综合列表:\n氟斑牙,牙齿松动': 1
+'牙科问题列表:\n牙周炎,牙齿松动,牙齿缺失': 1
+'Visible diseases in the dental images:\nClass II Malocclusion,Convex Profile,Dental Crowding': 1
+'List of dental anomalies:\nClass III Malocclusion,Pigment Deposition': 1
+'Class II Malocclusion,Congenitally Missing Tooth': 1
+'Detected oral abnormalities or diseases:\nHigh-Angle Mandible,Convex Profile,Dental Crowding': 1
+'影响牙科健康的疾病:\n牙髓炎,牙齿松动,龋齿': 1
+'Class III Malocclusion,Low-Angle Mandible,Mandibular Skeletal Asymmetry,Anterior Crossbite,Dental Crowding': 1
+'Diseases affecting oral health:\nPeriapical Periodontitis,Tooth Fracture,Tooth Mobility,Dental Caries': 1
+'根尖区透射影像,楔状缺损,牙周炎,牙齿松动': 1
+'检测到的牙科状况包括:\nⅡ类错颌,龋齿': 1
+'牙科异常:\n氟斑牙,牙髓炎,龋齿': 1
+'Classified diseases in the oral cavity:\nClass II Malocclusion,Proclined Upper Incisors,Narrow Maxillary Arch,Right Mandibular Midline Deviation,Deep Curve Of Spee,Deep Overjet,Deep Overbite,Dental Crowding,Dental Crowding': 1
+'识别的可见口腔健康状况:\nⅡ类错颌,下颌骨性偏斜,凸面型,深覆盖,牙齿拥挤': 1
+'Class II Malocclusion,Tooth Loss': 1
+'诊断的疾病:\n根尖周炎,牙髓炎': 1
+'影响患者口腔健康的疾病包括:\n牙齿拥挤,龋齿': 1
+'Visible diseases and anomalies are:\nClass II Malocclusion,Mandibular Skeletal Asymmetry,High-Angle Mandible,Convex Profile,Deep Overjet,Dental Crowding': 1
+'诊断的疾病:\nⅡ类错颌,下颌骨性偏斜,下颌高角,凸面型,深覆盖,牙齿拥挤': 1
+'Detected oral abnormalities or diseases:\nRestoration Defect,Periapical Periodontitis,Pulpitis': 1
+'Diseases present in images:\nClass II Malocclusion,Deep Overbite,Deep Overjet,Dental Crowding,Dental Caries': 1
+'Classified diseases in the oral cavity:\nMandibular Skeletal Asymmetry,Convex Profile,Deep Overbite,Deep Overjet,Dental Crowding': 1
+'Disease(s) identified in oral images:\nClass II Malocclusion,Mandibular Skeletal Asymmetry,Convex Profile,Dental Crowding': 1
+'可见疾病的名称:\nⅢ类错颌,下颌高角,凸面型,牙齿拥挤': 1
+'检测到的口腔疾病综合列表:\n根尖周炎,牙髓炎': 1
+'错颌,阻生齿,龋齿': 1
+'Identified abnormalities and oral health conditions:\nClass III Malocclusion,Mandibular Skeletal Asymmetry,High-Angle Mandible,Concave Profile,Open Bite,Crossbite,Dental Crowding': 1
+'可见的疾病和状况:\n氟斑牙,牙体缺损,牙齿缺失': 1
+'牙折断,牙龈炎': 1
+'影响患者口腔健康的疾病包括:\nⅡ类错颌,下颌骨性偏斜,凸面型,前突,深覆合,深覆盖,牙齿拥挤': 1
+'Oral diseases patient is suffering from:\nPeriapical Periodontitis,Periodontitis,Gingivitis': 1
+'观察到的异常和疾病如下:\nⅡ类错颌,凸面型,深覆盖,牙齿拥挤': 1
+'可见的疾病和异常包括:\n牙周炎,牙齿松动,牙龈炎': 1
+'Detected anomalies and diseases:\nClass II Malocclusion,Convex Profile,Deep Overbite': 1
+'可见的口腔健康问题和牙科疾病:\nⅡ类错颌,下颌骨性偏斜,牙反合,牙齿拥挤': 1
+'影响口腔健康的疾病:\nⅠ类错颌,脱矿': 1
+'Observed abnormalities and diseases are:\nDental Fluorosis,Dental Caries': 1
+'影响患者口腔健康的疾病包括:\n牙髓炎,阻生齿': 1
+'Disease(s) identified in oral images:\nTooth Structure Loss,Periodontitis,Subgingival Calculus': 1
+'Spacing,Deep Overbite,Deep Overjet,Dental Crowding': 1
+'Visible diseases and anomalies are:\nMandibular Skeletal Asymmetry,Convex Profile,Deep Overbite,Dental Crowding': 1
+'Diseases present in the images:\nClass II Malocclusion,Mandibular Skeletal Asymmetry,Dental Crowding': 1
+'存在疾病的分类:\n牙隐裂,龋齿': 1
+'识别出的疾病:\nⅠ类错颌,凸面型,前突,牙列不齐,阻生齿': 1
+'牙科图像中可见的疾病:\n下颌骨性偏斜,凸面型,深覆合,牙齿拥挤': 1
+'Ⅲ类错颌,下颌骨性偏斜,牙列不齐,牙反颌': 1
+'Diseases present in images:\nClass III Malocclusion,High-Angle Mandible,Dental Crowding': 1
+'Detected dental conditions include:\nClass II Malocclusion,Mandibular Skeletal Asymmetry,High-Angle Mandible,Deep Overjet,Dental Crowding,Tooth Loss,Dental Caries': 1
+'当前的口腔或牙科状况:\n牙齿拥挤,龋齿': 1
+'患者患有的口腔疾病:\nⅡ类错颌,牙列不齐': 1
+'Class III Malocclusion,High-Angle Mandible,Dental Crowding,Dental Crowding': 1
+'Detected anomalies and diseases:\nClass II Malocclusion,Mandibular Skeletal Asymmetry,Convex Profile,Deep Overbite,Dental Crowding': 1
+'Here is the list of anomalies and diseases that the patient have:\nClass III Malocclusion,Mandibular Skeletal Asymmetry,Open Bite,Spacing': 1
+'当前的口腔或牙科状况:\nⅢ类错颌,下颌骨性偏斜,牙反合,牙齿拥挤': 1
+'Diseases present in images:\nPulpitis,Tooth Loss': 1
+'牙科问题列表:\nⅡ类错颌,下颌骨性偏斜,凸面型,深覆合,牙齿拥挤': 1
+'Classification of diseases present:\nClass II Malocclusion,Convex Profile,Deep Overbite,Deep Overjet,Dental Crowding': 1
+'Dental Fluorosis,Tooth Structure Loss,Gingivitis,Demineralization': 1
+'Diagnosed diseases:\nTooth Structure Loss,Dental Crowding,Dental Caries': 1
+'患者患有的口腔疾病:\n内源性黄牙,牙体缺损': 1
+'List of oro-dental diseases:\nClass I Malocclusion,Dental Caries': 1
+'Diagnosed diseases:\nClass II Malocclusion,Mandibular Skeletal Asymmetry,High-Angle Mandible,Convex Profile,Deep Overbite,Deep Overjet,Dental Crowding': 1
+'Classified diseases in the oral cavity:\nClass II Malocclusion,Mandibular Skeletal Asymmetry,Incisor Protrusion,Deep Overbite,Dental Crowding,Dental Crowding': 1
+'Observed abnormalities and diseases are:\nDental Crowding,Dental Crowding': 1
+'Detected diseases and anomalies:\nTooth Structure Loss,Tooth Loss': 1
+'根据图像确定的疾病类型:\n口腔卫生不良,龋齿': 1
+'List of dental anomalies:\nDental Crowding,Gingivitis': 1
+'识别的口腔健康状况包括:\n牙体缺损,牙磨耗': 1
+'Visible diseases and conditions:\nMandibular Skeletal Asymmetry,Convex Profile,Incisor Protrusion,Deep Overbite,Deep Overjet,Dental Crowding,Tooth Loss': 1
+'是的，患者患有以下疾病:\n氟斑牙,龋齿': 1
+'Identified diseases from images:\nClass II Malocclusion,Dental Caries': 1
+'凹面型,牙齿拥挤': 1
+'图像中存在的疾病:\nⅡ类错颌,凸面型': 1
+'Identified oral diseases:\nWedge-Shaped Defect,Periodontitis': 1
+'患者患有的口腔疾病:\nⅠ类错颌,Ⅱ类错颌,先天缺失,深覆颌,牙列不齐,牙齿拥挤,近中阻生': 1
+'这些图像中存在的异常列表如下:\n牙列不齐,牙齿拥挤': 1
+'影响口腔健康的疾病:\n下颌骨性偏斜,凸面型,错颌': 1
+'Oral disease(s) patient is suffering from:\nClass II Malocclusion,High-Angle Mandible,Convex Profile,Open Bite,Dental Crowding': 1
+'这些图像中存在的异常列表如下:\n氟斑牙,牙髓炎,龋齿': 1
+'楔状缺损,牙体缺损': 1
+'可见的口腔健康问题和牙科疾病:\nⅠ类错颌,深覆合': 1
+'影响患者的牙科疾病列表:\nⅠ类错颌,凸面型': 1
+'基于数据识别的牙科异常:\nⅡ类错颌,下颌骨性偏斜,凸面型,深覆合,牙齿拥挤': 1
+'牙科图像中可见的疾病:\nⅡ类错颌,牙齿拥挤': 1
+'是的，患者患有以下疾病:\n根尖周炎,牙周炎,牙龈炎': 1
+'Oral diseases or issues detected are:\nWedge-Shaped Defect,Dental Caries': 1
+'Dental anomalies:\nMandibular Skeletal Asymmetry,Convex Profile,Incisor Protrusion,Deep Overbite,Deep Overjet,Dental Crowding': 1
+'Visible diseases in dental or oral images:\nPeriodontitis,Tooth Mobility': 1
+'Visible diseases in the dental images:\nClass II Malocclusion,Open Bite,Dental Crowding': 1
+'根据图像确定的疾病类型:\n修复体缺损,牙体缺损': 1
+'List of dental anomalies:\nClass II Malocclusion,Mandibular Skeletal Asymmetry,High-Angle Mandible,Convex Profile,Incisor Protrusion,Deep Overbite,Deep Overjet,Dental Crowding': 1
+'Diseases affecting oral health:\nTooth Structure Loss,Pulpitis': 1
+'牙周炎,牙折断': 1
+'Identified abnormalities and oral health conditions:\nWedge-Shaped Defect,Tooth Structure Loss,Dental Caries': 1
+'图像中存在的疾病:\n根尖周炎,牙体缺损,龋齿': 1
+'Detected anomalies and diseases:\nClass III Malocclusion,High-Angle Mandible,Dental Crowding': 1
+'凹面型,牙列不齐,牙齿拥挤': 1
+'Ⅱ类错颌,下颌骨性偏斜,牙列不齐,牙齿拥挤': 1
+'牙周炎,牙石,牙龈炎': 1
+'识别的口腔疾病和牙科状况:\n根尖周炎,牙体缺损,牙髓炎,龋齿': 1
+'Classification of diseases present:\nClass II Malocclusion,Mandibular Skeletal Asymmetry,Deep Overbite,Deep Overjet,Dental Crowding': 1
+'患者患有的口腔疾病:\n根尖区透射影像,根管内吸收,牙齿变色': 1
+'Low-Angle Mandible,Mandibular Skeletal Asymmetry,Convex Profile,Deep Overbite,Dental Crowding': 1
+'Detected anomalies and diseases:\nLost Filling,Periapical Periodontitis,Post And Core Crown,Dental Fluorosis,Tooth Structure Loss,Pulpitis,Gingivitis,Dental Caries': 1
+'List of dental diseases:\nClass I Malocclusion,Mandibular Skeletal Asymmetry,Convex Profile,Dental Crowding': 1
+'存在疾病的分类:\n下颌高角,凸面型,牙齿拥挤': 1
+'List of dental diseases affecting the patient:\nClass I Malocclusion,Mandibular Skeletal Asymmetry,Convex Profile,Deep Overbite,Dental Crowding': 1
+'影响患者口腔健康的疾病包括:\n牙龈炎,色素附着': 1
+'牙科异常:\n牙髓炎,龋齿': 1
+'口腔中疾病的分类:\nⅡ类错颌,下颌骨性偏斜,凸面型,深覆合,深覆盖,牙齿拥挤': 1
+'可见的疾病和状况:\nⅢ类错颌,下颌骨性偏斜,牙反合,牙齿拥挤': 1
+'Oral diseases the patient is suffering from:\nClass II Malocclusion,Mandibular Skeletal Asymmetry,Convex Profile,Incisor Protrusion,Deep Overbite,Deep Overjet': 1
+'牙科图像中可见的疾病:\nⅢ类错颌,下颌低角,牙反合': 1
+'存在的疾病和异常:\nⅢ类错颌,下颌低角,牙列不齐,牙反合': 1
+'Dental anomalies:\nHigh-Angle Mandible,Convex Profile,Dental Crowding,Dental Crowding': 1
+'检测到的口腔疾病综合列表:\nⅡ类错颌,下颌骨性偏斜,凸面型,深覆合,深覆盖,牙齿拥挤': 1
+'检测到的异常和健康状况:\nⅠ类错颌,龋齿': 1
+'Comprehensive list of oral diseases detected:\nConvex Profile,Dental Crowding': 1
+'Observed abnormalities and diseases are:\nDental Fluorosis,Tooth Structure Loss,Dental Caries': 1
+'Oral disease(s) patient is suffering from:\nDental Fluorosis,Tooth Structure Loss': 1
+'识别出的口腔图像中的疾病:\n牙龈炎,近中阻生,阻生齿,龋齿': 1
+'Determined disease type:\nWedge-Shaped Defect,Tooth Mobility,Gingivitis': 1
+'口腔中疾病的分类:\n牙体缺损,牙龈炎': 1
+'Oral health issues and dental diseases visible:\nClass III Malocclusion,Dental Crowding': 1
+'Crossbite,Dental Crowding': 1
+'Periapical Periodontitis,Tooth Loss,Gingivitis,Impacted Tooth': 1
+'Class II Malocclusion,Retained Primary Tooth,Convex Profile,Deep Overbite,Dental Crowding': 1
+'这是患者患有的异常和疾病列表:\nⅢ类错颌,深覆合': 1
+'可见的疾病和异常包括:\n牙龈炎,色素附着': 1
+'识别的口腔健康状况包括:\n根尖周炎,牙髓炎': 1
+'基于数据识别的牙科异常:\n下颌骨性偏斜,凸面型,前突,深覆合,深覆盖,牙齿拥挤': 1
+'识别出的口腔疾病:\nⅢ类错颌,牙齿拥挤': 1
+'患者患有的口腔疾病:\n深窝沟,龋齿': 1
+'下颌低角,凸面型,牙齿拥挤': 1
+'Diagnosed diseases:\nTooth Structure Loss,Tooth Loss': 1
+'Visible oral health conditions identified:\nClass II Malocclusion,Class III Malocclusion,Mandibular Skeletal Asymmetry,Convex Profile,Deep Overbite,Deep Overjet,Anterior Crossbite,Dental Crowding': 1
+'Detected abnormalities and health conditions:\nClass II Malocclusion,Mandibular Skeletal Asymmetry,Convex Profile,Dental Crowding': 1
+'Visible diseases in the dental images:\nClass II Malocclusion,Dental Caries': 1
+'深覆盖': 1
+'Comprehensive list of oral diseases detected:\nClass II Malocclusion,High-Angle Mandible,Convex Profile,Dental Crowding': 1
+'牙周炎,牙槽骨吸收,牙龈炎,龈下牙石': 1
+'下颌高角,凸面型,牙列不齐,牙齿拥挤': 1
+'发现的口腔健康问题和疾病如下:\nⅠ类错颌,龋齿': 1
+'Diseases affecting the patient’s oral health include:\nClass II Malocclusion,Mandibular Skeletal Asymmetry,Convex Profile,Deep Overbite,Deep Overjet': 1
+'影响患者的牙科疾病列表:\n牙周炎,牙龈萎缩': 1
+'识别的口腔疾病和牙科状况:\n牙隐裂,牙髓炎': 1
+'Identified dental anomalies based on data:\nPeriapical Periodontitis,Dental Caries': 1
+'Comprehensive list of oral diseases detected:\nTooth Structure Loss,Dental Caries': 1
+'修复体缺损,氟斑牙,龈下牙石': 1
+'Ⅱ类错颌,脱矿,近中阻生': 1
+'Class III Malocclusion,Mandibular Skeletal Asymmetry,High-Angle Mandible,Convex Profile,Anterior Crossbite,Dental Crowding': 1
+'识别的口腔健康状况包括:\nⅢ类错颌,下颌骨性偏斜,凸面型,牙齿拥挤': 1
+'牙科或口腔图像中可见的疾病:\n牙龈炎,色素附着': 1
+'Oral health conditions identified include:\nClass II Malocclusion,High-Angle Mandible,Convex Profile,Dental Crowding': 1
+'影响口腔健康的疾病:\n牙周炎,牙髓炎,牙齿松动': 1
+'基于图像诊断的疾病:\nⅡ类错颌,下颌高角,凸面型,牙列不齐,牙齿拥挤': 1
+'Identified dental anomalies based on data:\nClass III Malocclusion,Mandibular Skeletal Asymmetry,Dental Crowding': 1
+'Class II Malocclusion,Mandibular Skeletal Asymmetry,Convex Profile,Anterior Crossbite,Dental Crowding': 1
+'Oral health issues and dental diseases visible:\nClass II Malocclusion,Mandibular Skeletal Asymmetry,High-Angle Mandible,Convex Profile,Dental Crowding': 1
+'Names of visible diseases:\nPeriodontitis,Tooth Discoloration,Gingivitis': 1
+'这是患者患有的异常和疾病列表:\nⅠ类错颌,龋齿': 1
+'当前的口腔或牙科状况:\n根尖周炎,牙周炎': 1
+'Diseases present in images:\nDeep Fissures,Deep Overbite,Enamel Hypoplasia': 1
+'Here is the list of anomalies and diseases that the patient have:\nClass II Malocclusion,Mandibular Skeletal Asymmetry,Deep Overbite,Deep Overjet,Dental Crowding': 1
+'可见的口腔健康问题和牙科疾病:\n牙体缺损,龋齿': 1
+'观察到的异常和疾病如下:\n氟斑牙,牙髓炎': 1
+'Diagnosed diseases:\nClass III Malocclusion,Low-Angle Mandible,Mandibular Skeletal Asymmetry,Deep Overbite,Dental Crowding': 1
+'Dental anomalies:\nClass II Malocclusion,Mandibular Skeletal Asymmetry,High-Angle Mandible,Convex Profile,Incisor Protrusion,Dental Crowding': 1
+'Detected abnormalities and health conditions:\nPeriodontitis,Gingivitis,Subgingival Calculus': 1
+'当前的口腔或牙科状况:\nⅡ类错颌,下颌骨性偏斜,下颌高角,凸面型,深覆合,牙齿拥挤': 1
+'Periodontitis,Tooth Mobility,Tooth Loss': 1
+'识别的口腔疾病和牙科状况:\n牙隐裂,龋齿': 1
+'Oral health issues and dental diseases visible:\nGingivitis,Impacted Tooth,Dental Caries': 1
+'Class I Malocclusion,Concave Profile,Anterior Crossbite,Dental Crowding': 1
+'牙科疾病列表:\nⅢ类错颌,下颌骨性偏斜,下颌高角,凸面型,开合咬合,深覆盖,牙齿拥挤': 1
+'List of oro-dental diseases:\nPulpitis,Dental Caries': 1
+'Concave Profile,Deep Overbite,Dental Crowding': 1
+'基于图像诊断的疾病:\nⅢ类错颌,下颌高角,凹面型,牙齿拥挤': 1
+'确定的疾病类型:\n根管内无新鲜渗出,牙髓炎': 1
+'Current oral or dental conditions:\nClass I Malocclusion,Dental Caries': 1
+'Detected abnormalities and health conditions:\nClass III Malocclusion,Mandibular Skeletal Asymmetry,High-Angle Mandible,Anterior Crossbite,Dental Crowding': 1
+'Detected anomalies and diseases:\nDental Fluorosis,Tooth Structure Loss': 1
+'Classification of diseases present:\nPeriodontitis,Tooth Mobility,Gingivitis': 1
+'图像中存在的疾病:\n牙龈炎,近中阻生': 1
+'疾病列表:\nⅠ类错颌,凸面型': 1
+'Mandibular Skeletal Asymmetry,Incisor Protrusion,Deep Overbite,Deep Overjet,Dental Crowding': 1
+'诊断的疾病:\nⅡ类错颌,下颌骨性偏斜,凸面型,前突,深覆合,深覆盖,牙齿拥挤': 1
+'Periapical Periodontitis,Pigment Deposition,Dental Caries': 1
+'Diagnosed diseases based on images:\nDry Root Canal,Pulpitis': 1
+'List of oro-dental diseases:\nRetained Primary Tooth,Convex Profile,Incisor Protrusion,Dental Fluorosis,Pulp Necrosis': 1
+'检测到的牙科状况包括:\n牙周炎,牙龈炎': 1
+'Dental anomalies:\nClass II Malocclusion,Convex Profile,Dental Crowding': 1
+'Detected dental conditions include:\nDental Fluorosis,Dental Caries': 1
+'Class II Malocclusion,Calculus,Dental Caries': 1
+'Detected dental conditions include:\nTooth Structure Loss,Periodontitis,Subgingival Calculus': 1
+'识别出的口腔图像中的疾病:\nⅡ类错颌,下颌骨性偏斜,凸面型,深覆合,深覆盖,牙齿拥挤': 1
+'Ⅱ类错颌,凸面型,牙齿拥挤,龋齿': 1
+'基于图像诊断的疾病:\n楔状缺损,牙齿松动,龈下牙石': 1
+'Detected oral abnormalities or diseases:\nClass III Malocclusion,Mandibular Skeletal Asymmetry,Crossbite,Dental Crowding': 1
+'牙科异常:\nⅡ类错颌,龋齿': 1
+'存在疾病的分类:\n牙龈炎,色素附着': 1
+'检测到的口腔疾病综合列表:\n下颌骨性偏斜,凸面型,牙反合,牙齿拥挤,高角': 1
+'Class II Malocclusion,Mandibular Skeletal Asymmetry,Convex Profile,Incisor Protrusion,Deep Overbite': 1
+'Oral diseases or issues detected are:\nHigh-Angle Mandible,Dental Crowding': 1
+'牙科异常列表:\n根尖周炎,牙周炎,牙龈炎': 1
+'Diseases and anomalies present:\nClass II Malocclusion,Mandibular Skeletal Asymmetry,Deep Overjet,Dental Crowding': 1
+'基于数据识别的牙科异常:\nⅠ类错颌,龋齿': 1
+'Diagnosed diseases based on images:\nClass II Malocclusion,Dental Crowding': 1
+'Ⅲ类错颌,牙体缺损,牙齿拥挤': 1
+'楔状缺损,牙髓炎,龋齿': 1
+'Oral health conditions identified include:\nTooth Structure Loss,Periodontitis,Tooth Mobility,Gingivitis,Dental Caries': 1
+'Detected oral abnormalities or diseases:\nCracked Tooth,Dental Caries': 1
+'Diseases affecting oral health:\nClass II Malocclusion,Class III Malocclusion,Mandibular Skeletal Asymmetry,Concave Profile,Deep Overbite,Anterior Crossbite,Dental Crowding': 1
+'下颌高角,凹面型,牙反颌,牙齿拥挤': 1
+'Names of visible diseases:\nClass II Malocclusion,Mandibular Skeletal Asymmetry,Convex Profile,Incisor Protrusion,Deep Overbite,Deep Overjet,Dental Crowding': 1
+'Determined disease type:\nConvex Profile,Anterior Crossbite,Dental Crowding': 1
+'口腔中疾病的分类:\n牙周炎,牙齿缺失': 1
+'Oral diseases or issues detected are:\nClass I Malocclusion,Dental Crowding,Dental Caries': 1
+'List of diseases:\nDental Fluorosis,Dental Caries': 1
+'识别的口腔健康状况包括:\nⅡ类错颌,下颌低角,凸面型,牙齿拥挤': 1
+'Ⅰ类错颌,牙石,牙龈炎,脱矿': 1
+'Ⅲ类错颌,牙反合': 1
+'Oral health issues and dental diseases visible:\nTooth Structure Loss,Impacted Tooth': 1
+'Visible diseases in the dental images:\nDental Fluorosis,Tooth Structure Loss': 1
+'Diseases affecting the patient’s mouth:\nMandibular Skeletal Asymmetry,Anterior Crossbite': 1
+'Ⅲ类错颌,下颌骨性偏斜,前突,深覆合,深覆盖,牙反合,牙齿拥挤': 1
+'Dental anomalies:\nClass II Malocclusion,Class III Malocclusion,Mandibular Skeletal Asymmetry': 1
+'Detected diseases and anomalies:\nClass II Malocclusion,Calculus,Dental Caries': 1
+'Ⅱ类错颌,凸面型,牙列不齐,牙齿拥挤': 1
+'检测到的异常和疾病:\nⅢ类错颌,下颌骨性偏斜,牙列不齐': 1
+'检测到的异常和健康状况:\n氟斑牙,牙体缺损': 1
+'Identified abnormalities and oral health conditions:\nClass II Malocclusion,High-Angle Mandible,Convex Profile,Dental Crowding': 1
+'Classified diseases in the oral cavity:\nClass II Malocclusion,Demineralization,Pigment Deposition,Mesioangular Impaction': 1
+'是的，患者患有以下疾病:\n下颌骨性偏斜,深覆合,牙齿拥挤': 1
+'疾病列表:\nⅢ类错颌,下颌骨性偏斜,牙反合,牙齿拥挤': 1
+'根据图像确定的疾病类型:\nⅢ类错颌,下颌骨性偏斜,下颌高角,凹面型,牙反合,牙齿拥挤': 1
+'检测到的异常和疾病:\n下颌骨性偏斜,凸面型,前突,牙齿拥挤': 1
+'检测到的口腔疾病或问题如下:\nⅡ类错颌,下颌骨性偏斜,凸面型,深覆合,牙齿拥挤': 1
+'患者患有的口腔疾病:\nⅡ类错颌,牙齿拥挤': 1
+'Here is the list of anomalies and diseases that the patient have:\nClass III Malocclusion,Mandibular Skeletal Asymmetry,Dental Crowding': 1
+'这些图像中存在的异常列表如下:\n牙体缺损,龋齿': 1
+'检测到的异常和健康状况:\n氟斑牙,牙周炎,牙齿松动': 1
+'影响牙科健康的疾病:\n根尖周炎,牙体缺损': 1
+'The patient has the following types of diseases:\nClass II Malocclusion,Mandibular Skeletal Asymmetry,Convex Profile,Deep Overbite,Deep Overjet,Dental Crowding': 1
+'牙科问题列表:\nⅡ类错颌,牙列不齐': 1
+'存在的疾病和异常:\nⅡ类错颌,深覆合': 1
+'Mandibular Skeletal Asymmetry,High-Angle Mandible,Concave Profile,Anterior Crossbite,Dental Crowding': 1
+'Oral diseases patient is suffering from:\nDental Fluorosis,Tooth Structure Loss,Dental Caries': 1
+'检测到的口腔疾病或问题如下:\nⅡ类错颌,深覆合': 1
+'Diseases affecting the patient’s oral health include:\nPost Endodontic Treatment,Wedge-Shaped Defect': 1
+'Pulpitis,Gingival Recession,Dental Caries': 1
+'Class III Malocclusion,Mandibular Skeletal Asymmetry,Convex Profile,Deep Overbite,Deep Overjet,Dental Crowding,Dental Crowding': 1
+'牙科异常列表:\nⅡ类错颌,Ⅲ类错颌,牙齿拥挤': 1
+'已识别的详细牙科疾病列表:\nⅡ类错颌,下颌骨性偏斜,散隙': 1
+'Class III Malocclusion,Mandibular Skeletal Asymmetry,Convex Profile,Spacing,Tooth Structure Loss': 1
+'List of oro-dental diseases:\nGingivitis,Dental Caries': 1
+'患者患有的疾病名称:\nⅡ类错颌,下颌低角,下颌骨性偏斜,凸面型,深覆合,深覆盖,牙齿拥挤': 1
+'Identified oral diseases:\nTooth Mobility,Gingivitis': 1
+'Class III Malocclusion,Mandibular Skeletal Asymmetry,Convex Profile,Incisor Protrusion,Deep Overbite,Deep Overjet,Dental Crowding': 1
+'检测到的异常和健康状况:\nⅡ类错颌,下颌低角,下颌骨性偏斜,凸面型,深覆合,深覆盖,牙齿拥挤': 1
+'Ⅱ类错颌,下颌骨性偏斜,凸面型,牙反合,牙齿拥挤': 1
+'Identified oral diseases:\nPeriapical Periodontitis,Periodontitis': 1
+'List of dental issues:\nMandibular Skeletal Asymmetry,High-Angle Mandible,Convex Profile,Deep Overbite,Dental Crowding': 1
+'Lost Filling,Post And Core Crown,Dental Fluorosis,Tooth Structure Loss,Dental Caries': 1
+'识别出的口腔疾病:\n下颌骨性偏斜,凸面型,牙反合,牙齿拥挤,高角': 1
+'口腔-牙科疾病列表:\n楔状缺损,氟斑牙': 1
+'Periapical Radiolucency,Internal Resorption,Tooth Discoloration': 1
+'影响牙科健康的疾病:\nⅢ类错颌,凹面型,牙齿拥挤': 1
+'Diseases and anomalies present:\nMandibular Skeletal Asymmetry,Deep Overbite,Dental Crowding': 1
+'Classified diseases in the oral cavity:\nClass I Malocclusion,Convex Profile,Incisor Protrusion,Tooth Structure Loss,Dental Crowding,Dental Crowding,Dental Caries': 1
+'影响患者的牙科疾病列表:\nⅡ类错颌,凸面型,牙齿拥挤': 1
+'Dental Midline Deviation': 1
+'牙科问题列表:\n牙周炎,牙齿松动': 1
+'根据图像确定的疾病类型:\nⅢ类错颌,下颌骨性偏斜,凹面型,牙齿拥挤': 1
+'Class II Malocclusion,Class III Malocclusion,High-Angle Mandible,Concave Profile,Crossbite,Dental Crowding': 1
+'Visible diseases in the dental images:\nClass III Malocclusion,Mandibular Skeletal Asymmetry,Concave Profile,Anterior Crossbite': 1
+'牙科或口腔图像中可见的疾病:\n牙龈萎缩,龈下牙石': 1
+'存在疾病的分类:\n外源性黄牙,牙龈炎': 1
+'Ⅲ类错颌,牙列不齐,牙反颌,牙齿拥挤,颏部轻度偏左,龋齿': 1
+'诊断的疾病:\n牙折断,牙髓炎,牙齿缺失': 1
+'Class II Malocclusion,Mandibular Skeletal Asymmetry,High-Angle Mandible,Deep Overjet,Dental Crowding,Tooth Loss,Dental Caries': 1
+'基于图像诊断的疾病:\n外源性黄牙,氟斑牙': 1
+'可见的口腔健康问题和牙科疾病:\nⅡ类错颌,龋齿': 1
+'Diseases present in images:\nClass II Malocclusion,Convex Profile,Deep Overbite,Deep Overjet,Dental Crowding': 1
+'患者患有的疾病名称:\nⅢ类错颌,下颌高角,牙齿拥挤': 1
+'Names of visible diseases:\nTooth Structure Loss,Tooth Loss': 1
+'Ⅰ类错颌,前突,牙列不齐': 1
+'Oral diseases the patient is suffering from:\nPeriodontitis,Tooth Mobility,Gingivitis,Dental Caries': 1
+'识别的口腔健康状况包括:\n氟斑牙,牙髓炎,龋齿': 1
+'Detected dental conditions include:\nClass II Malocclusion,Mandibular Skeletal Asymmetry,Convex Profile,Deep Overbite,Deep Overjet,Dental Crowding': 1
+'楔状缺损,牙龈炎,色素附着,龋齿': 1
+'图像中存在的疾病:\n下颌骨性偏斜,凸面型,深覆合,牙齿拥挤': 1
+'牙体缺损,牙齿拥挤,龋齿': 1
+'Class II Malocclusion,Enamel Hypoplasia': 1
+'Oral disease(s) patient is suffering from:\nClass II Malocclusion,Mandibular Skeletal Asymmetry,Convex Profile,Deep Overbite,Deep Overjet,Dental Crowding': 1
+'Visible diseases and conditions:\nClass II Malocclusion,Mandibular Skeletal Asymmetry,Convex Profile,Incisor Protrusion,Deep Overjet,Dental Crowding,Anterior Crossbite,Dental Crowding': 1
+'Comprehensive list of oral diseases detected:\nRetained Tooth,Dental Crowding': 1
+'Ⅱ类错颌,下颌骨性偏斜,凸面型,前突,深覆盖,牙齿拥挤': 1
+'识别出的口腔图像中的疾病:\nⅡ类错颌,牙齿拥挤': 1
+'Oral diseases the patient is suffering from:\nClass II Malocclusion,Mandibular Skeletal Asymmetry,Convex Profile,Incisor Protrusion,Deep Overjet,Dental Crowding,Anterior Crossbite,Dental Crowding': 1
+'Diseases affecting dental health:\nMandibular Skeletal Asymmetry,Deep Overbite,Dental Crowding': 1
+'Class I Malocclusion,Convex Profile,Incisor Protrusion,Tooth Structure Loss,Dental Crowding,Dental Crowding,Dental Caries': 1
+'根据图像确定的疾病类型:\nⅡ类错颌,下颌骨性偏斜,凸面型,深覆合,牙齿拥挤': 1
+'Names of diseases the patient has:\nClass III Malocclusion,Dental Caries': 1
+'Oral diseases the patient is suffering from:\nClass II Malocclusion,Convex Profile,Dental Crowding': 1
+'发现的口腔健康问题和疾病如下:\nⅡ类错颌,凸面型,深覆盖,牙齿拥挤': 1
+'Class II Malocclusion,Deep Overbite,Deep Overjet,Dental Crowding': 1
+'List of dental anomalies:\nClass I Malocclusion,Class II Malocclusion,Convex Profile,Dental Crowding': 1
+'Diseases present in the images:\nDental Crowding,Dental Caries': 1
+'已识别的详细牙科疾病列表:\nⅡ类错颌,Ⅲ类错颌,下颌骨性偏斜,凹面型': 1
+'牙科或口腔图像中可见的疾病:\n下颌骨性偏斜,凸面型,牙齿拥挤': 1
+'Yes, the patient has the following diseases:\nClass II Malocclusion,Mandibular Skeletal Asymmetry,Convex Profile,Incisor Protrusion,Deep Overbite,Deep Overjet,Dental Crowding': 1
+'Class II Malocclusion,Low-Angle Mandible,Dental Crowding': 1
+'The patient has the following types of diseases:\nClass II Malocclusion,Deep Overbite,Deep Overjet,Dental Crowding': 1
+'Mandibular Skeletal Asymmetry,High-Angle Mandible,Convex Profile,Deep Overbite,Deep Overjet,Dental Crowding,Malocclusion': 1
+'这些图像中存在的异常列表如下:\n下颌骨性偏斜,凸面型,深覆合,牙列不齐,牙齿拥挤': 1
+'根尖周炎,牙髓炎,龋齿': 1
+'Current oral or dental conditions:\nClass II Malocclusion,Convex Profile,Deep Overbite,Deep Overjet,Dental Crowding': 1
+'牙科问题列表:\nⅡ类错颌,凸面型,深覆合,牙列不齐': 1
+'Yes, the patient has the following diseases:\nHigh-Angle Mandible,Dental Crowding': 1
+'Gingival Recession,Impacted Tooth': 1
+'Dental anomalies:\nWedge-Shaped Defect,Tooth Rotation,Pulpitis,Dental Caries': 1
+'检测到的口腔疾病或问题如下:\n氟斑牙,牙周炎,牙齿松动,牙齿缺失,牙龈炎,龈下牙石': 1
+'Identified dental anomalies based on data:\nConvex Profile,Dental Crowding': 1
+'确定的疾病类型:\n牙龈炎,色素附着,龋齿': 1
+'Here is the list of abnormalities that are present in the images:\nPeriapical Periodontitis,Dental Fluorosis,Dental Caries': 1
+'Wedge-Shaped Defect,Tooth Structure Loss': 1
+'Determined disease type:\nGingivitis,Impacted Tooth': 1
+'Class II Malocclusion,Mandibular Skeletal Asymmetry,High-Angle Mandible,Convex Profile,Deep Overbite,Anterior Crossbite,Dental Crowding': 1
+'List of dental diseases affecting the patient:\nClass II Malocclusion,High-Angle Mandible,Convex Profile,Dental Crowding': 1
+'存在的疾病和异常:\n凸面型,牙齿拥挤': 1
+'可见疾病的名称:\n牙周炎,牙龈炎': 1
+'检测到的异常和疾病:\n根尖周炎,牙周炎': 1
+'Class II Malocclusion,Mandibular Skeletal Asymmetry,Convex Profile,Deep Overjet,Enamel Hypoplasia,Dental Crowding,Tooth Loss,Demineralization,Dental Caries': 1
+'Diseases affecting oral health:\nPeriapical Periodontitis,Periodontitis,Pulpitis,Tooth Discoloration': 1
+'Ⅱ类错颌,Ⅲ类错颌,下颌骨性偏斜,下颌高角,牙反合,牙齿拥挤': 1
+'Class II Malocclusion,Gingivitis,Dental Caries': 1
+'Dental anomalies:\nClass II Malocclusion,Maxillary Expansion': 1
+'患者患有以下类型的疾病:\n根尖周炎,牙体缺损,牙周炎': 1
+'已识别的详细牙科疾病列表:\n根管内无新鲜渗出,牙髓炎': 1
+'Current oral or dental conditions:\nPeriodontitis,Subgingival Calculus': 1
+'Class III Malocclusion,Maxillary Protrusion,Convex Profile,Supernumerary Tooth,Crossbite,Gingivitis': 1
+'Diseases present in the images:\nTooth Structure Loss,Tooth Loss': 1
+'Here is the list of abnormalities that are present in the images:\nDry Root Canal,Pulpitis': 1
+'Class I Malocclusion,Convex Profile,Deep Overbite,Deep Overbite,Tooth Loss': 1
+'识别的口腔健康状况包括:\n深覆合,牙齿拥挤': 1
+'Class II Malocclusion,High-Angle Mandible,Convex Profile,Deep Overbite': 1
+'Here is the list of anomalies and diseases that the patient have:\nTooth Structure Loss,Dental Crowding,Dental Caries': 1
+'Class II Malocclusion,Mandibular Skeletal Asymmetry,Congenitally Missing Tooth,Deep Overbite,Dental Crowding': 1
+'List of oro-dental diseases:\nClass II Malocclusion,High-Angle Mandible,Convex Profile,Deep Overbite,Deep Overjet,Dental Crowding': 1
+'充填物脱落,牙体缺损,牙齿拥挤,龋齿': 1
+'牙周炎,牙龈炎,牙龈萎缩,龈下牙石': 1
+'Visible diseases and anomalies are:\nTooth Structure Loss,Tooth Loss,Dental Caries': 1
+'检测到的牙科状况包括:\nⅢ类错颌,下颌骨性偏斜,下颌高角,深覆盖,牙齿拥挤': 1
+'影响患者的牙科疾病列表:\nⅡ类错颌,下颌骨性偏斜,凸面型,牙齿拥挤': 1
+'内源性黄牙,楔状缺损': 1
+'Visible oral health conditions identified:\nDental Crowding,Dental Caries': 1
+'Identified oral diseases:\nClass II Malocclusion,Mandibular Skeletal Asymmetry,Convex Profile,Deep Overbite,Deep Overjet,Dental Crowding': 1
+'修复体缺损,牙龈炎,牙龈萎缩': 1
+'检测到的口腔疾病或问题如下:\n凹面型,牙列不齐,牙齿拥挤': 1
+'Observed abnormalities and diseases are:\nClass II Malocclusion,Mandibular Skeletal Asymmetry,High-Angle Mandible,Convex Profile,Dental Crowding': 1
+'识别的异常和口腔健康状况:\nⅡ类错颌,凸面型,深覆合': 1
+'Dental anomalies:\nClass II Malocclusion,Deep Overbite': 1
+'Detected oral abnormalities or diseases:\nPulpitis,Gingivitis': 1
+'Hyperemia,Dental Caries': 1
+'Classification of diseases present:\nTooth Structure Loss,Tooth Loss,Gingivitis,Dental Caries': 1
+'基于图像诊断的疾病:\nⅡ类错颌,下颌骨性偏斜,深覆盖,牙齿拥挤': 1
+'Class I Malocclusion,Class II Malocclusion,Multiple Restored Teeth,Deep Overbite,Dental Crowding,Dental Crowding': 1
+'牙科问题列表:\n下颌骨性偏斜,下颌高角,深覆合,牙列不齐,牙齿拥挤': 1
+'患者患有以下类型的疾病:\n根尖周炎,牙体缺损,牙龈炎': 1
+'Detailed list of dental diseases identified:\nClass III Malocclusion,Retroclined Upper Incisors,Retroclined Lower Incisors,Right Mandibular Midline Deviation,Crossbite,Chin Deviated Right,Dental Caries': 1
+'这是患者患有的异常和疾病列表:\nⅡ类错颌,下颌骨性偏斜,牙齿拥挤': 1
+'是的，患者患有以下疾病:\n牙反颌,高角': 1
+'可见的疾病和状况:\nⅢ类错颌,下颌骨性偏斜,凸面型,前突,深覆盖,牙齿拥挤': 1
+'Diseases affecting the patient’s mouth:\nConvex Profile,Deep Overbite,Dental Crowding': 1
+'Oral health problems and diseases found:\nClass II Malocclusion,Mandibular Skeletal Asymmetry,Convex Profile,Deep Overbite,Deep Overjet,Dental Crowding': 1
+'Visible oral health conditions identified:\nWedge-Shaped Defect,Dental Fluorosis': 1
+'Ⅱ类错颌,牙龈炎,龋齿': 1
+'Detected abnormalities and health conditions:\nClass III Malocclusion,Anterior Crossbite,Dental Caries': 1
+'Here is the list of abnormalities that are present in the images:\nMandibular Skeletal Asymmetry,High-Angle Mandible,Dental Crowding': 1
+'Oral diseases the patient is suffering from:\nDental Fluorosis,Tooth Structure Loss,Dental Caries': 1
+'当前的口腔或牙科状况:\n修复体缺损,根尖周炎,牙齿松动,牙齿缺失,牙龈炎': 1
+'Names of visible diseases:\nMandibular Skeletal Asymmetry,Convex Profile,Deep Overbite,Dental Crowding,Dental Crowding': 1
+'可见的疾病和异常包括:\nⅡ类错颌,下颌骨性偏斜,凸面型,深覆合,深覆盖,牙反合,牙齿拥挤': 1
+'Detected diseases and anomalies:\nDental Crowding,Dental Caries': 1
+'Dental anomalies:\nDental Fluorosis,Dental Caries': 1
+'存在的疾病和异常:\nⅡ类错颌,阻生齿,龋齿': 1
+'Visible diseases and conditions:\nClass III Malocclusion,Concave Profile,Dental Crowding,Dental Crowding': 1
+'牙体缺损,牙髓炎,龋齿': 1
+'根尖周炎,牙隐裂': 1
+'Ⅲ类错颌,上凸下缩,下颌骨性偏斜,深覆合,深覆盖,牙齿拥挤': 1
+'Diagnosed diseases:\nDental Fluorosis,Pulpitis,Dental Caries': 1
+'检测到的异常和健康状况:\n凸面型,前突': 1
+'Classified diseases in the oral cavity:\nClass II Malocclusion,Mandibular Skeletal Asymmetry,Convex Profile,Deep Overbite,Dental Crowding': 1
+'Names of diseases the patient has:\nClass II Malocclusion,Mandibular Skeletal Asymmetry,Dental Crowding': 1
+'凹面型,牙列不齐': 1
+'氟斑牙,肯氏III类缺失': 1
+'Diagnosed diseases based on images:\nPulpitis,Tooth Loss,Dental Caries': 1
+'Class III Malocclusion,Dental Crowding,Crossbite,Dental Crowding,Chin Deviated Left,Dental Caries': 1
+'口腔中疾病的分类:\n外源性黄牙,色素附着': 1
+'Current oral or dental conditions:\nClass II Malocclusion,Dental Crowding': 1
+'存在的疾病和异常:\n氟斑牙,龋齿': 1
+'The patient has the following types of diseases:\nConvex Profile,Dental Crowding': 1
+'Wedge-Shaped Defect,Cracked Tooth,Gingivitis,Dental Caries': 1
+'Detected diseases and anomalies:\nMandibular Skeletal Asymmetry,Convex Profile,Deep Overbite,Deep Overjet,Dental Crowding': 1
+'Class III Malocclusion,Mandibular Skeletal Asymmetry,Convex Profile,Anterior Crossbite': 1
+'检测到的口腔异常或疾病:\nⅢ类错颌,下颌高角,牙齿拥挤': 1
+'患者患有的口腔疾病:\nⅢ类错颌,下颌骨性偏斜,前突,深覆合,深覆盖,牙反合,牙齿拥挤': 1
+'Visible diseases in dental or oral images:\nTooth Structure Loss,Periodontitis,Tooth Mobility,Gingivitis': 1
+'影响患者口腔健康的疾病包括:\nⅡ类错颌,凸面型,牙齿拥挤': 1
+'Oral health problems and diseases found:\nClass III Malocclusion,Mandibular Skeletal Asymmetry,Dental Crowding': 1
+'List of dental issues:\nTooth Structure Loss,Periodontitis,Tooth Mobility,Tooth Loss,Gingivitis,Dental Caries': 1
+'Class II Malocclusion,Class III Malocclusion,Mandibular Skeletal Asymmetry,Convex Profile,Deep Overbite,Deep Overjet,Anterior Crossbite,Dental Crowding': 1
+'根尖周炎,龋齿': 1
+'Class I Malocclusion,Convex Profile,Dental Crowding,Dental Crowding,Dental Caries': 1
+'Identified oral diseases:\nClass II Malocclusion,Deep Overbite,Enamel Hypoplasia,Dental Crowding': 1
+'Ⅱ类错颌,下颌骨性偏斜,散隙': 1
+'可见疾病的名称:\nⅡ类错颌,龋齿': 1
+'Detected dental conditions include:\nClass III Malocclusion,Crossbite,Dental Caries': 1
+'Ⅱ类错颌,上凸下缩,下颌骨性偏斜,下颌高角,深覆合,牙列不齐,牙齿拥挤': 1
+'识别出的口腔图像中的疾病:\nⅢ类错颌,下颌骨性偏斜,凸面型,牙反颌': 1
+'影响口腔健康的疾病:\nⅡ类错颌,凸面型': 1
+'Diseases affecting dental health:\nPeriapical Periodontitis,Tooth Loss': 1
+'根尖周炎,深覆合,牙列不齐': 1
+'根尖周炎,氟斑牙': 1
+'List of dental anomalies:\nClass III Malocclusion,Mandibular Skeletal Asymmetry,High-Angle Mandible,Convex Profile,Open Bite,Deep Overjet,Dental Crowding': 1
+'识别出的口腔图像中的疾病:\n牙龈炎,色素附着,龋齿': 1
+'Identified oral diseases:\nGingivitis,Subgingival Calculus': 1
+'Oral diseases and dental conditions identified:\nClass II Malocclusion,Mandibular Skeletal Asymmetry,Convex Profile,Dental Crowding': 1
+'基于图像诊断的疾病:\n氟斑牙,牙髓炎': 1
+'可见的口腔健康问题和牙科疾病:\nⅡ类错颌,凸面型,牙齿拥挤': 1
+'Detected oral abnormalities or diseases:\nClass III Malocclusion,Dental Crowding': 1
+'Oral health conditions identified include:\nPeriapical Periodontitis,Periodontitis': 1
+'List of dental anomalies:\nClass II Malocclusion,Mandibular Skeletal Asymmetry,Convex Profile,Incisor Protrusion,Deep Overbite,Deep Overjet,Dental Crowding': 1
+'根据图像确定的疾病类型:\nⅡ类错颌,Ⅲ类错颌,下颌骨性偏斜,凸面型,深覆盖,牙齿拥挤,牙齿缺失': 1
+'Ⅱ类错颌,凸面型,深覆合,深覆盖,牙齿拥挤': 1
+'检测到的异常和疾病:\nⅡ类错颌,下颌高角,凸面型,牙齿拥挤': 1
+'Classification of diseases present:\nClass II Malocclusion,Mandibular Skeletal Asymmetry,High-Angle Mandible,Convex Profile,Deep Overbite,Deep Overjet,Dental Crowding': 1
+'Restoration Defect,Congenitally Missing Tooth,Gingivitis': 1
+'下颌骨性偏斜,下颌高角,凸面型,深覆盖,牙列不齐,牙齿拥挤': 1
+'Detected oral abnormalities or diseases:\nClass I Malocclusion,Dental Crowding': 1
+'Diseases present in images:\nClass II Malocclusion,Low-Angle Mandible,Mandibular Skeletal Asymmetry,Convex Profile,Deep Overbite,Dental Crowding': 1
+'Oral diseases the patient is suffering from:\nClass II Malocclusion,Mandibular Skeletal Asymmetry,Anterior Crossbite,Dental Crowding': 1
+'患者患有以下类型的疾病:\nⅡ类错颌,龋齿': 1
+'Oral diseases or issues detected are:\nClass III Malocclusion,High-Angle Mandible,Concave Profile,Anterior Crossbite,Dental Crowding': 1
+'Determined disease types based on images:\nMandibular Skeletal Asymmetry,High-Angle Mandible,Dental Crowding': 1
+'可见的疾病和状况:\nⅡ类错颌,下颌骨性偏斜,凸面型,牙齿拥挤': 1
+'检测到的口腔疾病或问题如下:\n修复体缺损,根尖周炎,牙周炎': 1
+'根管内无新鲜渗出,楔状缺损': 1
+'基于数据识别的牙科异常:\n牙体缺损,牙龈炎': 1
+'Here is the list of abnormalities that are present in the images:\nPeriodontitis,Subgingival Calculus': 1
+'Ⅱ类错颌,下颌高角,凸面型,多生牙,牙齿拥挤': 1
+'检测到的异常和疾病:\nⅠ类错颌,阻生齿,龋齿': 1
+'Oral diseases patient is suffering from:\nDental Fluorosis,Dental Crowding': 1
+'Ⅱ类错颌,下颌骨性偏斜,乳牙滞留,凸面型,深覆合,深覆盖,牙齿拥挤': 1
+'Here is the list of anomalies and diseases that the patient have:\nMandibular Skeletal Asymmetry,High-Angle Mandible,Convex Profile,Deep Overbite,Dental Crowding': 1
+'Identified abnormalities and oral health conditions:\nClass II Malocclusion,Convex Profile': 1
+'是的，患者患有以下疾病:\nⅠ类错颌,楔状缺损': 1
+'Visible oral health conditions identified:\nMandibular Skeletal Asymmetry,Convex Profile,Incisor Protrusion,Dental Crowding': 1
+'Visible diseases and anomalies are:\nClass II Malocclusion,Convex Profile,Dental Crowding': 1
+'Diseases present in the images:\nCracked Tooth,Pulpitis': 1
+'检测到的口腔疾病综合列表:\n下颌骨性偏斜,牙反合,牙齿拥挤': 1
+'Ⅲ类错颌,下颌低角,下颌骨性偏斜,牙反合,牙齿拥挤': 1
+'Determined disease types based on images:\nClass II Malocclusion,High-Angle Mandible,Dental Crowding': 1
+'乳牙滞留,错颌': 1
+'可见的疾病和异常包括:\nⅡ类错颌,下颌骨性偏斜,凸面型,前突,深覆合,深覆盖,牙齿拥挤': 1
+'Dental Fluorosis,Tooth Structure Loss,Tooth Loss,Dental Caries': 1
+'Names of diseases the patient has:\nPulpitis,Tooth Loss': 1
+'Here is the list of abnormalities that are present in the images:\nClass II Malocclusion,Dental Crowding': 1
+'Oral diseases and dental conditions identified:\nClass II Malocclusion,Dental Caries': 1
+'患者患有的疾病名称:\n氟斑牙,牙体缺损,龋齿': 1
+'Oral diseases patient is suffering from:\nDemineralization,Dental Caries': 1
+'识别的可见口腔健康状况:\n牙周炎,牙龈炎': 1
+'Diagnosed diseases based on images:\nConvex Profile,Dental Crowding': 1
+'已识别的详细牙科疾病列表:\n氟斑牙,牙体缺损,龋齿': 1
+'这些图像中存在的异常列表如下:\n牙体缺损,牙齿缺失': 1
+'识别的口腔疾病和牙科状况:\nⅢ类错颌,下颌骨性偏斜,下颌高角,凹面型,牙反合,牙齿拥挤': 1
+'Diseases diagnosed from images:\nPeriapical Periodontitis,Dental Crowding': 1
+'Diseases affecting the patient’s mouth:\nDental Crowding,Dental Caries': 1
+'存在的疾病和异常:\n楔状缺损,氟斑牙,龋齿': 1
+'Oral diseases the patient is suffering from:\nRetained Primary Tooth,Ectopic Tooth,Tooth Rotation': 1
+'Ⅱ类错颌,牙石,牙龈炎': 1
+'Diseases affecting oral health:\nGingivitis,Pigment Deposition,Dental Caries': 1
+'根尖周炎,牙列不齐': 1
+'Class II Malocclusion,Mandibular Skeletal Asymmetry,Convex Profile,Deep Overbite': 1
+'List of dental anomalies:\nClass III Malocclusion,Mandibular Skeletal Asymmetry,Convex Profile,Dental Crowding': 1
+'Diseases and anomalies present:\nConvex Profile,Mouth Breathing,Dental Crowding': 1
+'存在的疾病和异常:\n修复体缺损,根尖周炎': 1
+'可见疾病的名称:\n牙扭转,龋齿': 1
+'氟斑牙,牙体缺损,牙龈炎,脱矿': 1
+'检测到的异常和疾病:\n根尖周炎,牙体缺损,牙髓炎,龋齿': 1
+'凸面型,前突': 1
+'Ⅱ类错颌,下颌骨性偏斜,下颌高角,牙齿拥挤,龋齿': 1
+'患者患有以下类型的疾病:\n牙体缺损,牙齿缺失': 1
+'基于图像诊断的疾病:\nⅡ类错颌,深覆合': 1
+'Names of visible diseases:\nPeriodontitis,Tooth Mobility,Dental Caries': 1
+'Labial Inclination,Excessive Overjet': 1
+'牙科异常:\nⅢ类错颌,下颌高角,牙反合,牙齿拥挤': 1
+'Class I Malocclusion,Tooth Discoloration': 1
+'识别出的口腔疾病:\n牙位滞留,龋齿': 1
+'Tooth Fracture,Pulpitis,Gingivitis,Dental Caries': 1
+'Classification of diseases present:\nConvex Profile,Dental Crowding': 1
+'影响口腔健康的疾病:\n牙龈炎,牙龈萎缩': 1
+'Periodontitis,Gingival Recession,Subgingival Calculus,Dental Caries': 1
+'这些图像中存在的异常列表如下:\nⅢ类错颌,下颌骨性偏斜,前突,牙反合,牙齿拥挤': 1
+'前牙端对端咬合': 1
+'Detected abnormalities and health conditions:\nTooth Structure Loss,Dental Caries': 1
+'发现的口腔健康问题和疾病如下:\nⅡ类错颌,下颌骨性偏斜,凸面型,深覆合,牙齿拥挤': 1
+'识别的异常和口腔健康状况:\nⅡ类错颌,下颌骨性偏斜,深覆盖,牙齿拥挤': 1
+'Oral diseases the patient is suffering from:\nClass II Malocclusion,Convex Profile,Deep Overbite': 1
+'Visible diseases and anomalies are:\nPeriodontitis,Tooth Mobility': 1
+'Ⅱ类错颌,下颌骨性偏斜,凸面型,前突,深覆合': 1
+'口腔中疾病的分类:\n楔状缺损,氟斑牙,牙髓炎': 1
+'Periapical Periodontitis,Dental Fluorosis,Tooth Structure Loss,Dental Crowding,Dental Caries': 1
+'牙科异常:\n下颌骨性偏斜,下颌高角,凸面型,深覆盖,牙列不齐': 1
+'牙科疾病列表:\n牙周炎,龈下牙石': 1
+'Oral diseases patient is suffering from:\nConcave Profile,Dental Crowding': 1
+'Detected diseases and anomalies:\nClass II Malocclusion,Mandibular Skeletal Asymmetry,Convex Profile,Incisor Protrusion,Deep Overbite,Deep Overjet,Dental Crowding': 1
+'Mandibular Skeletal Asymmetry,Convex Profile,Malocclusion': 1
+'Oral health problems and diseases found:\nClass III Malocclusion,High-Angle Mandible,Dental Crowding': 1
+'Detailed list of dental diseases identified:\nClass II Malocclusion,Convex Profile,Dental Crowding': 1
+'观察到的异常和疾病如下:\nⅡ类错颌,下颌骨性偏斜,下颌高角,凸面型,深覆合,牙反合,牙齿拥挤': 1
+'Detected diseases and anomalies:\nWedge-Shaped Defect,Gingivitis': 1
+'Oral health problems and diseases found:\nPeriapical Periodontitis,Tooth Structure Loss,Periodontitis,Tooth Loss,Dental Caries': 1
+'Diseases present in the images:\nDeep Fissures,Deep Overbite,Enamel Hypoplasia': 1
+'Classification of diseases present:\nClass II Malocclusion,Convex Profile,Dental Crowding': 1
+'Class II Malocclusion,High-Angle Mandible,Concave Profile,Dental Crowding': 1
+'Diseases and anomalies present:\nClass II Malocclusion,Convex Profile': 1
+'Dental anomalies:\nRetained Primary Tooth,Tooth Loss': 1
+'Oral disease(s) patient is suffering from:\nMandibular Skeletal Asymmetry,Convex Profile,Dental Crowding': 1
+'Detected diseases and anomalies:\nTooth Structure Loss,Dental Caries': 1
+'Diseases affecting the patient’s mouth:\nClass II Malocclusion,Deep Overbite,Deep Overjet,Dental Crowding,Dental Caries': 1
+'Class III Malocclusion,Mandibular Skeletal Asymmetry,Convex Profile,Spacing,Deep Overjet': 1
+'Identified diseases from images:\nGingivitis,Dental Caries': 1
+'基于图像诊断的疾病:\n楔状缺损,氟斑牙,龋齿': 1
+'检测到的异常和疾病:\n楔状缺损,牙扭转,牙髓炎,龋齿': 1
+'诊断的疾病:\nⅡ类错颌,下颌骨性偏斜,深覆合,深覆盖,牙齿拥挤': 1
+'存在疾病的分类:\n牙周炎,牙齿松动,牙龈炎,龋齿': 1
+'Visible diseases and anomalies are:\nClass II Malocclusion,Supernumerary Tooth': 1
+'Diseases affecting the patient’s oral health include:\nClass II Malocclusion,Convex Profile,Dental Crowding': 1
+'Determined disease types based on images:\nClass III Malocclusion,Mandibular Skeletal Asymmetry,Convex Profile,Dental Crowding': 1
+'Identified abnormalities and oral health conditions:\nPeriodontitis,Gingivitis,Gingival Recession': 1
+'深窝沟,牙体发育异常,龋齿': 1
+'Oral health problems and diseases found:\nDental Crowding,Dental Caries': 1
+'可见的口腔健康问题和牙科疾病:\n根尖周炎,氟斑牙,龋齿': 1
+'可见的疾病和状况:\n牙周炎,牙龈萎缩,龈下牙石': 1
+'Identified diseases from images:\nClass II Malocclusion,Mandibular Skeletal Asymmetry,Deep Overbite,Deep Overjet,Dental Crowding': 1
+'Visible oral health conditions identified:\nPeriodontitis,Tooth Loss,Gingivitis': 1
+'识别的口腔疾病和牙科状况:\n牙周炎,牙龈炎': 1
+'The patient has the following types of diseases:\nClass III Malocclusion,Mandibular Skeletal Asymmetry,High-Angle Mandible,Convex Profile,Deep Overjet,Dental Crowding': 1
+'Oral health issues and dental diseases visible:\nMandibular Skeletal Asymmetry,Convex Profile,Deep Overbite,Dental Crowding,Malocclusion': 1
+'检测到的口腔异常或疾病:\nⅢ类错颌,牙列不齐,牙齿拥挤': 1
+'检测到的疾病和异常:\n前牙开合,散隙,牙齿缺失,龋齿': 1
+'Diagnosed diseases based on images:\nClass III Malocclusion,Mandibular Skeletal Asymmetry,Deep Overbite,Dental Crowding': 1
+'Diseases affecting the patient’s mouth:\nMandibular Skeletal Asymmetry,Convex Profile,Incisor Protrusion,Deep Overbite,Deep Overjet,Dental Crowding': 1
+'图像中存在的疾病:\nⅢ类错颌,下颌高角,牙齿拥挤': 1
+'Here is the list of abnormalities that are present in the images:\nPeriapical Periodontitis,Periodontitis': 1
+'牙周炎,龋齿': 1
+'Ⅲ类错颌,上颌扩弓': 1
+'Diseases affecting dental health:\nImpacted Tooth,Dental Caries': 1
+'图像中存在的疾病:\nⅡ类错颌,凸面型,深覆盖,牙齿拥挤,高角': 1
+'List of dental issues:\nDeep Overbite,Deep Overbite,Pigment Deposition': 1
+'Ⅱ类错颌,安氏Ⅱ类磨牙关系,牙列不齐,牙齿拥挤,龋齿': 1
+'Oral health problems and diseases found:\nClass III Malocclusion,High-Angle Mandible,Dental Crowding,Dental Crowding': 1
+'下颌骨性偏斜,下颌高角,深覆合,牙列不齐,牙齿拥挤': 1
+'Oral health problems and diseases found:\nPeriodontitis,Tooth Mobility': 1
+'Yes, the patient has the following diseases:\nClass II Malocclusion,High-Angle Mandible,Convex Profile,Dental Crowding': 1
+'牙科疾病列表:\nⅡ类错颌,凸面型,牙齿拥挤': 1
+'Post And Core Crown,Dental Fluorosis,Tooth Structure Loss,Pulpitis,Impacted Tooth,Dental Caries': 1
+'识别的口腔疾病和牙科状况:\n牙周炎,牙齿松动,牙龈炎': 1
+'Oral disease(s) patient is suffering from:\nPulpitis,Dental Caries': 1
+'氟斑牙,牙齿缺失': 1
+'Visible diseases in the dental images:\nPeriodontitis,Tooth Mobility,Gingivitis': 1
+'Oral diseases patient is suffering from:\nDental Fluorosis,Dental Caries': 1
+'Diseases and anomalies present:\nClass III Malocclusion,Mandibular Skeletal Asymmetry,Anterior Crossbite': 1
+'影响口腔健康的疾病:\n牙体缺损,牙周炎,牙齿缺失': 1
+'Deep Overbite,Tooth Wear': 1
+'Detailed list of dental diseases identified:\nWedge-Shaped Defect,Dental Fluorosis,Dental Caries': 1
+'可见的疾病和异常包括:\nⅠ类错颌,Ⅱ类错颌,上前牙唇倾,多生牙,深 SPEE 曲线,深覆盖,深覆颌,牙列不齐,牙齿拥挤': 1
+'Diseases affecting dental health:\nClass III Malocclusion,High-Angle Mandible,Concave Profile,Dental Crowding': 1
+'影响患者口腔的疾病:\n牙列不齐,龋齿': 1
+'Visible diseases and conditions:\nClass II Malocclusion,Mandibular Skeletal Asymmetry,Convex Profile,Deep Overbite,Dental Crowding': 1
+'Oral health conditions identified include:\nClass II Malocclusion,Mandibular Skeletal Asymmetry,Incisor Protrusion,Deep Overbite,Dental Crowding,Dental Crowding': 1
+'检测到的口腔疾病或问题如下:\nⅡ类错颌,下颌骨性偏斜,下颌高角,凸面型,深覆合,深覆盖,牙齿拥挤': 1
+'当前的口腔或牙科状况:\n牙位滞留,龋齿': 1
+'List of dental issues:\nRetained Tooth,Dental Caries': 1
+'识别出的口腔图像中的疾病:\nⅡ类错颌,龋齿': 1
+'Diseases present in the images:\nClass III Malocclusion,Dental Crowding': 1
+'识别的口腔健康状况包括:\n牙周炎,牙龈炎': 1
+'识别出的口腔图像中的疾病:\n深覆盖,深覆颌,牙槽骨水平吸收': 1
+'识别出的疾病:\n牙周炎,牙龈炎': 1
+'Detected anomalies and diseases:\nDental Crowding,Dental Caries': 1
+'Here is the list of anomalies and diseases that the patient have:\nClass II Malocclusion,High-Angle Mandible,Convex Profile,Dental Crowding': 1
+'Periodontitis,Gingivitis,Subgingival Calculus,Dental Caries': 1
+'诊断的疾病:\n牙周炎,牙龈炎,牙龈萎缩': 1
+'List of dental anomalies:\nMandibular Skeletal Asymmetry,Deep Overbite,Deep Overjet,Anterior Crossbite,Dental Crowding': 1
+'Intrinsic Tooth Discoloration,Dental Fluorosis': 1
+'Oral health issues and dental diseases visible:\nDental Fluorosis,Tooth Structure Loss,Tooth Loss': 1
+'检测到的口腔异常或疾病:\n下颌高角,凸面型,牙齿拥挤': 1
+'已识别的详细牙科疾病列表:\n根管内无新鲜渗出,牙周炎,牙龈炎': 1
+'疾病列表:\n牙周炎,牙龈炎,龈下牙石': 1
+'可见疾病的名称:\n楔状缺损,牙髓炎': 1
+'Diseases and anomalies present:\nClass I Malocclusion,Class II Malocclusion,Retroclined Upper Incisors,Retroclined Lower Incisors,Deep Overbite,Dental Crowding,Dental Caries': 1
+'牙科问题列表:\n牙列不齐,牙齿拥挤': 1
+'急性冠周炎,根尖周炎,牙龈炎': 1
+'根尖周炎,桩核冠,氟斑牙,牙体缺损,龋齿': 1
+'检测到的异常和疾病:\nⅠ类错颌,凸面型,牙齿拥挤': 1
+'Names of visible diseases:\nMandibular Skeletal Asymmetry,Dental Crowding,Malocclusion': 1
+'口腔-牙科疾病列表:\nⅢ类错颌,凸面型': 1
+'Visible diseases and anomalies are:\nPeriapical Periodontitis,Tooth Fracture,Pulpitis': 1
+'检测到的异常和疾病:\nⅢ类错颌,下颌骨性偏斜,下颌高角,牙列不齐,牙齿拥挤': 1
+'Diseases present in images:\nClass III Malocclusion,Mandibular Skeletal Asymmetry,Convex Profile,Spacing,Deep Overjet': 1
+'Oral diseases the patient is suffering from:\nGingivitis,Dental Caries': 1
+'基于数据识别的牙科异常:\n楔状缺损,牙周炎': 1
+'Visible diseases and anomalies are:\nClass II Malocclusion,Dental Crowding': 1
+'Ectopic Tooth,Retained Tooth,Tooth Mobility': 1
+'List of dental diseases affecting the patient:\nTooth Structure Loss,Periodontitis,Tooth Mobility,Tooth Loss,Gingivitis': 1
+'牙科图像中可见的疾病:\n牙龈炎,龋齿': 1
+'List of dental issues:\nClass II Malocclusion,Dental Crowding': 1
+'Here is the list of anomalies and diseases that the patient have:\nClass I Malocclusion,Convex Profile,Deep Overbite': 1
+'牙科疾病列表:\nⅡ类错颌,凸面型,深覆合,牙列不齐': 1
+'Oral disease(s) patient is suffering from:\nPeriodontitis,Gingivitis': 1
+'Diseases and anomalies present:\nGingivitis,Dental Caries': 1
+'牙科图像中可见的疾病:\n牙体缺损,龋齿': 1
+'Class III Malocclusion,Deep Overbite,Dental Crowding': 1
+'是的，患者患有以下疾病:\n氟斑牙,牙齿松动,龋齿': 1
+'Diseases affecting the patient’s mouth:\nClass II Malocclusion,Dental Crowding': 1
+'Visible diseases in the dental images:\nClass III Malocclusion,Dental Caries': 1
+'Disease(s) identified in oral images:\nDeep Fissures,Tooth Developmental Anomaly,Dental Caries': 1
+'Yes, the patient has the following diseases:\nPigment Deposition,Dental Caries': 1
+'检测到的口腔疾病综合列表:\n牙体缺损,牙齿缺失': 1
+'The patient has the following types of diseases:\nPeriodontitis,Gingivitis': 1
+'这是患者患有的异常和疾病列表:\nⅡ类错颌,下颌骨性偏斜,凸面型,深覆合,深覆盖,牙齿拥挤': 1
+'是的，患者患有以下疾病:\nⅡ类错颌,下颌高角,凸面型,牙齿拥挤': 1
+'牙科图像中可见的疾病:\n根尖周炎,牙髓炎': 1
+'氟斑牙,牙磨耗': 1
+'可见的口腔健康问题和牙科疾病:\n牙体缺损,种植术后状态': 1
+'Classification of diseases present:\nMandibular Skeletal Asymmetry,Convex Profile,Anterior Crossbite,Dental Crowding': 1
+'Identified diseases from images:\nClass II Malocclusion,Mandibular Skeletal Asymmetry,High-Angle Mandible,Convex Profile,Deep Overbite,Anterior Crossbite,Dental Crowding': 1
+'牙科疾病列表:\nⅡ类错颌,牙列不齐': 1
+'识别出的口腔疾病:\nⅢ类错颌,下颌骨性偏斜,下颌高角,凸面型,散隙,牙列不齐': 1
+'Disease(s) identified in oral images:\nClass II Malocclusion,Mandibular Skeletal Asymmetry,Convex Profile,Spacing,Deep Overbite,Deep Overjet': 1
+'Visible diseases and conditions:\nGingivitis,Dental Caries': 1
+'牙科异常列表:\nⅢ类错颌,上颌扩弓': 1
+'Determined disease type:\nDental Fluorosis,Buccal Displacement': 1
+'Visible diseases and conditions:\nDental Fluorosis,Dental Caries': 1
+'影响患者口腔的疾病:\nⅡ类错颌,下颌低角,下颌骨性偏斜,深覆合,深覆盖,牙齿拥挤': 1
+'检测到的口腔疾病综合列表:\n牙龈萎缩,龋齿': 1
+'Diseases diagnosed from images:\nPost Endodontic Treatment,Wedge-Shaped Defect': 1
+'Ⅲ类错颌,下颌高角,凹面型': 1
+'牙髓炎,阻生齿': 1
+'Detailed list of dental diseases identified:\nDental Crowding,Dental Caries': 1
+'色素附着,龋齿': 1
+'识别出的口腔图像中的疾病:\n氟斑牙,龋齿': 1
+'List of diseases:\nClass II Malocclusion,High-Angle Mandible,Convex Profile,Dental Crowding': 1
+'Dental anomalies:\nClass II Malocclusion,Dental Caries': 1
+'Mandibular Skeletal Asymmetry,Deep Overbite,Deep Overjet,Dental Crowding,Malocclusion': 1
+'Identified abnormalities and oral health conditions:\nWedge-Shaped Defect,Dental Fluorosis,Pulpitis,Dental Caries': 1
+'识别的异常和口腔健康状况:\n下颌骨性偏斜,凸面型,深覆合,牙齿拥挤,错颌': 1
+'患者患有的口腔疾病:\n牙周炎,牙齿松动,牙龈炎,牙龈萎缩,颌部创伤': 1
+'Comprehensive list of oral diseases detected:\nPoor Oral Hygiene,Dental Caries': 1
+'Identified oral diseases:\nPeriodontitis,Tooth Mobility,Gingivitis': 1
+'Identified dental anomalies based on data:\nRetained Primary Tooth,Convex Profile,Incisor Protrusion,Dental Fluorosis,Pulp Necrosis': 1
+'Identified oral diseases:\nPeriodontitis,Gingivitis': 1
+'Gingivitis,Mesioangular Impaction,Impacted Tooth,Dental Caries': 1
+'已识别的详细牙科疾病列表:\n凸面型,牙齿拥挤': 1
+'Diseases affecting the patient’s oral health include:\nDental Fluorosis,Dental Caries': 1
+'Diseases present in the images:\nClass III Malocclusion,Anterior Crossbite,Dental Caries': 1
+'可见的疾病和状况:\n氟斑牙,龋齿': 1
+'下颌骨性偏斜,牙齿拥挤': 1
+'Ⅲ类错颌,下颌低角,凸面型,牙齿拥挤,牙龈炎': 1
+'Diseases affecting oral health:\nPeriodontitis,Tooth Mobility,Gingivitis': 1
+'List of diseases:\nClass I Malocclusion,Dental Crowding': 1
+'牙周炎,牙龈萎缩,色素附着': 1
+'Maxillary Protrusion,Mandibular Retrusion,Spacing,Deep Overjet': 1
+'患者患有以下类型的疾病:\nⅡ类错颌,下颌高角,凸面型,深覆合,深覆盖,牙齿拥挤': 1
+'患者患有以下类型的疾病:\nⅢ类错颌,下颌骨性偏斜,牙反合,牙齿拥挤': 1
+'List of dental diseases affecting the patient:\nRetained Primary Tooth,Retained Tooth': 1
+'Identified abnormalities and oral health conditions:\nClass II Malocclusion,Low-Angle Mandible,Mandibular Skeletal Asymmetry,Convex Profile,Deep Overjet,Dental Crowding': 1
+'检测到的牙科状况包括:\n牙齿拥挤,龋齿': 1
+'检测到的牙科状况包括:\n牙体缺损,牙齿缺失': 1
+'检测到的口腔疾病或问题如下:\n楔状缺损,牙周炎': 1
+'Diseases present in images:\nClass II Malocclusion,High-Angle Mandible,Convex Profile,Deep Overjet,Dental Crowding': 1
+'根尖周炎,阻生齿': 1
+'下颌骨性偏斜,凸面型,深覆盖,深覆颌': 1
+'Wedge-Shaped Defect,Deep Fissures,Tooth Structure Loss,Gingivitis': 1
+'Visible diseases and anomalies are:\nClass I Malocclusion,Dental Caries': 1
+'Oral diseases and dental conditions identified:\nPeriodontitis,Gingivitis': 1
+'Ⅱ类错颌,深覆合,深覆盖,牙列不齐,龋齿': 1
+'Tooth Mobility,Gingivitis': 1
+'根据图像确定的疾病类型:\n牙周炎,牙龈炎': 1
+'Ⅲ类错颌,下颌骨性偏斜,下颌高角,凸面型,深覆盖,牙齿拥挤': 1
+'识别的可见口腔健康状况:\nⅢ类错颌,下颌骨性偏斜,牙反合,牙齿拥挤': 1
+'Visible diseases and conditions:\nClass II Malocclusion,High-Angle Mandible,Convex Profile,Dental Crowding': 1
+'Diseases diagnosed from images:\nClass III Malocclusion,Convex Profile,Dental Crowding,Dental Caries': 1
+'内源性黄牙,氟斑牙,牙齿变色': 1
+'Oral health issues and dental diseases visible:\nClass I Malocclusion,Impacted Tooth': 1
+'Diseases affecting the patient’s mouth:\nPeriodontitis,Gingivitis,Subgingival Calculus': 1
+'Visible diseases in the dental images:\nClass II Malocclusion,High-Angle Mandible': 1
+'存在疾病的分类:\nⅠ类错颌,Ⅱ类错颌,深覆颌,牙列不齐,牙齿拥挤': 1
+'检测到的口腔疾病综合列表:\nⅡ类错颌,凸面型,牙齿拥挤': 1
+'识别出的疾病:\nⅡ类错颌,下颌骨性偏斜,先天缺失,深覆合,牙齿拥挤': 1
+'确定的疾病类型:\n楔状缺损,氟斑牙': 1
+'可见疾病的名称:\n牙周炎,牙齿松动,牙龈萎缩': 1
+'这是患者患有的异常和疾病列表:\n牙髓炎,龋齿': 1
+'观察到的异常和疾病如下:\nⅡ类错颌,下颌骨性偏斜,凸面型,前突,深覆合,深覆盖,牙齿拥挤': 1
+'Diseases diagnosed from images:\nClass II Malocclusion,Dental Caries': 1
+'牙科图像中可见的疾病:\nⅡ类错颌,下颌高角,凸面型,深覆盖,牙齿拥挤': 1
+'影响患者的牙科疾病列表:\n下颌骨性偏斜,开合咬合,牙齿拥挤': 1
+'口腔-牙科疾病列表:\n牙体缺损,牙外伤,颌部创伤': 1
+'Names of diseases the patient has:\nClass III Malocclusion,Dental Crowding,Crossbite,Tooth Fracture,Dental Crowding': 1
+'Detected oral abnormalities or diseases:\nPeriodontitis,Gingival Recession': 1
+'Comprehensive list of oral diseases detected:\nRestoration Defect,Gingivitis': 1
+'图像中存在的疾病:\n牙折断,牙髓炎,牙齿缺失': 1
+'检测到的口腔异常或疾病:\nⅠ类错颌,凸面型,牙齿拥挤': 1
+'图像中存在的疾病:\n牙周炎,牙龈萎缩': 1
+'The patient has the following types of diseases:\nClass II Malocclusion,Angle Class II Molar Relationship,Dental Crowding,Dental Crowding,Dental Caries': 1
+'Visible diseases in the dental images:\nClass II Malocclusion,Mandibular Skeletal Asymmetry,Deep Overjet,Dental Crowding': 1
+'Oral diseases the patient is suffering from:\nPeriodontitis,Gingivitis': 1
+'根据图像确定的疾病类型:\nⅢ类错颌,乳牙滞留': 1
+'牙科或口腔图像中可见的疾病:\nⅡ类错颌,下颌骨性偏斜,凸面型,前突,牙齿拥挤': 1
+'这些图像中存在的异常列表如下:\nⅢ类错颌,凹面型,牙齿拥挤': 1
+'Here is the list of abnormalities that are present in the images:\nDeep Fissures,Gingivitis,Dental Caries': 1
+'Identified diseases from images:\nPeriodontitis,Gingival Recession,Subgingival Calculus': 1
+'Class II Malocclusion,Maxillary Protrusion,High-Angle Mandible': 1
+'检测到的牙科状况包括:\nⅢ类错颌,下颌骨性偏斜,下颌高角,牙反合,牙齿拥挤': 1
+'Class I Malocclusion,Mandibular Skeletal Asymmetry,High-Angle Mandible,Convex Profile,Deep Overbite,Deep Overjet,Dental Crowding,Dental Crowding': 1
+'Oral health conditions identified include:\nPulpitis,Dental Caries': 1
+'Visible diseases and anomalies are:\nClass II Malocclusion,High-Angle Mandible,Concave Profile,Dental Crowding': 1
+'List of dental issues:\nGingivitis,Pigment Deposition': 1
+'Detected oral abnormalities or diseases:\nPeriapical Periodontitis,Tooth Fracture,Pulp Necrosis,Tooth Mobility': 1
+'List of dental diseases affecting the patient:\nClass I Malocclusion,Wedge-Shaped Defect': 1
+'Diseases affecting the patient’s mouth:\nClass II Malocclusion,Mandibular Skeletal Asymmetry,Convex Profile,Deep Overbite,Deep Overjet,Dental Crowding,Dental Crowding': 1
+'识别的可见口腔健康状况:\nⅡ类错颌,凸面型,牙齿拥挤': 1
+'楔状缺损,氟斑牙,牙髓炎,龋齿': 1
+'Detected oral abnormalities or diseases:\nPeriodontitis,Gingival Recession,Pigment Deposition': 1
+'List of dental diseases:\nClass II Malocclusion,Mandibular Skeletal Asymmetry,Convex Profile,Incisor Protrusion,Dental Crowding': 1
+'Diseases affecting the patient’s mouth:\nCracked Tooth,Pulpitis': 1
+'影响患者口腔的疾病:\n根尖周炎,牙体缺损,牙周炎': 1
+'Narrow Maxillary Arch,Mandibular Retrusion': 1
+'可见疾病的名称:\n牙龈炎,色素附着': 1
+'Comprehensive list of oral diseases detected:\nHigh-Angle Mandible,Dental Crowding': 1
+'Ⅱ类错颌,下颌骨性偏斜,牙反合,牙齿拥挤': 1
+'Ⅰ类错颌,下颌骨性偏斜,深覆合,深覆盖,牙齿拥挤': 1
+'Ⅱ类错颌,深覆盖': 1
+'Disease(s) identified in oral images:\nGingivitis,Dental Caries': 1
+'影响患者口腔健康的疾病包括:\n牙周炎,牙齿松动,牙龈炎': 1
+'观察到的异常和疾病如下:\nⅢ类错颌,凹面型,牙齿拥挤': 1
+'确定的疾病类型:\n牙周炎,牙龈炎': 1
+'Detected dental conditions include:\nClass I Malocclusion,Dental Caries': 1
+'Visible oral health conditions identified:\nClass II Malocclusion,Mandibular Skeletal Asymmetry,High-Angle Mandible,Convex Profile,Incisor Protrusion,Deep Overbite,Deep Overjet,Dental Crowding': 1
+'Oral diseases patient is suffering from:\nClass III Malocclusion,Convex Profile': 1
+'Visible diseases and anomalies are:\nLow-Angle Mandible,Concave Profile,Dental Crowding': 1
+'Periodontitis,Alveolar Bone Resorption,Gingivitis,Subgingival Calculus': 1
+'基于数据识别的牙科异常:\n氟斑牙,龋齿': 1
+'Class I Malocclusion,Convex Profile,Deep Overbite': 1
+'Oral health conditions identified include:\nWedge-Shaped Defect,Dental Caries': 1
+'Class II Malocclusion,Class III Malocclusion,Mandibular Skeletal Asymmetry,Concave Profile': 1
+'可见的疾病和状况:\nⅡ类错颌,凸面型,深覆合,牙列不齐': 1
+'Classified diseases in the oral cavity:\nPeriodontitis,Gingivitis': 1
+'Current oral or dental conditions:\nClass II Malocclusion,Mandibular Skeletal Asymmetry,Convex Profile,Deep Overbite,Deep Overjet,Dental Crowding': 1
+'口腔-牙科疾病列表:\n楔状缺损,牙齿松动,牙龈炎': 1
+'Oral diseases and dental conditions identified:\nClass II Malocclusion,Convex Profile': 1
+'患者患有的口腔疾病:\nⅡ类错颌,下颌骨性偏斜,下颌高角': 1
+'Mandibular Skeletal Asymmetry,High-Angle Mandible,Convex Profile': 1
+'检测到的牙科状况包括:\nⅡ类错颌,下颌骨性偏斜,凸面型,深覆合,深覆盖,牙齿拥挤': 1
+'Detected dental conditions include:\nTooth Structure Loss,Periodontitis': 1
+'Comprehensive list of oral diseases detected:\nPeriodontitis,Calculus,Gingivitis': 1
+'检测到的口腔异常或疾病:\n牙髓炎,龋齿': 1
+'Identified diseases from images:\nClass III Malocclusion,Mandibular Skeletal Asymmetry,Convex Profile,Incisor Protrusion,Deep Overbite': 1
+'List of dental diseases affecting the patient:\nClass II Malocclusion,Maxillary Expansion': 1
+'根据图像确定的疾病类型:\nⅡ类错颌,下颌骨性偏斜,凸面型,深覆合,深覆盖,牙齿拥挤': 1
+'Class I Malocclusion,Class II Malocclusion,Dens Evaginatus,Deep Curve Of Spee,Dental Crowding,Dental Crowding': 1
+'疾病列表:\nⅡ类错颌,凸面型,深覆合': 1
+'Oral diseases patient is suffering from:\nHigh-Angle Mandible,Anterior Crossbite,Dental Crowding': 1
+'疾病列表:\nⅠ类错颌,牙列不齐': 1
+'患者患有以下类型的疾病:\n牙列不齐,牙齿拥挤': 1
+'Identified diseases from images:\nClass II Malocclusion,Deep Overbite': 1
+'检测到的口腔异常或疾病:\n牙齿拥挤,龋齿': 1
+'Identified diseases from images:\nPeriodontitis,Tooth Mobility,Gingivitis': 1
+'Class II Malocclusion,Mandibular Skeletal Asymmetry,Convex Profile,Incisor Protrusion,Deep Overbite,Dental Crowding': 1
+'观察到的异常和疾病如下:\n氟斑牙,牙折断': 1
+'Class II Malocclusion,Convex Profile,Incisor Protrusion,Deep Overbite,Deep Overjet': 1
+'Disease(s) identified in oral images:\nPeriapical Periodontitis,Periodontitis': 1
+'Diseases diagnosed from images:\nClass I Malocclusion,Class II Malocclusion,Convex Profile,Dental Crowding': 1
+'Ⅱ类错颌,下颌骨性偏斜,先天缺失,凸面型,深覆合,牙齿拥挤': 1
+'Visible diseases and conditions:\nPeriodontitis,Tooth Mobility,Gingivitis': 1
+'Ⅱ类错颌,脱矿,龋齿': 1
+'识别出的口腔疾病:\n氟斑牙,牙体缺损,龋齿': 1
+'检测到的口腔异常或疾病:\n牙体缺损,牙周炎,牙龈炎': 1
+'Mandibular Skeletal Asymmetry,High-Angle Mandible,Convex Profile,Dental Crowding': 1
+'Oral diseases and dental conditions identified:\nClass II Malocclusion,Mandibular Skeletal Asymmetry,High-Angle Mandible,Convex Profile': 1
+'检测到的口腔异常或疾病:\n牙龈炎,色素附着': 1
+'下颌低角,下颌骨性偏斜,凸面型,多生牙,深覆盖,牙齿拥挤': 1
+'Disease(s) identified in oral images:\nConvex Profile,Dental Crowding': 1
+'Diseases affecting dental health:\nDental Fluorosis,Pulpitis,Dental Caries': 1
+'Diseases and anomalies present:\nClass II Malocclusion,High-Angle Mandible,Convex Profile,Deep Overbite,Deep Overjet,Dental Crowding': 1
+'Diseases present in images:\nClass II Malocclusion,Dental Caries': 1
+'Class II Malocclusion,Retained Primary Tooth,Convex Profile,Dental Crowding': 1
+'Diseases diagnosed from images:\nDental Fluorosis,Tooth Structure Loss': 1
+'Ⅱ类错颌,凹面型,牙齿拥挤': 1
+'Diseases affecting the patient’s mouth:\nClass II Malocclusion,Class III Malocclusion,Mandibular Skeletal Asymmetry,Convex Profile,Deep Overbite,Deep Overjet,Dental Crowding': 1
+'Visible diseases in dental or oral images:\nClass II Malocclusion,Deep Overbite': 1
+'Identified oral diseases:\nClass I Malocclusion,Mandibular Skeletal Asymmetry,Convex Profile,Incisor Protrusion,Deep Overbite,Dental Crowding': 1
+'患者患有的口腔疾病:\nⅡ类错颌,上颌扩弓': 1
+'Diseases affecting oral health:\nPeriodontitis,Gingivitis,Gingival Recession': 1
+'Oral health issues and dental diseases visible:\nWedge-Shaped Defect,Dental Fluorosis': 1
+'Ⅱ类错颌,下颌高角,凹面型,牙反合,牙齿拥挤': 1
+'Visible diseases in the dental images:\nClass II Malocclusion,Mandibular Skeletal Asymmetry,Convex Profile,Deep Overbite,Deep Overjet,Dental Crowding': 1
+'Mandibular Skeletal Asymmetry,High-Angle Mandible,Dental Crowding': 1
+'The patient has the following types of diseases:\nTooth Structure Loss,Pulpitis': 1
+'Here is the list of abnormalities that are present in the images:\nClass I Malocclusion,Mandibular Skeletal Asymmetry,Convex Profile,Deep Overbite,Dental Crowding': 1
+'检测到的疾病和异常:\nⅡ类错颌,下颌骨性偏斜,凸面型,深覆合,深覆盖,牙齿拥挤': 1
+'识别出的疾病:\nⅢ类错颌,下颌高角,凹面型,牙反合,牙齿拥挤': 1
+'Dental Fluorosis,Periodontitis,Gingivitis,Gingival Recession,Dental Caries': 1
+'Class I Malocclusion,Retroclined Upper Incisors,Deep Overbite,Dental Crowding': 1
+'Identified diseases from images:\nClass II Malocclusion,High-Angle Mandible,Convex Profile,Dental Crowding': 1
+'Determined disease type:\nClass III Malocclusion,Mandibular Skeletal Asymmetry,Anterior Crossbite': 1
+'影响患者口腔的疾病:\n根尖周炎,牙周炎': 1
+'Oral diseases and dental conditions identified:\nDental Fluorosis,Gingivitis': 1
+'修复体缺损,先天缺失,牙龈炎': 1
+'Identified dental anomalies based on data:\nClass II Malocclusion,Dental Crowding': 1
+'Class II Malocclusion,Convex Profile,Deep Overbite,Dental Crowding,Dental Crowding': 1
+'检测到的疾病和异常:\n牙齿拥挤,龋齿': 1
+'牙科图像中可见的疾病:\nⅢ类错颌,下颌高角,凹面型,牙齿拥挤': 1
+'牙科异常列表:\n牙髓炎,龋齿': 1
+'基于图像诊断的疾病:\n根管内无新鲜渗出,牙髓炎': 1
+'List of dental issues:\nClass I Malocclusion,Mandibular Skeletal Asymmetry,High-Angle Mandible,Dental Crowding': 1
+'牙体缺损,牙外伤,颌部创伤': 1
+'发现的口腔健康问题和疾病如下:\nⅡ类错颌,龋齿': 1
+'Class III Malocclusion,Crossbite,Dental Caries': 1
+'Detected oral abnormalities or diseases:\nClass III Malocclusion,Dental Caries': 1
+'检测到的异常和健康状况:\nⅡ类错颌,凸面型,深覆合': 1
+'识别的异常和口腔健康状况:\n根尖周炎,牙周炎': 1
+'Oral disease(s) patient is suffering from:\nMandibular Skeletal Asymmetry,Deep Overbite,Deep Overjet,Dental Crowding,Malocclusion': 1
+'Restoration Defect,Subgingival Calculus': 1
+'Here is the list of anomalies and diseases that the patient have:\nClass II Malocclusion,Convex Profile,Deep Overbite': 1
+'Diseases affecting dental health:\nGingivitis,Pigment Deposition': 1
+'Identified oral diseases:\nClass II Malocclusion,Deep Overbite': 1
+'Ⅱ类错颌,下颌骨性偏斜,下颌高角,凸面型,深覆合': 1
+'检测到的异常和疾病:\n下颌骨性偏斜,凸面型,深覆合,牙列不齐,牙齿拥挤': 1
+'Detected abnormalities and health conditions:\nMandibular Skeletal Asymmetry,Convex Profile,Deep Overbite,Deep Overjet,Dental Crowding': 1
+'Periapical Periodontitis,Malocclusion': 1
+'可见的疾病和状况:\nⅡ类错颌,凸面型,牙齿拥挤': 1
+'Class II Malocclusion,Convex Profile,Dental Crowding,Dental Caries': 1
+'牙周炎,牙齿变色,牙龈炎': 1
+'Ⅰ类错颌,凸面型,阻生齿': 1
+'List of dental anomalies:\nClass II Malocclusion,Mandibular Skeletal Asymmetry,High-Angle Mandible,Deep Overjet': 1
+'Ⅱ类错颌,上前牙唇倾,下前牙唇倾,凸面型,散隙,深 SPEE 曲线,深覆盖,深覆颌,牙列中线偏左,牙扭转': 1
+'检测到的口腔异常或疾病:\nⅡ类错颌,深覆合': 1
+'识别的可见口腔健康状况:\nⅡ类错颌,下颌骨性偏斜,凸面型,深覆合,深覆盖,牙齿拥挤': 1
+'识别的口腔疾病和牙科状况:\nⅢ类错颌,上凸下缩,下颌骨性偏斜,深覆合,深覆盖,牙齿拥挤': 1
+'List of dental anomalies:\nClass II Malocclusion,Convex Profile,Incisor Protrusion,Deep Overbite,Deep Overjet': 1
+'Identified dental anomalies based on data:\nClass II Malocclusion,Mandibular Skeletal Asymmetry,Convex Profile,Dental Crowding': 1
+'检测到的口腔疾病或问题如下:\nⅢ类错颌,下颌骨性偏斜,下颌高角,凸面型': 1
+'修复体缺损,牙体缺损,牙龈萎缩': 1
+'Names of diseases the patient has:\nDental Fluorosis,Dental Caries': 1
+'Visible diseases in dental or oral images:\nRetained Tooth,Tooth Structure Loss': 1
+'Ⅲ类错颌,下颌骨性偏斜,下颌高角,凸面型,牙列不齐,牙齿拥挤': 1
+'List of dental diseases affecting the patient:\nTooth Structure Loss,Tooth Loss': 1
+'Periodontitis,Dental Caries': 1
+'Detailed list of dental diseases identified:\nClass III Malocclusion,Mandibular Skeletal Asymmetry,Convex Profile,Deep Overjet,Dental Crowding': 1
+'患者患有的疾病名称:\nⅢ类错颌,牙列不齐,牙齿拥挤': 1
+'Current oral or dental conditions:\nDental Fluorosis,Tooth Structure Loss,Gingivitis': 1
+'Class II Malocclusion,High-Angle Mandible': 1
+'Identified abnormalities and oral health conditions:\nClass III Malocclusion,Dental Caries': 1
+'识别出的口腔图像中的疾病:\n凸面型,牙齿拥挤': 1
+'口腔中疾病的分类:\nⅡ类错颌,牙齿拥挤': 1
+'检测到的口腔疾病综合列表:\n牙体缺损,牙髓炎': 1
+'Diagnosed diseases:\nClass II Malocclusion,Dens Evaginatus': 1
+'根尖周炎,牙周炎,牙齿变色': 1
+'存在疾病的分类:\nⅢ类错颌,下颌骨性偏斜,下颌高角,凸面型,牙列不齐,牙齿拥挤': 1
+'Diseases present in images:\nGingivitis,Pigment Deposition': 1
+'Ⅲ类错颌,下颌骨性偏斜,凸面型,散隙,牙体缺损': 1
+'Detected abnormalities and health conditions:\nLow-Angle Mandible,Mandibular Skeletal Asymmetry,Convex Profile,Deep Overbite,Dental Crowding': 1
+'Ⅰ类错颌,牙龈炎,脱矿': 1
+'基于图像诊断的疾病:\nⅡ类错颌,下颌骨性偏斜,下颌高角,凸面型,深覆合,牙齿拥挤': 1
+'The patient has the following types of diseases:\nClass II Malocclusion,Convex Profile,Dental Crowding': 1
+'Comprehensive list of oral diseases detected:\nDental Fluorosis,Dental Caries': 1
+'检测到的疾病和异常:\nⅡ类错颌,下颌骨性偏斜,深覆盖,牙齿拥挤': 1
+'Visible diseases and anomalies are:\nClass II Malocclusion,Mandibular Skeletal Asymmetry,Convex Profile,Deep Overjet,Dental Crowding': 1
+'存在的疾病和异常:\n牙龈炎,色素附着': 1
+'牙体缺损,牙周炎,牙齿松动,牙齿缺失,牙龈炎': 1
+'根尖周炎,氟斑牙,牙体缺损,牙髓炎,龋齿': 1
+'Pigment Deposition,Dental Caries': 1
+'Comprehensive list of oral diseases detected:\nPulpitis,Dental Caries': 1
+'Diseases diagnosed from images:\nPulpitis,Dental Caries': 1
+'下颌高角,牙反合,牙齿拥挤': 1
+'Visible diseases in the dental images:\nClass II Malocclusion,Maxillary Expansion': 1
+'Current oral or dental conditions:\nClass II Malocclusion,Demineralization': 1
+'Detected oral abnormalities or diseases:\nPulpitis,Tooth Loss': 1
+'影响牙科健康的疾病:\nⅢ类错颌,下颌骨性偏斜,下颌高角,牙列不齐,牙齿拥挤': 1
+'识别出的疾病:\n牙髓炎,牙齿缺失,龋齿': 1
+'Classification of diseases present:\nGingivitis,Pigment Deposition': 1
+'Detected diseases and anomalies:\nMandibular Skeletal Asymmetry,Dental Crowding,Dental Crowding': 1
+'Diseases present in images:\nClass II Malocclusion,High-Angle Mandible,Convex Profile,Dental Crowding': 1
+'Yes, the patient has the following diseases:\nGingivitis,Dental Caries': 1
+'Ⅱ类错颌,下颌骨性偏斜,下颌高角,凸面型,前突,深覆合,深覆盖,牙齿拥挤': 1
+'Identified diseases from images:\nTooth Developmental Anomaly,Pulpitis,Dental Caries': 1
+'基于图像诊断的疾病:\nⅡ类错颌,下颌骨性偏斜,凸面型': 1
+'Ⅰ类错颌,Ⅱ类错颌,多颗牙齿充填术后状态,深覆颌,牙列不齐,牙齿拥挤': 1
+'检测到的口腔疾病或问题如下:\nⅠ类错颌,深覆合': 1
+'Observed abnormalities and diseases are:\nPost And Core Crown,Dental Fluorosis,Tooth Structure Loss,Pulpitis,Impacted Tooth,Dental Caries': 1
+'识别出的疾病:\n修复体缺损,先天缺失,牙龈炎': 1
+'Diseases present in images:\nClass II Malocclusion,Dental Crowding,Dental Caries': 1
+'影响患者口腔健康的疾病包括:\n牙体缺损,牙齿缺失': 1
+'Oral diseases the patient is suffering from:\nRestoration Defect,Tooth Structure Loss': 1
+'Determined disease type:\nRestoration Defect,Dental Fluorosis,Subgingival Calculus': 1
+'Visible diseases and anomalies are:\nClass II Malocclusion,Mandibular Skeletal Asymmetry,Convex Profile,Deep Overbite,Deep Overjet,Dental Crowding': 1
+'Periodontitis,Cracked Tooth,Gingivitis,Subgingival Calculus': 1
+'是的，患者患有以下疾病:\nⅢ类错颌,下颌骨性偏斜,凸面型,深覆合,牙齿拥挤': 1
+'Diseases diagnosed from images:\nClass II Malocclusion,Pigment Deposition': 1
+'识别的口腔健康状况包括:\n牙体缺损,脱矿,龋齿': 1
+'存在疾病的分类:\nⅢ类错颌,下颌骨性偏斜,凹面型': 1
+'Disease(s) identified in oral images:\nClass II Malocclusion,Convex Profile,Dental Crowding': 1
+'Oral diseases the patient is suffering from:\nTooth Structure Loss,Gingivitis': 1
+'List of oro-dental diseases:\nPeriapical Periodontitis,Wedge-Shaped Defect,Tooth Structure Loss,Pulpitis,Dental Caries': 1
+'Diseases and anomalies present:\nConvex Profile,Incisor Protrusion,Chin Retrusion': 1
+'患者患有以下类型的疾病:\nⅡ类错颌,凸面型': 1
+'是的，患者患有以下疾病:\n楔状缺损,牙磨耗,牙龈萎缩,龋齿': 1
+'Diseases affecting dental health:\nPeriapical Periodontitis,Tooth Mobility': 1
+'Dental Fluorosis,Tooth Mobility,Dental Caries': 1
+'可见疾病的名称:\n牙周炎,牙龈萎缩': 1
+'Oral health conditions identified include:\nClass II Malocclusion,Mandibular Skeletal Asymmetry,Deep Overbite,Deep Overjet,Dental Crowding': 1
+'存在疾病的分类:\nⅠ类错颌,龋齿': 1
+'下颌骨性偏斜,凸面型,前突,深覆合,深覆盖,牙反合,牙齿拥挤': 1
+'存在的疾病和异常:\nⅢ类错颌,下颌骨性偏斜,深覆合,牙齿拥挤': 1
+'存在的疾病和异常:\n下颌低角,凹面型,牙齿拥挤': 1
+'Diseases present in images:\nPeriodontitis,Gingivitis': 1
+'Periodontitis,Tooth Loss,Gingival Recession': 1
+'List of dental issues:\nPulpitis,Dental Caries': 1
+'观察到的异常和疾病如下:\nⅡ类错颌,龋齿': 1
+'患者患有的口腔疾病:\nⅡ类错颌,下颌骨性偏斜,牙列不齐,牙齿拥挤': 1
+'Visible diseases in the dental images:\nClass III Malocclusion,High-Angle Mandible,Convex Profile,Dental Crowding': 1
+'检测到的口腔疾病或问题如下:\nⅡ类错颌,龋齿': 1
+'Determined disease types based on images:\nPeriapical Periodontitis,Dental Caries': 1
+'可见的疾病和状况:\nⅢ类错颌,牙反颌,龋齿': 1
+'图像中存在的疾病:\n充血,牙体缺损,龋齿': 1
+'氟斑牙,牙齿松动': 1
+'检测到的疾病和异常:\n牙周炎,牙龈炎': 1
+'基于图像诊断的疾病:\n楔状缺损,龋齿': 1
+'Detected oral abnormalities or diseases:\nHyperemia,Impacted Tooth': 1
+'检测到的疾病和异常:\n氟斑牙,肯氏III类缺失': 1
+'识别的可见口腔健康状况:\nⅠ类错颌,牙列不齐': 1
+'Periapical Periodontitis,Tooth Structure Loss,Pulpitis': 1
+'可见的疾病和状况:\n氟斑牙,牙周炎': 1
+'牙科异常:\nⅢ类错颌,下颌骨性偏斜,唇腭裂术后状态,深覆合,牙齿拥挤,阻塞性睡眠呼吸暂停综合征': 1
+'Oral health conditions identified include:\nTooth Rotation,Tooth Loss': 1
+'Ⅰ类错颌,Ⅱ类错颌,凸面型,深 SPEE 曲线,深覆盖,牙列不齐,牙齿拥挤': 1
+'图像中存在的疾病:\n牙龈炎,色素附着,龋齿': 1
+'牙科问题列表:\n下颌高角,凸面型,开合咬合,牙列不齐,牙齿拥挤': 1
+'检测到的口腔疾病综合列表:\nⅠ类错颌,Ⅱ类错颌,下颌骨性偏斜,凹面型': 1
+'当前的口腔或牙科状况:\n凸面型,牙齿拥挤': 1
+'可见疾病的名称:\nⅡ类错颌,下颌骨性偏斜,凸面型,散隙,深覆合,深覆盖': 1
+'牙科疾病列表:\n深窝沟,深覆合,牙釉质发育不全': 1
+'List of oro-dental diseases:\nDental Crowding,Gingivitis': 1
+'根尖周炎,牙体缺损,牙齿拥挤,龋齿': 1
+'List of dental diseases:\nClass II Malocclusion,Convex Profile,Dental Crowding': 1
+'影响牙科健康的疾病:\n牙髓炎,龋齿': 1
+'识别出的口腔图像中的疾病:\n牙髓炎,龋齿': 1
+'影响牙科健康的疾病:\n氟斑牙,龋齿': 1
+'Here is the list of anomalies and diseases that the patient have:\nPeriodontitis,Pulpitis,Dental Caries': 1
+'楔状缺损,牙周炎,牙齿松动,牙龈炎': 1
+'Detected anomalies and diseases:\nPulpitis,Gingivitis,Impacted Tooth': 1
+'检测到的异常和健康状况:\nⅠ类错颌,深覆合': 1
+'Determined disease types based on images:\nMandibular Skeletal Asymmetry,Convex Profile,Dental Crowding': 1
+'可见的口腔健康问题和牙科疾病:\n牙列不齐,牙齿拥挤': 1
+'根据图像确定的疾病类型:\n牙周炎,牙齿松动,牙龈炎': 1
+'检测到的口腔疾病或问题如下:\n牙龈炎,龋齿': 1
+'Current oral or dental conditions:\nPeriapical Periodontitis,Periodontitis,Pulpitis,Gingivitis': 1
+'Ⅰ类错颌,深覆合': 1
+'Dental anomalies:\nClass III Malocclusion,Mandibular Skeletal Asymmetry,Convex Profile,Incisor Protrusion,Anterior Crossbite,Dental Crowding': 1
+'这是患者患有的异常和疾病列表:\n根管内无新鲜渗出,牙体缺损': 1
+'Ⅱ类错颌,凸面型,深覆颌,牙列不齐,牙齿拥挤': 1
+'检测到的疾病和异常:\n凸面型,牙齿拥挤': 1
+'Oral health conditions identified include:\nMandibular Skeletal Asymmetry,High-Angle Mandible,Deep Overbite,Dental Crowding,Dental Crowding': 1
+'乳牙滞留,牙体缺损': 1
+'List of dental diseases affecting the patient:\nClass III Malocclusion,Dental Crowding': 1
+'Observed abnormalities and diseases are:\nPeriapical Periodontitis,Tooth Structure Loss,Dental Caries': 1
+'检测到的口腔疾病或问题如下:\nⅢ类错颌,凸面型,牙齿拥挤,龋齿': 1
+'Pulpitis,Tooth Mobility,Gingivitis': 1
+'Low-Angle Mandible,Convex Profile,Dental Crowding': 1
+'Classification of diseases present:\nPeriodontitis,Subgingival Calculus': 1
+'识别的口腔疾病和牙科状况:\nⅡ类错颌,下颌骨性偏斜,凸面型,深覆合,牙齿拥挤': 1
+'Class III Malocclusion,Mandibular Skeletal Asymmetry,High-Angle Mandible,Convex Profile,Spacing,Dental Crowding': 1
+'Visible diseases and anomalies are:\nClass II Malocclusion,Mandibular Skeletal Asymmetry,Deep Overjet,Dental Crowding': 1
+'List of oro-dental diseases:\nClass II Malocclusion,Mandibular Skeletal Asymmetry,Convex Profile,Dental Crowding': 1
+'存在疾病的分类:\n下颌骨性偏斜,牙齿拥挤': 1
+'牙科问题列表:\nⅠ类错颌,凸面型,牙列不齐,牙齿拥挤,龋齿': 1
+'Diagnosed diseases based on images:\nGingivitis,Dental Caries': 1
+'这是患者患有的异常和疾病列表:\n下颌骨性偏斜,凸面型,前突,深覆合,深覆盖,牙齿拥挤': 1
+'牙科疾病列表:\nⅡ类错颌,下颌骨性偏斜,下颌高角,凸面型,深覆合,深覆盖,牙齿拥挤': 1
+'Diseases present in the images:\nPeriapical Periodontitis,Tooth Structure Loss,Pulpitis,Dental Caries': 1
+'Identified abnormalities and oral health conditions:\nPeriodontitis,Tooth Mobility,Gingivitis': 1
+'患者患有的口腔疾病:\nⅢ类错颌,下颌骨性偏斜,凸面型,前突,深覆合,深覆盖,牙齿拥挤': 1
+'Diseases affecting the patient’s oral health include:\nWedge-Shaped Defect,Gingivitis,Dental Caries': 1
+'Oral diseases patient is suffering from:\nClass II Malocclusion,Dental Caries': 1
+'Classified diseases in the oral cavity:\nMandibular Skeletal Asymmetry,Convex Profile,Incisor Protrusion,Deep Overbite,Dental Crowding': 1
+'根管治疗术后': 1
+'Lost Filling,Tooth Structure Loss,Dental Crowding,Dental Caries': 1
+'牙科异常列表:\nⅡ类错颌,Ⅲ类错颌,下颌骨性偏斜': 1
+'图像中存在的疾病:\nⅡ类错颌,下颌骨性偏斜,凸面型,深覆合': 1
+'Oral diseases patient is suffering from:\nClass II Malocclusion,Convex Profile,Dental Crowding': 1
+'牙科异常列表:\nⅢ类错颌,下颌骨性偏斜,凹面型,牙齿拥挤': 1
+'Class III Malocclusion,Mandibular Skeletal Asymmetry': 1
+'Comprehensive list of oral diseases detected:\nPeriodontitis,Gingival Recession,Subgingival Calculus': 1
+'根据图像确定的疾病类型:\nⅡ类错颌,下颌骨性偏斜,凸面型,前突,深覆合,深覆盖,牙齿拥挤': 1
+'Class III Malocclusion,High-Angle Mandible,Convex Profile,Incisor Protrusion,Anterior Crossbite,Dental Crowding': 1
+'Oral diseases and dental conditions identified:\nClass III Malocclusion,High-Angle Mandible,Concave Profile,Anterior Crossbite,Dental Crowding': 1
+'Ⅱ类错颌,下颌骨性偏斜,凸面型,前突,深覆盖,牙列不齐,牙反合,牙齿拥挤': 1
+'Periapical Periodontitis,Wedge-Shaped Defect,Tooth Structure Loss,Pulpitis,Dental Caries': 1
+'Oral health problems and diseases found:\nClass II Malocclusion,Dental Caries': 1
+'观察到的异常和疾病如下:\nⅠ类错颌,Ⅱ类错颌,上前牙唇倾,乳牙滞留,凸面型,双侧升支高度不一致,深 SPEE 曲线,深覆盖,深覆颌,牙列中线偏斜,牙齿拥挤,颏部偏右,龋齿': 1
+'Class II Malocclusion,Class III Malocclusion,Convex Profile,Deep Overbite,Deep Overjet,Dental Crowding': 1
+'Diseases affecting the patient’s oral health include:\nPulpitis,Dental Caries': 1
+'影响患者口腔的疾病:\n根管内无新鲜渗出,楔状缺损': 1
+'识别的口腔疾病和牙科状况:\n凹面型,牙齿拥挤': 1
+'下颌骨性偏斜,牙齿拥挤,错颌': 1
+'这是患者患有的异常和疾病列表:\n牙龈炎,龋齿': 1
+'Observed abnormalities and diseases are:\nTooth Structure Loss,Tooth Loss': 1
+'Yes, the patient has the following diseases:\nClass II Malocclusion,Dental Crowding': 1
+'疾病列表:\nⅠ类错颌,脱矿': 1
+'Diseases diagnosed from images:\nGingivitis,Gingival Recession': 1
+'Retained Primary Tooth,Periapical Periodontitis,Gingivitis': 1
+'影响口腔健康的疾病:\n牙龈炎,阻生齿': 1
+'患者患有的口腔疾病:\nⅡ类错颌,凸面型': 1
+'影响患者口腔的疾病:\n氟斑牙,牙髓坏死,过小牙': 1
+'识别的可见口腔健康状况:\n根尖周炎,牙齿缺失,龋齿': 1
+'Mandibular Skeletal Asymmetry,High-Angle Mandible,Deep Overbite,Dental Crowding,Dental Crowding': 1
+'Detected abnormalities and health conditions:\nLost Filling,Post And Core Crown,Dental Fluorosis,Tooth Structure Loss,Dental Caries': 1
+'口腔中疾病的分类:\n牙折断,牙龈炎,龋齿': 1
+'List of dental diseases:\nClass II Malocclusion,Mandibular Skeletal Asymmetry,Dental Crowding': 1
+'识别出的口腔疾病:\n根尖周炎,牙周炎': 1
+'Class II Malocclusion,Excessive Overbite': 1
+'检测到的口腔异常或疾病:\n根尖周炎,牙体缺损,牙周炎,牙龈炎': 1
+'氟斑牙,牙折断': 1
+'根尖周炎,牙齿缺失': 1
+'Determined disease type:\nClass I Malocclusion,Class II Malocclusion,Mandibular Skeletal Asymmetry,High-Angle Mandible,Retained Primary Tooth,Convex Profile,Deep Overbite,Deep Overjet,Dental Crowding': 1
+'Ⅱ类错颌,下颌骨性偏斜': 1
+'Comprehensive list of oral diseases detected:\nGingivitis,Mesioangular Impaction': 1
+'Comprehensive list of oral diseases detected:\nConvex Profile,Dental Crowding,Dental Crowding': 1
+'Detected dental conditions include:\nClass II Malocclusion,High-Angle Mandible,Convex Profile,Dental Crowding': 1
+'Class III Malocclusion,Deep Overbite': 1
+'患者患有的疾病名称:\n牙周炎,牙齿缺失': 1
+'患者患有的口腔疾病:\n下颌骨性偏斜,凸面型,散隙': 1
+'牙科疾病列表:\n牙髓炎,龋齿': 1
+'牙科或口腔图像中可见的疾病:\n牙周炎,牙龈炎,龈下牙石': 1
+'根据图像确定的疾病类型:\n深覆合,深覆颌,色素附着': 1
+'口腔中疾病的分类:\n牙周炎,牙齿松动,牙龈炎': 1
+'Ⅲ类错颌,下颌低角,下颌骨性偏斜,凸面型': 1
+'Disease(s) identified in oral images:\nClass II Malocclusion,Mandibular Skeletal Asymmetry,Convex Profile,Deep Overbite,Deep Overjet,Dental Crowding': 1
+'识别的可见口腔健康状况:\n牙周炎,牙龈萎缩,色素附着': 1
+'Class III Malocclusion,Low-Angle Mandible,Anterior Crossbite': 1
+'Class III Malocclusion,Gingivitis': 1
+'Identified diseases from images:\nClass II Malocclusion,Mandibular Skeletal Asymmetry,Dental Crowding': 1
+'Periodontitis,Gingivitis,Gingival Recession,Subgingival Calculus': 1
+'Disease(s) identified in oral images:\nClass III Malocclusion,High-Angle Mandible,Convex Profile,Dental Crowding': 1
+'Determined disease type:\nPeriapical Periodontitis,Tooth Structure Loss,Pulpitis': 1
+'检测到的口腔异常或疾病:\n根尖周炎,牙体缺损,牙齿拥挤': 1
+'当前的口腔或牙科状况:\nⅡ类错颌,牙齿拥挤,龋齿': 1
+'Oral health issues and dental diseases visible:\nMandibular Skeletal Asymmetry,High-Angle Mandible,Convex Profile,Deep Overjet,Dental Crowding,Dental Crowding': 1
+'口腔中疾病的分类:\n下颌骨性偏斜,凸面型,牙齿拥挤': 1
+'已识别的详细牙科疾病列表:\n修复体缺损,牙周炎,牙龈萎缩': 1
+'Visible diseases in dental or oral images:\nTooth Structure Loss,Periodontitis': 1
+'Ⅱ类错颌,深覆颌,牙釉质发育不全,牙齿拥挤': 1
+'可见的疾病和异常包括:\n根尖周炎,深覆合,牙列不齐': 1
+'这是患者患有的异常和疾病列表:\nⅡ类错颌,下颌骨性偏斜,凸面型,前突,深覆合,牙齿拥挤': 1
+'Ⅰ类错颌,Ⅱ类错颌,下颌骨性偏斜,凸面型,深覆合,深覆盖,牙齿拥挤': 1
+'Oral diseases or issues detected are:\nPeriapical Periodontitis,Dental Fluorosis,Tooth Structure Loss,Dental Caries': 1
+'Identified diseases from images:\nConvex Profile,Supernumerary Tooth': 1
+'List of oro-dental diseases:\nClass I Malocclusion,Class III Malocclusion,Retroclined Lower Incisors,Wedge-Shaped Defect,Dental Crowding,Dental Crowding,Microdontia': 1
+'Periapical Periodontitis,Dental Fluorosis,Tooth Structure Loss,Pulpitis,Dental Caries': 1
+'Class I Malocclusion,Class III Malocclusion,Proclined Upper Incisors,Retroclined Lower Incisors,Left Mandibular Midline Deviation,Poor Oral Hygiene,Spacing,Deep Overjet,Deep Overbite,Dental Crowding': 1
+'Comprehensive list of oral diseases detected:\nClass II Malocclusion,Mandibular Skeletal Asymmetry,Convex Profile,Deep Overbite,Dental Crowding': 1
+'List of diseases:\nDental Fluorosis,Tooth Wear,Enamel Hypoplasia,Dental Caries': 1
+'Oral diseases patient is suffering from:\nMandibular Skeletal Asymmetry,Convex Profile,Incisor Protrusion,Dental Crowding': 1
+'已识别的详细牙科疾病列表:\n牙龈炎,阻生齿': 1
+'可见的疾病和状况:\n外源性黄牙,氟斑牙': 1
+'基于数据识别的牙科异常:\n下颌骨性偏斜,牙列不齐,牙齿拥挤': 1
+'Visible diseases in the dental images:\nClass I Malocclusion,Wedge-Shaped Defect': 1
+'Identified diseases from images:\nPeriodontitis,Gingivitis': 1
+'Tooth Structure Loss,Demineralization,Dental Caries': 1
+'Diseases affecting the patient’s mouth:\nClass I Malocclusion,Dental Caries': 1
+'Identified abnormalities and oral health conditions:\nClass I Malocclusion,Dental Caries': 1
+'疾病列表:\n牙龈炎,龋齿': 1
+'识别的异常和口腔健康状况:\nⅡ类错颌,凸面型': 1
+'Oral diseases patient is suffering from:\nClass II Malocclusion,Mandibular Skeletal Asymmetry,Convex Profile,Deep Overjet,Dental Crowding': 1
+'Diseases affecting oral health:\nLabial Inclination,Excessive Overjet': 1
+'图像中存在的疾病:\nⅡ类错颌,下颌骨性偏斜,牙齿拥挤': 1
+'下颌骨性偏斜,下颌高角,凸面型,深覆合,牙齿拥挤': 1
+'Class I Malocclusion,Deep Overbite,Dental Crowding,Dental Crowding,Dental Caries': 1
+'基于图像诊断的疾病:\nⅠ类错颌,牙齿拥挤': 1
+'Yes, the patient has the following diseases:\nPeriodontitis,Tooth Mobility,Gingivitis,Gingival Recession': 1
+'Ⅲ类错颌,下颌高角,牙反颌,牙齿拥挤': 1
+'Class III Malocclusion,Mandibular Skeletal Asymmetry,High-Angle Mandible,Concave Profile,Anterior Crossbite,Dental Crowding': 1
+'Detected diseases and anomalies:\nPeriodontitis,Tooth Mobility,Gingivitis': 1
+'这是患者患有的异常和疾病列表:\n牙体缺损,牙齿缺失': 1
+'List of dental diseases:\nGingivitis,Dental Caries': 1
+'图像中存在的疾病:\nⅢ类错颌,牙齿拥挤': 1
+'Names of diseases the patient has:\nClass II Malocclusion,Dental Caries': 1
+'Ⅰ类错颌,阻生齿': 1
+'楔状缺损,深窝沟,牙体缺损,牙龈炎': 1
+'Oral diseases patient is suffering from:\nClass II Malocclusion,Dental Crowding': 1
+'Tooth Structure Loss,Periodontitis,Tooth Mobility,Gingivitis': 1
+'根据图像确定的疾病类型:\nⅢ类错颌,牙反颌,牙齿拥挤': 1
+'Ⅱ类错颌,下颌低角,下颌骨性偏斜,牙齿拥挤': 1
+'基于数据识别的牙科异常:\nⅢ类错颌,下颌骨性偏斜,下颌高角,凸面型,牙列不齐,牙反合,牙齿拥挤': 1
+'患者患有的口腔疾病:\n牙石,牙龈萎缩,龋齿': 1
+'Diagnosed diseases:\nClass III Malocclusion,Mandibular Skeletal Asymmetry,Concave Profile,Dental Crowding': 1
+'Dental Fluorosis,Pulp Necrosis,Microdontia': 1
+'牙科异常:\n牙体缺损,牙龈炎': 1
+'Detected abnormalities and health conditions:\nClass III Malocclusion,Mandibular Skeletal Asymmetry,Convex Profile,Anterior Crossbite,Dental Crowding': 1
+'Tooth Structure Loss,Dental Crowding,Dental Crowding': 1
+'Ⅰ类错颌,上前牙舌倾,深覆颌,牙齿拥挤': 1
+'Oral health issues and dental diseases visible:\nTooth Structure Loss,Pulpitis,Dental Caries': 1
+'根据图像确定的疾病类型:\nⅡ类错颌,阻生齿': 1
+'发现的口腔健康问题和疾病如下:\n牙周炎,牙齿松动,牙龈炎': 1
+'口腔中疾病的分类:\nⅡ类错颌,下颌骨性偏斜,凸面型,前突,深覆合,深覆盖,牙齿拥挤': 1
+'Names of visible diseases:\nPeriodontitis,Tooth Mobility,Gingivitis,Gingival Recession,Jaw Trauma': 1
+'List of diseases:\nPulpitis,Dental Caries': 1
+'List of dental issues:\nClass II Malocclusion,Convex Profile': 1
+'识别出的口腔疾病:\nⅡ类错颌,凸面型,牙齿拥挤': 1
+'牙科或口腔图像中可见的疾病:\n深覆盖,深覆颌,牙槽骨水平吸收': 1
+'Oral health issues and dental diseases visible:\nConvex Profile,Dental Crowding': 1
+'识别的可见口腔健康状况:\n牙列不齐,牙周炎,牙齿松动,牙龈炎': 1
+'Dental anomalies:\nClass I Malocclusion,Convex Profile': 1
+'Class I Malocclusion,Convex Profile,Impacted Tooth': 1
+'根据图像确定的疾病类型:\n牙髓炎,龋齿': 1
+'The patient has the following types of diseases:\nClass II Malocclusion,Convex Profile,Deep Overjet,Dental Crowding': 1
+'Visible diseases and anomalies are:\nClass II Malocclusion,Dental Caries': 1
+'Class I Malocclusion,Class III Malocclusion': 1
+'List of dental anomalies:\nPeriapical Periodontitis,Dental Fluorosis,Tooth Structure Loss,Pulpitis,Dental Caries': 1
+'Detected diseases and anomalies:\nClass I Malocclusion,Low-Angle Mandible,Convex Profile,Dental Crowding': 1
+'Visible diseases and conditions:\nClass II Malocclusion,Deep Overbite': 1
+'识别出的口腔疾病:\n根管内无新鲜渗出,牙髓炎': 1
+'影响口腔健康的疾病:\n牙齿拥挤,龋齿': 1
+'牙科异常:\n牙龈炎,龋齿': 1
+'List of dental issues:\nGingivitis,Dental Caries': 1
+'List of dental diseases:\nPulpitis,Dental Caries': 1
+'Diseases affecting the patient’s mouth:\nDental Crowding,Impacted Tooth,Dental Caries': 1
+'识别的可见口腔健康状况:\n下颌骨性偏斜,深覆合,牙齿拥挤': 1
+'检测到的口腔疾病综合列表:\nⅢ类错颌,下颌骨性偏斜,凸面型,牙齿拥挤': 1
+'疾病列表:\n根尖周炎,氟斑牙': 1
+'患者患有的口腔疾病:\n根尖周炎,牙体缺损,牙周炎': 1
+'List of oro-dental diseases:\nClass II Malocclusion,Dental Caries': 1
+'Names of visible diseases:\nClass II Malocclusion,Convex Profile,Deep Overbite,Dental Crowding,Dental Crowding': 1
+'Determined disease type:\nClass II Malocclusion,Mandibular Skeletal Asymmetry,Convex Profile,Deep Overbite,Dental Crowding': 1
+'Diseases affecting dental health:\nConvex Profile,Dental Crowding': 1
+'Here is the list of anomalies and diseases that the patient have:\nClass II Malocclusion,Convex Profile,Dental Crowding': 1
+'牙周炎,牙龈萎缩,龋齿': 1
+'Oral diseases or issues detected are:\nNarrow Maxillary Arch,Mandibular Retrusion': 1
+'Class III Malocclusion,Low-Angle Mandible,Mandibular Skeletal Asymmetry,Convex Profile,Deep Overbite,Dental Crowding': 1
+'Detected dental conditions include:\nDry Root Canal,Pulpitis': 1
+'Mandibular Skeletal Asymmetry,Convex Profile,Tooth Structure Loss,Dental Crowding': 1
+'Detected oral abnormalities or diseases:\nRestoration Defect,Tooth Structure Loss,Subgingival Calculus': 1
+'Comprehensive list of oral diseases detected:\nClass III Malocclusion,Mandibular Skeletal Asymmetry,Dental Crowding': 1
+'Here is the list of anomalies and diseases that the patient have:\nHigh-Angle Mandible,Dental Crowding': 1
+'Diseases affecting the patient’s mouth:\nClass III Malocclusion,Dental Caries': 1
+'Dry Root Canal,Demineralization,Dental Caries': 1
+'Oral diseases and dental conditions identified:\nTooth Structure Loss,Tooth Loss': 1
+'Ⅱ类错颌,下颌骨性偏斜,凸面型,深覆盖,牙釉质发育不全,牙齿拥挤,牙齿缺失,脱矿,龋齿': 1
+'影响患者口腔的疾病:\n牙龈炎,色素附着,龋齿': 1
+'Here is the list of abnormalities that are present in the images:\nPeriapical Periodontitis,Periodontitis,Pulpitis,Gingivitis': 1
+'Oral diseases the patient is suffering from:\nClass I Malocclusion,Demineralization': 1
+'Diagnosed diseases:\nPeriapical Periodontitis,Periodontitis,Gingivitis': 1
+'List of dental diseases affecting the patient:\nMandibular Skeletal Asymmetry,Convex Profile,Incisor Protrusion,Deep Overbite,Deep Overjet,Dental Crowding': 1
+'Determined disease types based on images:\nDental Fluorosis,Dental Caries': 1
+'List of diseases:\nPeriodontitis,Gingivitis': 1
+'List of dental issues:\nClass III Malocclusion,Anterior Crossbite,Dental Crowding': 1
+'Oral diseases or issues detected are:\nPeriapical Periodontitis,Tooth Structure Loss,Gingivitis': 1
+'检测到的异常和疾病:\nⅢ类错颌,下颌骨性偏斜,凸面型,牙反合,牙齿拥挤': 1
+'Detected anomalies and diseases:\nDental Fluorosis,Dental Caries': 1
+'牙科异常列表:\n内源性黄牙,氟斑牙': 1
+'Visible diseases and conditions:\nHyperemia,Impacted Tooth': 1
+'Dental Fluorosis,Tooth Structure Loss,Periodontitis,Cracked Tooth': 1
+'影响口腔健康的疾病:\n氟斑牙,牙体缺损,龋齿': 1
+'Deep Overbite,Deep Overjet,Dental Crowding,Dental Crowding': 1
+'Visible diseases in dental or oral images:\nClass II Malocclusion,Pigment Deposition': 1
+'Oral health conditions identified include:\nTooth Structure Loss,Dental Crowding,Dental Caries': 1
+'影响患者口腔健康的疾病包括:\n根尖周炎,牙齿缺失,龋齿': 1
+'List of dental diseases:\nClass II Malocclusion,Low-Angle Mandible,Mandibular Skeletal Asymmetry,Convex Profile,Incisor Protrusion,Deep Overbite,Deep Overjet,Dental Crowding,Dental Crowding': 1
+'Disease(s) identified in oral images:\nPeriodontitis,Tooth Loss': 1
+'Diseases affecting the patient’s oral health include:\nDental Fluorosis,Tooth Structure Loss,Dental Caries': 1
+'Oral health conditions identified include:\nClass II Malocclusion,Calculus,Dental Caries': 1
+'Here is the list of abnormalities that are present in the images:\nClass II Malocclusion,Mandibular Skeletal Asymmetry,Convex Profile,Deep Overbite,Deep Overjet,Dental Crowding': 1
+'可见疾病的名称:\n牙周炎,牙髓炎,牙齿松动': 1
+'Identified diseases from images:\nPulpitis,Dental Caries': 1
+'Disease(s) identified in oral images:\nPeriapical Periodontitis,Tooth Structure Loss,Pulpitis,Dental Caries': 1
+'Classified diseases in the oral cavity:\nPeriodontitis,Gingivitis,Jaw Trauma': 1
+'Oral diseases the patient is suffering from:\nPeriodontitis,Tooth Mobility,Gingival Recession': 1
+'List of diseases:\nRetained Primary Tooth,Gingivitis': 1
+'诊断的疾病:\nⅡ类错颌,下颌骨性偏斜,凸面型,牙反合,牙齿拥挤': 1
+'Detected abnormalities and health conditions:\nGingivitis,Pigment Deposition': 1
+'List of diseases:\nClass II Malocclusion,Demineralization,Dental Caries': 1
+'Class III Malocclusion,Crossbite,Dental Crowding': 1
+'识别的口腔健康状况包括:\nⅢ类错颌,下颌骨性偏斜,下颌高角,凹面型,牙反合,牙齿拥挤': 1
+'影响患者口腔健康的疾病包括:\nⅡ类错颌,Ⅲ类错颌,下颌骨性偏斜,牙齿拥挤': 1
+'Class II Malocclusion,High-Angle Mandible,Convex Profile,Deep Overjet': 1
+'List of dental issues:\nPeriodontitis,Gingivitis': 1
+'患者患有的口腔疾病:\nⅡ类错颌,下颌高角,凸面型,深覆合': 1
+'检测到的牙科状况包括:\nⅡ类错颌,牙列不齐': 1
+'存在的疾病和异常:\nⅡ类错颌,下颌骨性偏斜,凸面型,深覆合,深覆盖,牙齿拥挤': 1
+'根尖周炎,错颌': 1
+'影响口腔健康的疾病:\nⅡ类错颌,Ⅲ类错颌,下颌骨性偏斜,凸面型,深覆合,深覆盖,牙齿拥挤': 1
+'Class III Malocclusion,Incisor Protrusion,Dental Caries': 1
+'患者患有的口腔疾病:\nⅡ类错颌,下颌骨性偏斜,凸面型,深覆合,牙齿拥挤,阻生齿': 1
+'Mandibular Skeletal Asymmetry,Deep Overbite,Deep Overjet,Dental Crowding': 1
+'Names of diseases the patient has:\nTooth Structure Loss,Dental Caries': 1
+'Diseases affecting the patient’s oral health include:\nDental Fluorosis,Pulpitis,Impacted Tooth,Dental Caries': 1
+'基于图像诊断的疾病:\n牙周炎,牙齿松动': 1
+'Diagnosed diseases based on images:\nClass I Malocclusion,Dental Caries': 1
+'Ⅲ类错颌,凸面型,牙齿拥挤,牙龈炎': 1
+'牙科或口腔图像中可见的疾病:\n下颌骨性偏斜,凸面型,前突,牙齿拥挤': 1
+'影响患者口腔健康的疾病包括:\nⅡ类错颌,龋齿': 1
+'检测到的异常和健康状况:\nⅢ类错颌,下颌骨性偏斜,凸面型,前突,深覆盖,牙齿拥挤': 1
+'内源性黄牙,氟斑牙,牙龈萎缩': 1
+'Dental Fluorosis,Periodontitis,Tooth Mobility': 1
+'Detailed list of dental diseases identified:\nPeriodontitis,Tooth Loss': 1
+'Ⅱ类错颌,阻生齿,龋齿': 1
+'口腔-牙科疾病列表:\nⅡ类错颌,下颌骨性偏斜,深覆盖,牙齿拥挤': 1
+'Inadequate Root Canal Filling,Periodontitis,Alveolar Bone Resorption,Gingivitis,Subgingival Calculus,Dental Caries': 1
+'Identified diseases from images:\nRestoration Defect,Periapical Periodontitis': 1
+'口腔中疾病的分类:\n氟斑牙,牙隐裂': 1
+'Diagnosed diseases based on images:\nHigh-Angle Mandible,Dental Crowding': 1
+'Periapical Periodontitis,Tooth Structure Loss,Periodontitis,Gingivitis': 1
+'可见疾病的名称:\n下颌骨性偏斜,下颌高角,凸面型,深覆合,深覆盖,牙齿拥挤,错颌': 1
+'识别的口腔健康状况包括:\nⅡ类错颌,凸面型,深覆盖,牙齿拥挤': 1
+'根据图像确定的疾病类型:\n牙位滞留,龋齿': 1
+'识别的异常和口腔健康状况:\n下颌骨性偏斜,凸面型,深覆盖,牙齿拥挤': 1
+'Classification of diseases present:\nClass II Malocclusion,Mandibular Skeletal Asymmetry,Convex Profile,Dental Crowding': 1
+'Ⅱ类错颌,下颌骨性偏斜,下颌高角,凸面型': 1
+'识别的口腔疾病和牙科状况:\n内源性黄牙,牙体缺损': 1
+'Ⅱ类错颌,下颌骨性偏斜,凸面型,前突,深覆合,牙齿拥挤': 1
+'识别的异常和口腔健康状况:\nⅡ类错颌,下颌骨性偏斜,凸面型,深覆合,深覆盖,牙齿拥挤': 1
+'检测到的口腔异常或疾病:\n根尖周炎,氟斑牙,牙体缺损,龋齿': 1
+'牙科异常:\n牙体缺损,牙齿缺失': 1
+'检测到的口腔异常或疾病:\nⅡ类错颌,牙龈炎,龋齿': 1
+'检测到的异常和健康状况:\n牙龈炎,色素附着': 1
+'可见的口腔健康问题和牙科疾病:\n牙体缺损,牙列不齐': 1
+'Oral health problems and diseases found:\nConvex Profile,Incisor Protrusion': 1
+'Here is the list of anomalies and diseases that the patient have:\nClass I Malocclusion,Retroclined Upper Incisors,Deep Overbite,Dental Crowding': 1
+'根据图像确定的疾病类型:\n凸面型,多生牙': 1
+'牙隐裂,牙髓炎': 1
+'Disease(s) identified in oral images:\nMaxillary Protrusion,Mandibular Retrusion,Spacing,Deep Overjet': 1
+'观察到的异常和疾病如下:\n内源性黄牙,氟斑牙,牙龈萎缩': 1
+'List of dental diseases:\nConvex Profile,Dental Crowding': 1
+'Yes, the patient has the following diseases:\nClass II Malocclusion,Mandibular Skeletal Asymmetry,Convex Profile,Deep Overjet,Dental Crowding': 1
+'Detected oral abnormalities or diseases:\nTooth Structure Loss,Dental Caries': 1
+'Dental anomalies:\nClass II Malocclusion,Mandibular Skeletal Asymmetry,High-Angle Mandible,Convex Profile,Dental Crowding': 1
+'已识别的详细牙科疾病列表:\nⅡ类错颌,龋齿': 1
+'牙科图像中可见的疾病:\n下颌骨性偏斜,凸面型,牙齿拥挤': 1
+'Diseases present in images:\nDental Crowding,Dental Caries': 1
+'Class II Malocclusion,Mandibular Skeletal Asymmetry,High-Angle Mandible,Convex Profile,Deep Overbite': 1
+'Class II Malocclusion,Class III Malocclusion,Mandibular Skeletal Asymmetry,Convex Profile,Deep Overjet,Dental Crowding': 1
+'存在疾病的分类:\n牙齿缺失,龋齿': 1
+'Yes, the patient has the following diseases:\nClass II Malocclusion,Mandibular Skeletal Asymmetry,Convex Profile,Deep Overbite,Deep Overjet,Dental Crowding': 1
+'楔状缺损,牙齿松动,龈下牙石': 1
+'Detected abnormalities and health conditions:\nClass III Malocclusion,High-Angle Mandible,Concave Profile,Anterior Crossbite,Dental Crowding': 1
+'Detected oral abnormalities or diseases:\nPeriapical Periodontitis,Periodontitis': 1
+'患者患有的疾病名称:\n乳牙滞留,凸面型,弓外牙,牙列不齐,牙齿拥挤': 1
+'牙科或口腔图像中可见的疾病:\nⅡ类错颌,龋齿': 1
+'List of diseases:\nRestoration Defect,Tooth Structure Loss,Gingival Recession': 1
+'Visible diseases and anomalies are:\nGingivitis,Dental Caries': 1
+'Ⅲ类错颌,下颌骨性偏斜,凸面型,深覆合': 1
+'识别出的口腔疾病:\nⅢ类错颌,下颌低角,牙列不齐,牙反合': 1
+'Identified abnormalities and oral health conditions:\nClass III Malocclusion,Mandibular Skeletal Asymmetry,Anterior Crossbite,Dental Crowding': 1
+'识别出的疾病:\n凸面型,牙齿拥挤': 1
+'识别的可见口腔健康状况:\nⅡ类错颌,下颌骨性偏斜,深覆盖,牙齿拥挤': 1
+'检测到的口腔疾病综合列表:\n根尖周炎,牙周炎': 1
+'Diseases affecting oral health:\nConcave Profile,Dental Crowding': 1
+'Oral health issues and dental diseases visible:\nTooth Structure Loss,Pulpitis': 1
+'Detected dental conditions include:\nDry Root Canal,Periodontitis,Gingivitis': 1
+'检测到的异常和疾病:\n凸面型,牙齿拥挤': 1
+'Class III Malocclusion,Concave Profile,Dental Crowding': 1
+'影响牙科健康的疾病:\n根尖周炎,牙体缺损,牙龈炎,龋齿': 1
+'检测到的异常和健康状况:\n内源性黄牙,氟斑牙': 1
+'Ⅱ类错颌,下颌后缩,凸面型,牙齿拥挤': 1
+'Names of diseases the patient has:\nPeriodontitis,Pulpitis,Dental Caries': 1
+'Identified oral diseases:\nPulpitis,Tooth Loss': 1
+'Detailed list of dental diseases identified:\nRestoration Defect,Dental Caries': 1
+'确定的疾病类型:\n根尖周炎,牙体缺损,牙龈炎': 1
+'Diseases affecting oral health:\nClass III Malocclusion,Anterior Crossbite,Dental Crowding': 1
+'基于数据识别的牙科异常:\n根管治疗术后,牙齿缺失': 1
+'影响牙科健康的疾病:\nⅠ类错颌,Ⅱ类错颌,深覆颌,牙列不齐,牙齿拥挤': 1
+'影响患者口腔健康的疾病包括:\nⅢ类错颌,下颌骨性偏斜,凸面型,深覆合,牙反合,牙齿拥挤': 1
+'Diseases affecting oral health:\nClass III Malocclusion,Dental Crowding': 1
+'牙科异常:\nⅡ类错颌,凸面型,牙齿拥挤': 1
+'识别的口腔疾病和牙科状况:\n楔状缺损,龋齿': 1
+'牙科异常列表:\n牙体缺损,龋齿': 1
+'疾病列表:\n牙位滞留,龋齿': 1
+'Identified diseases from images:\nDemineralization,Dental Caries': 1
+'Detected oral abnormalities or diseases:\nDeep Fissures,Dental Caries': 1
+'Retained Primary Tooth,Dental Crowding,Dental Crowding': 1
+'患者患有的疾病名称:\nⅡ类错颌,下颌骨性偏斜,凸面型,深覆盖,牙齿拥挤': 1
+'检测到的口腔异常或疾病:\nⅡ类错颌,色素附着': 1
+'存在疾病的分类:\n牙周炎,牙齿松动,牙龈炎': 1
+'Oral disease(s) patient is suffering from:\nClass III Malocclusion,Mandibular Skeletal Asymmetry,Convex Profile,Incisor Protrusion,Anterior Crossbite,Dental Crowding': 1
+'Ⅱ类错颌,下颌低角,下颌骨性偏斜,凸面型,散隙,深覆盖,深覆颌': 1
+'Diseases and anomalies present:\nPeriodontitis,Tooth Mobility': 1
+'Class III Malocclusion,Mandibular Skeletal Asymmetry,Concave Profile,Anterior Crossbite,Dental Crowding': 1
+'牙科疾病列表:\nⅢ类错颌,下颌高角,凸面型,牙齿拥挤': 1
+'Names of visible diseases:\nMandibular Skeletal Asymmetry,Deep Overbite,Deep Overjet,Dental Crowding': 1
+'乳牙滞留,牙龈炎': 1
+'牙齿缺失,牙龈炎': 1
+'Class II Malocclusion,Mandibular Skeletal Asymmetry,Convex Profile,Incisor Protrusion,Deep Overbite,Deep Overjet': 1
+'Visible diseases and conditions:\nWedge-Shaped Defect,Pulpitis': 1
+'识别出的口腔疾病:\n牙髓炎,牙齿缺失': 1
+'Oral disease(s) patient is suffering from:\nExtrinsic Tooth Stain,Pigment Deposition': 1
+'确定的疾病类型:\nⅠ类错颌,牙齿变色': 1
+'识别的异常和口腔健康状况:\n氟斑牙,牙体缺损,龋齿': 1
+'影响患者的牙科疾病列表:\nⅡ类错颌,下颌骨性偏斜,凸面型,深覆合,牙齿拥挤': 1
+'Mandibular Skeletal Asymmetry,Deep Overjet,Dental Crowding': 1
+'牙体缺损,牙周炎,龈下牙石': 1
+'Detected diseases and anomalies:\nTooth Wear,Enamel Hypoplasia,Dental Caries': 1
+'Identified oral diseases:\nPulpitis,Dental Caries': 1
+'Mandibular Skeletal Asymmetry,High-Angle Mandible,Convex Profile,Incisor Protrusion,Deep Overjet,Dental Crowding': 1
+'牙科图像中可见的疾病:\n氟斑牙,牙体缺损,牙周炎,牙隐裂': 1
+'Malocclusion,Impacted Tooth,Dental Caries': 1
+'Classified diseases in the oral cavity:\nPeriodontitis,Cracked Tooth,Gingivitis,Subgingival Calculus': 1
+'检测到的口腔疾病或问题如下:\n牙龈炎,色素附着': 1
+'可见疾病的名称:\n错颌,龋齿': 1
+'Identified abnormalities and oral health conditions:\nPeriodontitis,Gingivitis': 1
+'观察到的异常和疾病如下:\n下颌低角,下颌骨性偏斜,凸面型,多生牙,深覆盖,牙齿拥挤': 1
+'List of dental diseases affecting the patient:\nSupernumerary Tooth,Dental Crowding': 1
+'Dental anomalies:\nConvex Profile,Dental Crowding': 1
+'患者患有以下类型的疾病:\n深窝沟,龋齿': 1
+'Visible oral health conditions identified:\nPeriodontitis,Tooth Mobility,Gingivitis': 1
+'检测到的牙科状况包括:\nⅠ类错颌,Ⅱ类错颌,凸面型,牙列不齐,牙反颌,牙齿拥挤': 1
+'Detailed list of dental diseases identified:\nOpen Bite,Abnormal Tongue Habit': 1
+'患者患有的口腔疾病:\nⅢ类错颌,下颌低角,下颌骨性偏斜,凹面型,前牙端对端咬合,牙列不齐,牙齿拥挤,阻生齿,龋齿': 1
+'确定的疾病类型:\n氟斑牙,龋齿': 1
+'Class I Malocclusion,Class II Malocclusion,Mandibular Skeletal Asymmetry,Convex Profile,Deep Overbite,Deep Overjet,Dental Crowding': 1
+'Oral diseases the patient is suffering from:\nClass II Malocclusion,Mandibular Skeletal Asymmetry,Convex Profile,Deep Overbite,Deep Overjet,Dental Crowding': 1
+'基于图像诊断的疾病:\nⅡ类错颌,牙齿拥挤': 1
+'Ⅱ类错颌,下颌骨性偏斜,下颌高角,凸面型,深覆合,牙反合,牙齿拥挤': 1
+'Mandibular Skeletal Asymmetry,Anterior Crossbite,Dental Crowding': 1
+'Here is the list of anomalies and diseases that the patient have:\nClass II Malocclusion,Mandibular Skeletal Asymmetry,Convex Profile,Incisor Protrusion,Deep Overbite,Deep Overjet,Dental Crowding': 1
+'The patient has the following types of diseases:\nPeriapical Periodontitis,Periodontitis': 1
+'牙体缺损,龈下牙石': 1
+'The patient has the following types of diseases:\nClass II Malocclusion,Dental Caries': 1
+'Names of diseases the patient has:\nHigh-Angle Mandible,Dental Crowding': 1
+'识别的可见口腔健康状况:\n牙龈炎,牙龈萎缩': 1
+'Identified dental anomalies based on data:\nPeriapical Periodontitis,Dental Fluorosis,Dental Caries': 1
+'Diseases affecting dental health:\nClass II Malocclusion,Class III Malocclusion,Dental Crowding': 1
+'Diagnosed diseases:\nTooth Structure Loss,Pulpitis': 1
+'检测到的异常和疾病:\nⅡ类错颌,上前牙舌倾,右侧面部增宽,深 SPEE 曲线,深覆颌': 1
+'牙科异常:\n根管内无新鲜渗出,牙体缺损': 1
+'Diseases and anomalies present:\nTooth Structure Loss,Dental Caries': 1
+'Detected oral abnormalities or diseases:\nPeriodontitis,Gingivitis,Jaw Trauma': 1
+'Oral diseases patient is suffering from:\nPeriodontitis,Gingivitis,Dental Caries': 1
+'Visible diseases in the dental images:\nPeriodontitis,Gingivitis,Dental Caries': 1
+'Class III Malocclusion,Mandibular Skeletal Asymmetry,Incisor Protrusion,Anterior Crossbite,Dental Crowding': 1
+'Class II Malocclusion,Class III Malocclusion,Dental Crowding': 1
+'存在疾病的分类:\nⅠ类错颌,凸面型,深覆合': 1
+'基于数据识别的牙科异常:\n牙位滞留,龋齿': 1
+'这些图像中存在的异常列表如下:\nⅡ类错颌,前磨牙畸形中央尖': 1
+'检测到的疾病和异常:\n根尖周炎,牙周炎': 1
+'List of dental diseases:\nTooth Structure Loss,Dental Caries': 1
+'根尖周炎,牙齿缺失,龋齿': 1
+'这是患者患有的异常和疾病列表:\n氟斑牙,牙体缺损,龋齿': 1
+'Detected abnormalities and health conditions:\nMandibular Skeletal Asymmetry,Convex Profile,Incisor Protrusion,Dental Crowding': 1
+'乳牙滞留,凸面型,前突,氟斑牙,牙髓坏死': 1
+'Detected oral abnormalities or diseases:\nPeriapical Periodontitis,Wedge-Shaped Defect,Dental Fluorosis,Pulpitis,Impacted Tooth,Dental Caries': 1
+'Identified dental anomalies based on data:\nWedge-Shaped Defect,Dental Crowding,Periodontitis,Dental Caries': 1
+'影响牙科健康的疾病:\n下颌骨性偏斜,深覆合,深覆盖,牙反合,牙齿拥挤': 1
+'影响牙科健康的疾病:\n氟斑牙,牙齿松动,龋齿': 1
+'牙科疾病列表:\n楔状缺损,牙扭转,牙髓炎,龋齿': 1
+'List of dental diseases affecting the patient:\nMandibular Skeletal Asymmetry,Convex Profile,Deep Overbite,Deep Overjet,Dental Crowding': 1
+'Names of visible diseases:\nConvex Profile,Incisor Protrusion': 1
+'Identified abnormalities and oral health conditions:\nCrossbite,Dental Crowding': 1
+'这是患者患有的异常和疾病列表:\n下颌骨性偏斜,凸面型,深覆合,牙齿拥挤': 1
+'Mandibular Skeletal Asymmetry,High-Angle Mandible,Anterior Crossbite,Dental Crowding': 1
+'Oral health issues and dental diseases visible:\nTooth Loss,Dental Caries': 1
+'患者患有以下类型的疾病:\nⅢ类错颌,乳牙滞留': 1
+'List of oro-dental diseases:\nGingivitis,Pigment Deposition': 1
+'口腔-牙科疾病列表:\nⅢ类错颌,下颌骨性偏斜,深覆盖,牙齿拥挤': 1
+'修复体缺损,楔状缺损,牙龈炎,龋齿': 1
+'患者患有以下类型的疾病:\nⅡ类错颌,Ⅲ类错颌,下颌骨性偏斜,凸面型,深覆合,深覆盖,牙反合,牙齿拥挤': 1
+'Oral diseases the patient is suffering from:\nDental Fluorosis,Dental Caries': 1
+'Ⅲ类错颌,下颌骨性偏斜,凹面型': 1
+'识别的可见口腔健康状况:\n外源性黄牙,牙龈炎': 1
+'牙科问题列表:\n凸面型,牙齿拥挤': 1
+'Ⅲ类错颌,上凸下缩,凸面型,多生牙,牙反颌,牙龈炎': 1
+'检测到的异常和疾病:\n下颌高角,凸面型,牙齿拥挤': 1
+'牙髓炎,牙龈萎缩,龋齿': 1
+'识别出的口腔图像中的疾病:\nⅡ类错颌,下颌骨性偏斜,凸面型,散隙,深覆合,深覆盖': 1
+'Detected dental conditions include:\nMandibular Skeletal Asymmetry,Deep Overbite,Dental Crowding,Malocclusion': 1
+'影响患者口腔健康的疾病包括:\nⅡ类错颌,深覆合,深覆盖,牙齿拥挤': 1
+'影响口腔健康的疾病:\nⅡ类错颌,龋齿': 1
+'识别出的疾病:\n下颌低角,下颌骨性偏斜,凸面型,深覆合,牙齿拥挤': 1
+'Oral diseases or issues detected are:\nClass II Malocclusion,Convex Profile': 1
+'Detected abnormalities and health conditions:\nDry Root Canal,Tooth Structure Loss,Pulpitis': 1
+'基于图像诊断的疾病:\n阻生齿,龋齿': 1
+'存在的疾病和异常:\nⅡ类错颌,下颌低角,下颌骨性偏斜,凸面型,深覆合,牙齿拥挤': 1
+'Yes, the patient has the following diseases:\nClass I Malocclusion,Class II Malocclusion,Multiple Restored Teeth,Deep Overbite,Dental Crowding,Dental Crowding': 1
+'Oral health problems and diseases found:\nClass I Malocclusion,Class II Malocclusion,Dens Evaginatus,Deep Curve Of Spee,Dental Crowding,Dental Crowding': 1
+'检测到的疾病和异常:\n下颌骨性偏斜,凸面型,牙齿拥挤': 1
+'Oral disease(s) patient is suffering from:\nClass II Malocclusion,Convex Profile,Dental Crowding': 1
+'Diagnosed diseases based on images:\nPeriapical Periodontitis,Tooth Structure Loss,Gingivitis,Dental Caries': 1
+'识别的异常和口腔健康状况:\n氟斑牙,牙体缺损,牙齿缺失,龋齿': 1
+'Class I Malocclusion,Impacted Tooth,Dental Caries': 1
+'Periodontitis,Gingivitis,Jaw Trauma': 1
+'Detected abnormalities and health conditions:\nConvex Profile,Dental Crowding': 1
+'Comprehensive list of oral diseases detected:\nTooth Structure Loss,Tooth Loss': 1
+'牙体缺损,牙齿缺失,牙龈炎,龋齿': 1
+'The patient has the following types of diseases:\nPulpitis,Dental Caries': 1
+'Here is the list of anomalies and diseases that the patient have:\nClass II Malocclusion,Mandibular Skeletal Asymmetry,Convex Profile,Dental Crowding': 1
+'氟斑牙,脱矿,色素附着,龋齿': 1
+'Periapical Periodontitis,Post And Core Crown,Wedge-Shaped Defect,Dental Fluorosis,Pulpitis,Dental Caries': 1
+'患者患有的口腔疾病:\n氟斑牙,牙周炎': 1
+'List of dental diseases:\nTooth Structure Loss,Tooth Loss': 1
+'Visible diseases and conditions:\nPeriodontitis,Gingivitis': 1
+'患者患有的口腔疾病:\n牙周炎,牙龈炎,牙龈萎缩,龈下牙石': 1
+'疾病列表:\n牙周炎,牙齿缺失,牙龈炎': 1
+'识别的异常和口腔健康状况:\n牙体缺损,龋齿': 1
+'影响患者的牙科疾病列表:\nⅡ类错颌,下颌骨性偏斜,凸面型,深覆盖,牙齿拥挤': 1
+'图像中存在的疾病:\nⅡ类错颌,深覆合': 1
+'患者患有的口腔疾病:\nⅡ类错颌,下颌骨性偏斜,凸面型,深覆合,深覆盖,牙齿拥挤': 1
+'检测到的疾病和异常:\nⅠ类错颌,Ⅱ类错颌,深覆颌,牙列不齐,牙齿拥挤': 1
+'The patient has the following types of diseases:\nMandibular Skeletal Asymmetry,Convex Profile,Deep Overbite,Dental Crowding,Dental Crowding': 1
+'口腔-牙科疾病列表:\nⅡ类错颌,下颌骨性偏斜,凸面型,前突,深覆合,深覆盖,牙齿拥挤': 1
+'Ⅱ类错颌,深覆合,深覆盖,牙列不齐,牙反合': 1
+'Classified diseases in the oral cavity:\nTooth Rotation,Dental Caries': 1
+'识别的可见口腔健康状况:\n桩核冠,氟斑牙,牙体缺损,牙髓炎,阻生齿,龋齿': 1
+'Visible diseases and conditions:\nClass II Malocclusion,Convex Profile': 1
+'Ⅱ类错颌,下颌骨性偏斜,凸面型,前突,深覆合,深覆盖,牙反合,牙齿拥挤': 1
+'检测到的牙科状况包括:\nⅢ类错颌,牙列不齐,牙反颌,牙折断,牙齿拥挤': 1
+'Diagnosed diseases:\nPulpitis,Tooth Loss,Dental Caries': 1
+'牙体缺损,牙列不齐,龋齿': 1
+'图像中存在的疾病:\n牙周炎,牙龈炎,牙龈萎缩': 1
+'识别的可见口腔健康状况:\n凸面型,牙齿拥挤': 1
+'Determined disease types based on images:\nPeriapical Periodontitis,Tooth Mobility': 1
+'Identified abnormalities and oral health conditions:\nMalocclusion,Dental Caries': 1
+'存在疾病的分类:\n氟斑牙,牙列不齐': 1
+'识别出的口腔图像中的疾病:\n根管内无新鲜渗出,牙髓炎': 1
+'Diseases present in the images:\nDental Fluorosis,Dental Caries': 1
+'修复体缺损,龈下牙石': 1
+'牙科问题列表:\nⅡ类错颌,凸面型,深覆合': 1
+'List of dental anomalies:\nGingivitis,Pigment Deposition,Dental Caries': 1
+'Current oral or dental conditions:\nClass III Malocclusion,Mandibular Skeletal Asymmetry,High-Angle Mandible,Convex Profile,Anterior Crossbite,Dental Crowding': 1
+'Oral diseases the patient is suffering from:\nDental Crowding,Gingivitis': 1
+'可见的疾病和异常包括:\n深覆合,龋齿': 1
+'List of oro-dental diseases:\nWedge-Shaped Defect,Dental Caries': 1
+'图像中存在的疾病:\nⅢ类错颌,下颌骨性偏斜,下颌高角,深覆盖,牙齿拥挤': 1
+'影响患者的牙科疾病列表:\nⅡ类错颌,深覆合': 1
+'Visible diseases and conditions:\nDental Fluorosis,Tooth Structure Loss,Dental Caries': 1
+'可见的口腔健康问题和牙科疾病:\nⅡ类错颌,下颌骨性偏斜,下颌高角,凸面型,深覆合,牙反合,牙齿拥挤': 1
+'识别的口腔疾病和牙科状况:\n牙龈炎,牙龈萎缩': 1
+'Ⅲ类错颌,牙反合,牙齿拥挤,龋齿': 1
+'基于图像诊断的疾病:\n修复体缺损,根尖周炎': 1
+'识别出的口腔图像中的疾病:\nⅢ类错颌,乳牙滞留': 1
+'识别出的疾病:\n牙列不齐,牙龈炎,龋齿': 1
+'口腔中疾病的分类:\n外源性黄牙,氟斑牙': 1
+'Diseases present in the images:\nGingivitis,Pigment Deposition,Dental Caries': 1
+'Diseases affecting oral health:\nClass I Malocclusion,Dental Crowding': 1
+'识别出的口腔图像中的疾病:\n牙体缺损,牙周炎': 1
+'检测到的口腔异常或疾病:\nⅡ类错颌,下颌骨性偏斜,下颌高角,深覆合,牙齿拥挤': 1
+'Ⅱ类错颌,下颌骨性偏斜,凸面型,深覆合,牙齿拥挤,阻生齿': 1
+'Diseases diagnosed from images:\nPeriodontitis,Tooth Mobility,Tooth Loss': 1
+'Diseases affecting oral health:\nConvex Profile,Dental Crowding': 1
+'Visible diseases in the dental images:\nPost And Core Crown,Dental Fluorosis,Tooth Structure Loss,Pulpitis,Impacted Tooth,Dental Caries': 1
+'牙科问题列表:\nⅢ类错颌,下颌骨性偏斜,凸面型,牙齿拥挤': 1
+'患者患有的口腔疾病:\n下颌骨性偏斜,凸面型,前突,深覆合,牙齿拥挤': 1
+'识别出的口腔疾病:\n下颌骨性偏斜,前突,深覆合,深覆盖,牙列不齐': 1
+'Ⅰ类错颌,下颌骨性偏斜,凸面型,牙齿拥挤': 1
+'识别的口腔疾病和牙科状况:\n氟斑牙,龋齿': 1
+'基于数据识别的牙科异常:\n下颌骨性偏斜,凸面型,深覆合,牙齿拥挤': 1
+'基于数据识别的牙科异常:\nⅡ类错颌,牙齿拥挤': 1
+'Diseases affecting the patient’s oral health include:\nPeriapical Periodontitis,Tooth Structure Loss,Dental Crowding': 1
+'Periapical Periodontitis,Tooth Mobility': 1
+'Oral disease(s) patient is suffering from:\nClass II Malocclusion,Demineralization,Mesioangular Impaction': 1
+'检测到的牙科状况包括:\nⅡ类错颌,下颌骨性偏斜,牙列不齐,牙齿拥挤': 1
+'Detailed list of dental diseases identified:\nConcave Profile,Dental Crowding': 1
+'Oral health problems and diseases found:\nPeriapical Periodontitis,Tooth Structure Loss,Pulpitis': 1
+'识别的可见口腔健康状况:\n牙体缺损,牙齿缺失': 1
+'牙科疾病列表:\n充血,牙体缺损,龋齿': 1
+'Detailed list of dental diseases identified:\nClass III Malocclusion,Mandibular Skeletal Asymmetry,Convex Profile,Incisor Protrusion,Deep Overbite,Deep Overjet,Dental Crowding': 1
+'上凸下缩,牙列不齐': 1
+'Detected abnormalities and health conditions:\nClass III Malocclusion,Deep Overbite': 1
+'临时修复体': 1
+'牙体缺损,牙髓炎,牙龈炎,龋齿': 1
+'检测到的口腔疾病或问题如下:\nⅡ类错颌,下颌骨性偏斜,深覆合,牙齿拥挤': 1
+'Pulpitis,Tooth Mobility,Gingivitis,Gingival Recession': 1
+'Diagnosed diseases:\nGingivitis,Pigment Deposition': 1
+'检测到的口腔疾病综合列表:\nⅢ类错颌,凸面型': 1
+'Names of visible diseases:\nClass II Malocclusion,Dental Crowding': 1
+'Oral health conditions identified include:\nTooth Structure Loss,Periodontitis,Tooth Loss': 1
+'Diseases diagnosed from images:\nPeriodontitis,Gingivitis,Gingival Recession,Subgingival Calculus': 1
+'Identified oral diseases:\nClass III Malocclusion,Dental Crowding': 1
+'Detected oral abnormalities or diseases:\nClass III Malocclusion,Mandibular Skeletal Asymmetry,Deep Overbite,Dental Crowding,Dental Crowding': 1
+'影响牙科健康的疾病:\n牙折断,牙龈炎': 1
+'Wedge-Shaped Defect,Dental Crowding,Periodontitis,Dental Caries': 1
+'List of oro-dental diseases:\nClass II Malocclusion,Congenitally Missing Tooth': 1
+'Oral health issues and dental diseases visible:\nMandibular Skeletal Asymmetry,High-Angle Mandible,Dental Crowding': 1
+'根尖周炎,氟斑牙,牙龈萎缩': 1
+'患者患有的口腔疾病:\nⅡ类错颌,下颌骨性偏斜,凸面型,前突,深覆合,深覆盖,牙齿拥挤': 1
+'影响牙科健康的疾病:\n根尖周炎,牙体缺损,牙周炎,牙龈炎': 1
+'Diagnosed diseases based on images:\nExtrinsic Tooth Stain,Dental Fluorosis': 1
+'Ⅱ类错颌,先天缺失': 1
+'Visible diseases in the dental images:\nMandibular Skeletal Asymmetry,Convex Profile,Deep Overbite,Deep Overjet,Dental Crowding': 1
+'Retained Tooth,Dental Crowding': 1
+'可见的疾病和状况:\n凸面型,牙齿拥挤': 1
+'Names of diseases the patient has:\nTooth Structure Loss,Periodontitis,Tooth Mobility,Gingivitis,Dental Caries': 1
+'Visible diseases and conditions:\nClass II Malocclusion,Convex Profile,Dental Crowding': 1
+'Diseases affecting oral health:\nTooth Structure Loss,Tooth Loss': 1
+'Periapical Periodontitis,Periodontitis,Tooth Fracture': 1
+'Identified oral diseases:\nPeriodontitis,Gingivitis,Dental Caries': 1
+'Low-Angle Mandible,Mandibular Skeletal Asymmetry,Convex Profile,Supernumerary Tooth,Deep Overjet,Dental Crowding': 1
+'识别出的疾病:\nⅢ类错颌,下颌骨性偏斜,牙反颌,牙齿拥挤': 1
+'Class II Malocclusion,Mandibular Skeletal Asymmetry,Deep Overbite': 1
+'Observed abnormalities and diseases are:\nClass III Malocclusion,Low-Angle Mandible,Mandibular Skeletal Asymmetry,Deep Overbite,Deep Overjet,Dental Crowding': 1
+'Diseases affecting the patient’s oral health include:\nConvex Profile,Dental Crowding': 1
+'Classification of diseases present:\nMandibular Skeletal Asymmetry,Convex Profile,Deep Overbite,Dental Crowding,Malocclusion': 1
+'Ⅱ类错颌,下颌骨性偏斜,前突,深覆合,牙列不齐,牙齿拥挤': 1
+'Identified abnormalities and oral health conditions:\nDental Crowding,Dental Caries': 1
+'口腔中疾病的分类:\nⅡ类错颌,凸面型,牙齿拥挤': 1
+'影响牙科健康的疾病:\nⅡ类错颌,下颌骨性偏斜,凸面型,前突,深覆合': 1
+'Diagnosed diseases based on images:\nDental Fluorosis,Periodontitis,Tooth Mobility': 1
+'Class II Malocclusion,Mandibular Skeletal Asymmetry,High-Angle Mandible,Convex Profile,Incisor Protrusion,Deep Overbite,Deep Overjet,Dental Crowding': 1
+'Identified dental anomalies based on data:\nPeriodontitis,Calculus,Gingivitis': 1
+'Ⅰ类错颌,Ⅱ类错颌,上前牙唇倾,多生牙,深 SPEE 曲线,深覆盖,深覆颌,牙列不齐,牙齿拥挤': 1
+'存在疾病的分类:\nⅡ类错颌,凸面型,近中阻生': 1
+'图像中存在的疾病:\n牙周炎,牙龈炎': 1
+'可见的疾病和状况:\nⅡ类错颌,凸面型,面型扁平,高角,龋齿': 1
+'下颌骨性偏斜,凸面型,错颌': 1
+'Class I Malocclusion,Class II Malocclusion,Deep Overbite,Dental Crowding,Dental Crowding': 1
+'Ⅱ类错颌,下颌低角,下颌骨性偏斜,深覆合,深覆盖,牙齿拥挤': 1
+'Oral health conditions identified include:\nClass II Malocclusion,Low-Angle Mandible,Mandibular Skeletal Asymmetry,Convex Profile,Deep Overbite,Deep Overjet,Dental Crowding': 1
+'识别的口腔疾病和牙科状况:\n牙周炎,牙龈炎,龈下牙石': 1
+'基于数据识别的牙科异常:\n牙周炎,牙齿松动': 1
+'这些图像中存在的异常列表如下:\n牙龈炎,龋齿': 1
+'Diseases affecting dental health:\nWedge-Shaped Defect,Dental Fluorosis': 1
+'当前的口腔或牙科状况:\n牙周炎,牙龈炎': 1
+'影响患者口腔的疾病:\n牙周炎,龈下牙石': 1
+'影响患者口腔的疾病:\nⅡ类错颌,凸面型,深覆盖,牙齿拥挤': 1
+'Determined disease type:\nGingivitis,Pigment Deposition': 1
+'Current oral or dental conditions:\nDental Fluorosis,Periodontitis': 1
+'牙科异常列表:\nⅢ类错颌,牙齿拥挤': 1
+'Distal Periapical Radiolucency': 1
+'患者患有的口腔疾病:\n牙髓炎,牙齿缺失,龋齿': 1
+'Detected diseases and anomalies:\nDental Fluorosis,Dental Caries': 1
+'Oral diseases and dental conditions identified:\nClass I Malocclusion,Class II Malocclusion,Convex Profile,Dental Crowding': 1
+'Pulp Necrosis': 1
+'Oral health conditions identified include:\nDental Fluorosis,Dental Caries': 1
+'患者患有的口腔疾病:\n牙周炎,牙齿缺失,牙龈炎': 1
+'这些图像中存在的异常列表如下:\nⅡ类错颌,凸面型,牙齿拥挤': 1
+'Oral health problems and diseases found:\nClass I Malocclusion,Convex Profile,Deep Overbite': 1
+'疾病列表:\n氟斑牙,龋齿': 1
+'Detected diseases and anomalies:\nPeriapical Periodontitis,Periodontitis': 1
+'检测到的口腔疾病或问题如下:\nⅡ类错颌,下颌骨性偏斜,凸面型,牙齿拥挤': 1
+'识别的口腔健康状况包括:\n牙髓炎,龋齿': 1
+'List of diseases:\nPeriodontitis,Tooth Mobility': 1
+'识别出的疾病:\n牙周炎,牙齿松动,牙龈炎,牙龈萎缩': 1
+'The patient has the following types of diseases:\nMandibular Skeletal Asymmetry,Deep Overbite,Deep Overjet,Dental Crowding,Malocclusion': 1
+'Detected anomalies and diseases:\nPeriodontitis,Gingivitis': 1
+'检测到的疾病和异常:\nⅡ类错颌,下颌骨性偏斜,深覆合,牙列不齐': 1
+'Visible oral health conditions identified:\nClass II Malocclusion,Impacted Tooth': 1
+'图像中存在的疾病:\nⅡ类错颌,凸面型,深覆合': 1
+'Oral diseases or issues detected are:\nClass II Malocclusion,Dental Caries': 1
+'Diagnosed diseases:\nClass II Malocclusion,Mandibular Skeletal Asymmetry,Convex Profile,Deep Overbite': 1
+'检测到的疾病和异常:\n牙位滞留,牙齿拥挤': 1
+'Detected oral abnormalities or diseases:\nClass II Malocclusion,Mandibular Skeletal Asymmetry,Convex Profile,Incisor Protrusion,Deep Overbite,Deep Overjet,Dental Crowding': 1
+'Current oral or dental conditions:\nHyperemia,Tooth Structure Loss,Dental Caries': 1
+'Detected oral abnormalities or diseases:\nMandibular Skeletal Asymmetry,High-Angle Mandible,Convex Profile,Dental Crowding': 1
+'Detected anomalies and diseases:\nClass III Malocclusion,Mandibular Skeletal Asymmetry,Concave Profile,Dental Crowding': 1
+'Names of diseases the patient has:\nClass II Malocclusion,Mandibular Skeletal Asymmetry,Convex Profile,Dental Crowding': 1
+'确定的疾病类型:\n牙体缺损,牙周炎': 1
+'识别的口腔健康状况包括:\n氟斑牙,龋齿': 1
+'检测到的口腔异常或疾病:\n楔状缺损,牙周炎,牙髓炎': 1
+'Oral diseases and dental conditions identified:\nGingivitis,Pigment Deposition': 1
+'是的，患者患有以下疾病:\n修复体缺损,牙周炎,牙龈萎缩': 1
+'Yes, the patient has the following diseases:\nClass II Malocclusion,Class III Malocclusion,Mandibular Skeletal Asymmetry,Dental Crowding': 1
+'牙科图像中可见的疾病:\nⅡ类错颌,下颌高角,凸面型,牙齿拥挤': 1
+'Diseases affecting the patient’s mouth:\nConvex Profile,Incisor Protrusion,Chin Retrusion': 1
+'存在的疾病和异常:\nⅡ类错颌,下颌骨性偏斜,凹面型,牙齿拥挤': 1
+'Diseases affecting the patient’s mouth:\nClass II Malocclusion,Mandibular Skeletal Asymmetry,Convex Profile,Incisor Protrusion,Deep Overbite,Deep Overjet,Dental Crowding': 1
+'牙髓炎,牙齿松动,牙龈炎,牙龈萎缩': 1
+'Disease(s) identified in oral images:\nDeep Overjet,Crossbite,Dental Crowding': 1
+'这是患者患有的异常和疾病列表:\n牙列不齐,牙龈炎': 1
+'根尖周炎,牙体缺损,牙周炎': 1
+'检测到的口腔疾病综合列表:\nⅡ类错颌,下颌骨性偏斜,凸面型,深覆合,牙齿拥挤': 1
+'The patient has the following types of diseases:\nPulp Necrosis,Gingivitis,Dental Caries': 1
+'牙科异常:\n脱矿,龋齿': 1
+'Visible diseases in the dental images:\nClass II Malocclusion,Class III Malocclusion,High-Angle Mandible,Concave Profile,Crossbite,Dental Crowding': 1
+'牙科异常:\nⅡ类错颌,下颌骨性偏斜,凸面型,前突,深覆合,深覆盖,牙齿拥挤': 1
+'疾病列表:\n凸面型,牙齿拥挤': 1
+'诊断的疾病:\nⅢ类错颌,下颌骨性偏斜,凸面型,牙齿拥挤': 1
+'Dental Fluorosis,Demineralization,Dental Caries': 1
+'患者患有的口腔疾病:\nⅡ类错颌,下颌骨性偏斜,凸面型,深覆盖,牙齿拥挤': 1
+'Classified diseases in the oral cavity:\nMaxillary Protrusion,Mandibular Retrusion,Spacing,Deep Overjet': 1
+'基于数据识别的牙科异常:\nⅡ类错颌,凸面型,牙齿拥挤': 1
+'Detected dental conditions include:\nClass II Malocclusion,Convex Profile,Deep Overbite,Deep Overjet,Dental Crowding': 1
+'已识别的详细牙科疾病列表:\n牙周炎,牙龈炎,龈下牙石': 1
+'Class III Malocclusion,Mandibular Skeletal Asymmetry,High-Angle Mandible,Convex Profile,Dental Crowding,Dental Crowding': 1
+'识别出的口腔图像中的疾病:\nⅡ类错颌,凸面型': 1
+'Visible diseases and conditions:\nDental Crowding,Gingivitis': 1
+'Here is the list of anomalies and diseases that the patient have:\nPeriodontitis,Gingivitis,Gingival Recession': 1
+'已识别的详细牙科疾病列表:\n楔状缺损,牙髓炎': 1

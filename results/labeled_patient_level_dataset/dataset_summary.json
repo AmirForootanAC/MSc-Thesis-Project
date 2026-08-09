@@ -1,0 +1,213 @@
+{
+    "dataset": {
+        "total_visits": 8775,
+        "total_patients": 4800
+    },
+    "split": {
+        "patient_counts": {
+            "test": 720,
+            "train": 3360,
+            "validation": 720
+        },
+        "visit_counts": {
+            "train": 6129,
+            "validation": 1330,
+            "test": 1316
+        }
+    },
+    "labels": {
+        "number_of_labels": 13,
+        "visits_with_at_least_one_label": 7256,
+        "label_coverage_percentage": 82.68945868945869,
+        "multi_label_visits": 2085
+    },
+    "label_split_distribution": [
+        {
+            "rank": 1,
+            "label": "Gingivitis",
+            "train_visits": 1357,
+            "validation_visits": 328,
+            "test_visits": 302,
+            "total_visits": 1987,
+            "patients": 1691,
+            "train_pct": 68.29391041771515,
+            "validation_pct": 16.50729743331656,
+            "test_pct": 15.198792148968293
+        },
+        {
+            "rank": 2,
+            "label": "Class II Malocclusion",
+            "train_visits": 1299,
+            "validation_visits": 264,
+            "test_visits": 262,
+            "total_visits": 1825,
+            "patients": 1498,
+            "train_pct": 71.17808219178082,
+            "validation_pct": 14.465753424657535,
+            "test_pct": 14.356164383561643
+        },
+        {
+            "rank": 3,
+            "label": "Dental Crowding",
+            "train_visits": 808,
+            "validation_visits": 171,
+            "test_visits": 169,
+            "total_visits": 1148,
+            "patients": 1066,
+            "train_pct": 70.38327526132404,
+            "validation_pct": 14.895470383275262,
+            "test_pct": 14.721254355400697
+        },
+        {
+            "rank": 4,
+            "label": "Tooth Structure Loss",
+            "train_visits": 742,
+            "validation_visits": 157,
+            "test_visits": 143,
+            "total_visits": 1042,
+            "patients": 831,
+            "train_pct": 71.20921305182341,
+            "validation_pct": 15.067178502879077,
+            "test_pct": 13.723608445297506
+        },
+        {
+            "rank": 5,
+            "label": "Dental Caries",
+            "train_visits": 660,
+            "validation_visits": 139,
+            "test_visits": 156,
+            "total_visits": 955,
+            "patients": 810,
+            "train_pct": 69.10994764397905,
+            "validation_pct": 14.554973821989527,
+            "test_pct": 16.335078534031414
+        },
+        {
+            "rank": 6,
+            "label": "Convex Profile",
+            "train_visits": 525,
+            "validation_visits": 108,
+            "test_visits": 113,
+            "total_visits": 746,
+            "patients": 739,
+            "train_pct": 70.37533512064343,
+            "validation_pct": 14.47721179624665,
+            "test_pct": 15.14745308310992
+        },
+        {
+            "rank": 7,
+            "label": "Mandibular Skeletal Asymmetry",
+            "train_visits": 373,
+            "validation_visits": 74,
+            "test_visits": 77,
+            "total_visits": 524,
+            "patients": 524,
+            "train_pct": 71.18320610687023,
+            "validation_pct": 14.122137404580155,
+            "test_pct": 14.694656488549619
+        },
+        {
+            "rank": 8,
+            "label": "Periodontitis",
+            "train_visits": 480,
+            "validation_visits": 98,
+            "test_visits": 91,
+            "total_visits": 669,
+            "patients": 553,
+            "train_pct": 71.74887892376681,
+            "validation_pct": 14.648729446935723,
+            "test_pct": 13.602391629297458
+        },
+        {
+            "rank": 9,
+            "label": "Class III Malocclusion",
+            "train_visits": 327,
+            "validation_visits": 59,
+            "test_visits": 76,
+            "total_visits": 462,
+            "patients": 389,
+            "train_pct": 70.77922077922078,
+            "validation_pct": 12.770562770562771,
+            "test_pct": 16.450216450216452
+        },
+        {
+            "rank": 10,
+            "label": "Pulpitis",
+            "train_visits": 323,
+            "validation_visits": 45,
+            "test_visits": 75,
+            "total_visits": 443,
+            "patients": 364,
+            "train_pct": 72.91196388261851,
+            "validation_pct": 10.15801354401806,
+            "test_pct": 16.93002257336343
+        },
+        {
+            "rank": 11,
+            "label": "Deep Overbite",
+            "train_visits": 284,
+            "validation_visits": 69,
+            "test_visits": 68,
+            "total_visits": 421,
+            "patients": 412,
+            "train_pct": 67.45843230403801,
+            "validation_pct": 16.389548693586697,
+            "test_pct": 16.152019002375297
+        },
+        {
+            "rank": 12,
+            "label": "Class I Malocclusion",
+            "train_visits": 251,
+            "validation_visits": 56,
+            "test_visits": 52,
+            "total_visits": 359,
+            "patients": 332,
+            "train_pct": 69.91643454038997,
+            "validation_pct": 15.598885793871867,
+            "test_pct": 14.484679665738161
+        },
+        {
+            "rank": 13,
+            "label": "Tooth Loss",
+            "train_visits": 210,
+            "validation_visits": 42,
+            "test_visits": 57,
+            "total_visits": 309,
+            "patients": 268,
+            "train_pct": 67.96116504854369,
+            "validation_pct": 13.592233009708737,
+            "test_pct": 18.446601941747574
+        }
+    ],
+    "split_statistics": [
+        {
+            "split": "train",
+            "patients": 3360,
+            "visits": 6129,
+            "visits_with_label": 5086,
+            "label_coverage_pct": 82.98254201337902,
+            "multi_label_visits": 1479
+        },
+        {
+            "split": "validation",
+            "patients": 720,
+            "visits": 1330,
+            "visits_with_label": 1082,
+            "label_coverage_pct": 81.35338345864662,
+            "multi_label_visits": 300
+        },
+        {
+            "split": "test",
+            "patients": 720,
+            "visits": 1316,
+            "visits_with_label": 1088,
+            "label_coverage_pct": 82.67477203647417,
+            "multi_label_visits": 306
+        }
+    ],
+    "validation": {
+        "patient_level_split": "PASS",
+        "visit_uniqueness": "PASS",
+        "all_visits_assigned": "PASS"
+    }
+}

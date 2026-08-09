@@ -1,0 +1,126 @@
+{
+    "dataset": {
+        "total_visits": 8775,
+        "total_patients": 4800,
+        "visits_with_anomalies_en": 7654,
+        "visits_without_anomalies_en": 1121
+    },
+    "reconstruction": {
+        "number_of_selected_labels": 13,
+        "selected_labels": [
+            "Gingivitis",
+            "Class II Malocclusion",
+            "Dental Crowding",
+            "Tooth Structure Loss",
+            "Dental Caries",
+            "Convex Profile",
+            "Mandibular Skeletal Asymmetry",
+            "Periodontitis",
+            "Class III Malocclusion",
+            "Pulpitis",
+            "Deep Overbite",
+            "Class I Malocclusion",
+            "Tooth Loss"
+        ],
+        "visits_with_at_least_one_selected_label": 7256,
+        "visits_without_selected_label": 1519,
+        "coverage_percentage": 82.68945868945869
+    },
+    "multi_label": {
+        "visits_with_multiple_selected_labels": 2085,
+        "maximum_labels_per_visit": 6
+    },
+    "label_statistics": [
+        {
+            "rank": 1,
+            "label": "Gingivitis",
+            "visits": 1987,
+            "patients": 1691,
+            "visit_percentage": 22.643874643874646
+        },
+        {
+            "rank": 2,
+            "label": "Class II Malocclusion",
+            "visits": 1825,
+            "patients": 1498,
+            "visit_percentage": 20.7977207977208
+        },
+        {
+            "rank": 3,
+            "label": "Dental Crowding",
+            "visits": 1148,
+            "patients": 1066,
+            "visit_percentage": 13.082621082621081
+        },
+        {
+            "rank": 4,
+            "label": "Tooth Structure Loss",
+            "visits": 1042,
+            "patients": 831,
+            "visit_percentage": 11.874643874643874
+        },
+        {
+            "rank": 5,
+            "label": "Dental Caries",
+            "visits": 955,
+            "patients": 810,
+            "visit_percentage": 10.883190883190883
+        },
+        {
+            "rank": 6,
+            "label": "Convex Profile",
+            "visits": 746,
+            "patients": 739,
+            "visit_percentage": 8.5014245014245
+        },
+        {
+            "rank": 7,
+            "label": "Mandibular Skeletal Asymmetry",
+            "visits": 524,
+            "patients": 524,
+            "visit_percentage": 5.971509971509971
+        },
+        {
+            "rank": 8,
+            "label": "Periodontitis",
+            "visits": 669,
+            "patients": 553,
+            "visit_percentage": 7.6239316239316235
+        },
+        {
+            "rank": 9,
+            "label": "Class III Malocclusion",
+            "visits": 462,
+            "patients": 389,
+            "visit_percentage": 5.264957264957265
+        },
+        {
+            "rank": 10,
+            "label": "Pulpitis",
+            "visits": 443,
+            "patients": 364,
+            "visit_percentage": 5.048433048433049
+        },
+        {
+            "rank": 11,
+            "label": "Deep Overbite",
+            "visits": 421,
+            "patients": 412,
+            "visit_percentage": 4.797720797720798
+        },
+        {
+            "rank": 12,
+            "label": "Class I Malocclusion",
+            "visits": 359,
+            "patients": 332,
+            "visit_percentage": 4.091168091168091
+        },
+        {
+            "rank": 13,
+            "label": "Tooth Loss",
+            "visits": 309,
+            "patients": 268,
+            "visit_percentage": 3.5213675213675217
+        }
+    ]
+}
