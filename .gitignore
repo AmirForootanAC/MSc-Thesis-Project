@@ -14,3 +14,8 @@ __pycache__/
 
 # Experiment artifacts
 *.log
+
+# Model checkpoints
+*.pt
+*.pth
+*.ckpt
