@@ -1,0 +1,67 @@
+{
+    "label_gingivitis": {
+        "f1": 0.6499372647427855,
+        "auroc": 0.8617292853317754,
+        "support": 328
+    },
+    "label_class_ii_malocclusion": {
+        "f1": 0.28337874659400547,
+        "auroc": 0.835015847973165,
+        "support": 264
+    },
+    "label_dental_crowding": {
+        "f1": 0.31390134529147984,
+        "auroc": 0.8785527955638305,
+        "support": 171
+    },
+    "label_tooth_structure_loss": {
+        "f1": 0.3378995433789954,
+        "auroc": 0.8301404749105403,
+        "support": 157
+    },
+    "label_dental_caries": {
+        "f1": 0.0,
+        "auroc": 0.6185721448030492,
+        "support": 139
+    },
+    "label_convex_profile": {
+        "f1": 0.018018018018018018,
+        "auroc": 0.875640267927502,
+        "support": 108
+    },
+    "label_mandibular_skeletal_asymmetry": {
+        "f1": 0.0,
+        "auroc": 0.8739832587364434,
+        "support": 74
+    },
+    "label_periodontitis": {
+        "f1": 0.0,
+        "auroc": 0.7398580373707925,
+        "support": 98
+    },
+    "label_class_iii_malocclusion": {
+        "f1": 0.0,
+        "auroc": 0.7495299310565549,
+        "support": 59
+    },
+    "label_pulpitis": {
+        "f1": 0.0,
+        "auroc": 0.7001815823605708,
+        "support": 45
+    },
+    "label_deep_overbite": {
+        "f1": 0.0,
+        "auroc": 0.8434357365330024,
+        "support": 69
+    },
+    "label_class_i_malocclusion": {
+        "f1": 0.0,
+        "auroc": 0.7253448082529715,
+        "support": 56
+    },
+    "label_tooth_loss": {
+        "f1": 0.0,
+        "auroc": 0.6804569653948536,
+        "support": 42
+    }
+}
