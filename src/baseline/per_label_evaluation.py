@@ -44,6 +44,11 @@ from src.baseline.utils import (
     move_image_batch_to_device,
 )
 
+from src.baseline.utils import (
+    move_image_batch_to_device,
+    get_modality_batch,
+)
+
 
 
 def collect_predictions(
@@ -63,7 +68,10 @@ def collect_predictions(
         for batch in loader:
 
             images = move_image_batch_to_device(
-                batch["images"],
+                get_modality_batch(
+                    batch,
+                    config.MODALITY,
+                ),
                 device,
             )
 

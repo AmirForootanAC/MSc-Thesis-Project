@@ -12,6 +12,8 @@ from src.baseline import config
 
 from src.baseline.transforms import get_image_transform
 
+import argparse
+
 from src.baseline.dataset import (
     COdeBaselineDataset,
 )
@@ -22,6 +24,11 @@ from src.baseline.collate import (
 
 from src.baseline.encoder import (
     ResNet50Encoder,
+)
+
+from src.baseline.utils import (
+    move_image_batch_to_device,
+    get_modality_batch,
 )
 
 from src.baseline.aggregator import (
@@ -36,17 +43,15 @@ from src.baseline.metrics import (
     compute_metrics,
 )
 
-from src.baseline.utils import (
-    move_image_batch_to_device,
-)
-
-
 
 def collect_predictions(
     model,
     loader,
     device,
 ):
+    """
+    Collect raw logits and labels.
+    """
 
     model.eval()
 
@@ -59,7 +64,10 @@ def collect_predictions(
         for batch in loader:
 
             images = move_image_batch_to_device(
-                batch["images"],
+                get_modality_batch(
+                    batch,
+                    config.MODALITY,
+                ),
                 device,
             )
 
@@ -93,13 +101,8 @@ def collect_predictions(
     )
 
 
-    probabilities = torch.sigmoid(
-        logits
-    )
-
-
     return (
-        probabilities.numpy(),
+        logits.numpy(),
         labels.numpy(),
     )
 
@@ -154,11 +157,28 @@ def apply_thresholds(
 
 def main():
 
+    parser = argparse.ArgumentParser()
+
+    parser.add_argument(
+        "--split",
+        default=config.VALID_SPLIT,
+        choices=[
+            "train",
+            "validation",
+            "test",
+        ],
+    )
+
+    args = parser.parse_args()
 
     device = torch.device(
         "cuda"
         if torch.cuda.is_available()
         else "cpu"
+    )
+
+    print(
+        f"Evaluation split: {args.split}"
     )
 
 
@@ -169,7 +189,7 @@ def main():
 
     dataset = COdeBaselineDataset(
         csv_path=config.DATASET_PATH,
-        split=config.VALID_SPLIT,
+        split=args.split,
         image_root=config.IMAGE_ROOT,
         transform=get_image_transform(),
     )
@@ -222,7 +242,7 @@ def main():
     )
 
 
-    probabilities, labels = collect_predictions(
+    logits, labels = collect_predictions(
         model,
         loader,
         device,
@@ -234,13 +254,8 @@ def main():
     )
 
 
-    default_predictions = (
-        probabilities >= 0.5
-    ).astype(int)
-
-
     default_metrics = compute_metrics(
-        probabilities,
+        logits,
         labels,
         threshold=0.5,
     )
@@ -270,17 +285,12 @@ def main():
     )
 
 
-    optimized_predictions = apply_thresholds(
-        probabilities,
-        thresholds,
-    )
-
-
     optimized_metrics = compute_metrics(
-        probabilities,
+        logits,
         labels,
         threshold=thresholds,
     )
+
 
     print(
         optimized_metrics
@@ -309,7 +319,7 @@ def main():
         /
         config.EXPERIMENT_NAME
         /
-        "evaluation.json"
+        f"{args.split}_evaluation.json"
     )
 
 

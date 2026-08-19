@@ -4,12 +4,13 @@ Evaluation metrics for COde baseline classification.
 
 import numpy as np
 
+from scipy.special import expit
+
 from sklearn.metrics import (
     f1_score,
     roc_auc_score,
     accuracy_score,
 )
-
 
 
 def compute_metrics(
@@ -25,17 +26,14 @@ def compute_metrics(
     - label-wise thresholds
     """
 
-
-    probabilities = 1 / (
-        1 + np.exp(-logits)
+    probabilities = expit(
+        logits
     )
 
 
-    if isinstance(threshold, list):
-
-        threshold = np.array(
-            threshold
-        )
+    threshold = np.asarray(
+        threshold
+    )
 
 
     predictions = (
@@ -43,9 +41,7 @@ def compute_metrics(
     ).astype(int)
 
 
-
     metrics = {}
-
 
 
     metrics["macro_f1"] = f1_score(
@@ -81,7 +77,6 @@ def compute_metrics(
     except ValueError:
 
         metrics["auroc"] = 0.0
-
 
 
     return metrics

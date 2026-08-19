@@ -100,7 +100,7 @@ def collect_predictions(
         for batch in loader:
 
             images = move_image_batch_to_device(
-                batch["images"],
+                batch["radiographs"],
                 device,
             )
 
@@ -227,6 +227,7 @@ def main():
         split=config.VALID_SPLIT,
         image_root=config.IMAGE_ROOT,
         transform=get_image_transform(),
+        require_modality=config.REQUIRE_MODALITY,
     )
 
 

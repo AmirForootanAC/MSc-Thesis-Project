@@ -1,0 +1,37 @@
+{
+    "experiment_name": "radiograph_only_finetune",
+    "task": "multi-label dental diagnosis classification",
+    "modality": "radiograph",
+    "encoder": "ResNet50",
+    "training_strategy": "encoder fine-tuning",
+    "aggregation": "mean pooling over variable-length radiograph images",
+    "dataset": "COde",
+    "split_strategy": "patient-level split",
+    "seed": 42,
+
+    "train_samples": 2972,
+    "validation_samples": 642,
+    "test_samples": 1316,
+
+    "num_labels": 13,
+
+    "validation_results": {
+        "macro_f1": 0.24811539541148456,
+        "micro_f1": 0.22057821473766184,
+        "auroc": 0.5781749776369103
+    },
+
+    "test_results": {
+        "macro_f1": 0.24007542899036746,
+        "micro_f1": 0.21977171599922615,
+        "auroc": 0.5893967616300914
+    },
+
+    "best_epoch": 19,
+
+    "notes": [
+        "Threshold optimization was performed only using validation split.",
+        "Final test evaluation used thresholds learned from validation split.",
+        "Patient-level split was preserved to prevent patient leakage."
+    ]
+}

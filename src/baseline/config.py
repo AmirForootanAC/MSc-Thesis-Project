@@ -45,8 +45,12 @@ RESULT_ROOT = (
 
 
 EXPERIMENT_NAME = (
-    "image_only"
+    "radiograph_only_finetune"
 )
+
+MODALITY = "radiograph"
+
+REQUIRE_MODALITY = "radiograph"
 
 
 TRAIN_SPLIT = "train"
@@ -68,7 +72,7 @@ BATCH_SIZE = 16
 NUM_EPOCHS = 20
 
 
-LEARNING_RATE = 1e-4
+LEARNING_RATE = 1e-5
 
 
 WEIGHT_DECAY = 1e-4
@@ -83,7 +87,8 @@ DEVICE = "cuda"
 PRETRAINED = True
 
 
-FREEZE_ENCODER = True
+FREEZE_ENCODER = False
+
 
 LABEL_NAMES = [
     "label_gingivitis",

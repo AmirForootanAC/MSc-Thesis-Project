@@ -41,6 +41,7 @@ from src.baseline.metrics import (
 
 from src.baseline.utils import (
     move_image_batch_to_device,
+    get_modality_batch,
 )
 
 
@@ -61,7 +62,10 @@ def train_one_epoch(
     for batch in loader:
 
         images = move_image_batch_to_device(
-            batch["images"],
+            get_modality_batch(
+                batch,
+                config.MODALITY,
+            ),
             device,
         )
 
@@ -118,7 +122,10 @@ def evaluate(
         for batch in loader:
 
             images = move_image_batch_to_device(
-                batch["images"],
+                get_modality_batch(
+                    batch,
+                    config.MODALITY,
+                ),
                 device,
             )
 
@@ -198,6 +205,7 @@ def main():
         split=config.TRAIN_SPLIT,
         image_root=config.IMAGE_ROOT,
         transform=transform,
+        require_modality=config.REQUIRE_MODALITY,
     )
 
 
@@ -206,6 +214,7 @@ def main():
         split=config.VALID_SPLIT,
         image_root=config.IMAGE_ROOT,
         transform=transform,
+        require_modality=config.REQUIRE_MODALITY,
     )
 
 

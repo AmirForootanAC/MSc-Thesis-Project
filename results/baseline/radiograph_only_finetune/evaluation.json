@@ -1,0 +1,29 @@
+{
+    "default_threshold_0.5": {
+        "macro_f1": 0.1641265663253129,
+        "micro_f1": 0.2613981762917933,
+        "accuracy": 0.09097744360902256,
+        "auroc": 0.5781749776369103
+    },
+    "optimized_thresholds": {
+        "macro_f1": 0.24811564009775203,
+        "micro_f1": 0.22057821473766184,
+        "accuracy": 0.014285714285714285,
+        "auroc": 0.5781749776369103
+    },
+    "thresholds": {
+        "label_gingivitis": 0.5,
+        "label_class_ii_malocclusion": 0.5,
+        "label_dental_crowding": 0.55,
+        "label_tooth_structure_loss": 0.3,
+        "label_dental_caries": 0.2,
+        "label_convex_profile": 0.6500000000000001,
+        "label_mandibular_skeletal_asymmetry": 0.4,
+        "label_periodontitis": 0.7000000000000001,
+        "label_class_iii_malocclusion": 0.25,
+        "label_pulpitis": 0.4,
+        "label_deep_overbite": 0.4,
+        "label_class_i_malocclusion": 0.25,
+        "label_tooth_loss": 0.3
+    }
+}

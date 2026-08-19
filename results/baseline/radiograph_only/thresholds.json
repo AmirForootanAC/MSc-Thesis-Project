@@ -1,0 +1,32 @@
+{
+    "thresholds": {
+        "label_gingivitis": 0.4,
+        "label_class_ii_malocclusion": 0.25,
+        "label_dental_crowding": 0.2,
+        "label_tooth_structure_loss": 0.15000000000000002,
+        "label_dental_caries": 0.1,
+        "label_convex_profile": 0.15000000000000002,
+        "label_mandibular_skeletal_asymmetry": 0.1,
+        "label_periodontitis": 0.15000000000000002,
+        "label_class_iii_malocclusion": 0.2,
+        "label_pulpitis": 0.2,
+        "label_deep_overbite": 0.1,
+        "label_class_i_malocclusion": 0.05,
+        "label_tooth_loss": 0.1
+    },
+    "label_f1": {
+        "label_gingivitis": 0.46994535519125685,
+        "label_class_ii_malocclusion": 0.5343511450381679,
+        "label_dental_crowding": 0.5699745547073791,
+        "label_tooth_structure_loss": 0.2,
+        "label_dental_caries": 0.21647819063004847,
+        "label_convex_profile": 0.3803680981595092,
+        "label_mandibular_skeletal_asymmetry": 0.32323232323232326,
+        "label_periodontitis": 0.4117647058823529,
+        "label_class_iii_malocclusion": 0.14953271028037382,
+        "label_pulpitis": 0.32,
+        "label_deep_overbite": 0.25806451612903225,
+        "label_class_i_malocclusion": 0.1103202846975089,
+        "label_tooth_loss": 0.17475728155339806
+    }
+}

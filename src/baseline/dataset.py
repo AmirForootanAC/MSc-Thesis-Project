@@ -41,12 +41,14 @@ class COdeBaselineDataset(Dataset):
         split="train",
         image_root=None,
         transform=None,
+        require_modality=None,
     ):
 
         self.csv_path = Path(csv_path)
         self.split = split
         self.image_root = Path(image_root) if image_root else None
         self.transform = transform
+        self.require_modality = require_modality
 
         self.df = pd.read_csv(self.csv_path)
 
@@ -54,14 +56,51 @@ class COdeBaselineDataset(Dataset):
             self.df["split"] == split
         ].reset_index(drop=True)
 
+
+        if self.require_modality:
+
+            if self.require_modality == "radiograph":
+
+                self.df = self.df[
+                    self.df["radiographs"].notna()
+                    &
+                    (self.df["radiographs"].str.strip() != "")
+                ]
+
+            elif self.require_modality == "photograph":
+
+                self.df = self.df[
+                    self.df["photographs"].notna()
+                    &
+                    (self.df["photographs"].str.strip() != "")
+                ]
+
+            else:
+
+                raise ValueError(
+                    f"Unknown required modality: {self.require_modality}"
+                )
+
+
+            self.df = self.df.reset_index(drop=True)
+
+
         self.image_loader = COdeImageLoader(
             image_root=self.image_root,
             transform=self.transform,
         )
 
+
         print(
             f"{split}: {len(self.df)} samples"
         )
+
+
+        if self.require_modality:
+
+            print(
+                f"Required modality: {self.require_modality}"
+            )
 
 
     def __len__(self):
