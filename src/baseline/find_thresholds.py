@@ -38,8 +38,8 @@ from src.baseline.model import (
 
 from src.baseline.utils import (
     move_image_batch_to_device,
+    get_modality_batch,
 )
-
 
 
 def build_model(device):
@@ -100,7 +100,10 @@ def collect_predictions(
         for batch in loader:
 
             images = move_image_batch_to_device(
-                batch["radiographs"],
+                get_modality_batch(
+                    batch,
+                    config.MODALITY,
+                ),
                 device,
             )
 
@@ -191,14 +194,14 @@ def find_best_threshold(
 
 
         thresholds[
-            COdeBaselineDataset.LABEL_COLUMNS[label_idx]
+            config.LABEL_NAMES[label_idx]
         ] = float(
             best_threshold
         )
 
 
         scores[
-            COdeBaselineDataset.LABEL_COLUMNS[label_idx]
+            config.LABEL_NAMES[label_idx]
         ] = float(
             best_f1
         )

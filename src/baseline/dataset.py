@@ -1,9 +1,11 @@
 from pathlib import Path
+
 import pandas as pd
 import torch
 
 from torch.utils.data import Dataset
 
+from src.baseline import config
 from src.baseline.image_loader import COdeImageLoader
 
 
@@ -12,28 +14,14 @@ class COdeBaselineDataset(Dataset):
     Patient-level baseline dataset for COde classification.
 
     Supports:
-    - image
+    - photograph
     - radiograph
     - text
     - multi-label targets
     - multi-image loading
-    """
 
-    LABEL_COLUMNS = [
-        "label_gingivitis",
-        "label_class_ii_malocclusion",
-        "label_dental_crowding",
-        "label_tooth_structure_loss",
-        "label_dental_caries",
-        "label_convex_profile",
-        "label_mandibular_skeletal_asymmetry",
-        "label_periodontitis",
-        "label_class_iii_malocclusion",
-        "label_pulpitis",
-        "label_deep_overbite",
-        "label_class_i_malocclusion",
-        "label_tooth_loss",
-    ]
+    Labels are defined centrally in src.baseline.config.
+    """
 
     def __init__(
         self,
@@ -46,16 +34,60 @@ class COdeBaselineDataset(Dataset):
 
         self.csv_path = Path(csv_path)
         self.split = split
-        self.image_root = Path(image_root) if image_root else None
+        self.image_root = (
+            Path(image_root)
+            if image_root
+            else None
+        )
         self.transform = transform
         self.require_modality = require_modality
 
-        self.df = pd.read_csv(self.csv_path)
+        # ----------------------------------------------------
+        # Load dataset
+        # ----------------------------------------------------
+
+        self.df = pd.read_csv(
+            self.csv_path
+        )
+
+        # ----------------------------------------------------
+        # Validate labels
+        # ----------------------------------------------------
+
+        missing_labels = [
+            column
+            for column in config.LABEL_NAMES
+            if column not in self.df.columns
+        ]
+
+        if missing_labels:
+            raise ValueError(
+                "Missing label columns in dataset: "
+                f"{missing_labels}"
+            )
+
+        # ----------------------------------------------------
+        # Validate label count
+        # ----------------------------------------------------
+
+        if len(config.LABEL_NAMES) != config.NUM_LABELS:
+            raise ValueError(
+                "NUM_LABELS does not match LABEL_NAMES: "
+                f"{config.NUM_LABELS} vs "
+                f"{len(config.LABEL_NAMES)}"
+            )
+
+        # ----------------------------------------------------
+        # Split
+        # ----------------------------------------------------
 
         self.df = self.df[
             self.df["split"] == split
         ].reset_index(drop=True)
 
+        # ----------------------------------------------------
+        # Required modality filtering
+        # ----------------------------------------------------
 
         if self.require_modality:
 
@@ -64,7 +96,11 @@ class COdeBaselineDataset(Dataset):
                 self.df = self.df[
                     self.df["radiographs"].notna()
                     &
-                    (self.df["radiographs"].str.strip() != "")
+                    (
+                        self.df["radiographs"]
+                        .str.strip()
+                        != ""
+                    )
                 ]
 
             elif self.require_modality == "photograph":
@@ -72,42 +108,57 @@ class COdeBaselineDataset(Dataset):
                 self.df = self.df[
                     self.df["photographs"].notna()
                     &
-                    (self.df["photographs"].str.strip() != "")
+                    (
+                        self.df["photographs"]
+                        .str.strip()
+                        != ""
+                    )
                 ]
 
             else:
 
                 raise ValueError(
-                    f"Unknown required modality: {self.require_modality}"
+                    "Unknown required modality: "
+                    f"{self.require_modality}"
                 )
 
+            self.df = (
+                self.df
+                .reset_index(drop=True)
+            )
 
-            self.df = self.df.reset_index(drop=True)
-
+        # ----------------------------------------------------
+        # Image loader
+        # ----------------------------------------------------
 
         self.image_loader = COdeImageLoader(
             image_root=self.image_root,
             transform=self.transform,
         )
 
+        # ----------------------------------------------------
+        # Report
+        # ----------------------------------------------------
 
         print(
             f"{split}: {len(self.df)} samples"
         )
 
-
         if self.require_modality:
 
             print(
-                f"Required modality: {self.require_modality}"
+                f"Required modality: "
+                f"{self.require_modality}"
             )
 
-
     def __len__(self):
+
         return len(self.df)
 
-
-    def _parse_images(self, value):
+    def _parse_images(
+        self,
+        value,
+    ):
         """
         Parse comma-separated image filenames.
         """
@@ -121,7 +172,6 @@ class COdeBaselineDataset(Dataset):
             if x.strip()
         ]
 
-
     def _load_images(
         self,
         filenames,
@@ -131,7 +181,7 @@ class COdeBaselineDataset(Dataset):
         Load all images from a modality.
 
         Returns:
-        - list of image tensors
+            list[torch.Tensor]
         """
 
         images = []
@@ -147,53 +197,67 @@ class COdeBaselineDataset(Dataset):
 
         return images
 
-
-    def _load_labels(self, row):
+    def _load_labels(
+        self,
+        row,
+    ):
+        """
+        Load multi-label target vector.
+        """
 
         labels = (
-            row[self.LABEL_COLUMNS]
+            row[config.LABEL_NAMES]
             .astype(float)
             .values
         )
 
         return torch.tensor(
             labels,
-            dtype=torch.float32
+            dtype=torch.float32,
         )
 
-
-    def __getitem__(self, idx):
+    def __getitem__(
+        self,
+        idx,
+    ):
 
         row = self.df.iloc[idx]
 
         sample = {
 
-            "checkup_id": row["checkup_id"],
+            "checkup_id":
+                row["checkup_id"],
 
-            "patient_id": row["patient_id"],
+            "patient_id":
+                row["patient_id"],
 
-            "images": self._load_images(
-                self._parse_images(
-                    row["photographs"]
+            "images":
+                self._load_images(
+                    self._parse_images(
+                        row["photographs"]
+                    ),
+                    modality="photograph",
                 ),
-                modality="photograph",
-            ),
 
-            "radiographs": self._load_images(
-                self._parse_images(
-                    row["radiographs"]
+            "radiographs":
+                self._load_images(
+                    self._parse_images(
+                        row["radiographs"]
+                    ),
+                    modality="radiograph",
                 ),
-                modality="radiograph",
-            ),
 
-            "text": str(
-                row["anomalies_en"]
-            )
-            if not pd.isna(row["anomalies_en"])
-            else "",
+            "text":
+                str(
+                    row["anomalies_en"]
+                )
+                if not pd.isna(
+                    row["anomalies_en"]
+                )
+                else "",
 
-            "labels": self._load_labels(row)
-
+            "labels":
+                self._load_labels(row),
         }
 
         return sample

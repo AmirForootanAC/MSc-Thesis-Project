@@ -1,0 +1,150 @@
+{
+    "dataset": {
+        "source": "results/labeled_patient_level_dataset/labeled_dataset.csv",
+        "total_visits": 8775,
+        "total_patients": 4800,
+        "number_of_labels": 6,
+        "labels": [
+            "label_caries",
+            "label_gingivitis",
+            "label_malocclusion",
+            "label_pulpitis",
+            "label_tooth_loss",
+            "label_tooth_structure_loss"
+        ]
+    },
+    "malocclusion_mapping": {
+        "target": "label_malocclusion",
+        "sources": [
+            "label_class_i_malocclusion",
+            "label_class_ii_malocclusion",
+            "label_class_iii_malocclusion"
+        ],
+        "operation": "logical OR"
+    },
+    "split": {
+        "patient_counts": {
+            "test": 720,
+            "train": 3360,
+            "validation": 720
+        },
+        "visit_counts": {
+            "train": 6129,
+            "validation": 1330,
+            "test": 1316
+        }
+    },
+    "labels": {
+        "visits_with_at_least_one_label": 6641,
+        "label_coverage_percentage": 75.68091168091168,
+        "multi_label_visits": 623
+    },
+    "label_split_distribution": [
+        {
+            "rank": 1,
+            "label": "Caries",
+            "train_visits": 660,
+            "validation_visits": 139,
+            "test_visits": 156,
+            "total_visits": 955,
+            "patients": 810,
+            "train_pct": 69.10994764397905,
+            "validation_pct": 14.554973821989527,
+            "test_pct": 16.335078534031414
+        },
+        {
+            "rank": 2,
+            "label": "Gingivitis",
+            "train_visits": 1357,
+            "validation_visits": 328,
+            "test_visits": 302,
+            "total_visits": 1987,
+            "patients": 1691,
+            "train_pct": 68.29391041771515,
+            "validation_pct": 16.50729743331656,
+            "test_pct": 15.198792148968293
+        },
+        {
+            "rank": 3,
+            "label": "Malocclusion",
+            "train_visits": 1833,
+            "validation_visits": 370,
+            "test_visits": 385,
+            "total_visits": 2588,
+            "patients": 2023,
+            "train_pct": 70.82689335394127,
+            "validation_pct": 14.296754250386398,
+            "test_pct": 14.876352395672335
+        },
+        {
+            "rank": 4,
+            "label": "Pulpitis",
+            "train_visits": 323,
+            "validation_visits": 45,
+            "test_visits": 75,
+            "total_visits": 443,
+            "patients": 364,
+            "train_pct": 72.91196388261851,
+            "validation_pct": 10.15801354401806,
+            "test_pct": 16.93002257336343
+        },
+        {
+            "rank": 5,
+            "label": "Tooth Loss",
+            "train_visits": 210,
+            "validation_visits": 42,
+            "test_visits": 57,
+            "total_visits": 309,
+            "patients": 268,
+            "train_pct": 67.96116504854369,
+            "validation_pct": 13.592233009708737,
+            "test_pct": 18.446601941747574
+        },
+        {
+            "rank": 6,
+            "label": "Tooth Structure Loss",
+            "train_visits": 742,
+            "validation_visits": 157,
+            "test_visits": 143,
+            "total_visits": 1042,
+            "patients": 831,
+            "train_pct": 71.20921305182341,
+            "validation_pct": 15.067178502879077,
+            "test_pct": 13.723608445297506
+        }
+    ],
+    "split_statistics": [
+        {
+            "split": "train",
+            "patients": 3360,
+            "visits": 6129,
+            "visits_with_six_label": 4649,
+            "label_coverage_pct": 75.85250448686573,
+            "multi_label_visits": 436
+        },
+        {
+            "split": "validation",
+            "patients": 720,
+            "visits": 1330,
+            "visits_with_six_label": 988,
+            "label_coverage_pct": 74.28571428571429,
+            "multi_label_visits": 85
+        },
+        {
+            "split": "test",
+            "patients": 720,
+            "visits": 1316,
+            "visits_with_six_label": 1004,
+            "label_coverage_pct": 76.29179331306992,
+            "multi_label_visits": 102
+        }
+    ],
+    "validation": {
+        "patient_level_split": "PASS",
+        "visit_uniqueness": "PASS",
+        "patient_set_preserved": "PASS",
+        "visit_set_preserved": "PASS",
+        "split_assignments_preserved": "PASS",
+        "malocclusion_mapping": "PASS"
+    }
+}

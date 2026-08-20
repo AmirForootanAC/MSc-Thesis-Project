@@ -1,0 +1,22 @@
+{
+    "default_threshold_0.5": {
+        "macro_f1": 0.1829762900299923,
+        "micro_f1": 0.4735772357723577,
+        "accuracy": 0.3894080996884735,
+        "auroc": 0.7002875046984701
+    },
+    "optimized_thresholds": {
+        "macro_f1": 0.3096929076735179,
+        "micro_f1": 0.47162673392181587,
+        "accuracy": 0.2398753894080997,
+        "auroc": 0.7002875046984701
+    },
+    "thresholds": {
+        "label_caries": 0.45,
+        "label_gingivitis": 0.25,
+        "label_malocclusion": 0.35000000000000003,
+        "label_pulpitis": 0.35000000000000003,
+        "label_tooth_loss": 0.25,
+        "label_tooth_structure_loss": 0.35000000000000003
+    }
+}

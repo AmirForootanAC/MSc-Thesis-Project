@@ -7,6 +7,8 @@ import json
 import torch
 import torch.nn as nn
 
+from tqdm import tqdm
+
 from torch.utils.data import DataLoader
 
 from src.baseline import config
@@ -59,7 +61,11 @@ def train_one_epoch(
     total_loss = 0.0
 
 
-    for batch in loader:
+    for batch in tqdm(
+        loader,
+        desc="Training",
+        leave=False,
+    ):
 
         images = move_image_batch_to_device(
             get_modality_batch(

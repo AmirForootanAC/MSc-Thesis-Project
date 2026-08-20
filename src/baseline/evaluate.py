@@ -43,6 +43,8 @@ from src.baseline.metrics import (
     compute_metrics,
 )
 
+from tqdm import tqdm
+
 
 def collect_predictions(
     model,
@@ -61,7 +63,11 @@ def collect_predictions(
 
     with torch.no_grad():
 
-        for batch in loader:
+        for batch in tqdm(
+            loader,
+            desc="Validation",
+            leave=False,
+        ):
 
             images = move_image_batch_to_device(
                 get_modality_batch(
@@ -192,6 +198,7 @@ def main():
         split=args.split,
         image_root=config.IMAGE_ROOT,
         transform=get_image_transform(),
+        require_modality=config.REQUIRE_MODALITY,
     )
 
 
