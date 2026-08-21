@@ -104,7 +104,7 @@ IMAGE_SIZE = 224
 # Training
 # ============================================================
 
-BATCH_SIZE = 8
+BATCH_SIZE = 16
 
 NUM_EPOCHS = 20
 
