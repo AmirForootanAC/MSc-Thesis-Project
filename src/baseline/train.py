@@ -274,6 +274,8 @@ def main():
         weight_decay=config.WEIGHT_DECAY,
     )
 
+    start_epoch = 0
+
 
     best_f1 = -1
 
@@ -294,9 +296,50 @@ def main():
 
     history = []
 
+    checkpoint_path = (
+        output_dir
+        /
+        "last_checkpoint.pt"
+    )
+
+    if checkpoint_path.exists():
+
+        print(
+            "Loading checkpoint..."
+        )
+
+        checkpoint = torch.load(
+            checkpoint_path,
+            map_location=device,
+        )
+
+        model.load_state_dict(
+            checkpoint["model_state"]
+        )
+
+        optimizer.load_state_dict(
+            checkpoint["optimizer_state"]
+        )
+
+        start_epoch = (
+            checkpoint["epoch"]
+        )
+
+        best_f1 = (
+            checkpoint["best_f1"]
+        )
+
+        history = (
+            checkpoint["history"]
+        )
+
+        print(
+            f"Resuming from epoch {start_epoch}"
+        )
 
     for epoch in range(
-        config.NUM_EPOCHS
+        start_epoch,
+        config.NUM_EPOCHS,
     ):
 
         train_loss = train_one_epoch(
@@ -346,10 +389,16 @@ Validation:
 
 
             torch.save(
-                model.state_dict(),
+                {
+                    "epoch": epoch + 1,
+                    "model_state": model.state_dict(),
+                    "optimizer_state": optimizer.state_dict(),
+                    "best_f1": best_f1,
+                    "history": history,
+                },
                 output_dir
                 /
-                "best_model.pt",
+                "last_checkpoint.pt",
             )
 
 

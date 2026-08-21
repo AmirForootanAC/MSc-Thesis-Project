@@ -52,7 +52,7 @@ RESULT_ROOT = (
 
 
 EXPERIMENT_NAME = (
-    "radiograph_only_6label"
+    "photograph_only_6label"
 )
 
 
@@ -60,9 +60,9 @@ EXPERIMENT_NAME = (
 # Modality
 # ============================================================
 
-MODALITY = "radiograph"
+MODALITY = "photograph"
 
-REQUIRE_MODALITY = "radiograph"
+REQUIRE_MODALITY = "photograph"
 
 
 # ============================================================
@@ -104,7 +104,7 @@ IMAGE_SIZE = 224
 # Training
 # ============================================================
 
-BATCH_SIZE = 16
+BATCH_SIZE = 8
 
 NUM_EPOCHS = 20
 
@@ -112,7 +112,7 @@ LEARNING_RATE = 1e-5
 
 WEIGHT_DECAY = 1e-4
 
-EARLY_STOPPING_PATIENCE = 5
+EARLY_STOPPING_PATIENCE = 10
 
 
 # ============================================================
