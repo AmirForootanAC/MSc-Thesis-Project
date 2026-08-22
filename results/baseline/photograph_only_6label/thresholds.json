@@ -1,0 +1,18 @@
+{
+    "thresholds": {
+        "label_caries": 0.35000000000000003,
+        "label_gingivitis": 0.5,
+        "label_malocclusion": 0.4,
+        "label_pulpitis": 0.4,
+        "label_tooth_loss": 0.5,
+        "label_tooth_structure_loss": 0.5
+    },
+    "label_f1": {
+        "label_caries": 0.2751322751322751,
+        "label_gingivitis": 0.6514285714285715,
+        "label_malocclusion": 0.5195822454308094,
+        "label_pulpitis": 0.1864406779661017,
+        "label_tooth_loss": 0.15217391304347827,
+        "label_tooth_structure_loss": 0.547945205479452
+    }
+}
