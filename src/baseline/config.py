@@ -104,7 +104,7 @@ IMAGE_SIZE = 224
 # Training
 # ============================================================
 
-BATCH_SIZE = 16
+BATCH_SIZE = 8
 
 NUM_EPOCHS = 20
 
@@ -124,3 +124,35 @@ DEVICE = "cuda"
 PRETRAINED = True
 
 FREEZE_ENCODER = False
+
+# ============================================================
+# Text baseline
+# ============================================================
+
+TEXT_MODEL_NAME = (
+    "distilbert-base-uncased"
+)
+
+TEXT_MAX_LENGTH = 256
+
+TEXT_EXPERIMENT_NAME = (
+    "text_only_6label"
+)
+
+# ============================================================
+# Text Baseline
+# ============================================================
+
+TEXT_MODEL_NAME = "distilbert-base-uncased"
+
+TEXT_MAX_LENGTH = 256
+
+TEXT_BATCH_SIZE = 16
+
+TEXT_NUM_EPOCHS = 20
+
+TEXT_LEARNING_RATE = 2e-5
+
+TEXT_WEIGHT_DECAY = 1e-4
+
+TEXT_FREEZE_ENCODER = False
