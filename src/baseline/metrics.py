@@ -1,10 +1,5 @@
-"""
-Evaluation metrics for COde baseline classification.
-"""
-
 import numpy as np
-
-from scipy.special import expit
+import torch
 
 from sklearn.metrics import (
     f1_score,
@@ -13,38 +8,80 @@ from sklearn.metrics import (
 )
 
 
+
 def compute_metrics(
     logits,
     labels,
     threshold=0.5,
 ):
+
     """
     Compute multi-label classification metrics.
 
-    Supports:
-    - single global threshold
-    - label-wise thresholds
+    Inputs:
+        logits:
+            torch.Tensor [N, C]
+
+        labels:
+            torch.Tensor [N, C]
+
+    Returns:
+        dict
     """
 
-    probabilities = expit(
-        logits
+
+    # -----------------------------
+    # Convert tensors to numpy
+    # -----------------------------
+
+    if torch.is_tensor(logits):
+
+        logits = logits.detach().cpu().numpy()
+
+
+    if torch.is_tensor(labels):
+
+        labels = labels.detach().cpu().numpy()
+
+
+
+    # -----------------------------
+    # Probabilities
+    # -----------------------------
+
+    probabilities = 1 / (
+        1 + np.exp(-logits)
     )
 
 
-    threshold = np.asarray(
-        threshold
-    )
+
+    # -----------------------------
+    # Threshold handling
+    # -----------------------------
+
+    if np.isscalar(threshold):
+
+        threshold_array = threshold
+
+    else:
+
+        threshold_array = np.asarray(
+            threshold
+        )
+
 
 
     predictions = (
-        probabilities >= threshold
+        probabilities >= threshold_array
     ).astype(int)
 
 
-    metrics = {}
 
+    # -----------------------------
+    # Metrics
+    # -----------------------------
 
-    metrics["macro_f1"] = f1_score(
+    macro_f1 = f1_score(
         labels,
         predictions,
         average="macro",
@@ -52,7 +89,7 @@ def compute_metrics(
     )
 
 
-    metrics["micro_f1"] = f1_score(
+    micro_f1 = f1_score(
         labels,
         predictions,
         average="micro",
@@ -60,7 +97,7 @@ def compute_metrics(
     )
 
 
-    metrics["accuracy"] = accuracy_score(
+    accuracy = accuracy_score(
         labels,
         predictions,
     )
@@ -68,7 +105,7 @@ def compute_metrics(
 
     try:
 
-        metrics["auroc"] = roc_auc_score(
+        auroc = roc_auc_score(
             labels,
             probabilities,
             average="macro",
@@ -76,7 +113,18 @@ def compute_metrics(
 
     except ValueError:
 
-        metrics["auroc"] = 0.0
+        auroc = 0.0
 
 
-    return metrics
+
+    return {
+
+        "macro_f1": float(macro_f1),
+
+        "micro_f1": float(micro_f1),
+
+        "auroc": float(auroc),
+
+        "accuracy": float(accuracy),
+
+    }

@@ -156,3 +156,9 @@ TEXT_LEARNING_RATE = 2e-5
 TEXT_WEIGHT_DECAY = 1e-4
 
 TEXT_FREEZE_ENCODER = False
+
+# ============================================================
+# MULTIMODAL BASELINE
+# ============================================================
+
+MULTIMODAL_EXPERIMENT_NAME = "full_multimodal_6label"
