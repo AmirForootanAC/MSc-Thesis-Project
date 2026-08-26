@@ -1,0 +1,13 @@
+split,pair_type,visits,percentage_of_split
+test,image_text,1304,99.09
+test,image_radiograph,642,48.78
+test,radiograph_text,633,48.1
+test,complete_triplet,633,48.1
+train,image_text,6081,99.22
+train,image_radiograph,2971,48.47
+train,radiograph_text,2936,47.9
+train,complete_triplet,2935,47.89
+validation,image_text,1313,98.72
+validation,image_radiograph,642,48.27
+validation,radiograph_text,627,47.14
+validation,complete_triplet,627,47.14

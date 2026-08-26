@@ -1,0 +1,15 @@
+modality_pattern,split,visits
+image+text,test,671
+image+text,train,3146
+image+text,validation,686
+image+xray,test,9
+image+xray,train,36
+image+xray,validation,15
+image+xray+text,test,633
+image+xray+text,train,2935
+image+xray+text,validation,627
+image_only,test,3
+image_only,train,9
+image_only,validation,2
+text_only,train,2
+xray+text,train,1

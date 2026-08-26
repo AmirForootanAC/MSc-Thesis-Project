@@ -1,0 +1,50 @@
+{
+  "dataset": "results/six_label_patient_level_dataset/labeled_dataset.csv",
+  "total_visits": 8775,
+  "total_patients": 4800,
+  "split_counts": {
+    "train": 6129,
+    "validation": 1330,
+    "test": 1316
+  },
+  "modality_counts": {
+    "total_visits": 8775,
+    "image_available": 8772,
+    "radiograph_available": 4256,
+    "text_available": 8701,
+    "image_text_pairs": 8698,
+    "image_radiograph_pairs": 4255,
+    "radiograph_text_pairs": 4196,
+    "complete_triplets": 4195,
+    "no_modality": 0
+  },
+  "percentages_of_all_visits": {
+    "image_available": 99.97,
+    "radiograph_available": 48.5,
+    "text_available": 99.16,
+    "image_text_pairs": 99.12,
+    "image_radiograph_pairs": 48.49,
+    "radiograph_text_pairs": 47.82,
+    "complete_triplets": 47.81,
+    "no_modality": 0.0
+  },
+  "modality_pattern_counts": {
+    "image+text": 4503,
+    "image+xray+text": 4195,
+    "image+xray": 60,
+    "image_only": 14,
+    "text_only": 2,
+    "xray+text": 1
+  },
+  "patient_level_split_validation": {
+    "patients_in_multiple_splits": 0,
+    "status": "PASS"
+  },
+  "text_fields_used_for_ssl": [
+    "chief_complaint",
+    "present_illness",
+    "past_medical_record",
+    "examination"
+  ],
+  "note": "Pair availability is defined at visit level. A pair means both modalities are available for the same visit."
+}

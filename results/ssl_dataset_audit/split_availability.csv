@@ -1,0 +1,4 @@
+split,visits,image_available,radiograph_available,text_available,image_text_pairs,image_radiograph_pairs,radiograph_text_pairs,complete_triplets
+test,1316,1316,642,1304,1304,642,633,633
+train,6129,6126,2972,6084,6081,2971,2936,2935
+validation,1330,1330,642,1313,1313,642,627,627
