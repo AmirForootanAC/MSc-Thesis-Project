@@ -1,0 +1,20 @@
+{
+  "image_text": {
+    "positive_mean": 0.46089706795895863,
+    "negative_mean": 0.07907780149349368,
+    "positive_count": 1313,
+    "negative_count": 1330
+  },
+  "image_radiograph": {
+    "positive_mean": 0.46452033156645123,
+    "negative_mean": 0.09264739181678322,
+    "positive_count": 642,
+    "negative_count": 1330
+  },
+  "radiograph_text": {
+    "positive_mean": 0.3887173597235975,
+    "negative_mean": 0.05769391160780438,
+    "positive_count": 627,
+    "negative_count": 1330
+  }
+}

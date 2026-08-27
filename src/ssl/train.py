@@ -26,6 +26,7 @@ from src.ssl.dataset import COdeSSLDataset
 from src.ssl.collate import ssl_collate
 from src.ssl.model import MultimodalSSLModel
 from src.ssl.tokenizer import ClinicalTokenizer
+from src.ssl.utils import load_modality_batch
 
 
 from src.baseline.image_loader import COdeImageLoader
@@ -83,88 +84,6 @@ def seed_everything(seed):
     if torch.cuda.is_available():
 
         torch.cuda.manual_seed_all(seed)
-
-
-
-# =========================
-# Image loading
-# =========================
-
-def load_modality_batch(
-    batch_files,
-    modality,
-    loader,
-    transform,
-):
-
-    outputs = []
-    mask = []
-
-
-    for files in batch_files:
-
-        imgs = []
-
-
-        for f in files:
-
-            try:
-
-                img = loader.load(
-                    f,
-                    modality=modality
-                )
-
-
-                img = transform(
-                    img
-                )
-
-
-                imgs.append(
-                    img
-                )
-
-
-            except Exception:
-
-                continue
-
-
-
-        if imgs:
-
-            outputs.append(
-                torch.stack(imgs).mean(0)
-            )
-
-            mask.append(True)
-
-
-
-        else:
-
-            outputs.append(
-                torch.zeros(
-                    3,
-                    224,
-                    224
-                )
-            )
-
-            mask.append(False)
-
-
-
-    return (
-        torch.stack(outputs).to(DEVICE),
-        torch.tensor(
-            mask,
-            device=DEVICE
-        )
-    )
-
-
 
 # =========================
 # Main training
@@ -298,7 +217,8 @@ def main():
                 batch["images"],
                 "photograph",
                 image_loader,
-                transform
+                transform,
+                DEVICE
             )
 
 
@@ -306,7 +226,8 @@ def main():
                 batch["radiographs"],
                 "radiograph",
                 image_loader,
-                transform
+                transform,
+                DEVICE
             )
 
 

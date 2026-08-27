@@ -21,4 +21,7 @@ __pycache__/
 *.ckpt
 
 # SSL training artifacts
-results/ssl_pretraining/
+# Keep experiment metadata/results, ignore large model checkpoints
+results/ssl_pretraining/**/*.pt
+results/ssl_pretraining/**/*.pth
+results/ssl_pretraining/**/*.ckpt

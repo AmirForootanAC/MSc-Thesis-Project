@@ -1,0 +1,16 @@
+{
+  "timestamp": "2026-08-27T03:19:42.052925",
+  "dataset": "COde",
+  "split": "train",
+  "batch_size": 16,
+  "epochs": 50,
+  "learning_rate": 0.0001,
+  "seed": 42,
+  "objective": "Dynamic multimodal contrastive learning",
+  "pairs": [
+    "image_text",
+    "image_radiograph",
+    "radiograph_text"
+  ],
+  "device": "cuda"
+}
