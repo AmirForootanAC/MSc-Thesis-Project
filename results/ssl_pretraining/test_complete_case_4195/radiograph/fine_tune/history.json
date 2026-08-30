@@ -1,0 +1,140 @@
+{
+    "experiment": "complete_case_4195",
+    "modality": "radiograph",
+    "mode": "fine_tune",
+    "dataset": "/home/ubuntu/Projects/thesis-code/results/ssl_pretraining/test_complete_case_4195/complete_case_dataset.csv",
+    "total_samples": 4195,
+    "train_samples": 2935,
+    "validation_samples": 627,
+    "test_samples": 633,
+    "best_epoch": 7,
+    "best_validation_auroc": 0.7848353729360543,
+    "test_metrics": {
+        "macro_f1": 0.26034297963558417,
+        "micro_f1": 0.5966386554621849,
+        "auroc": 0.8043498379132461,
+        "accuracy": 0.5466034755134281
+    },
+    "history": [
+        {
+            "epoch": 1,
+            "train_loss": 0.5271610513977383,
+            "validation": {
+                "macro_f1": 0.1132924335378323,
+                "micro_f1": 0.5321805955811719,
+                "auroc": 0.7089114466720497,
+                "accuracy": 0.44019138755980863
+            }
+        },
+        {
+            "epoch": 2,
+            "train_loss": 0.2991603357798379,
+            "validation": {
+                "macro_f1": 0.11052322163433274,
+                "micro_f1": 0.47414880201765447,
+                "auroc": 0.7447734287474392,
+                "accuracy": 0.4609250398724083
+            }
+        },
+        {
+            "epoch": 3,
+            "train_loss": 0.25962736951592175,
+            "validation": {
+                "macro_f1": 0.12869345349044523,
+                "micro_f1": 0.5096153846153846,
+                "auroc": 0.7647162339922825,
+                "accuracy": 0.47527910685805425
+            }
+        },
+        {
+            "epoch": 4,
+            "train_loss": 0.2371338526515857,
+            "validation": {
+                "macro_f1": 0.1921494143716366,
+                "micro_f1": 0.5452380952380952,
+                "auroc": 0.7749008971254466,
+                "accuracy": 0.518341307814992
+            }
+        },
+        {
+            "epoch": 5,
+            "train_loss": 0.22352674328114674,
+            "validation": {
+                "macro_f1": 0.20201947175631385,
+                "micro_f1": 0.5832426550598476,
+                "auroc": 0.7754755540181097,
+                "accuracy": 0.529505582137161
+            }
+        },
+        {
+            "epoch": 6,
+            "train_loss": 0.21075388914703028,
+            "validation": {
+                "macro_f1": 0.22341493291368672,
+                "micro_f1": 0.5891304347826087,
+                "auroc": 0.7775972252961684,
+                "accuracy": 0.5406698564593302
+            }
+        },
+        {
+            "epoch": 7,
+            "train_loss": 0.1974328754712706,
+            "validation": {
+                "macro_f1": 0.2198243726228548,
+                "micro_f1": 0.5850945494994438,
+                "auroc": 0.7848353729360543,
+                "accuracy": 0.5486443381180224
+            }
+        },
+        {
+            "epoch": 8,
+            "train_loss": 0.1877390450757483,
+            "validation": {
+                "macro_f1": 0.2816461344806595,
+                "micro_f1": 0.5978260869565217,
+                "auroc": 0.7810673540835217,
+                "accuracy": 0.5614035087719298
+            }
+        },
+        {
+            "epoch": 9,
+            "train_loss": 0.17558740326405867,
+            "validation": {
+                "macro_f1": 0.2804058779918027,
+                "micro_f1": 0.5976008724100327,
+                "auroc": 0.7825420933402486,
+                "accuracy": 0.5661881977671451
+            }
+        },
+        {
+            "epoch": 10,
+            "train_loss": 0.16413835444204186,
+            "validation": {
+                "macro_f1": 0.283252116619723,
+                "micro_f1": 0.6036519871106337,
+                "auroc": 0.7801072677333578,
+                "accuracy": 0.5677830940988836
+            }
+        },
+        {
+            "epoch": 11,
+            "train_loss": 0.15625906913824703,
+            "validation": {
+                "macro_f1": 0.2990683738451015,
+                "micro_f1": 0.6017505470459519,
+                "auroc": 0.7836410621570146,
+                "accuracy": 0.5677830940988836
+            }
+        },
+        {
+            "epoch": 12,
+            "train_loss": 0.14777601609492433,
+            "validation": {
+                "macro_f1": 0.29197855298887454,
+                "micro_f1": 0.6030368763557483,
+                "auroc": 0.7847482902486496,
+                "accuracy": 0.5709728867623605
+            }
+        }
+    ]
+}

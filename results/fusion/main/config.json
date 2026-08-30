@@ -1,0 +1,16 @@
+{
+  "model": "main",
+  "seed": 42,
+  "batch_size": 64,
+  "epochs": 50,
+  "learning_rate": 0.0001,
+  "weight_decay": 0.0001,
+  "device": "cuda",
+  "num_labels": 6,
+  "image_dim": 2048,
+  "radiograph_dim": 2048,
+  "text_dim": 768,
+  "representation_root": "/home/ubuntu/Projects/thesis-code/results/fusion/ssl_representations",
+  "best_epoch": 41,
+  "best_validation_macro_f1": 0.7513541414310829
+}
