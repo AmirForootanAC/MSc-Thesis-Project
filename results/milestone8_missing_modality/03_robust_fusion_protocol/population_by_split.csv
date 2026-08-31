@@ -1,0 +1,4 @@
+split,visits,patients,labeled_visits,complete_cases,missing_xray,missing_text,missing_image
+train,6129,3360,4649,2896,3157,133,3
+validation,1330,720,988,616,688,42,0
+test,1316,720,1004,625,674,32,0

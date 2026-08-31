@@ -1,0 +1,5 @@
+scenario,description,source_split,population_policy,missing_modalities,complete_validation_cases,controlled_generation
+A_complete,Image + X-ray + Text,validation,Fixed deterministic controlled missingness generated from complete validation cases.,,616,no
+B_missing_xray,Image + Text,validation,Fixed deterministic controlled missingness generated from complete validation cases.,radiograph,616,yes
+C_missing_text,Image + X-ray,validation,Fixed deterministic controlled missingness generated from complete validation cases.,text,616,yes
+D_missing_multiple,Image Only,validation,Fixed deterministic controlled missingness generated from complete validation cases.,"radiograph,text",616,yes

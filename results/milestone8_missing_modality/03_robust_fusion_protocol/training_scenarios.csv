@@ -1,0 +1,5 @@
+scenario,description,source_split,population_policy,missing_modalities,complete_training_cases,natural_training_samples,controlled_generation
+A_complete,Image + X-ray + Text,train,Natural samples plus controlled missingness generated from complete training cases.,,2896,6129,no
+B_missing_xray,Image + Text,train,Natural samples plus controlled missingness generated from complete training cases.,radiograph,2896,6129,yes
+C_missing_text,Image + X-ray,train,Natural samples plus controlled missingness generated from complete training cases.,text,2896,6129,yes
+D_missing_multiple,Image Only,train,Natural samples plus controlled missingness generated from complete training cases.,"radiograph,text",2896,6129,yes

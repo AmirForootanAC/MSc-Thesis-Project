@@ -1,0 +1,75 @@
+{
+    "milestone": "8.3.1",
+    "experiment": "Robust Fusion Dataset and Protocol",
+    "purpose": "Define and validate the training and validation population protocol for missing-modality robust fusion.",
+    "authoritative_dataset": "results/six_label_patient_level_dataset/labeled_dataset.csv",
+    "representation_root": "results/fusion/ssl_representations",
+    "model_basis": "Milestone 7.3 MainFusion",
+    "labels": [
+        "label_caries",
+        "label_gingivitis",
+        "label_malocclusion",
+        "label_pulpitis",
+        "label_tooth_loss",
+        "label_tooth_structure_loss"
+    ],
+    "split_policy": {
+        "patient_level_split": "Inherited from finalized dataset",
+        "regeneration": false,
+        "train_visits": 6129,
+        "validation_visits": 1330,
+        "test_visits": 1316
+    },
+    "training_policy": {
+        "natural_missingness": true,
+        "controlled_missingness": true,
+        "source_for_controlled_missingness": "Complete training cases",
+        "test_used_for_training": false,
+        "test_used_for_model_selection": false
+    },
+    "validation_policy": {
+        "controlled_missingness": true,
+        "deterministic": true,
+        "source": "Complete validation cases",
+        "test_used": false
+    },
+    "test_policy": {
+        "population": "Unmodified held-out test split",
+        "training": false,
+        "model_selection": false
+    },
+    "missingness_scenarios": {
+        "A_complete": {
+            "description": "Image + X-ray + Text",
+            "missing": []
+        },
+        "B_missing_xray": {
+            "description": "Image + Text",
+            "missing": [
+                "radiograph"
+            ]
+        },
+        "C_missing_text": {
+            "description": "Image + X-ray",
+            "missing": [
+                "text"
+            ]
+        },
+        "D_missing_multiple": {
+            "description": "Image Only",
+            "missing": [
+                "radiograph",
+                "text"
+            ]
+        }
+    },
+    "validation": {
+        "authoritative_dataset": "PASS",
+        "patient_level_split": "PASS",
+        "visit_uniqueness": "PASS",
+        "population_counts": "PASS",
+        "complete_case_counts": "PASS",
+        "test_isolation": "PASS",
+        "dataset_modified": false
+    }
+}
