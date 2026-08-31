@@ -1,0 +1,109 @@
+{
+    "milestone": "8.2",
+    "experiment": "Controlled Missing-Modality Evaluation",
+    "purpose": "Evaluate the existing Milestone 7.3 SSL Fusion Main model under controlled missing-modality conditions before designing a robust missing-modality model.",
+    "model": {
+        "name": "SSL Fusion — Main",
+        "architecture": "Image 2048->512, Radiograph 2048->512, Text 768->512, Concat 1536->512->6",
+        "checkpoint": "/home/ubuntu/Projects/thesis-code/results/fusion/main/best_model.pt",
+        "training_performed": false,
+        "fine_tuning_performed": false
+    },
+    "population": {
+        "dataset": "Complete-case test population from Milestone 7.3",
+        "representation_root": "/home/ubuntu/Projects/thesis-code/results/fusion/ssl_representations",
+        "samples": 633,
+        "same_population_across_scenarios": true
+    },
+    "missing_modality_method": {
+        "method": "zero_representation",
+        "description": "The representation of a missing modality is replaced with a zero vector of the corresponding representation dimension.",
+        "retraining": false,
+        "imputation": false
+    },
+    "scenarios": {
+        "A_complete": {
+            "description": "Image + X-ray + Text",
+            "missing_modalities": [],
+            "samples": 633,
+            "metrics": {
+                "macro_f1": 0.767646861342241,
+                "micro_f1": 0.8760484622553588,
+                "auroc": 0.9646367593359364,
+                "accuracy": 0.8120063191153238
+            },
+            "performance_drop": {
+                "macro_f1_drop": 0.0,
+                "micro_f1_drop": 0.0,
+                "auroc_drop": 0.0,
+                "accuracy_drop": 0.0
+            }
+        },
+        "B_missing_xray": {
+            "description": "Image + Text",
+            "missing_modalities": [
+                "radiograph"
+            ],
+            "samples": 633,
+            "metrics": {
+                "macro_f1": 0.6751164871118377,
+                "micro_f1": 0.8259693417493237,
+                "auroc": 0.9609432899579468,
+                "accuracy": 0.7377567140600316
+            },
+            "performance_drop": {
+                "macro_f1_drop": 0.09253037423040333,
+                "micro_f1_drop": 0.050079120506035135,
+                "auroc_drop": 0.0036934693779896444,
+                "accuracy_drop": 0.07424960505529221
+            }
+        },
+        "C_missing_text": {
+            "description": "Image + X-ray",
+            "missing_modalities": [
+                "text"
+            ],
+            "samples": 633,
+            "metrics": {
+                "macro_f1": 0.3558738829323363,
+                "micro_f1": 0.5365853658536586,
+                "auroc": 0.7508484192062088,
+                "accuracy": 0.4849921011058452
+            },
+            "performance_drop": {
+                "macro_f1_drop": 0.41177297840990473,
+                "micro_f1_drop": 0.33946309640170025,
+                "auroc_drop": 0.21378834012972758,
+                "accuracy_drop": 0.32701421800947866
+            }
+        },
+        "D_missing_multiple": {
+            "description": "Image Only",
+            "missing_modalities": [
+                "radiograph",
+                "text"
+            ],
+            "samples": 633,
+            "metrics": {
+                "macro_f1": 0.24408412610839647,
+                "micro_f1": 0.2605570530098832,
+                "auroc": 0.7199533299571778,
+                "accuracy": 0.20063191153238547
+            },
+            "performance_drop": {
+                "macro_f1_drop": 0.5235627352338446,
+                "micro_f1_drop": 0.6154914092454756,
+                "auroc_drop": 0.24468342937875864,
+                "accuracy_drop": 0.6113744075829384
+            }
+        }
+    },
+    "validation": {
+        "complete_case_population": "PASS",
+        "same_population_across_scenarios": "PASS",
+        "patient_level_split": "Inherited from Milestone 7",
+        "test_used_for_model_selection": false,
+        "model_modified": false,
+        "model_retrained": false
+    }
+}
