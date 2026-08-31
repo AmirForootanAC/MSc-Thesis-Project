@@ -1,0 +1,37 @@
+modality_pattern_code,modality_pattern,label_column,label_name,visits,positive_visits,prevalence_percentage
+001,Text,label_caries,Caries,2,1,50.0
+001,Text,label_gingivitis,Gingivitis,2,0,0.0
+001,Text,label_malocclusion,Malocclusion,2,0,0.0
+001,Text,label_pulpitis,Pulpitis,2,0,0.0
+001,Text,label_tooth_loss,Tooth Loss,2,0,0.0
+001,Text,label_tooth_structure_loss,Tooth Structure Loss,2,1,50.0
+011,X-ray + Text,label_caries,Caries,1,0,0.0
+011,X-ray + Text,label_gingivitis,Gingivitis,1,0,0.0
+011,X-ray + Text,label_malocclusion,Malocclusion,1,0,0.0
+011,X-ray + Text,label_pulpitis,Pulpitis,1,0,0.0
+011,X-ray + Text,label_tooth_loss,Tooth Loss,1,1,100.0
+011,X-ray + Text,label_tooth_structure_loss,Tooth Structure Loss,1,0,0.0
+100,Image,label_caries,Caries,89,0,0.0
+100,Image,label_gingivitis,Gingivitis,89,0,0.0
+100,Image,label_malocclusion,Malocclusion,89,2,2.247191011235955
+100,Image,label_pulpitis,Pulpitis,89,0,0.0
+100,Image,label_tooth_loss,Tooth Loss,89,0,0.0
+100,Image,label_tooth_structure_loss,Tooth Structure Loss,89,1,1.1235955056179776
+101,Image + Text,label_caries,Caries,4428,472,10.659439927732612
+101,Image + Text,label_gingivitis,Gingivitis,4428,1393,31.458897922312556
+101,Image + Text,label_malocclusion,Malocclusion,4428,545,12.308039747064136
+101,Image + Text,label_pulpitis,Pulpitis,4428,260,5.871725383920506
+101,Image + Text,label_tooth_loss,Tooth Loss,4428,189,4.2682926829268295
+101,Image + Text,label_tooth_structure_loss,Tooth Structure Loss,4428,901,20.347786811201445
+110,Image + X-ray,label_caries,Caries,118,0,0.0
+110,Image + X-ray,label_gingivitis,Gingivitis,118,0,0.0
+110,Image + X-ray,label_malocclusion,Malocclusion,118,1,0.847457627118644
+110,Image + X-ray,label_pulpitis,Pulpitis,118,0,0.0
+110,Image + X-ray,label_tooth_loss,Tooth Loss,118,0,0.0
+110,Image + X-ray,label_tooth_structure_loss,Tooth Structure Loss,118,0,0.0
+111,Image + X-ray + Text,label_caries,Caries,4137,482,11.65095479816292
+111,Image + X-ray + Text,label_gingivitis,Gingivitis,4137,594,14.358230601885424
+111,Image + X-ray + Text,label_malocclusion,Malocclusion,4137,2040,49.31109499637418
+111,Image + X-ray + Text,label_pulpitis,Pulpitis,4137,183,4.423495286439449
+111,Image + X-ray + Text,label_tooth_loss,Tooth Loss,4137,119,2.8764805414551606
+111,Image + X-ray + Text,label_tooth_structure_loss,Tooth Structure Loss,4137,139,3.359922649262751

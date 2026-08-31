@@ -1,0 +1,123 @@
+{
+    "milestone": "8.1",
+    "experiment": "Natural Missingness Audit",
+    "purpose": "Descriptive audit of naturally occurring modality missingness in the authoritative six-label patient-level benchmark dataset.",
+    "authoritative_dataset": "results/six_label_patient_level_dataset/labeled_dataset.csv",
+    "dataset": {
+        "total_visits": 8775,
+        "total_patients": 4800,
+        "six_labels": [
+            "label_caries",
+            "label_gingivitis",
+            "label_malocclusion",
+            "label_pulpitis",
+            "label_tooth_loss",
+            "label_tooth_structure_loss"
+        ]
+    },
+    "modality_presence": {
+        "image_present": 8772,
+        "image_missing": 3,
+        "xray_present": 4256,
+        "xray_missing": 4519,
+        "text_present": 8568,
+        "text_missing": 207
+    },
+    "pattern_count": 6,
+    "natural_patterns": [
+        {
+            "modality_pattern_code": "111",
+            "modality_pattern": "Image + X-ray + Text",
+            "reference_scenario": "Scenario A — Complete",
+            "visits": 4137,
+            "patients": 2803,
+            "percentage": 47.14529914529915,
+            "labeled_visits": 3227,
+            "label_coverage_percentage": 78.00338409475465
+        },
+        {
+            "modality_pattern_code": "110",
+            "modality_pattern": "Image + X-ray",
+            "reference_scenario": "Scenario D — Text Missing",
+            "visits": 118,
+            "patients": 117,
+            "percentage": 1.3447293447293447,
+            "labeled_visits": 1,
+            "label_coverage_percentage": 0.847457627118644
+        },
+        {
+            "modality_pattern_code": "101",
+            "modality_pattern": "Image + Text",
+            "reference_scenario": "Scenario B — X-ray Missing",
+            "visits": 4428,
+            "patients": 2817,
+            "percentage": 50.46153846153846,
+            "labeled_visits": 3407,
+            "label_coverage_percentage": 76.94218608852755
+        },
+        {
+            "modality_pattern_code": "100",
+            "modality_pattern": "Image",
+            "reference_scenario": "Scenario C — Image Only",
+            "visits": 89,
+            "patients": 85,
+            "percentage": 1.0142450142450143,
+            "labeled_visits": 3,
+            "label_coverage_percentage": 3.3707865168539324
+        },
+        {
+            "modality_pattern_code": "011",
+            "modality_pattern": "X-ray + Text",
+            "reference_scenario": "Other Natural Pattern",
+            "visits": 1,
+            "patients": 1,
+            "percentage": 0.011396011396011395,
+            "labeled_visits": 1,
+            "label_coverage_percentage": 100.0
+        },
+        {
+            "modality_pattern_code": "001",
+            "modality_pattern": "Text",
+            "reference_scenario": "Other Natural Pattern",
+            "visits": 2,
+            "patients": 1,
+            "percentage": 0.02279202279202279,
+            "labeled_visits": 2,
+            "label_coverage_percentage": 100.0
+        }
+    ],
+    "split_statistics": {
+        "train": {
+            "visits": 6129,
+            "patients": 3360,
+            "complete_cases": 2896,
+            "missing_xray": 3157,
+            "missing_text": 133,
+            "missing_image": 3
+        },
+        "validation": {
+            "visits": 1330,
+            "patients": 720,
+            "complete_cases": 616,
+            "missing_xray": 688,
+            "missing_text": 42,
+            "missing_image": 0
+        },
+        "test": {
+            "visits": 1316,
+            "patients": 720,
+            "complete_cases": 625,
+            "missing_xray": 674,
+            "missing_text": 32,
+            "missing_image": 0
+        }
+    },
+    "validation": {
+        "patient_level_split": "PASS",
+        "visit_uniqueness": "PASS",
+        "authoritative_six_label_dataset": "PASS",
+        "dataset_modified": false,
+        "imputation_performed": false,
+        "samples_removed": false
+    }
+}
