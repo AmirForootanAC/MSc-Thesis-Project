@@ -1,0 +1,9 @@
+split,pattern,image_available,radiograph_available,text_available,missing_modality_count,samples,percentage
+all,complete,True,True,True,0,4195,47.806267806267805
+all,image_missing,False,True,True,1,1,0.011396011396011397
+all,radiograph_missing,True,False,True,1,4503,51.31623931623932
+all,text_missing,True,True,False,1,60,0.6837606837606838
+all,image_radiograph_missing,False,False,True,2,2,0.022792022792022793
+all,image_text_missing,False,True,False,2,0,0.0
+all,radiograph_text_missing,True,False,False,2,14,0.15954415954415954
+all,all_missing,False,False,False,3,0,0.0

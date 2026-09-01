@@ -1,0 +1,73 @@
+{
+  "milestone": "8.5.1",
+  "experiment": "Natural Missingness Robustness Protocol",
+  "dataset": "/home/ubuntu/Projects/thesis-code/results/six_label_patient_level_dataset/labeled_dataset.csv",
+  "total_visits": 8775,
+  "unique_patients": 4800,
+  "split_counts": {
+    "train": 6129,
+    "validation": 1330,
+    "test": 1316
+  },
+  "modality_availability": {
+    "image": {
+      "available_samples": 8772,
+      "missing_samples": 3,
+      "available_percentage": 99.96581196581197,
+      "missing_percentage": 0.03418803418803419
+    },
+    "radiograph": {
+      "available_samples": 4256,
+      "missing_samples": 4519,
+      "available_percentage": 48.5014245014245,
+      "missing_percentage": 51.4985754985755
+    },
+    "text": {
+      "available_samples": 8701,
+      "missing_samples": 74,
+      "available_percentage": 99.15669515669515,
+      "missing_percentage": 0.8433048433048433
+    }
+  },
+  "overall_pattern_distribution": {
+    "complete": {
+      "samples": 4195,
+      "percentage": 47.806267806267805
+    },
+    "image_missing": {
+      "samples": 1,
+      "percentage": 0.011396011396011397
+    },
+    "radiograph_missing": {
+      "samples": 4503,
+      "percentage": 51.31623931623932
+    },
+    "text_missing": {
+      "samples": 60,
+      "percentage": 0.6837606837606838
+    },
+    "image_radiograph_missing": {
+      "samples": 2,
+      "percentage": 0.022792022792022793
+    },
+    "image_text_missing": {
+      "samples": 0,
+      "percentage": 0.0
+    },
+    "radiograph_text_missing": {
+      "samples": 14,
+      "percentage": 0.15954415954415954
+    },
+    "all_missing": {
+      "samples": 0,
+      "percentage": 0.0
+    }
+  },
+  "protocol": {
+    "patient_level_split_preserved": true,
+    "complete_case_filter": false,
+    "natural_missingness": true,
+    "model_training": false,
+    "test_population_definition": "All six-label patient-level visits within the authoritative split."
+  }
+}

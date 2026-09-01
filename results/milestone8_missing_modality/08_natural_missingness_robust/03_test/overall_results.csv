@@ -1,0 +1,2 @@
+scenario,description,samples,macro_f1,micro_f1,auroc,accuracy
+natural_missingness_all_patterns,Natural test population excluding all-missing visits,1316,0.7998379824183007,0.8622100954979536,0.9673417962293464,0.8069908814589666

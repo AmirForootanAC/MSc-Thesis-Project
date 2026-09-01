@@ -1,0 +1,27 @@
+{
+  "milestone": "8.5.2",
+  "dataset": "/home/ubuntu/Projects/thesis-code/results/six_label_patient_level_dataset/labeled_dataset.csv",
+  "total_rows": 8775,
+  "patients": 4800,
+  "checkups": 8775,
+  "image_available": 8772,
+  "radiograph_available": 4256,
+  "text_available": 8701,
+  "complete_cases": 4195,
+  "all_missing": 0,
+  "split_counts": {
+    "train": 6129,
+    "validation": 1330,
+    "test": 1316
+  },
+  "pattern_counts": {
+    "complete": 4195,
+    "image_missing": 1,
+    "radiograph_missing": 4503,
+    "text_missing": 60,
+    "image_radiograph_missing": 2,
+    "image_text_missing": 0,
+    "radiograph_text_missing": 14,
+    "all_missing": 0
+  }
+}

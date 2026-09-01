@@ -1,0 +1,16 @@
+{
+  "milestone": "8.5.2",
+  "dataset": "/home/ubuntu/Projects/thesis-code/results/six_label_patient_level_dataset/labeled_dataset.csv",
+  "ssl_checkpoint": "/home/ubuntu/Projects/thesis-code/results/ssl_pretraining/multimodal_dynamic/best_ssl_model.pt",
+  "best_model": "/home/ubuntu/Projects/thesis-code/results/milestone8_missing_modality/08_natural_missingness_robust/02_training/best_model.pt",
+  "test_samples": 1316,
+  "all_missing_excluded": true,
+  "metrics": {
+    "macro_f1": 0.7998379824183007,
+    "micro_f1": 0.8622100954979536,
+    "auroc": 0.9673417962293464,
+    "accuracy": 0.8069908814589666
+  },
+  "best_validation_macro_f1": 0.8022688471202387,
+  "best_epoch": 23
+}

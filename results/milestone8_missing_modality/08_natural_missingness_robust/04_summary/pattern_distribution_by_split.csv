@@ -1,0 +1,15 @@
+split,pattern,samples
+test,complete,633
+test,radiograph_missing,671
+test,radiograph_text_missing,3
+test,text_missing,9
+train,complete,2935
+train,image_missing,1
+train,image_radiograph_missing,2
+train,radiograph_missing,3146
+train,radiograph_text_missing,9
+train,text_missing,36
+validation,complete,627
+validation,radiograph_missing,686
+validation,radiograph_text_missing,2
+validation,text_missing,15

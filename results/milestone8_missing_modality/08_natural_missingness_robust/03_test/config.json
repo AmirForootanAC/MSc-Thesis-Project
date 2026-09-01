@@ -1,0 +1,15 @@
+{
+  "milestone": "8.5.2",
+  "dataset": "/home/ubuntu/Projects/thesis-code/results/six_label_patient_level_dataset/labeled_dataset.csv",
+  "ssl_checkpoint": "/home/ubuntu/Projects/thesis-code/results/ssl_pretraining/multimodal_dynamic/best_ssl_model.pt",
+  "representation_root": "/home/ubuntu/Projects/thesis-code/results/milestone8_missing_modality/08_natural_missingness_robust/01_representations",
+  "training_checkpoint": "/home/ubuntu/Projects/thesis-code/results/milestone8_missing_modality/08_natural_missingness_robust/02_training/best_model.pt",
+  "device": "cuda",
+  "seed": 42,
+  "batch_size": 32,
+  "threshold": 0.5,
+  "natural_missingness": true,
+  "controlled_dropout": false,
+  "ssl_encoders_frozen": true,
+  "test_used_for_model_selection": false
+}

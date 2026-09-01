@@ -1,0 +1,7 @@
+pattern,samples,percentage
+complete,4195,47.806267806267805
+image_missing,1,0.011396011396011395
+image_radiograph_missing,2,0.02279202279202279
+radiograph_missing,4503,51.31623931623932
+radiograph_text_missing,14,0.15954415954415954
+text_missing,60,0.6837606837606838

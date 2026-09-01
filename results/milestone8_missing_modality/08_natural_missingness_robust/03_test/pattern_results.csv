@@ -1,0 +1,9 @@
+pattern,samples,macro_f1,micro_f1,auroc,accuracy
+complete,633,0.7761168212342433,0.866112650046168,0.954937163704593,0.7930489731437599
+image_missing,0,,,,
+radiograph_missing,671,0.7903306683044664,0.8584229390681004,0.9680088077540795,0.8166915052160953
+text_missing,9,0.0,0.0,,1.0
+image_radiograph_missing,0,,,,
+image_text_missing,0,,,,
+radiograph_text_missing,3,0.0,0.0,,1.0
+all_missing,0,,,,
