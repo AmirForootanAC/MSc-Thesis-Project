@@ -1,0 +1,73 @@
+{
+  "milestone": "8.4.3",
+  "experiment": "Standard Fusion Ablation Test",
+  "device": "cuda",
+  "batch_size": 64,
+  "representation_root": "/home/ubuntu/Projects/thesis-code/results/fusion/ssl_representations",
+  "checkpoint_path": "/home/ubuntu/Projects/thesis-code/results/milestone8_missing_modality/06_robustness_ablation/02_standard_fusion/best_model.pt",
+  "test_population": "Complete-case test population from Milestone 7 SSL representations",
+  "test_samples": 633,
+  "threshold": 0.5,
+  "model_selection_on_test": false,
+  "ssl_encoders_frozen": true,
+  "training_modality_dropout": false,
+  "training_modality_presence_mask": false,
+  "scenarios": {
+    "complete": {
+      "description": "All modalities available",
+      "mask": [
+        1,
+        1,
+        1
+      ]
+    },
+    "image_missing": {
+      "description": "Image missing",
+      "mask": [
+        0,
+        1,
+        1
+      ]
+    },
+    "radiograph_missing": {
+      "description": "Radiograph missing",
+      "mask": [
+        1,
+        0,
+        1
+      ]
+    },
+    "text_missing": {
+      "description": "Clinical text missing",
+      "mask": [
+        1,
+        1,
+        0
+      ]
+    },
+    "image_radiograph_missing": {
+      "description": "Image and radiograph missing",
+      "mask": [
+        0,
+        0,
+        1
+      ]
+    },
+    "image_text_missing": {
+      "description": "Image and text missing",
+      "mask": [
+        0,
+        1,
+        0
+      ]
+    },
+    "radiograph_text_missing": {
+      "description": "Radiograph and text missing",
+      "mask": [
+        1,
+        0,
+        0
+      ]
+    }
+  }
+}

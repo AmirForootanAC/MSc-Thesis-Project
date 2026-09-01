@@ -1,0 +1,4 @@
+split,representation_samples,path
+train,2935,/home/ubuntu/Projects/thesis-code/results/fusion/ssl_representations/train.pt
+validation,627,/home/ubuntu/Projects/thesis-code/results/fusion/ssl_representations/validation.pt
+test,633,/home/ubuntu/Projects/thesis-code/results/fusion/ssl_representations/test.pt

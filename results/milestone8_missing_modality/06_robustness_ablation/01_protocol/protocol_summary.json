@@ -1,0 +1,51 @@
+{
+    "milestone": "8.4",
+    "experiment": "Robustness Ablation Study",
+    "research_question": "Does explicit modality-dropout training improve robustness to missing modalities compared with standard multimodal fusion?",
+    "comparison": {
+        "standard_fusion": {
+            "modality_dropout": false,
+            "modality_presence_mask": false,
+            "ssl_encoders_frozen": true
+        },
+        "robust_fusion": {
+            "modality_dropout": true,
+            "modality_presence_mask": true,
+            "ssl_encoders_frozen": true,
+            "checkpoint": "/home/ubuntu/Projects/thesis-code/results/milestone8_missing_modality/04_robust_fusion_training/best_model.pt"
+        }
+    },
+    "shared_data": {
+        "dataset": "/home/ubuntu/Projects/thesis-code/results/six_label_patient_level_dataset/labeled_dataset.csv",
+        "representations": "/home/ubuntu/Projects/thesis-code/results/fusion/ssl_representations",
+        "train_population": 2935,
+        "validation_population": 627,
+        "test_population": 633
+    },
+    "evaluation": {
+        "test_population": 633,
+        "test_scenarios": [
+            "complete",
+            "image_missing",
+            "radiograph_missing",
+            "text_missing",
+            "image_radiograph_missing",
+            "image_text_missing",
+            "radiograph_text_missing"
+        ],
+        "model_selection_metric": "validation_macro_f1",
+        "test_used_for_model_selection": false
+    },
+    "split_policy": {
+        "patient_level_split_inherited": true,
+        "regenerated": false,
+        "leakage_check": "PASS"
+    },
+    "validation": {
+        "dataset_population": "PASS",
+        "complete_case_population": "PASS",
+        "representation_population": "PASS",
+        "patient_level_isolation": "PASS",
+        "robust_checkpoint_exists": true
+    }
+}

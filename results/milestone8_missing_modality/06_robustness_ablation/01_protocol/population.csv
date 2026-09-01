@@ -1,0 +1,4 @@
+split,visits,patients,complete_cases,natural_missing_image,natural_missing_radiograph,natural_missing_text
+train,6129,3360,2896,3,3157,133
+validation,1330,720,616,0,688,42
+test,1316,720,625,0,674,32

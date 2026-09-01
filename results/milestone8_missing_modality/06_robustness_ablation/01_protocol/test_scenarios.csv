@@ -1,0 +1,8 @@
+scenario,description,image,radiograph,text
+complete,All modalities available,1,1,1
+image_missing,Image missing,0,1,1
+radiograph_missing,Radiograph missing,1,0,1
+text_missing,Clinical text missing,1,1,0
+image_radiograph_missing,Image and radiograph missing,0,0,1
+image_text_missing,Image and text missing,0,1,0
+radiograph_text_missing,Radiograph and text missing,1,0,0

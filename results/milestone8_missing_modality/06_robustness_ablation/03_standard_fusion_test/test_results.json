@@ -1,0 +1,101 @@
+{
+  "milestone": "8.4.3",
+  "experiment": "Standard Fusion Ablation Test",
+  "representation_root": "/home/ubuntu/Projects/thesis-code/results/fusion/ssl_representations",
+  "checkpoint": "/home/ubuntu/Projects/thesis-code/results/milestone8_missing_modality/06_robustness_ablation/02_standard_fusion/best_model.pt",
+  "checkpoint_epoch": 46,
+  "checkpoint_validation_macro_f1": 0.7435190334940058,
+  "test_samples": 633,
+  "batch_size": 64,
+  "device": "cuda",
+  "threshold": 0.5,
+  "model_selection_on_test": false,
+  "training_modality_dropout": false,
+  "training_modality_presence_mask": false,
+  "scenarios": [
+    {
+      "scenario": "complete",
+      "description": "All modalities available",
+      "image_available": true,
+      "radiograph_available": true,
+      "text_available": true,
+      "samples": 633,
+      "macro_f1": 0.7691322004128504,
+      "micro_f1": 0.8745318352059925,
+      "auroc": 0.9641482959194629,
+      "accuracy": 0.8072669826224329
+    },
+    {
+      "scenario": "image_missing",
+      "description": "Image missing",
+      "image_available": false,
+      "radiograph_available": true,
+      "text_available": true,
+      "samples": 633,
+      "macro_f1": 0.77289170287525,
+      "micro_f1": 0.8703535811423391,
+      "auroc": 0.9643997782304283,
+      "accuracy": 0.7946287519747235
+    },
+    {
+      "scenario": "radiograph_missing",
+      "description": "Radiograph missing",
+      "image_available": true,
+      "radiograph_available": false,
+      "text_available": true,
+      "samples": 633,
+      "macro_f1": 0.6850166266744536,
+      "micro_f1": 0.8241563055062167,
+      "auroc": 0.9608171143521843,
+      "accuracy": 0.7330173775671406
+    },
+    {
+      "scenario": "text_missing",
+      "description": "Clinical text missing",
+      "image_available": true,
+      "radiograph_available": true,
+      "text_available": false,
+      "samples": 633,
+      "macro_f1": 0.3634655702105118,
+      "micro_f1": 0.5492341356673961,
+      "auroc": 0.7526188994465172,
+      "accuracy": 0.5039494470774092
+    },
+    {
+      "scenario": "image_radiograph_missing",
+      "description": "Image and radiograph missing",
+      "image_available": false,
+      "radiograph_available": false,
+      "text_available": true,
+      "samples": 633,
+      "macro_f1": 0.7070908200563913,
+      "micro_f1": 0.8368055555555556,
+      "auroc": 0.9526524148499144,
+      "accuracy": 0.740916271721959
+    },
+    {
+      "scenario": "image_text_missing",
+      "description": "Image and text missing",
+      "image_available": false,
+      "radiograph_available": true,
+      "text_available": false,
+      "samples": 633,
+      "macro_f1": 0.30213481031894324,
+      "micro_f1": 0.5343511450381679,
+      "auroc": 0.6776623305930812,
+      "accuracy": 0.4549763033175355
+    },
+    {
+      "scenario": "radiograph_text_missing",
+      "description": "Radiograph and text missing",
+      "image_available": true,
+      "radiograph_available": false,
+      "text_available": false,
+      "samples": 633,
+      "macro_f1": 0.22356311229506623,
+      "micro_f1": 0.21711568938193343,
+      "auroc": 0.72270995606819,
+      "accuracy": 0.11374407582938388
+    }
+  ]
+}
