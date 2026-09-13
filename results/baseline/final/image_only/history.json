@@ -1,0 +1,2452 @@
+[
+  {
+    "epoch": 1,
+    "train_loss": 0.44171129276707,
+    "validation_loss": 0.32083671209932885,
+    "validation_metrics": {
+      "macro_f1": 0.11875000000000001,
+      "micro_f1": 0.5265588914549654,
+      "auroc": 0.6294353199187908,
+      "accuracy": 0.4704944178628389,
+      "per_label": {
+        "label_caries": {
+          "f1": 0.0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "auroc": 0.4526932367149758
+        },
+        "label_gingivitis": {
+          "f1": 0.0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "auroc": 0.7884102322661645
+        },
+        "label_malocclusion": {
+          "f1": 0.7125,
+          "precision": 0.6477272727272727,
+          "recall": 0.7916666666666666,
+          "auroc": 0.8168018682399214
+        },
+        "label_pulpitis": {
+          "f1": 0.0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "auroc": 0.7122950819672131
+        },
+        "label_tooth_loss": {
+          "f1": 0.0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "auroc": 0.5346652070790002
+        },
+        "label_tooth_structure_loss": {
+          "f1": 0.0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "auroc": 0.4717462932454695
+        }
+      }
+    }
+  },
+  {
+    "epoch": 2,
+    "train_loss": 0.30168887432816893,
+    "validation_loss": 0.2893559504536134,
+    "validation_metrics": {
+      "macro_f1": 0.12111959287531805,
+      "micro_f1": 0.5402951191827469,
+      "auroc": 0.6709285630801691,
+      "accuracy": 0.48165869218500795,
+      "per_label": {
+        "label_caries": {
+          "f1": 0.0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "auroc": 0.4743357487922706
+        },
+        "label_gingivitis": {
+          "f1": 0.0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "auroc": 0.8463983050847457
+        },
+        "label_malocclusion": {
+          "f1": 0.7267175572519083,
+          "precision": 0.6485013623978202,
+          "recall": 0.8263888888888888,
+          "auroc": 0.819408595542445
+        },
+        "label_pulpitis": {
+          "f1": 0.0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "auroc": 0.7851012536162004
+        },
+        "label_tooth_loss": {
+          "f1": 0.0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "auroc": 0.5950556467797847
+        },
+        "label_tooth_structure_loss": {
+          "f1": 0.0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "auroc": 0.5052718286655684
+        }
+      }
+    }
+  },
+  {
+    "epoch": 3,
+    "train_loss": 0.2798195870070431,
+    "validation_loss": 0.2754793905570537,
+    "validation_metrics": {
+      "macro_f1": 0.13454852171695622,
+      "micro_f1": 0.5508849557522124,
+      "auroc": 0.6991211849796585,
+      "accuracy": 0.4864433811802233,
+      "per_label": {
+        "label_caries": {
+          "f1": 0.0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "auroc": 0.49829710144927547
+        },
+        "label_gingivitis": {
+          "f1": 0.07920792079207921,
+          "precision": 0.8,
+          "recall": 0.041666666666666664,
+          "auroc": 0.867231638418079
+        },
+        "label_malocclusion": {
+          "f1": 0.7280832095096582,
+          "precision": 0.6363636363636364,
+          "recall": 0.8506944444444444,
+          "auroc": 0.8210217961324155
+        },
+        "label_pulpitis": {
+          "f1": 0.0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "auroc": 0.8003375120540019
+        },
+        "label_tooth_loss": {
+          "f1": 0.0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "auroc": 0.6597336252508667
+        },
+        "label_tooth_structure_loss": {
+          "f1": 0.0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "auroc": 0.5481054365733113
+        }
+      }
+    }
+  },
+  {
+    "epoch": 4,
+    "train_loss": 0.2656902418515013,
+    "validation_loss": 0.263436773155309,
+    "validation_metrics": {
+      "macro_f1": 0.21340177733620358,
+      "micro_f1": 0.570446735395189,
+      "auroc": 0.7282924784795576,
+      "accuracy": 0.5055821371610846,
+      "per_label": {
+        "label_caries": {
+          "f1": 0.0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "auroc": 0.5311714975845411
+        },
+        "label_gingivitis": {
+          "f1": 0.45454545454545453,
+          "precision": 0.8333333333333334,
+          "recall": 0.3125,
+          "auroc": 0.8777463904582549
+        },
+        "label_malocclusion": {
+          "f1": 0.7147540983606557,
+          "precision": 0.6770186335403726,
+          "recall": 0.7569444444444444,
+          "auroc": 0.8246988692232056
+        },
+        "label_pulpitis": {
+          "f1": 0.1111111111111111,
+          "precision": 1.0,
+          "recall": 0.058823529411764705,
+          "auroc": 0.8148023143683701
+        },
+        "label_tooth_loss": {
+          "f1": 0.0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "auroc": 0.719029374201788
+        },
+        "label_tooth_structure_loss": {
+          "f1": 0.0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "auroc": 0.602306425041186
+        }
+      }
+    }
+  },
+  {
+    "epoch": 5,
+    "train_loss": 0.2564801771894138,
+    "validation_loss": 0.25754498435726647,
+    "validation_metrics": {
+      "macro_f1": 0.23217687655118346,
+      "micro_f1": 0.5759637188208617,
+      "auroc": 0.7491388169980828,
+      "accuracy": 0.5087719298245614,
+      "per_label": {
+        "label_caries": {
+          "f1": 0.0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "auroc": 0.5602536231884058
+        },
+        "label_gingivitis": {
+          "f1": 0.46616541353383456,
+          "precision": 0.8378378378378378,
+          "recall": 0.3229166666666667,
+          "auroc": 0.8817678907721281
+        },
+        "label_malocclusion": {
+          "f1": 0.7163695299837926,
+          "precision": 0.6717325227963525,
+          "recall": 0.7673611111111112,
+          "auroc": 0.8276589642740084
+        },
+        "label_pulpitis": {
+          "f1": 0.21052631578947367,
+          "precision": 1.0,
+          "recall": 0.11764705882352941,
+          "auroc": 0.8252169720347154
+        },
+        "label_tooth_loss": {
+          "f1": 0.0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "auroc": 0.755701514322204
+        },
+        "label_tooth_structure_loss": {
+          "f1": 0.0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "auroc": 0.6442339373970346
+        }
+      }
+    }
+  },
+  {
+    "epoch": 6,
+    "train_loss": 0.24991824853485223,
+    "validation_loss": 0.25223815431700475,
+    "validation_metrics": {
+      "macro_f1": 0.2602942111296944,
+      "micro_f1": 0.5833333333333334,
+      "auroc": 0.7668314448255508,
+      "accuracy": 0.5135566188197768,
+      "per_label": {
+        "label_caries": {
+          "f1": 0.0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "auroc": 0.5899637681159421
+        },
+        "label_gingivitis": {
+          "f1": 0.47761194029850745,
+          "precision": 0.8421052631578947,
+          "recall": 0.3333333333333333,
+          "auroc": 0.8864563716258632
+        },
+        "label_malocclusion": {
+          "f1": 0.7205169628432956,
+          "precision": 0.6737160120845922,
+          "recall": 0.7743055555555556,
+          "auroc": 0.8303015404785317
+        },
+        "label_pulpitis": {
+          "f1": 0.36363636363636365,
+          "precision": 0.8,
+          "recall": 0.23529411764705882,
+          "auroc": 0.8360173577627772
+        },
+        "label_tooth_loss": {
+          "f1": 0.0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "auroc": 0.7879036672140121
+        },
+        "label_tooth_structure_loss": {
+          "f1": 0.0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "auroc": 0.6703459637561779
+        }
+      }
+    }
+  },
+  {
+    "epoch": 7,
+    "train_loss": 0.2455232210802447,
+    "validation_loss": 0.248719315362882,
+    "validation_metrics": {
+      "macro_f1": 0.2588827200551189,
+      "micro_f1": 0.5881032547699214,
+      "auroc": 0.7764329755137562,
+      "accuracy": 0.518341307814992,
+      "per_label": {
+        "label_caries": {
+          "f1": 0.0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "auroc": 0.6010507246376812
+        },
+        "label_gingivitis": {
+          "f1": 0.47761194029850745,
+          "precision": 0.8421052631578947,
+          "recall": 0.3333333333333333,
+          "auroc": 0.8899285938480854
+        },
+        "label_malocclusion": {
+          "f1": 0.7278582930756844,
+          "precision": 0.6786786786786787,
+          "recall": 0.7847222222222222,
+          "auroc": 0.8335791543756146
+        },
+        "label_pulpitis": {
+          "f1": 0.34782608695652173,
+          "precision": 0.6666666666666666,
+          "recall": 0.23529411764705882,
+          "auroc": 0.838910318225651
+        },
+        "label_tooth_loss": {
+          "f1": 0.0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "auroc": 0.8088852399197226
+        },
+        "label_tooth_structure_loss": {
+          "f1": 0.0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "auroc": 0.6862438220757826
+        }
+      }
+    }
+  },
+  {
+    "epoch": 8,
+    "train_loss": 0.2412332656313678,
+    "validation_loss": 0.24544523816697206,
+    "validation_metrics": {
+      "macro_f1": 0.2584402132145916,
+      "micro_f1": 0.5853107344632769,
+      "auroc": 0.785236384136141,
+      "accuracy": 0.518341307814992,
+      "per_label": {
+        "label_caries": {
+          "f1": 0.0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "auroc": 0.6161231884057972
+        },
+        "label_gingivitis": {
+          "f1": 0.47761194029850745,
+          "precision": 0.8421052631578947,
+          "recall": 0.3333333333333333,
+          "auroc": 0.8921845574387948
+        },
+        "label_malocclusion": {
+          "f1": 0.7252032520325203,
+          "precision": 0.6819571865443425,
+          "recall": 0.7743055555555556,
+          "auroc": 0.836073213700426
+        },
+        "label_pulpitis": {
+          "f1": 0.34782608695652173,
+          "precision": 0.6666666666666666,
+          "recall": 0.23529411764705882,
+          "auroc": 0.8423818707810993
+        },
+        "label_tooth_loss": {
+          "f1": 0.0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "auroc": 0.8253968253968254
+        },
+        "label_tooth_structure_loss": {
+          "f1": 0.0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "auroc": 0.6992586490939043
+        }
+      }
+    }
+  },
+  {
+    "epoch": 9,
+    "train_loss": 0.23732532753687788,
+    "validation_loss": 0.24403135950052285,
+    "validation_metrics": {
+      "macro_f1": 0.25917300454250486,
+      "micro_f1": 0.5899441340782123,
+      "auroc": 0.7908595519331966,
+      "accuracy": 0.5215311004784688,
+      "per_label": {
+        "label_caries": {
+          "f1": 0.0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "auroc": 0.6243115942028986
+        },
+        "label_gingivitis": {
+          "f1": 0.47761194029850745,
+          "precision": 0.8421052631578947,
+          "recall": 0.3333333333333333,
+          "auroc": 0.8937735404896422
+        },
+        "label_malocclusion": {
+          "f1": 0.7296,
+          "precision": 0.6765578635014837,
+          "recall": 0.7916666666666666,
+          "auroc": 0.8385672730252376
+        },
+        "label_pulpitis": {
+          "f1": 0.34782608695652173,
+          "precision": 0.6666666666666666,
+          "recall": 0.23529411764705882,
+          "auroc": 0.8431533269045324
+        },
+        "label_tooth_loss": {
+          "f1": 0.0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "auroc": 0.8357963875205254
+        },
+        "label_tooth_structure_loss": {
+          "f1": 0.0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "auroc": 0.7095551894563425
+        }
+      }
+    }
+  },
+  {
+    "epoch": 10,
+    "train_loss": 0.23483027663964992,
+    "validation_loss": 0.24197441132008274,
+    "validation_metrics": {
+      "macro_f1": 0.29523046242147366,
+      "micro_f1": 0.6061946902654868,
+      "auroc": 0.7958217697569531,
+      "accuracy": 0.5390749601275917,
+      "per_label": {
+        "label_caries": {
+          "f1": 0.0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "auroc": 0.6308091787439615
+        },
+        "label_gingivitis": {
+          "f1": 0.5594405594405595,
+          "precision": 0.851063829787234,
+          "recall": 0.4166666666666667,
+          "auroc": 0.8963433772755807
+        },
+        "label_malocclusion": {
+          "f1": 0.7319422150882825,
+          "precision": 0.6805970149253732,
+          "recall": 0.7916666666666666,
+          "auroc": 0.8404058095706326
+        },
+        "label_pulpitis": {
+          "f1": 0.48,
+          "precision": 0.75,
+          "recall": 0.35294117647058826,
+          "auroc": 0.842960462873674
+        },
+        "label_tooth_loss": {
+          "f1": 0.0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "auroc": 0.8454661558109834
+        },
+        "label_tooth_structure_loss": {
+          "f1": 0.0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "auroc": 0.7189456342668863
+        }
+      }
+    }
+  },
+  {
+    "epoch": 11,
+    "train_loss": 0.23257052758327948,
+    "validation_loss": 0.23912200633483596,
+    "validation_metrics": {
+      "macro_f1": 0.2822894009505242,
+      "micro_f1": 0.6112956810631229,
+      "auroc": 0.7992476588473796,
+      "accuracy": 0.5454545454545454,
+      "per_label": {
+        "label_caries": {
+          "f1": 0.0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "auroc": 0.6348429951690822
+        },
+        "label_gingivitis": {
+          "f1": 0.6133333333333333,
+          "precision": 0.8518518518518519,
+          "recall": 0.4791666666666667,
+          "auroc": 0.8988739799121156
+        },
+        "label_malocclusion": {
+          "f1": 0.7325769854132901,
+          "precision": 0.6869300911854104,
+          "recall": 0.7847222222222222,
+          "auroc": 0.8428179285480171
+        },
+        "label_pulpitis": {
+          "f1": 0.34782608695652173,
+          "precision": 0.6666666666666666,
+          "recall": 0.23529411764705882,
+          "auroc": 0.8428640308582449
+        },
+        "label_tooth_loss": {
+          "f1": 0.0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "auroc": 0.8520343003101624
+        },
+        "label_tooth_structure_loss": {
+          "f1": 0.0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "auroc": 0.7240527182866558
+        }
+      }
+    }
+  },
+  {
+    "epoch": 12,
+    "train_loss": 0.22948874965594315,
+    "validation_loss": 0.2382853437167934,
+    "validation_metrics": {
+      "macro_f1": 0.28380654891782847,
+      "micro_f1": 0.6194111232279171,
+      "auroc": 0.8027714631948246,
+      "accuracy": 0.5518341307814992,
+      "per_label": {
+        "label_caries": {
+          "f1": 0.0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "auroc": 0.64018115942029
+        },
+        "label_gingivitis": {
+          "f1": 0.6133333333333333,
+          "precision": 0.8518518518518519,
+          "recall": 0.4791666666666667,
+          "auroc": 0.899913684871312
+        },
+        "label_malocclusion": {
+          "f1": 0.7416798732171157,
+          "precision": 0.6822157434402333,
+          "recall": 0.8125,
+          "auroc": 0.8441340953785644
+        },
+        "label_pulpitis": {
+          "f1": 0.34782608695652173,
+          "precision": 0.6666666666666666,
+          "recall": 0.23529411764705882,
+          "auroc": 0.8433461909353905
+        },
+        "label_tooth_loss": {
+          "f1": 0.0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "auroc": 0.8583287721218755
+        },
+        "label_tooth_structure_loss": {
+          "f1": 0.0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "auroc": 0.7307248764415156
+        }
+      }
+    }
+  },
+  {
+    "epoch": 13,
+    "train_loss": 0.22664096705838835,
+    "validation_loss": 0.2363712980494469,
+    "validation_metrics": {
+      "macro_f1": 0.29019860558746996,
+      "micro_f1": 0.6112956810631229,
+      "auroc": 0.8053581269870113,
+      "accuracy": 0.543859649122807,
+      "per_label": {
+        "label_caries": {
+          "f1": 0.0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "auroc": 0.6430555555555555
+        },
+        "label_gingivitis": {
+          "f1": 0.589041095890411,
+          "precision": 0.86,
+          "recall": 0.4479166666666667,
+          "auroc": 0.900776836158192
+        },
+        "label_malocclusion": {
+          "f1": 0.7354838709677419,
+          "precision": 0.6867469879518072,
+          "recall": 0.7916666666666666,
+          "auroc": 0.845322230416257
+        },
+        "label_pulpitis": {
+          "f1": 0.4166666666666667,
+          "precision": 0.7142857142857143,
+          "recall": 0.29411764705882354,
+          "auroc": 0.8444069431051109
+        },
+        "label_tooth_loss": {
+          "f1": 0.0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "auroc": 0.8648969166210546
+        },
+        "label_tooth_structure_loss": {
+          "f1": 0.0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "auroc": 0.7336902800658978
+        }
+      }
+    }
+  },
+  {
+    "epoch": 14,
+    "train_loss": 0.22431031458221923,
+    "validation_loss": 0.23838853355072723,
+    "validation_metrics": {
+      "macro_f1": 0.2904346691013982,
+      "micro_f1": 0.6336842105263157,
+      "auroc": 0.8073541358643981,
+      "accuracy": 0.5566188197767146,
+      "per_label": {
+        "label_caries": {
+          "f1": 0.0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "auroc": 0.6446980676328502
+        },
+        "label_gingivitis": {
+          "f1": 0.6451612903225806,
+          "precision": 0.847457627118644,
+          "recall": 0.5208333333333334,
+          "auroc": 0.9021696484620214
+        },
+        "label_malocclusion": {
+          "f1": 0.7496206373292867,
+          "precision": 0.6657681940700808,
+          "recall": 0.8576388888888888,
+          "auroc": 0.8471710095050804
+        },
+        "label_pulpitis": {
+          "f1": 0.34782608695652173,
+          "precision": 0.6666666666666666,
+          "recall": 0.23529411764705882,
+          "auroc": 0.8450819672131148
+        },
+        "label_tooth_loss": {
+          "f1": 0.0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "auroc": 0.8673599708082467
+        },
+        "label_tooth_structure_loss": {
+          "f1": 0.0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "auroc": 0.7376441515650742
+        }
+      }
+    }
+  },
+  {
+    "epoch": 15,
+    "train_loss": 0.22280363699964348,
+    "validation_loss": 0.23221539526800566,
+    "validation_metrics": {
+      "macro_f1": 0.31149689489000826,
+      "micro_f1": 0.6295081967213115,
+      "auroc": 0.8111967593847168,
+      "accuracy": 0.5614035087719298,
+      "per_label": {
+        "label_caries": {
+          "f1": 0.05194805194805195,
+          "precision": 1.0,
+          "recall": 0.02666666666666667,
+          "auroc": 0.6504227053140097
+        },
+        "label_gingivitis": {
+          "f1": 0.6585365853658537,
+          "precision": 0.7941176470588235,
+          "recall": 0.5625,
+          "auroc": 0.904072504708098
+        },
+        "label_malocclusion": {
+          "f1": 0.7418300653594772,
+          "precision": 0.7006172839506173,
+          "recall": 0.7881944444444444,
+          "auroc": 0.8479187151753523
+        },
+        "label_pulpitis": {
+          "f1": 0.4166666666666667,
+          "precision": 0.7142857142857143,
+          "recall": 0.29411764705882354,
+          "auroc": 0.8473963355834137
+        },
+        "label_tooth_loss": {
+          "f1": 0.0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "auroc": 0.8725597518700967
+        },
+        "label_tooth_structure_loss": {
+          "f1": 0.0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "auroc": 0.7448105436573312
+        }
+      }
+    }
+  },
+  {
+    "epoch": 16,
+    "train_loss": 0.22154050568062864,
+    "validation_loss": 0.23163352350268182,
+    "validation_metrics": {
+      "macro_f1": 0.30963306823630715,
+      "micro_f1": 0.6305525460455038,
+      "auroc": 0.8130445381914072,
+      "accuracy": 0.5582137161084529,
+      "per_label": {
+        "label_caries": {
+          "f1": 0.02631578947368421,
+          "precision": 1.0,
+          "recall": 0.013333333333333334,
+          "auroc": 0.6494082125603865
+        },
+        "label_gingivitis": {
+          "f1": 0.6745562130177515,
+          "precision": 0.7808219178082192,
+          "recall": 0.59375,
+          "auroc": 0.9053868487131199
+        },
+        "label_malocclusion": {
+          "f1": 0.7402597402597403,
+          "precision": 0.6951219512195121,
+          "recall": 0.7916666666666666,
+          "auroc": 0.8483437807276302
+        },
+        "label_pulpitis": {
+          "f1": 0.4166666666666667,
+          "precision": 0.7142857142857143,
+          "recall": 0.29411764705882354,
+          "auroc": 0.8491321118611379
+        },
+        "label_tooth_loss": {
+          "f1": 0.0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "auroc": 0.874019339536581
+        },
+        "label_tooth_structure_loss": {
+          "f1": 0.0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "auroc": 0.7519769357495881
+        }
+      }
+    }
+  },
+  {
+    "epoch": 17,
+    "train_loss": 0.21849552816038886,
+    "validation_loss": 0.2311215394565576,
+    "validation_metrics": {
+      "macro_f1": 0.3126110001110001,
+      "micro_f1": 0.631578947368421,
+      "auroc": 0.81483290545938,
+      "accuracy": 0.5582137161084529,
+      "per_label": {
+        "label_caries": {
+          "f1": 0.05194805194805195,
+          "precision": 1.0,
+          "recall": 0.02666666666666667,
+          "auroc": 0.6516545893719805
+        },
+        "label_gingivitis": {
+          "f1": 0.6666666666666666,
+          "precision": 0.7777777777777778,
+          "recall": 0.5833333333333334,
+          "auroc": 0.9069365976145637
+        },
+        "label_malocclusion": {
+          "f1": 0.7403846153846154,
+          "precision": 0.6875,
+          "recall": 0.8020833333333334,
+          "auroc": 0.8492041543756145
+        },
+        "label_pulpitis": {
+          "f1": 0.4166666666666667,
+          "precision": 0.7142857142857143,
+          "recall": 0.29411764705882354,
+          "auroc": 0.8502892960462872
+        },
+        "label_tooth_loss": {
+          "f1": 0.0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "auroc": 0.8762999452654625
+        },
+        "label_tooth_structure_loss": {
+          "f1": 0.0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "auroc": 0.7546128500823724
+        }
+      }
+    }
+  },
+  {
+    "epoch": 18,
+    "train_loss": 0.21881740729068216,
+    "validation_loss": 0.23047038540244102,
+    "validation_metrics": {
+      "macro_f1": 0.32606058418404316,
+      "micro_f1": 0.6396588486140725,
+      "auroc": 0.8165849016644998,
+      "accuracy": 0.5661881977671451,
+      "per_label": {
+        "label_caries": {
+          "f1": 0.125,
+          "precision": 1.0,
+          "recall": 0.06666666666666667,
+          "auroc": 0.653828502415459
+        },
+        "label_gingivitis": {
+          "f1": 0.6706586826347305,
+          "precision": 0.7887323943661971,
+          "recall": 0.5833333333333334,
+          "auroc": 0.9077605147520401
+        },
+        "label_malocclusion": {
+          "f1": 0.7440381558028617,
+          "precision": 0.6862170087976539,
+          "recall": 0.8125,
+          "auroc": 0.8498135857096034
+        },
+        "label_pulpitis": {
+          "f1": 0.4166666666666667,
+          "precision": 0.7142857142857143,
+          "recall": 0.29411764705882354,
+          "auroc": 0.8512536162005786
+        },
+        "label_tooth_loss": {
+          "f1": 0.0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "auroc": 0.8789454479109651
+        },
+        "label_tooth_structure_loss": {
+          "f1": 0.0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "auroc": 0.7579077429983525
+        }
+      }
+    }
+  },
+  {
+    "epoch": 19,
+    "train_loss": 0.2176152115905967,
+    "validation_loss": 0.22953133341632312,
+    "validation_metrics": {
+      "macro_f1": 0.3250448028673835,
+      "micro_f1": 0.6363636363636364,
+      "auroc": 0.8186793231232993,
+      "accuracy": 0.5629984051036683,
+      "per_label": {
+        "label_caries": {
+          "f1": 0.125,
+          "precision": 1.0,
+          "recall": 0.06666666666666667,
+          "auroc": 0.6556884057971015
+        },
+        "label_gingivitis": {
+          "f1": 0.6666666666666666,
+          "precision": 0.8181818181818182,
+          "recall": 0.5625,
+          "auroc": 0.9082901757689893
+        },
+        "label_malocclusion": {
+          "f1": 0.7419354838709677,
+          "precision": 0.6927710843373494,
+          "recall": 0.7986111111111112,
+          "auroc": 0.8505151999344477
+        },
+        "label_pulpitis": {
+          "f1": 0.4166666666666667,
+          "precision": 0.7142857142857143,
+          "recall": 0.29411764705882354,
+          "auroc": 0.8535679845708775
+        },
+        "label_tooth_loss": {
+          "f1": 0.0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "auroc": 0.8805874840357598
+        },
+        "label_tooth_structure_loss": {
+          "f1": 0.0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "auroc": 0.7634266886326194
+        }
+      }
+    }
+  },
+  {
+    "epoch": 20,
+    "train_loss": 0.2151017317330155,
+    "validation_loss": 0.2283261075050016,
+    "validation_metrics": {
+      "macro_f1": 0.3138391014699247,
+      "micro_f1": 0.6344086021505376,
+      "auroc": 0.8201607410530966,
+      "accuracy": 0.5614035087719298,
+      "per_label": {
+        "label_caries": {
+          "f1": 0.125,
+          "precision": 1.0,
+          "recall": 0.06666666666666667,
+          "auroc": 0.6567512077294687
+        },
+        "label_gingivitis": {
+          "f1": 0.6706586826347305,
+          "precision": 0.7887323943661971,
+          "recall": 0.5833333333333334,
+          "auroc": 0.9096045197740112
+        },
+        "label_malocclusion": {
+          "f1": 0.7395498392282959,
+          "precision": 0.688622754491018,
+          "recall": 0.7986111111111112,
+          "auroc": 0.8510529334644379
+        },
+        "label_pulpitis": {
+          "f1": 0.34782608695652173,
+          "precision": 0.6666666666666666,
+          "recall": 0.23529411764705882,
+          "auroc": 0.8547251687560271
+        },
+        "label_tooth_loss": {
+          "f1": 0.0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "auroc": 0.882685641306331
+        },
+        "label_tooth_structure_loss": {
+          "f1": 0.0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "auroc": 0.7661449752883032
+        }
+      }
+    }
+  },
+  {
+    "epoch": 21,
+    "train_loss": 0.21322563814369794,
+    "validation_loss": 0.22716352381283725,
+    "validation_metrics": {
+      "macro_f1": 0.3432364287592686,
+      "micro_f1": 0.6377440347071583,
+      "auroc": 0.8224809529368838,
+      "accuracy": 0.5677830940988836,
+      "per_label": {
+        "label_caries": {
+          "f1": 0.125,
+          "precision": 1.0,
+          "recall": 0.06666666666666667,
+          "auroc": 0.6576932367149758
+        },
+        "label_gingivitis": {
+          "f1": 0.6706586826347305,
+          "precision": 0.7887323943661971,
+          "recall": 0.5833333333333334,
+          "auroc": 0.9098399246704332
+        },
+        "label_malocclusion": {
+          "f1": 0.7418300653594772,
+          "precision": 0.7006172839506173,
+          "recall": 0.7881944444444444,
+          "auroc": 0.8516367584398558
+        },
+        "label_pulpitis": {
+          "f1": 0.4166666666666667,
+          "precision": 0.7142857142857143,
+          "recall": 0.29411764705882354,
+          "auroc": 0.8577145612343298
+        },
+        "label_tooth_loss": {
+          "f1": 0.10526315789473684,
+          "precision": 1.0,
+          "recall": 0.05555555555555555,
+          "auroc": 0.885513592410144
+        },
+        "label_tooth_structure_loss": {
+          "f1": 0.0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "auroc": 0.7724876441515651
+        }
+      }
+    }
+  },
+  {
+    "epoch": 22,
+    "train_loss": 0.2118458120553305,
+    "validation_loss": 0.22726359373972385,
+    "validation_metrics": {
+      "macro_f1": 0.35041097973103014,
+      "micro_f1": 0.6561514195583596,
+      "auroc": 0.8238411934378639,
+      "accuracy": 0.5853269537480064,
+      "per_label": {
+        "label_caries": {
+          "f1": 0.125,
+          "precision": 1.0,
+          "recall": 0.06666666666666667,
+          "auroc": 0.6596739130434782
+        },
+        "label_gingivitis": {
+          "f1": 0.6976744186046512,
+          "precision": 0.7894736842105263,
+          "recall": 0.625,
+          "auroc": 0.9105853735091023
+        },
+        "label_malocclusion": {
+          "f1": 0.7578616352201258,
+          "precision": 0.6925287356321839,
+          "recall": 0.8368055555555556,
+          "auroc": 0.8525688298918388
+        },
+        "label_pulpitis": {
+          "f1": 0.4166666666666667,
+          "precision": 0.7142857142857143,
+          "recall": 0.29411764705882354,
+          "auroc": 0.8621504339440694
+        },
+        "label_tooth_loss": {
+          "f1": 0.10526315789473684,
+          "precision": 1.0,
+          "recall": 0.05555555555555555,
+          "auroc": 0.8845101258894362
+        },
+        "label_tooth_structure_loss": {
+          "f1": 0.0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "auroc": 0.7735584843492586
+        }
+      }
+    }
+  },
+  {
+    "epoch": 23,
+    "train_loss": 0.21160004454428882,
+    "validation_loss": 0.22700215366822254,
+    "validation_metrics": {
+      "macro_f1": 0.3528087327694696,
+      "micro_f1": 0.6512118018967334,
+      "auroc": 0.8265091864085713,
+      "accuracy": 0.580542264752791,
+      "per_label": {
+        "label_caries": {
+          "f1": 0.17073170731707318,
+          "precision": 1.0,
+          "recall": 0.09333333333333334,
+          "auroc": 0.6623550724637681
+        },
+        "label_gingivitis": {
+          "f1": 0.6706586826347305,
+          "precision": 0.7887323943661971,
+          "recall": 0.5833333333333334,
+          "auroc": 0.911056183301946
+        },
+        "label_malocclusion": {
+          "f1": 0.7535321821036107,
+          "precision": 0.6876790830945558,
+          "recall": 0.8333333333333334,
+          "auroc": 0.8532653228449688
+        },
+        "label_pulpitis": {
+          "f1": 0.4166666666666667,
+          "precision": 0.7142857142857143,
+          "recall": 0.29411764705882354,
+          "auroc": 0.8656219864995179
+        },
+        "label_tooth_loss": {
+          "f1": 0.10526315789473684,
+          "precision": 1.0,
+          "recall": 0.05555555555555555,
+          "auroc": 0.8866082831600073
+        },
+        "label_tooth_structure_loss": {
+          "f1": 0.0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "auroc": 0.780148270181219
+        }
+      }
+    }
+  },
+  {
+    "epoch": 24,
+    "train_loss": 0.20953961867808646,
+    "validation_loss": 0.22548496713743935,
+    "validation_metrics": {
+      "macro_f1": 0.35696164132395664,
+      "micro_f1": 0.6531483457844184,
+      "auroc": 0.8278078879227877,
+      "accuracy": 0.5821371610845295,
+      "per_label": {
+        "label_caries": {
+          "f1": 0.1927710843373494,
+          "precision": 1.0,
+          "recall": 0.10666666666666667,
+          "auroc": 0.6627173913043478
+        },
+        "label_gingivitis": {
+          "f1": 0.6706586826347305,
+          "precision": 0.7887323943661971,
+          "recall": 0.5833333333333334,
+          "auroc": 0.9118016321406152
+        },
+        "label_malocclusion": {
+          "f1": 0.7564102564102564,
+          "precision": 0.7023809523809523,
+          "recall": 0.8194444444444444,
+          "auroc": 0.853803056374959
+        },
+        "label_pulpitis": {
+          "f1": 0.4166666666666667,
+          "precision": 0.7142857142857143,
+          "recall": 0.29411764705882354,
+          "auroc": 0.8672613307618129
+        },
+        "label_tooth_loss": {
+          "f1": 0.10526315789473684,
+          "precision": 1.0,
+          "recall": 0.05555555555555555,
+          "auroc": 0.8880678708264914
+        },
+        "label_tooth_structure_loss": {
+          "f1": 0.0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "auroc": 0.7831960461285008
+        }
+      }
+    }
+  },
+  {
+    "epoch": 25,
+    "train_loss": 0.21027959444704758,
+    "validation_loss": 0.22573348780787444,
+    "validation_metrics": {
+      "macro_f1": 0.35725831985776463,
+      "micro_f1": 0.6561844863731656,
+      "auroc": 0.8287405455555268,
+      "accuracy": 0.5853269537480064,
+      "per_label": {
+        "label_caries": {
+          "f1": 0.1927710843373494,
+          "precision": 1.0,
+          "recall": 0.10666666666666667,
+          "auroc": 0.6624275362318841
+        },
+        "label_gingivitis": {
+          "f1": 0.6706586826347305,
+          "precision": 0.7887323943661971,
+          "recall": 0.5833333333333334,
+          "auroc": 0.9122135907093534
+        },
+        "label_malocclusion": {
+          "f1": 0.7581903276131046,
+          "precision": 0.6883852691218131,
+          "recall": 0.84375,
+          "auroc": 0.8545046705998034
+        },
+        "label_pulpitis": {
+          "f1": 0.4166666666666667,
+          "precision": 0.7142857142857143,
+          "recall": 0.29411764705882354,
+          "auroc": 0.8711186113789777
+        },
+        "label_tooth_loss": {
+          "f1": 0.10526315789473684,
+          "precision": 1.0,
+          "recall": 0.05555555555555555,
+          "auroc": 0.8881590950556468
+        },
+        "label_tooth_structure_loss": {
+          "f1": 0.0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "auroc": 0.784019769357496
+        }
+      }
+    }
+  },
+  {
+    "epoch": 26,
+    "train_loss": 0.20715316106902806,
+    "validation_loss": 0.22480797791216947,
+    "validation_metrics": {
+      "macro_f1": 0.36958698971831055,
+      "micro_f1": 0.6645502645502646,
+      "auroc": 0.8303356738435687,
+      "accuracy": 0.5933014354066986,
+      "per_label": {
+        "label_caries": {
+          "f1": 0.2558139534883721,
+          "precision": 1.0,
+          "recall": 0.14666666666666667,
+          "auroc": 0.6632971014492753
+        },
+        "label_gingivitis": {
+          "f1": 0.6746987951807228,
+          "precision": 0.8,
+          "recall": 0.5833333333333334,
+          "auroc": 0.912370527306968
+        },
+        "label_malocclusion": {
+          "f1": 0.765079365079365,
+          "precision": 0.7046783625730995,
+          "recall": 0.8368055555555556,
+          "auroc": 0.8549963126843658
+        },
+        "label_pulpitis": {
+          "f1": 0.4166666666666667,
+          "precision": 0.7142857142857143,
+          "recall": 0.29411764705882354,
+          "auroc": 0.872854387656702
+        },
+        "label_tooth_loss": {
+          "f1": 0.10526315789473684,
+          "precision": 1.0,
+          "recall": 0.05555555555555555,
+          "auroc": 0.8904397007845284
+        },
+        "label_tooth_structure_loss": {
+          "f1": 0.0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "auroc": 0.7880560131795717
+        }
+      }
+    }
+  },
+  {
+    "epoch": 27,
+    "train_loss": 0.20709993886159941,
+    "validation_loss": 0.2253031673122056,
+    "validation_metrics": {
+      "macro_f1": 0.3602554344291693,
+      "micro_f1": 0.6555323590814196,
+      "auroc": 0.8307738033484453,
+      "accuracy": 0.583732057416268,
+      "per_label": {
+        "label_caries": {
+          "f1": 0.21428571428571427,
+          "precision": 1.0,
+          "recall": 0.12,
+          "auroc": 0.6642632850241547
+        },
+        "label_gingivitis": {
+          "f1": 0.6706586826347305,
+          "precision": 0.7887323943661971,
+          "recall": 0.5833333333333334,
+          "auroc": 0.9130571249215317
+        },
+        "label_malocclusion": {
+          "f1": 0.7546583850931677,
+          "precision": 0.6825842696629213,
+          "recall": 0.84375,
+          "auroc": 0.855723533267781
+        },
+        "label_pulpitis": {
+          "f1": 0.4166666666666667,
+          "precision": 0.7142857142857143,
+          "recall": 0.29411764705882354,
+          "auroc": 0.8721793635486982
+        },
+        "label_tooth_loss": {
+          "f1": 0.10526315789473684,
+          "precision": 1.0,
+          "recall": 0.05555555555555555,
+          "auroc": 0.8906221492428389
+        },
+        "label_tooth_structure_loss": {
+          "f1": 0.0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "auroc": 0.7887973640856673
+        }
+      }
+    }
+  },
+  {
+    "epoch": 28,
+    "train_loss": 0.20697595380063927,
+    "validation_loss": 0.22427201157883753,
+    "validation_metrics": {
+      "macro_f1": 0.3464153976478182,
+      "micro_f1": 0.6603375527426161,
+      "auroc": 0.8322182931440834,
+      "accuracy": 0.5885167464114832,
+      "per_label": {
+        "label_caries": {
+          "f1": 0.17073170731707318,
+          "precision": 1.0,
+          "recall": 0.09333333333333334,
+          "auroc": 0.6646980676328502
+        },
+        "label_gingivitis": {
+          "f1": 0.6900584795321637,
+          "precision": 0.7866666666666666,
+          "recall": 0.6145833333333334,
+          "auroc": 0.9139398932831138
+        },
+        "label_malocclusion": {
+          "f1": 0.764612954186414,
+          "precision": 0.7014492753623188,
+          "recall": 0.8402777777777778,
+          "auroc": 0.8559795968534906
+        },
+        "label_pulpitis": {
+          "f1": 0.34782608695652173,
+          "precision": 0.6666666666666666,
+          "recall": 0.23529411764705882,
+          "auroc": 0.8747830279652844
+        },
+        "label_tooth_loss": {
+          "f1": 0.10526315789473684,
+          "precision": 1.0,
+          "recall": 0.05555555555555555,
+          "auroc": 0.8918992884510125
+        },
+        "label_tooth_structure_loss": {
+          "f1": 0.0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "auroc": 0.7920098846787479
+        }
+      }
+    }
+  },
+  {
+    "epoch": 29,
+    "train_loss": 0.20527983532979963,
+    "validation_loss": 0.22425725763734383,
+    "validation_metrics": {
+      "macro_f1": 0.35192157780610517,
+      "micro_f1": 0.6590198123044838,
+      "auroc": 0.83330589285268,
+      "accuracy": 0.5869218500797448,
+      "per_label": {
+        "label_caries": {
+          "f1": 0.21428571428571427,
+          "precision": 1.0,
+          "recall": 0.12,
+          "auroc": 0.6662922705314009
+        },
+        "label_gingivitis": {
+          "f1": 0.6863905325443787,
+          "precision": 0.7945205479452054,
+          "recall": 0.6041666666666666,
+          "auroc": 0.9144303201506592
+        },
+        "label_malocclusion": {
+          "f1": 0.7577639751552795,
+          "precision": 0.6853932584269663,
+          "recall": 0.8472222222222222,
+          "auroc": 0.8566760898066208
+        },
+        "label_pulpitis": {
+          "f1": 0.34782608695652173,
+          "precision": 0.6666666666666666,
+          "recall": 0.23529411764705882,
+          "auroc": 0.8766152362584378
+        },
+        "label_tooth_loss": {
+          "f1": 0.10526315789473684,
+          "precision": 1.0,
+          "recall": 0.05555555555555555,
+          "auroc": 0.8920817369093231
+        },
+        "label_tooth_structure_loss": {
+          "f1": 0.0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "auroc": 0.7937397034596376
+        }
+      }
+    }
+  },
+  {
+    "epoch": 30,
+    "train_loss": 0.20325256741988887,
+    "validation_loss": 0.22226851358066632,
+    "validation_metrics": {
+      "macro_f1": 0.3759702243691536,
+      "micro_f1": 0.6624203821656051,
+      "auroc": 0.8343011461504695,
+      "accuracy": 0.5933014354066986,
+      "per_label": {
+        "label_caries": {
+          "f1": 0.27586206896551724,
+          "precision": 1.0,
+          "recall": 0.16,
+          "auroc": 0.6652294685990339
+        },
+        "label_gingivitis": {
+          "f1": 0.7052023121387283,
+          "precision": 0.7922077922077922,
+          "recall": 0.6354166666666666,
+          "auroc": 0.9149011299435027
+        },
+        "label_malocclusion": {
+          "f1": 0.752827140549273,
+          "precision": 0.7039274924471299,
+          "recall": 0.8090277777777778,
+          "auroc": 0.856655604719764
+        },
+        "label_pulpitis": {
+          "f1": 0.4166666666666667,
+          "precision": 0.7142857142857143,
+          "recall": 0.29411764705882354,
+          "auroc": 0.8800867888138862
+        },
+        "label_tooth_loss": {
+          "f1": 0.10526315789473684,
+          "precision": 1.0,
+          "recall": 0.05555555555555555,
+          "auroc": 0.8918992884510126
+        },
+        "label_tooth_structure_loss": {
+          "f1": 0.0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "auroc": 0.7970345963756178
+        }
+      }
+    }
+  },
+  {
+    "epoch": 31,
+    "train_loss": 0.2032009409055398,
+    "validation_loss": 0.22385673611601697,
+    "validation_metrics": {
+      "macro_f1": 0.37427682396722645,
+      "micro_f1": 0.6652806652806653,
+      "auroc": 0.8349031774481296,
+      "accuracy": 0.5917065390749602,
+      "per_label": {
+        "label_caries": {
+          "f1": 0.29545454545454547,
+          "precision": 1.0,
+          "recall": 0.17333333333333334,
+          "auroc": 0.6661231884057972
+        },
+        "label_gingivitis": {
+          "f1": 0.6666666666666666,
+          "precision": 0.7971014492753623,
+          "recall": 0.5729166666666666,
+          "auroc": 0.9150776836158192
+        },
+        "label_malocclusion": {
+          "f1": 0.7616099071207431,
+          "precision": 0.6871508379888268,
+          "recall": 0.8541666666666666,
+          "auroc": 0.8573828253031793
+        },
+        "label_pulpitis": {
+          "f1": 0.4166666666666667,
+          "precision": 0.7142857142857143,
+          "recall": 0.29411764705882354,
+          "auroc": 0.8801832208293153
+        },
+        "label_tooth_loss": {
+          "f1": 0.10526315789473684,
+          "precision": 1.0,
+          "recall": 0.05555555555555555,
+          "auroc": 0.8926290822842546
+        },
+        "label_tooth_structure_loss": {
+          "f1": 0.0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "auroc": 0.7980230642504119
+        }
+      }
+    }
+  },
+  {
+    "epoch": 32,
+    "train_loss": 0.20136400770994883,
+    "validation_loss": 0.2244178907403463,
+    "validation_metrics": {
+      "macro_f1": 0.37816980083322527,
+      "micro_f1": 0.6721311475409836,
+      "auroc": 0.8358930436163617,
+      "accuracy": 0.5996810207336523,
+      "per_label": {
+        "label_caries": {
+          "f1": 0.29545454545454547,
+          "precision": 1.0,
+          "recall": 0.17333333333333334,
+          "auroc": 0.6672826086956523
+        },
+        "label_gingivitis": {
+          "f1": 0.6863905325443787,
+          "precision": 0.7945205479452054,
+          "recall": 0.6041666666666666,
+          "auroc": 0.9159996861268048
+        },
+        "label_malocclusion": {
+          "f1": 0.7652439024390244,
+          "precision": 0.6820652173913043,
+          "recall": 0.8715277777777778,
+          "auroc": 0.8580434693543101
+        },
+        "label_pulpitis": {
+          "f1": 0.4166666666666667,
+          "precision": 0.7142857142857143,
+          "recall": 0.29411764705882354,
+          "auroc": 0.8820154291224687
+        },
+        "label_tooth_loss": {
+          "f1": 0.10526315789473684,
+          "precision": 1.0,
+          "recall": 0.05555555555555555,
+          "auroc": 0.8922641853676336
+        },
+        "label_tooth_structure_loss": {
+          "f1": 0.0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "auroc": 0.7997528830313014
+        }
+      }
+    }
+  },
+  {
+    "epoch": 33,
+    "train_loss": 0.2013629896195773,
+    "validation_loss": 0.22192692676488357,
+    "validation_metrics": {
+      "macro_f1": 0.38203879543105285,
+      "micro_f1": 0.6729166666666667,
+      "auroc": 0.8359405966263856,
+      "accuracy": 0.6028708133971292,
+      "per_label": {
+        "label_caries": {
+          "f1": 0.29545454545454547,
+          "precision": 1.0,
+          "recall": 0.17333333333333334,
+          "auroc": 0.6672826086956523
+        },
+        "label_gingivitis": {
+          "f1": 0.7126436781609196,
+          "precision": 0.7948717948717948,
+          "recall": 0.6458333333333334,
+          "auroc": 0.9162154739485248
+        },
+        "label_malocclusion": {
+          "f1": 0.7622047244094489,
+          "precision": 0.6974063400576369,
+          "recall": 0.8402777777777778,
+          "auroc": 0.8580639544411668
+        },
+        "label_pulpitis": {
+          "f1": 0.4166666666666667,
+          "precision": 0.7142857142857143,
+          "recall": 0.29411764705882354,
+          "auroc": 0.8817261330761812
+        },
+        "label_tooth_loss": {
+          "f1": 0.10526315789473684,
+          "precision": 1.0,
+          "recall": 0.05555555555555555,
+          "auroc": 0.8923554095967888
+        },
+        "label_tooth_structure_loss": {
+          "f1": 0.0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "auroc": 0.8
+        }
+      }
+    }
+  },
+  {
+    "epoch": 34,
+    "train_loss": 0.19917816500247987,
+    "validation_loss": 0.2227306978989251,
+    "validation_metrics": {
+      "macro_f1": 0.36689427663239,
+      "micro_f1": 0.6687370600414079,
+      "auroc": 0.8365187125165404,
+      "accuracy": 0.594896331738437,
+      "per_label": {
+        "label_caries": {
+          "f1": 0.29545454545454547,
+          "precision": 1.0,
+          "recall": 0.17333333333333334,
+          "auroc": 0.6671376811594203
+        },
+        "label_gingivitis": {
+          "f1": 0.6904761904761905,
+          "precision": 0.8055555555555556,
+          "recall": 0.6041666666666666,
+          "auroc": 0.9161173885750156
+        },
+        "label_malocclusion": {
+          "f1": 0.7623456790123457,
+          "precision": 0.6861111111111111,
+          "recall": 0.8576388888888888,
+          "auroc": 0.8588270239265814
+        },
+        "label_pulpitis": {
+          "f1": 0.34782608695652173,
+          "precision": 0.6666666666666666,
+          "recall": 0.23529411764705882,
+          "auroc": 0.8816297010607521
+        },
+        "label_tooth_loss": {
+          "f1": 0.10526315789473684,
+          "precision": 1.0,
+          "recall": 0.05555555555555555,
+          "auroc": 0.8931764276591864
+        },
+        "label_tooth_structure_loss": {
+          "f1": 0.0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "auroc": 0.8022240527182866
+        }
+      }
+    }
+  },
+  {
+    "epoch": 35,
+    "train_loss": 0.19925172883783765,
+    "validation_loss": 0.222436320225272,
+    "validation_metrics": {
+      "macro_f1": 0.36334124701409265,
+      "micro_f1": 0.6631908237747653,
+      "auroc": 0.8372194673119376,
+      "accuracy": 0.5885167464114832,
+      "per_label": {
+        "label_caries": {
+          "f1": 0.29213483146067415,
+          "precision": 0.9285714285714286,
+          "recall": 0.17333333333333334,
+          "auroc": 0.6668961352657005
+        },
+        "label_gingivitis": {
+          "f1": 0.6746987951807228,
+          "precision": 0.8,
+          "recall": 0.5833333333333334,
+          "auroc": 0.9165685812931575
+        },
+        "label_malocclusion": {
+          "f1": 0.7601246105919003,
+          "precision": 0.6892655367231638,
+          "recall": 0.8472222222222222,
+          "auroc": 0.8590421173385775
+        },
+        "label_pulpitis": {
+          "f1": 0.34782608695652173,
+          "precision": 0.6666666666666666,
+          "recall": 0.23529411764705882,
+          "auroc": 0.8843297974927675
+        },
+        "label_tooth_loss": {
+          "f1": 0.10526315789473684,
+          "precision": 1.0,
+          "recall": 0.05555555555555555,
+          "auroc": 0.8932676518883416
+        },
+        "label_tooth_structure_loss": {
+          "f1": 0.0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "auroc": 0.8032125205930808
+        }
+      }
+    }
+  },
+  {
+    "epoch": 36,
+    "train_loss": 0.19858690468995382,
+    "validation_loss": 0.2209844203500808,
+    "validation_metrics": {
+      "macro_f1": 0.3759590841118727,
+      "micro_f1": 0.6645702306079665,
+      "auroc": 0.8386011114364044,
+      "accuracy": 0.5933014354066986,
+      "per_label": {
+        "label_caries": {
+          "f1": 0.29213483146067415,
+          "precision": 0.9285714285714286,
+          "recall": 0.17333333333333334,
+          "auroc": 0.6681521739130434
+        },
+        "label_gingivitis": {
+          "f1": 0.6826347305389222,
+          "precision": 0.8028169014084507,
+          "recall": 0.59375,
+          "auroc": 0.917078625235405
+        },
+        "label_malocclusion": {
+          "f1": 0.7590551181102362,
+          "precision": 0.6945244956772334,
+          "recall": 0.8368055555555556,
+          "auroc": 0.859615699770567
+        },
+        "label_pulpitis": {
+          "f1": 0.4166666666666667,
+          "precision": 0.7142857142857143,
+          "recall": 0.29411764705882354,
+          "auroc": 0.8858727097396335
+        },
+        "label_tooth_loss": {
+          "f1": 0.10526315789473684,
+          "precision": 1.0,
+          "recall": 0.05555555555555555,
+          "auroc": 0.8945447910965152
+        },
+        "label_tooth_structure_loss": {
+          "f1": 0.0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "auroc": 0.806342668863262
+        }
+      }
+    }
+  },
+  {
+    "epoch": 37,
+    "train_loss": 0.19730654369014486,
+    "validation_loss": 0.21985099106272565,
+    "validation_metrics": {
+      "macro_f1": 0.3827561811123003,
+      "micro_f1": 0.6694473409801877,
+      "auroc": 0.8395863476343951,
+      "accuracy": 0.5980861244019139,
+      "per_label": {
+        "label_caries": {
+          "f1": 0.3111111111111111,
+          "precision": 0.9333333333333333,
+          "recall": 0.18666666666666668,
+          "auroc": 0.6694806763285024
+        },
+        "label_gingivitis": {
+          "f1": 0.7052023121387283,
+          "precision": 0.7922077922077922,
+          "recall": 0.6354166666666666,
+          "auroc": 0.9181967984934086
+        },
+        "label_malocclusion": {
+          "f1": 0.7582938388625592,
+          "precision": 0.6956521739130435,
+          "recall": 0.8333333333333334,
+          "auroc": 0.8597539741068503
+        },
+        "label_pulpitis": {
+          "f1": 0.4166666666666667,
+          "precision": 0.7142857142857143,
+          "recall": 0.29411764705882354,
+          "auroc": 0.8877049180327868
+        },
+        "label_tooth_loss": {
+          "f1": 0.10526315789473684,
+          "precision": 1.0,
+          "recall": 0.05555555555555555,
+          "auroc": 0.8938149972632732
+        },
+        "label_tooth_structure_loss": {
+          "f1": 0.0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "auroc": 0.8085667215815486
+        }
+      }
+    }
+  },
+  {
+    "epoch": 38,
+    "train_loss": 0.19711369958170752,
+    "validation_loss": 0.21948383918291406,
+    "validation_metrics": {
+      "macro_f1": 0.37128275116060955,
+      "micro_f1": 0.6680584551148225,
+      "auroc": 0.8397221525136235,
+      "accuracy": 0.5964912280701754,
+      "per_label": {
+        "label_caries": {
+          "f1": 0.3111111111111111,
+          "precision": 0.9333333333333333,
+          "recall": 0.18666666666666668,
+          "auroc": 0.668852657004831
+        },
+        "label_gingivitis": {
+          "f1": 0.7052023121387283,
+          "precision": 0.7922077922077922,
+          "recall": 0.6354166666666666,
+          "auroc": 0.9184714375392342
+        },
+        "label_malocclusion": {
+          "f1": 0.7582938388625592,
+          "precision": 0.6956521739130435,
+          "recall": 0.8333333333333334,
+          "auroc": 0.8600970993117011
+        },
+        "label_pulpitis": {
+          "f1": 0.34782608695652173,
+          "precision": 0.6666666666666666,
+          "recall": 0.23529411764705882,
+          "auroc": 0.8879942140790742
+        },
+        "label_tooth_loss": {
+          "f1": 0.10526315789473684,
+          "precision": 1.0,
+          "recall": 0.05555555555555555,
+          "auroc": 0.8950921364714468
+        },
+        "label_tooth_structure_loss": {
+          "f1": 0.0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "auroc": 0.807825370675453
+        }
+      }
+    }
+  },
+  {
+    "epoch": 39,
+    "train_loss": 0.19659945833666773,
+    "validation_loss": 0.2186620345787157,
+    "validation_metrics": {
+      "macro_f1": 0.381839026880322,
+      "micro_f1": 0.6666666666666666,
+      "auroc": 0.8405970354073328,
+      "accuracy": 0.5980861244019139,
+      "per_label": {
+        "label_caries": {
+          "f1": 0.3111111111111111,
+          "precision": 0.9333333333333333,
+          "recall": 0.18666666666666668,
+          "auroc": 0.6692391304347827
+        },
+        "label_gingivitis": {
+          "f1": 0.7011494252873564,
+          "precision": 0.782051282051282,
+          "recall": 0.6354166666666666,
+          "auroc": 0.9193149717514124
+        },
+        "label_malocclusion": {
+          "f1": 0.7568438003220612,
+          "precision": 0.7057057057057057,
+          "recall": 0.8159722222222222,
+          "auroc": 0.8600970993117012
+        },
+        "label_pulpitis": {
+          "f1": 0.4166666666666667,
+          "precision": 0.7142857142857143,
+          "recall": 0.29411764705882354,
+          "auroc": 0.8896335583413693
+        },
+        "label_tooth_loss": {
+          "f1": 0.10526315789473684,
+          "precision": 1.0,
+          "recall": 0.05555555555555555,
+          "auroc": 0.8950009122422916
+        },
+        "label_tooth_structure_loss": {
+          "f1": 0.0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "auroc": 0.8102965403624383
+        }
+      }
+    }
+  },
+  {
+    "epoch": 40,
+    "train_loss": 0.1952507289415809,
+    "validation_loss": 0.22096619066558307,
+    "validation_metrics": {
+      "macro_f1": 0.3566722427623921,
+      "micro_f1": 0.6707946336429309,
+      "auroc": 0.8409270517580754,
+      "accuracy": 0.5980861244019139,
+      "per_label": {
+        "label_caries": {
+          "f1": 0.29213483146067415,
+          "precision": 0.9285714285714286,
+          "recall": 0.17333333333333334,
+          "auroc": 0.6706159420289854
+        },
+        "label_gingivitis": {
+          "f1": 0.7052023121387283,
+          "precision": 0.7922077922077922,
+          "recall": 0.6354166666666666,
+          "auroc": 0.9190599497802888
+        },
+        "label_malocclusion": {
+          "f1": 0.7647058823529411,
+          "precision": 0.6899441340782123,
+          "recall": 0.8576388888888888,
+          "auroc": 0.8616232382825303
+        },
+        "label_pulpitis": {
+          "f1": 0.2727272727272727,
+          "precision": 0.6,
+          "recall": 0.17647058823529413,
+          "auroc": 0.8896335583413694
+        },
+        "label_tooth_loss": {
+          "f1": 0.10526315789473684,
+          "precision": 1.0,
+          "recall": 0.05555555555555555,
+          "auroc": 0.8949096880131363
+        },
+        "label_tooth_structure_loss": {
+          "f1": 0.0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "auroc": 0.8097199341021417
+        }
+      }
+    }
+  },
+  {
+    "epoch": 41,
+    "train_loss": 0.19372335499614396,
+    "validation_loss": 0.22212356498724298,
+    "validation_metrics": {
+      "macro_f1": 0.38442324675295647,
+      "micro_f1": 0.6787878787878788,
+      "auroc": 0.8416586142599435,
+      "accuracy": 0.5996810207336523,
+      "per_label": {
+        "label_caries": {
+          "f1": 0.3111111111111111,
+          "precision": 0.9333333333333333,
+          "recall": 0.18666666666666668,
+          "auroc": 0.6712681159420288
+        },
+        "label_gingivitis": {
+          "f1": 0.7058823529411765,
+          "precision": 0.8108108108108109,
+          "recall": 0.625,
+          "auroc": 0.9191776522284997
+        },
+        "label_malocclusion": {
+          "f1": 0.767616191904048,
+          "precision": 0.6754617414248021,
+          "recall": 0.8888888888888888,
+          "auroc": 0.8620534251065226
+        },
+        "label_pulpitis": {
+          "f1": 0.4166666666666667,
+          "precision": 0.7142857142857143,
+          "recall": 0.29411764705882354,
+          "auroc": 0.8905014464802313
+        },
+        "label_tooth_loss": {
+          "f1": 0.10526315789473684,
+          "precision": 1.0,
+          "recall": 0.05555555555555555,
+          "auroc": 0.8959131545338442
+        },
+        "label_tooth_structure_loss": {
+          "f1": 0.0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "auroc": 0.8110378912685339
+        }
+      }
+    }
+  },
+  {
+    "epoch": 42,
+    "train_loss": 0.19331409085836332,
+    "validation_loss": 0.2202952615445173,
+    "validation_metrics": {
+      "macro_f1": 0.3840592312298538,
+      "micro_f1": 0.6755921730175077,
+      "auroc": 0.8421648664509229,
+      "accuracy": 0.5996810207336523,
+      "per_label": {
+        "label_caries": {
+          "f1": 0.3111111111111111,
+          "precision": 0.9333333333333333,
+          "recall": 0.18666666666666668,
+          "auroc": 0.6713164251207729
+        },
+        "label_gingivitis": {
+          "f1": 0.7058823529411765,
+          "precision": 0.8108108108108109,
+          "recall": 0.625,
+          "auroc": 0.919903483992467
+        },
+        "label_malocclusion": {
+          "f1": 0.7654320987654321,
+          "precision": 0.6888888888888889,
+          "recall": 0.8611111111111112,
+          "auroc": 0.8622992461488037
+        },
+        "label_pulpitis": {
+          "f1": 0.4166666666666667,
+          "precision": 0.7142857142857143,
+          "recall": 0.29411764705882354,
+          "auroc": 0.8905978784956605
+        },
+        "label_tooth_loss": {
+          "f1": 0.10526315789473684,
+          "precision": 1.0,
+          "recall": 0.05555555555555555,
+          "auroc": 0.8961868272213098
+        },
+        "label_tooth_structure_loss": {
+          "f1": 0.0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "auroc": 0.8126853377265238
+        }
+      }
+    }
+  },
+  {
+    "epoch": 43,
+    "train_loss": 0.1931489123188832,
+    "validation_loss": 0.21799699514161183,
+    "validation_metrics": {
+      "macro_f1": 0.370263625262264,
+      "micro_f1": 0.6645502645502646,
+      "auroc": 0.8423292447459882,
+      "accuracy": 0.5933014354066986,
+      "per_label": {
+        "label_caries": {
+          "f1": 0.3111111111111111,
+          "precision": 0.9333333333333333,
+          "recall": 0.18666666666666668,
+          "auroc": 0.6717995169082126
+        },
+        "label_gingivitis": {
+          "f1": 0.7017543859649122,
+          "precision": 0.8,
+          "recall": 0.625,
+          "auroc": 0.9200800376647833
+        },
+        "label_malocclusion": {
+          "f1": 0.7556270096463023,
+          "precision": 0.7035928143712575,
+          "recall": 0.8159722222222222,
+          "auroc": 0.8620534251065224
+        },
+        "label_pulpitis": {
+          "f1": 0.34782608695652173,
+          "precision": 0.6666666666666666,
+          "recall": 0.23529411764705882,
+          "auroc": 0.8911764705882352
+        },
+        "label_tooth_loss": {
+          "f1": 0.10526315789473684,
+          "precision": 1.0,
+          "recall": 0.05555555555555555,
+          "auroc": 0.8952745849297573
+        },
+        "label_tooth_structure_loss": {
+          "f1": 0.0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "auroc": 0.8135914332784184
+        }
+      }
+    }
+  },
+  {
+    "epoch": 44,
+    "train_loss": 0.19213899541696997,
+    "validation_loss": 0.21781007313652884,
+    "validation_metrics": {
+      "macro_f1": 0.3966965493832965,
+      "micro_f1": 0.6694560669456067,
+      "auroc": 0.8430980486271596,
+      "accuracy": 0.5933014354066986,
+      "per_label": {
+        "label_caries": {
+          "f1": 0.34408602150537637,
+          "precision": 0.8888888888888888,
+          "recall": 0.21333333333333335,
+          "auroc": 0.6730314009661835
+        },
+        "label_gingivitis": {
+          "f1": 0.6936416184971098,
+          "precision": 0.7792207792207793,
+          "recall": 0.625,
+          "auroc": 0.9207862523540489
+        },
+        "label_malocclusion": {
+          "f1": 0.7571884984025559,
+          "precision": 0.7011834319526628,
+          "recall": 0.8229166666666666,
+          "auroc": 0.8622480334316618
+        },
+        "label_pulpitis": {
+          "f1": 0.48,
+          "precision": 0.75,
+          "recall": 0.35294117647058826,
+          "auroc": 0.8903085824493733
+        },
+        "label_tooth_loss": {
+          "f1": 0.10526315789473684,
+          "precision": 1.0,
+          "recall": 0.05555555555555555,
+          "auroc": 0.8958219303046888
+        },
+        "label_tooth_structure_loss": {
+          "f1": 0.0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "auroc": 0.8163920922570017
+        }
+      }
+    }
+  },
+  {
+    "epoch": 45,
+    "train_loss": 0.19187868208870576,
+    "validation_loss": 0.21793180001498777,
+    "validation_metrics": {
+      "macro_f1": 0.3830156570868645,
+      "micro_f1": 0.6694736842105263,
+      "auroc": 0.8436408263139087,
+      "accuracy": 0.5980861244019139,
+      "per_label": {
+        "label_caries": {
+          "f1": 0.3111111111111111,
+          "precision": 0.9333333333333333,
+          "recall": 0.18666666666666668,
+          "auroc": 0.6731763285024155
+        },
+        "label_gingivitis": {
+          "f1": 0.7058823529411765,
+          "precision": 0.8108108108108109,
+          "recall": 0.625,
+          "auroc": 0.9209431889516635
+        },
+        "label_malocclusion": {
+          "f1": 0.759170653907496,
+          "precision": 0.7020648967551623,
+          "recall": 0.8263888888888888,
+          "auroc": 0.8630264667322189
+        },
+        "label_pulpitis": {
+          "f1": 0.4166666666666667,
+          "precision": 0.7142857142857143,
+          "recall": 0.29411764705882354,
+          "auroc": 0.890887174541948
+        },
+        "label_tooth_loss": {
+          "f1": 0.10526315789473684,
+          "precision": 1.0,
+          "recall": 0.05555555555555555,
+          "auroc": 0.8970078452837074
+        },
+        "label_tooth_structure_loss": {
+          "f1": 0.0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "auroc": 0.8168039538714993
+        }
+      }
+    }
+  },
+  {
+    "epoch": 46,
+    "train_loss": 0.19081409411550543,
+    "validation_loss": 0.2169292366391496,
+    "validation_metrics": {
+      "macro_f1": 0.39163420276788324,
+      "micro_f1": 0.6659597030752916,
+      "auroc": 0.8439644108070108,
+      "accuracy": 0.5933014354066986,
+      "per_label": {
+        "label_caries": {
+          "f1": 0.3076923076923077,
+          "precision": 0.875,
+          "recall": 0.18666666666666668,
+          "auroc": 0.6739251207729469
+        },
+        "label_gingivitis": {
+          "f1": 0.7011494252873564,
+          "precision": 0.782051282051282,
+          "recall": 0.6354166666666666,
+          "auroc": 0.9217474890144381
+        },
+        "label_malocclusion": {
+          "f1": 0.755700325732899,
+          "precision": 0.7116564417177914,
+          "recall": 0.8055555555555556,
+          "auroc": 0.8627908882333661
+        },
+        "label_pulpitis": {
+          "f1": 0.48,
+          "precision": 0.75,
+          "recall": 0.35294117647058826,
+          "auroc": 0.8912729026036644
+        },
+        "label_tooth_loss": {
+          "f1": 0.10526315789473684,
+          "precision": 1.0,
+          "recall": 0.05555555555555555,
+          "auroc": 0.896916621054552
+        },
+        "label_tooth_structure_loss": {
+          "f1": 0.0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "auroc": 0.8171334431630972
+        }
+      }
+    }
+  },
+  {
+    "epoch": 47,
+    "train_loss": 0.19047455786034587,
+    "validation_loss": 0.21646284976903396,
+    "validation_metrics": {
+      "macro_f1": 0.378394318443964,
+      "micro_f1": 0.6701791359325606,
+      "auroc": 0.8438932989510474,
+      "accuracy": 0.5964912280701754,
+      "per_label": {
+        "label_caries": {
+          "f1": 0.34408602150537637,
+          "precision": 0.8888888888888888,
+          "recall": 0.21333333333333335,
+          "auroc": 0.6734178743961352
+        },
+        "label_gingivitis": {
+          "f1": 0.7159090909090909,
+          "precision": 0.7875,
+          "recall": 0.65625,
+          "auroc": 0.9217082548650346
+        },
+        "label_malocclusion": {
+          "f1": 0.7572815533980582,
+          "precision": 0.7090909090909091,
+          "recall": 0.8125,
+          "auroc": 0.8633542281219272
+        },
+        "label_pulpitis": {
+          "f1": 0.34782608695652173,
+          "precision": 0.6666666666666666,
+          "recall": 0.23529411764705882,
+          "auroc": 0.8903085824493732
+        },
+        "label_tooth_loss": {
+          "f1": 0.10526315789473684,
+          "precision": 1.0,
+          "recall": 0.05555555555555555,
+          "auroc": 0.897190293742018
+        },
+        "label_tooth_structure_loss": {
+          "f1": 0.0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "auroc": 0.8173805601317958
+        }
+      }
+    }
+  },
+  {
+    "epoch": 48,
+    "train_loss": 0.19045863904525864,
+    "validation_loss": 0.21801382991709287,
+    "validation_metrics": {
+      "macro_f1": 0.3988446792957571,
+      "micro_f1": 0.6769865841073271,
+      "auroc": 0.8454323883641148,
+      "accuracy": 0.5964912280701754,
+      "per_label": {
+        "label_caries": {
+          "f1": 0.3404255319148936,
+          "precision": 0.8421052631578947,
+          "recall": 0.21333333333333335,
+          "auroc": 0.6742874396135266
+        },
+        "label_gingivitis": {
+          "f1": 0.7017543859649122,
+          "precision": 0.8,
+          "recall": 0.625,
+          "auroc": 0.9221398305084745
+        },
+        "label_malocclusion": {
+          "f1": 0.765625,
+          "precision": 0.6960227272727273,
+          "recall": 0.8506944444444444,
+          "auroc": 0.8641019337921994
+        },
+        "label_pulpitis": {
+          "f1": 0.48,
+          "precision": 0.75,
+          "recall": 0.35294117647058826,
+          "auroc": 0.8927193828351013
+        },
+        "label_tooth_loss": {
+          "f1": 0.10526315789473684,
+          "precision": 1.0,
+          "recall": 0.05555555555555555,
+          "auroc": 0.8980113118044153
+        },
+        "label_tooth_structure_loss": {
+          "f1": 0.0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "auroc": 0.8213344316309721
+        }
+      }
+    }
+  },
+  {
+    "epoch": 49,
+    "train_loss": 0.19150997658719485,
+    "validation_loss": 0.21790427139288263,
+    "validation_metrics": {
+      "macro_f1": 0.3920370140140257,
+      "micro_f1": 0.6735537190082644,
+      "auroc": 0.8455555787277212,
+      "accuracy": 0.5964912280701754,
+      "per_label": {
+        "label_caries": {
+          "f1": 0.3076923076923077,
+          "precision": 0.875,
+          "recall": 0.18666666666666668,
+          "auroc": 0.6748188405797102
+        },
+        "label_gingivitis": {
+          "f1": 0.6936416184971098,
+          "precision": 0.7792207792207793,
+          "recall": 0.625,
+          "auroc": 0.9227283427495292
+        },
+        "label_malocclusion": {
+          "f1": 0.765625,
+          "precision": 0.6960227272727273,
+          "recall": 0.8506944444444444,
+          "auroc": 0.8644348164536217
+        },
+        "label_pulpitis": {
+          "f1": 0.48,
+          "precision": 0.75,
+          "recall": 0.35294117647058826,
+          "auroc": 0.892526518804243
+        },
+        "label_tooth_loss": {
+          "f1": 0.10526315789473684,
+          "precision": 1.0,
+          "recall": 0.05555555555555555,
+          "auroc": 0.8977376391169495
+        },
+        "label_tooth_structure_loss": {
+          "f1": 0.0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "auroc": 0.8210873146622735
+        }
+      }
+    }
+  },
+  {
+    "epoch": 50,
+    "train_loss": 0.18819401296469757,
+    "validation_loss": 0.21775540384122088,
+    "validation_metrics": {
+      "macro_f1": 0.4000956617249081,
+      "micro_f1": 0.6804123711340206,
+      "auroc": 0.8459055156895364,
+      "accuracy": 0.6012759170653907,
+      "per_label": {
+        "label_caries": {
+          "f1": 0.34408602150537637,
+          "precision": 0.8888888888888888,
+          "recall": 0.21333333333333335,
+          "auroc": 0.6756159420289856
+        },
+        "label_gingivitis": {
+          "f1": 0.7017543859649122,
+          "precision": 0.8,
+          "recall": 0.625,
+          "auroc": 0.9231206842435657
+        },
+        "label_malocclusion": {
+          "f1": 0.7694704049844237,
+          "precision": 0.6977401129943502,
+          "recall": 0.8576388888888888,
+          "auroc": 0.8650135201573255
+        },
+        "label_pulpitis": {
+          "f1": 0.48,
+          "precision": 0.75,
+          "recall": 0.35294117647058826,
+          "auroc": 0.8931051108968177
+        },
+        "label_tooth_loss": {
+          "f1": 0.10526315789473684,
+          "precision": 1.0,
+          "recall": 0.05555555555555555,
+          "auroc": 0.8977376391169494
+        },
+        "label_tooth_structure_loss": {
+          "f1": 0.0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "auroc": 0.8208401976935749
+        }
+      }
+    }
+  }
+]

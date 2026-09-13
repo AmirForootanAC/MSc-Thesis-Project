@@ -1,0 +1,244 @@
+{
+  "scenario": "text_only",
+  "modalities": [
+    "text"
+  ],
+  "labels": [
+    "label_caries",
+    "label_gingivitis",
+    "label_malocclusion",
+    "label_pulpitis",
+    "label_tooth_loss",
+    "label_tooth_structure_loss"
+  ],
+  "seed": 42,
+  "train_samples": 2935,
+  "validation_samples": 627,
+  "test_samples": 633,
+  "sample_counts_expected": {
+    "train": 2935,
+    "validation": 627,
+    "test": 633
+  },
+  "loss": "BCEWithLogitsLoss",
+  "checkpoint_selection": "validation_macro_f1_at_threshold_0.5",
+  "checkpoint_epoch": 10,
+  "best_validation_macro_f1": 0.8155429938811888,
+  "best_validation_metrics": {
+    "macro_f1": 0.8155429938811888,
+    "micro_f1": 0.8947368421052632,
+    "auroc": 0.9628002981890975,
+    "accuracy": 0.8389154704944178,
+    "per_label": {
+      "label_caries": {
+        "f1": 0.85,
+        "precision": 0.8,
+        "recall": 0.9066666666666666,
+        "auroc": 0.9873913043478261
+      },
+      "label_gingivitis": {
+        "f1": 0.9740932642487047,
+        "precision": 0.9690721649484536,
+        "recall": 0.9791666666666666,
+        "auroc": 0.9980579096045198
+      },
+      "label_malocclusion": {
+        "f1": 0.9109947643979057,
+        "precision": 0.9157894736842105,
+        "recall": 0.90625,
+        "auroc": 0.9615085217961324
+      },
+      "label_pulpitis": {
+        "f1": 0.6470588235294118,
+        "precision": 0.6470588235294118,
+        "recall": 0.6470588235294118,
+        "auroc": 0.9643201542912248
+      },
+      "label_tooth_loss": {
+        "f1": 0.7333333333333333,
+        "precision": 0.9166666666666666,
+        "recall": 0.6111111111111112,
+        "auroc": 0.9273855135924102
+      },
+      "label_tooth_structure_loss": {
+        "f1": 0.7777777777777778,
+        "precision": 0.875,
+        "recall": 0.7,
+        "auroc": 0.9381383855024711
+      }
+    }
+  },
+  "final_validation_default": {
+    "macro_f1": 0.8155429938811888,
+    "micro_f1": 0.8947368421052632,
+    "auroc": 0.9628002981890975,
+    "accuracy": 0.8389154704944178,
+    "per_label": {
+      "label_caries": {
+        "f1": 0.85,
+        "precision": 0.8,
+        "recall": 0.9066666666666666,
+        "auroc": 0.9873913043478261
+      },
+      "label_gingivitis": {
+        "f1": 0.9740932642487047,
+        "precision": 0.9690721649484536,
+        "recall": 0.9791666666666666,
+        "auroc": 0.9980579096045198
+      },
+      "label_malocclusion": {
+        "f1": 0.9109947643979057,
+        "precision": 0.9157894736842105,
+        "recall": 0.90625,
+        "auroc": 0.9615085217961324
+      },
+      "label_pulpitis": {
+        "f1": 0.6470588235294118,
+        "precision": 0.6470588235294118,
+        "recall": 0.6470588235294118,
+        "auroc": 0.9643201542912248
+      },
+      "label_tooth_loss": {
+        "f1": 0.7333333333333333,
+        "precision": 0.9166666666666666,
+        "recall": 0.6111111111111112,
+        "auroc": 0.9273855135924102
+      },
+      "label_tooth_structure_loss": {
+        "f1": 0.7777777777777778,
+        "precision": 0.875,
+        "recall": 0.7,
+        "auroc": 0.9381383855024711
+      }
+    }
+  },
+  "validation_optimized_thresholds": [
+    0.9000000000000001,
+    0.1,
+    0.15000000000000002,
+    0.3,
+    0.6000000000000001,
+    0.1
+  ],
+  "test_default": {
+    "macro_f1": 0.8211129570119319,
+    "micro_f1": 0.8975069252077562,
+    "auroc": 0.9744689761631835,
+    "accuracy": 0.8357030015797788,
+    "per_label": {
+      "label_caries": {
+        "f1": 0.8789808917197452,
+        "precision": 0.9078947368421053,
+        "recall": 0.8518518518518519,
+        "auroc": 0.9670334585793522
+      },
+      "label_gingivitis": {
+        "f1": 0.9613259668508287,
+        "precision": 0.9775280898876404,
+        "recall": 0.9456521739130435,
+        "auroc": 0.9992566101422488
+      },
+      "label_malocclusion": {
+        "f1": 0.9235880398671097,
+        "precision": 0.9144736842105263,
+        "recall": 0.9328859060402684,
+        "auroc": 0.962446158469398
+      },
+      "label_pulpitis": {
+        "f1": 0.7301587301587301,
+        "precision": 0.7931034482758621,
+        "recall": 0.6764705882352942,
+        "auroc": 0.9907198271629187
+      },
+      "label_tooth_loss": {
+        "f1": 0.7659574468085106,
+        "precision": 0.9473684210526315,
+        "recall": 0.6428571428571429,
+        "auroc": 0.9476977567886659
+      },
+      "label_tooth_structure_loss": {
+        "f1": 0.6666666666666666,
+        "precision": 0.6875,
+        "recall": 0.6470588235294118,
+        "auroc": 0.9796600458365164
+      }
+    }
+  },
+  "test_optimized": {
+    "macro_f1": 0.8173480694133591,
+    "micro_f1": 0.8927272727272727,
+    "auroc": 0.9744689761631835,
+    "accuracy": 0.8357030015797788,
+    "per_label": {
+      "label_caries": {
+        "f1": 0.8707482993197279,
+        "precision": 0.9696969696969697,
+        "recall": 0.7901234567901234,
+        "auroc": 0.9670334585793522
+      },
+      "label_gingivitis": {
+        "f1": 0.9523809523809523,
+        "precision": 0.9278350515463918,
+        "recall": 0.9782608695652174,
+        "auroc": 0.9992566101422488
+      },
+      "label_malocclusion": {
+        "f1": 0.9198036006546645,
+        "precision": 0.8977635782747604,
+        "recall": 0.9429530201342282,
+        "auroc": 0.962446158469398
+      },
+      "label_pulpitis": {
+        "f1": 0.7878787878787878,
+        "precision": 0.8125,
+        "recall": 0.7647058823529411,
+        "auroc": 0.9907198271629187
+      },
+      "label_tooth_loss": {
+        "f1": 0.7391304347826086,
+        "precision": 0.9444444444444444,
+        "recall": 0.6071428571428571,
+        "auroc": 0.9476977567886659
+      },
+      "label_tooth_structure_loss": {
+        "f1": 0.6341463414634146,
+        "precision": 0.5416666666666666,
+        "recall": 0.7647058823529411,
+        "auroc": 0.9796600458365164
+      }
+    }
+  },
+  "parameter_counts": {
+    "total": 66561286,
+    "trainable": 66561286,
+    "frozen": 0
+  },
+  "config": {
+    "batch_size": 8,
+    "num_epochs": 50,
+    "learning_rate": 2e-05,
+    "weight_decay": 0.0001,
+    "early_stopping_patience": 10,
+    "default_threshold": 0.5,
+    "threshold_min": 0.05,
+    "threshold_max": 0.95,
+    "threshold_step": 0.05,
+    "seed": 42,
+    "device": "cuda",
+    "num_workers": 0,
+    "pin_memory": true,
+    "text_model_name": "distilbert-base-uncased",
+    "text_max_length": 256,
+    "text_columns": [
+      "chief_complaint",
+      "present_illness",
+      "past_medical_record",
+      "examination"
+    ],
+    "image_size": 224,
+    "pretrained_image_encoder": true,
+    "freeze_image_encoder": true,
+    "hidden_dim": 256,
+    "loss": "BCEWithLogitsLoss"
+  }
+}

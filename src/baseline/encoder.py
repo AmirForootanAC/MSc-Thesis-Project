@@ -23,22 +23,17 @@ class ResNet50Encoder(nn.Module):
         pretrained=True,
         freeze=False,
     ):
-
         super().__init__()
 
-        if pretrained:
-
-            weights = ResNet50_Weights.DEFAULT
-
-        else:
-
-            weights = None
-
+        weights = (
+            ResNet50_Weights.DEFAULT
+            if pretrained
+            else None
+        )
 
         backbone = resnet50(
             weights=weights
         )
-
 
         self.features = nn.Sequential(
             *list(
@@ -46,19 +41,31 @@ class ResNet50Encoder(nn.Module):
             )[:-1]
         )
 
+        self.freeze = freeze
 
         if freeze:
-
             for param in self.features.parameters():
-
                 param.requires_grad = False
 
+            # Keep frozen pretrained BatchNorm layers in eval mode.
+            self.features.eval()
+
+    def train(self, mode=True):
+        """
+        Keep the frozen image encoder in eval mode so that
+        BatchNorm running statistics remain fixed.
+        """
+        super().train(mode)
+
+        if self.freeze:
+            self.features.eval()
+
+        return self
 
     def forward(
         self,
         x,
     ):
-
         x = self.features(x)
 
         x = x.flatten(
