@@ -1,0 +1,1 @@
+"""Strong X-ray-only experiment v2."""
