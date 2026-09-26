@@ -1,4 +1,4 @@
-"""RGB medical-friendly transforms for photograph fine-tuning."""
+"""Strong V2 transforms for photograph and radiograph branches."""
 
 from torchvision import transforms
 
@@ -18,7 +18,31 @@ IMAGENET_STD = [
 
 def get_train_transform(
     image_size=256,
+    modality="photograph",
 ):
+    if modality == "photograph":
+        color_jitter = transforms.ColorJitter(
+            brightness=0.12,
+            contrast=0.12,
+            saturation=0.12,
+            hue=0.03,
+        )
+
+        color_probability = 0.50
+
+    elif modality == "radiograph":
+        color_jitter = transforms.ColorJitter(
+            brightness=0.08,
+            contrast=0.08,
+        )
+
+        color_probability = 0.30
+
+    else:
+        raise ValueError(
+            f"Unknown image modality: {modality}"
+        )
+
     return transforms.Compose(
         [
             transforms.Resize(
@@ -49,15 +73,8 @@ def get_train_transform(
             ),
 
             transforms.RandomApply(
-                [
-                    transforms.ColorJitter(
-                        brightness=0.12,
-                        contrast=0.12,
-                        saturation=0.12,
-                        hue=0.03,
-                    )
-                ],
-                p=0.50,
+                [color_jitter],
+                p=color_probability,
             ),
 
             transforms.RandomApply(

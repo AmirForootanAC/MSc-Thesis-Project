@@ -1,8 +1,8 @@
 """
 Six-Label Patient-Level Dataset Pipeline
 
-Creates a six-label benchmark dataset from the finalized
-13-label patient-level dataset.
+Creates the canonical six-label benchmark dataset from the
+finalized 13-label patient-level dataset.
 
 Input:
     results/labeled_patient_level_dataset/labeled_dataset.csv
@@ -15,6 +15,19 @@ Output:
 
 The existing patient-level split is authoritative and is NOT
 regenerated or modified by this module.
+
+Clinical text sanitization is applied ONCE here so that every
+downstream supervised / SSL / robustness pipeline consumes the
+same canonical text-cleaned dataset.
+
+The four model-eligible clinical text fields are sanitized:
+    - chief_complaint
+    - present_illness
+    - past_medical_record
+    - examination
+
+The target labels themselves are reconstructed upstream from
+anomalies_en and are NOT changed by this module.
 
 Six benchmark labels:
     - Caries
@@ -40,6 +53,11 @@ from pathlib import Path
 
 import pandas as pd
 
+from src.data.clinical_text_sanitization import (
+    count_dataframe_matches,
+    sanitize_text_columns,
+)
+
 
 # ============================================================
 # Configuration
@@ -63,6 +81,18 @@ LABEL_DISTRIBUTION_PATH = (
 
 SUMMARY_PATH = (
     OUTPUT_DIR / "dataset_summary.json"
+)
+
+TEXT_COLUMNS = [
+    "chief_complaint",
+    "present_illness",
+    "past_medical_record",
+    "examination",
+]
+
+BACKUP_DATASET_PATH = (
+    OUTPUT_DIR
+    / "labeled_dataset.csv.backup_before_text_cleaning"
 )
 
 
@@ -140,8 +170,8 @@ MALOCCLUSION_SOURCE_LABELS = [
 def parse_args():
     parser = argparse.ArgumentParser(
         description=(
-            "Create the six-label patient-level benchmark "
-            "dataset from the finalized 13-label dataset."
+            "Create the canonical six-label patient-level "
+            "benchmark dataset."
         )
     )
 
@@ -162,7 +192,8 @@ def prepare_output_directory(force: bool):
     """
     Prepare output directory.
 
-    Existing outputs require --force.
+    The existing canonical dataset is protected by a backup
+    created before this function removes the output directory.
     """
 
     if OUTPUT_DIR.exists():
@@ -173,12 +204,54 @@ def prepare_output_directory(force: bool):
                 "Use --force to overwrite."
             )
 
-        shutil.rmtree(OUTPUT_DIR)
+        existing_dataset = OUTPUT_DATASET_PATH
 
-    OUTPUT_DIR.mkdir(
-        parents=True,
-        exist_ok=True,
-    )
+        if existing_dataset.exists():
+
+            if not BACKUP_DATASET_PATH.exists():
+
+                shutil.copy2(
+                    existing_dataset,
+                    BACKUP_DATASET_PATH,
+                )
+
+                print(
+                    "[INFO] Created backup of existing "
+                    "canonical dataset:"
+                )
+
+                print(
+                    f"       {BACKUP_DATASET_PATH}"
+                )
+
+            else:
+
+                print(
+                    "[INFO] Existing backup preserved:"
+                )
+
+                print(
+                    f"       {BACKUP_DATASET_PATH}"
+                )
+
+        # Do NOT remove the backup.
+        #
+        # Remove only generated output artifacts.
+        for path in [
+            OUTPUT_DATASET_PATH,
+            LABEL_DISTRIBUTION_PATH,
+            SUMMARY_PATH,
+        ]:
+
+            if path.exists():
+                path.unlink()
+
+    else:
+
+        OUTPUT_DIR.mkdir(
+            parents=True,
+            exist_ok=True,
+        )
 
 
 # ============================================================
@@ -225,7 +298,7 @@ def validate_input(
     dataset: pd.DataFrame,
 ):
     """
-    Validate the finalized 13-label dataset before conversion.
+    Validate the finalized 13-label patient-level dataset.
     """
 
     required_columns = {
@@ -234,6 +307,7 @@ def validate_input(
         "split",
         "has_reconstructed_label",
         "reconstructed_label_count",
+        *TEXT_COLUMNS,
     }
 
     missing_required = (
@@ -341,10 +415,11 @@ def build_six_label_dataset(
     Convert the finalized 13-label dataset into the
     six-label benchmark dataset.
 
-    Only the label representation changes.
+    Labels are constructed first.
 
-    Patient identities, visits, modalities, text, and split
-    assignments are preserved.
+    Clinical text is then sanitized so that downstream models
+    cannot directly recover the benchmark targets from explicit
+    diagnostic terminology.
     """
 
     print(
@@ -394,8 +469,7 @@ def build_six_label_dataset(
     )
 
     # --------------------------------------------------------
-    # Generate new six-label statistics BEFORE removing the
-    # original 13-label columns.
+    # Generate six-label statistics
     # --------------------------------------------------------
 
     result["six_label_count"] = (
@@ -409,11 +483,51 @@ def build_six_label_dataset(
     ).astype(int)
 
     # --------------------------------------------------------
+    # Sanitize model-eligible clinical text
+    # --------------------------------------------------------
+
+    print(
+        "[INFO] Sanitizing clinical text..."
+    )
+
+    matches_before = count_dataframe_matches(
+        result,
+        TEXT_COLUMNS,
+    )
+
+    print(
+        f"[INFO] Explicit target-term matches "
+        f"before sanitization: {matches_before:,}"
+    )
+
+    result = sanitize_text_columns(
+        result,
+        TEXT_COLUMNS,
+    )
+
+    matches_after = count_dataframe_matches(
+        result,
+        TEXT_COLUMNS,
+    )
+
+    print(
+        f"[INFO] Explicit target-term matches "
+        f"after sanitization: {matches_after:,}"
+    )
+
+    if matches_after != 0:
+        raise ValueError(
+            "Clinical text sanitization incomplete: "
+            f"{matches_after:,} explicit target-term matches "
+            "remain."
+        )
+
+    print(
+        "[INFO] Clinical text sanitization: PASS"
+    )
+
+    # --------------------------------------------------------
     # Remove old 13-label representation.
-    #
-    # Some final six-label columns share the same names as their
-    # original source labels. Therefore, preserve all final labels
-    # when dropping the old 13-label representation.
     # --------------------------------------------------------
 
     columns_to_drop = [
@@ -619,17 +733,13 @@ def validate_six_label_dataset(
             ].astype(bool)
         )
         .astype(int)
+        .reset_index(drop=True)
     )
 
     actual_malocclusion = (
         six_label[
             "label_malocclusion"
         ]
-        .reset_index(drop=True)
-    )
-
-    expected_malocclusion = (
-        expected_malocclusion
         .reset_index(drop=True)
     )
 
@@ -683,6 +793,136 @@ def validate_six_label_dataset(
 
     print(
         "[INFO] Six-label validation: PASS"
+    )
+
+
+# ============================================================
+# Canonical Dataset Integrity
+# ============================================================
+
+def validate_against_backup(
+    dataset: pd.DataFrame,
+):
+    """
+    Compare the newly generated canonical dataset against the
+    pre-cleaning backup.
+
+    Patient IDs, visit IDs, split assignments, image references,
+    and labels must remain identical.
+
+    Only the four clinical text columns are allowed to differ.
+    """
+
+    if not BACKUP_DATASET_PATH.exists():
+
+        print(
+            "[WARN] Backup not found; skipping "
+            "pre-cleaning integrity comparison."
+        )
+
+        return
+
+    print(
+        "[INFO] Comparing canonical dataset against backup..."
+    )
+
+    backup = pd.read_csv(
+        BACKUP_DATASET_PATH
+    )
+
+    # --------------------------------------------------------
+    # Basic shape / schema validation
+    # --------------------------------------------------------
+
+    if len(backup) != len(dataset):
+        raise ValueError(
+            "Backup row count differs from new dataset: "
+            f"{len(backup):,} vs {len(dataset):,}"
+        )
+
+    if list(backup.columns) != list(dataset.columns):
+        raise ValueError(
+            "Column structure changed unexpectedly between "
+            "backup and new canonical dataset."
+        )
+
+    # --------------------------------------------------------
+    # Non-text columns
+    #
+    # checkup_id is used as the sorting key and therefore must
+    # NOT also appear in compare_columns.
+    # --------------------------------------------------------
+
+    compare_columns = [
+        column
+        for column in dataset.columns
+        if column not in TEXT_COLUMNS
+        and column != "checkup_id"
+    ]
+
+    backup_sorted = (
+        backup[
+            ["checkup_id", *compare_columns]
+        ]
+        .sort_values("checkup_id")
+        .reset_index(drop=True)
+    )
+
+    dataset_sorted = (
+        dataset[
+            ["checkup_id", *compare_columns]
+        ]
+        .sort_values("checkup_id")
+        .reset_index(drop=True)
+    )
+
+    if not backup_sorted.equals(dataset_sorted):
+        raise ValueError(
+            "Non-text dataset content changed during "
+            "clinical text sanitization."
+        )
+
+    print(
+        "[INFO] Non-text integrity check: PASS"
+    )
+
+    # --------------------------------------------------------
+    # Verify that text actually changed where expected.
+    # --------------------------------------------------------
+
+    changed_cells = 0
+
+    for column in TEXT_COLUMNS:
+
+        before = (
+            backup[column]
+            .fillna("")
+            .astype(str)
+        )
+
+        after = (
+            dataset[column]
+            .fillna("")
+            .astype(str)
+        )
+
+        changed_cells += int(
+            (before != after).sum()
+        )
+
+    print(
+        f"[INFO] Changed clinical-text cells: "
+        f"{changed_cells:,}"
+    )
+
+    if changed_cells == 0:
+        raise ValueError(
+            "No clinical text cells changed. "
+            "Sanitization appears not to have been applied."
+        )
+
+    print(
+        "[INFO] Backup integrity comparison: PASS"
     )
 
 
@@ -899,6 +1139,12 @@ def generate_summary(
 
             "labels":
                 FINAL_LABEL_COLUMNS,
+
+            "canonical_text_sanitization":
+                True,
+
+            "sanitized_text_columns":
+                TEXT_COLUMNS,
         },
 
         "malocclusion_mapping": {
@@ -983,6 +1229,12 @@ def generate_summary(
 
             "malocclusion_mapping":
                 "PASS",
+
+            "non_text_integrity":
+                "PASS",
+
+            "clinical_text_sanitization":
+                "PASS",
         },
     }
 
@@ -997,7 +1249,7 @@ def save_outputs(
     summary: dict,
 ):
     """
-    Save final six-label dataset and summary artifacts.
+    Save final canonical six-label dataset and artifacts.
     """
 
     print(
@@ -1143,6 +1395,11 @@ def print_report(
         f"{SUMMARY_PATH}"
     )
 
+    print(
+        f"[INFO] Backup: "
+        f"{BACKUP_DATASET_PATH}"
+    )
+
 
 # ============================================================
 # Main
@@ -1169,6 +1426,10 @@ def main():
     validate_six_label_dataset(
         original,
         six_label,
+    )
+
+    validate_against_backup(
+        six_label
     )
 
     label_distribution = (

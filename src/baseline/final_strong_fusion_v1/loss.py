@@ -5,9 +5,7 @@ import torch
 import torch.nn as nn
 
 
-class ClassWeightedBCEWithLogitsLoss(
-    nn.Module
-):
+class ClassWeightedBCEWithLogitsLoss(nn.Module):
     def __init__(
         self,
         pos_weights,

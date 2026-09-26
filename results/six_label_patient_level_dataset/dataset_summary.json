@@ -11,6 +11,13 @@
             "label_pulpitis",
             "label_tooth_loss",
             "label_tooth_structure_loss"
+        ],
+        "canonical_text_sanitization": true,
+        "sanitized_text_columns": [
+            "chief_complaint",
+            "present_illness",
+            "past_medical_record",
+            "examination"
         ]
     },
     "malocclusion_mapping": {
@@ -145,6 +152,8 @@
         "patient_set_preserved": "PASS",
         "visit_set_preserved": "PASS",
         "split_assignments_preserved": "PASS",
-        "malocclusion_mapping": "PASS"
+        "malocclusion_mapping": "PASS",
+        "non_text_integrity": "PASS",
+        "clinical_text_sanitization": "PASS"
     }
 }
