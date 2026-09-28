@@ -1,0 +1,2230 @@
+{
+  "experiment": "xray_only_max_strength_v2_error_analysis",
+  "checkpoint": "/home/ubuntu/Projects/thesis-code/results/baseline/test_xray_strong_v2/xray_only_max_strength/checkpoints/epoch_039.pt",
+  "checkpoint_epoch": 39,
+  "threshold": 0.5,
+  "top_k": 15,
+  "test_samples": 633,
+  "target_labels": [
+    "label_caries",
+    "label_tooth_loss",
+    "label_tooth_structure_loss"
+  ],
+  "use_tta": true,
+  "errors": {
+    "label_caries": {
+      "false_positives_available": 24,
+      "false_negatives_available": 67,
+      "false_positives": [
+        {
+          "error_type": "false_positive",
+          "label": "label_caries",
+          "label_index": 0,
+          "dataset_index": 49,
+          "checkup_id": "0276-001",
+          "patient_id": "276",
+          "score": 0.8784558176994324,
+          "threshold": 0.5,
+          "ground_truth": 0,
+          "predicted": 1,
+          "radiographs": [
+            {
+              "filename": "0276-001-01.jpg",
+              "source_path": "/home/ubuntu/Projects/thesis-code/data/raw/COde-Dataset/Images/Radiographs/0276-001-01.jpg",
+              "exported_path": "/home/ubuntu/Projects/thesis-code/results/baseline/test_xray_strong_v2/xray_only_max_strength/error_analysis/label_caries/false_positives/0276-001__patient_276__view_01__0276-001-01.jpg"
+            }
+          ],
+          "rank": 1
+        },
+        {
+          "error_type": "false_positive",
+          "label": "label_caries",
+          "label_index": 0,
+          "dataset_index": 287,
+          "checkup_id": "1926-002",
+          "patient_id": "1926",
+          "score": 0.8747305274009705,
+          "threshold": 0.5,
+          "ground_truth": 0,
+          "predicted": 1,
+          "radiographs": [
+            {
+              "filename": "1926-002-01.jpg",
+              "source_path": "/home/ubuntu/Projects/thesis-code/data/raw/COde-Dataset/Images/Radiographs/1926-002-01.jpg",
+              "exported_path": "/home/ubuntu/Projects/thesis-code/results/baseline/test_xray_strong_v2/xray_only_max_strength/error_analysis/label_caries/false_positives/1926-002__patient_1926__view_01__1926-002-01.jpg"
+            }
+          ],
+          "rank": 2
+        },
+        {
+          "error_type": "false_positive",
+          "label": "label_caries",
+          "label_index": 0,
+          "dataset_index": 172,
+          "checkup_id": "1034-001",
+          "patient_id": "1034",
+          "score": 0.7956459522247314,
+          "threshold": 0.5,
+          "ground_truth": 0,
+          "predicted": 1,
+          "radiographs": [
+            {
+              "filename": "1034-001-01.jpg",
+              "source_path": "/home/ubuntu/Projects/thesis-code/data/raw/COde-Dataset/Images/Radiographs/1034-001-01.jpg",
+              "exported_path": "/home/ubuntu/Projects/thesis-code/results/baseline/test_xray_strong_v2/xray_only_max_strength/error_analysis/label_caries/false_positives/1034-001__patient_1034__view_01__1034-001-01.jpg"
+            },
+            {
+              "filename": "1034-001-02.jpg",
+              "source_path": "/home/ubuntu/Projects/thesis-code/data/raw/COde-Dataset/Images/Radiographs/1034-001-02.jpg",
+              "exported_path": "/home/ubuntu/Projects/thesis-code/results/baseline/test_xray_strong_v2/xray_only_max_strength/error_analysis/label_caries/false_positives/1034-001__patient_1034__view_02__1034-001-02.jpg"
+            },
+            {
+              "filename": "1034-001-03.jpg",
+              "source_path": "/home/ubuntu/Projects/thesis-code/data/raw/COde-Dataset/Images/Radiographs/1034-001-03.jpg",
+              "exported_path": "/home/ubuntu/Projects/thesis-code/results/baseline/test_xray_strong_v2/xray_only_max_strength/error_analysis/label_caries/false_positives/1034-001__patient_1034__view_03__1034-001-03.jpg"
+            }
+          ],
+          "rank": 3
+        },
+        {
+          "error_type": "false_positive",
+          "label": "label_caries",
+          "label_index": 0,
+          "dataset_index": 173,
+          "checkup_id": "1034-002",
+          "patient_id": "1034",
+          "score": 0.7956459522247314,
+          "threshold": 0.5,
+          "ground_truth": 0,
+          "predicted": 1,
+          "radiographs": [
+            {
+              "filename": "1034-002-01.jpg",
+              "source_path": "/home/ubuntu/Projects/thesis-code/data/raw/COde-Dataset/Images/Radiographs/1034-002-01.jpg",
+              "exported_path": "/home/ubuntu/Projects/thesis-code/results/baseline/test_xray_strong_v2/xray_only_max_strength/error_analysis/label_caries/false_positives/1034-002__patient_1034__view_01__1034-002-01.jpg"
+            },
+            {
+              "filename": "1034-002-02.jpg",
+              "source_path": "/home/ubuntu/Projects/thesis-code/data/raw/COde-Dataset/Images/Radiographs/1034-002-02.jpg",
+              "exported_path": "/home/ubuntu/Projects/thesis-code/results/baseline/test_xray_strong_v2/xray_only_max_strength/error_analysis/label_caries/false_positives/1034-002__patient_1034__view_02__1034-002-02.jpg"
+            },
+            {
+              "filename": "1034-002-03.jpg",
+              "source_path": "/home/ubuntu/Projects/thesis-code/data/raw/COde-Dataset/Images/Radiographs/1034-002-03.jpg",
+              "exported_path": "/home/ubuntu/Projects/thesis-code/results/baseline/test_xray_strong_v2/xray_only_max_strength/error_analysis/label_caries/false_positives/1034-002__patient_1034__view_03__1034-002-03.jpg"
+            }
+          ],
+          "rank": 4
+        },
+        {
+          "error_type": "false_positive",
+          "label": "label_caries",
+          "label_index": 0,
+          "dataset_index": 2,
+          "checkup_id": "0016-001",
+          "patient_id": "16",
+          "score": 0.786732017993927,
+          "threshold": 0.5,
+          "ground_truth": 0,
+          "predicted": 1,
+          "radiographs": [
+            {
+              "filename": "0016-001-01.jpg",
+              "source_path": "/home/ubuntu/Projects/thesis-code/data/raw/COde-Dataset/Images/Radiographs/0016-001-01.jpg",
+              "exported_path": "/home/ubuntu/Projects/thesis-code/results/baseline/test_xray_strong_v2/xray_only_max_strength/error_analysis/label_caries/false_positives/0016-001__patient_16__view_01__0016-001-01.jpg"
+            }
+          ],
+          "rank": 5
+        },
+        {
+          "error_type": "false_positive",
+          "label": "label_caries",
+          "label_index": 0,
+          "dataset_index": 361,
+          "checkup_id": "2733-005",
+          "patient_id": "2733",
+          "score": 0.7423115968704224,
+          "threshold": 0.5,
+          "ground_truth": 0,
+          "predicted": 1,
+          "radiographs": [
+            {
+              "filename": "2733-005-01.jpg",
+              "source_path": "/home/ubuntu/Projects/thesis-code/data/raw/COde-Dataset/Images/Radiographs/2733-005-01.jpg",
+              "exported_path": "/home/ubuntu/Projects/thesis-code/results/baseline/test_xray_strong_v2/xray_only_max_strength/error_analysis/label_caries/false_positives/2733-005__patient_2733__view_01__2733-005-01.jpg"
+            }
+          ],
+          "rank": 6
+        },
+        {
+          "error_type": "false_positive",
+          "label": "label_caries",
+          "label_index": 0,
+          "dataset_index": 236,
+          "checkup_id": "1572-001",
+          "patient_id": "1572",
+          "score": 0.7068781852722168,
+          "threshold": 0.5,
+          "ground_truth": 0,
+          "predicted": 1,
+          "radiographs": [
+            {
+              "filename": "1572-001-01.jpg",
+              "source_path": "/home/ubuntu/Projects/thesis-code/data/raw/COde-Dataset/Images/Radiographs/1572-001-01.jpg",
+              "exported_path": "/home/ubuntu/Projects/thesis-code/results/baseline/test_xray_strong_v2/xray_only_max_strength/error_analysis/label_caries/false_positives/1572-001__patient_1572__view_01__1572-001-01.jpg"
+            },
+            {
+              "filename": "1572-001-02.jpg",
+              "source_path": "/home/ubuntu/Projects/thesis-code/data/raw/COde-Dataset/Images/Radiographs/1572-001-02.jpg",
+              "exported_path": "/home/ubuntu/Projects/thesis-code/results/baseline/test_xray_strong_v2/xray_only_max_strength/error_analysis/label_caries/false_positives/1572-001__patient_1572__view_02__1572-001-02.jpg"
+            }
+          ],
+          "rank": 7
+        },
+        {
+          "error_type": "false_positive",
+          "label": "label_caries",
+          "label_index": 0,
+          "dataset_index": 237,
+          "checkup_id": "1572-002",
+          "patient_id": "1572",
+          "score": 0.7068781852722168,
+          "threshold": 0.5,
+          "ground_truth": 0,
+          "predicted": 1,
+          "radiographs": [
+            {
+              "filename": "1572-002-01.jpg",
+              "source_path": "/home/ubuntu/Projects/thesis-code/data/raw/COde-Dataset/Images/Radiographs/1572-002-01.jpg",
+              "exported_path": "/home/ubuntu/Projects/thesis-code/results/baseline/test_xray_strong_v2/xray_only_max_strength/error_analysis/label_caries/false_positives/1572-002__patient_1572__view_01__1572-002-01.jpg"
+            },
+            {
+              "filename": "1572-002-02.jpg",
+              "source_path": "/home/ubuntu/Projects/thesis-code/data/raw/COde-Dataset/Images/Radiographs/1572-002-02.jpg",
+              "exported_path": "/home/ubuntu/Projects/thesis-code/results/baseline/test_xray_strong_v2/xray_only_max_strength/error_analysis/label_caries/false_positives/1572-002__patient_1572__view_02__1572-002-02.jpg"
+            }
+          ],
+          "rank": 8
+        },
+        {
+          "error_type": "false_positive",
+          "label": "label_caries",
+          "label_index": 0,
+          "dataset_index": 46,
+          "checkup_id": "0252-003",
+          "patient_id": "252",
+          "score": 0.7056894302368164,
+          "threshold": 0.5,
+          "ground_truth": 0,
+          "predicted": 1,
+          "radiographs": [
+            {
+              "filename": "0252-003-01.jpg",
+              "source_path": "/home/ubuntu/Projects/thesis-code/data/raw/COde-Dataset/Images/Radiographs/0252-003-01.jpg",
+              "exported_path": "/home/ubuntu/Projects/thesis-code/results/baseline/test_xray_strong_v2/xray_only_max_strength/error_analysis/label_caries/false_positives/0252-003__patient_252__view_01__0252-003-01.jpg"
+            },
+            {
+              "filename": "0252-003-02.jpg",
+              "source_path": "/home/ubuntu/Projects/thesis-code/data/raw/COde-Dataset/Images/Radiographs/0252-003-02.jpg",
+              "exported_path": "/home/ubuntu/Projects/thesis-code/results/baseline/test_xray_strong_v2/xray_only_max_strength/error_analysis/label_caries/false_positives/0252-003__patient_252__view_02__0252-003-02.jpg"
+            }
+          ],
+          "rank": 9
+        },
+        {
+          "error_type": "false_positive",
+          "label": "label_caries",
+          "label_index": 0,
+          "dataset_index": 47,
+          "checkup_id": "0252-004",
+          "patient_id": "252",
+          "score": 0.7056894302368164,
+          "threshold": 0.5,
+          "ground_truth": 0,
+          "predicted": 1,
+          "radiographs": [
+            {
+              "filename": "0252-004-01.jpg",
+              "source_path": "/home/ubuntu/Projects/thesis-code/data/raw/COde-Dataset/Images/Radiographs/0252-004-01.jpg",
+              "exported_path": "/home/ubuntu/Projects/thesis-code/results/baseline/test_xray_strong_v2/xray_only_max_strength/error_analysis/label_caries/false_positives/0252-004__patient_252__view_01__0252-004-01.jpg"
+            },
+            {
+              "filename": "0252-004-02.jpg",
+              "source_path": "/home/ubuntu/Projects/thesis-code/data/raw/COde-Dataset/Images/Radiographs/0252-004-02.jpg",
+              "exported_path": "/home/ubuntu/Projects/thesis-code/results/baseline/test_xray_strong_v2/xray_only_max_strength/error_analysis/label_caries/false_positives/0252-004__patient_252__view_02__0252-004-02.jpg"
+            }
+          ],
+          "rank": 10
+        },
+        {
+          "error_type": "false_positive",
+          "label": "label_caries",
+          "label_index": 0,
+          "dataset_index": 48,
+          "checkup_id": "0252-005",
+          "patient_id": "252",
+          "score": 0.7056894302368164,
+          "threshold": 0.5,
+          "ground_truth": 0,
+          "predicted": 1,
+          "radiographs": [
+            {
+              "filename": "0252-005-01.jpg",
+              "source_path": "/home/ubuntu/Projects/thesis-code/data/raw/COde-Dataset/Images/Radiographs/0252-005-01.jpg",
+              "exported_path": "/home/ubuntu/Projects/thesis-code/results/baseline/test_xray_strong_v2/xray_only_max_strength/error_analysis/label_caries/false_positives/0252-005__patient_252__view_01__0252-005-01.jpg"
+            },
+            {
+              "filename": "0252-005-02.jpg",
+              "source_path": "/home/ubuntu/Projects/thesis-code/data/raw/COde-Dataset/Images/Radiographs/0252-005-02.jpg",
+              "exported_path": "/home/ubuntu/Projects/thesis-code/results/baseline/test_xray_strong_v2/xray_only_max_strength/error_analysis/label_caries/false_positives/0252-005__patient_252__view_02__0252-005-02.jpg"
+            }
+          ],
+          "rank": 11
+        },
+        {
+          "error_type": "false_positive",
+          "label": "label_caries",
+          "label_index": 0,
+          "dataset_index": 333,
+          "checkup_id": "2336-001",
+          "patient_id": "2336",
+          "score": 0.6944646239280701,
+          "threshold": 0.5,
+          "ground_truth": 0,
+          "predicted": 1,
+          "radiographs": [
+            {
+              "filename": "2336-001-01.jpg",
+              "source_path": "/home/ubuntu/Projects/thesis-code/data/raw/COde-Dataset/Images/Radiographs/2336-001-01.jpg",
+              "exported_path": "/home/ubuntu/Projects/thesis-code/results/baseline/test_xray_strong_v2/xray_only_max_strength/error_analysis/label_caries/false_positives/2336-001__patient_2336__view_01__2336-001-01.jpg"
+            },
+            {
+              "filename": "2336-001-02.jpg",
+              "source_path": "/home/ubuntu/Projects/thesis-code/data/raw/COde-Dataset/Images/Radiographs/2336-001-02.jpg",
+              "exported_path": "/home/ubuntu/Projects/thesis-code/results/baseline/test_xray_strong_v2/xray_only_max_strength/error_analysis/label_caries/false_positives/2336-001__patient_2336__view_02__2336-001-02.jpg"
+            }
+          ],
+          "rank": 12
+        },
+        {
+          "error_type": "false_positive",
+          "label": "label_caries",
+          "label_index": 0,
+          "dataset_index": 57,
+          "checkup_id": "0391-004",
+          "patient_id": "391",
+          "score": 0.6715569496154785,
+          "threshold": 0.5,
+          "ground_truth": 0,
+          "predicted": 1,
+          "radiographs": [
+            {
+              "filename": "0391-004-01.jpg",
+              "source_path": "/home/ubuntu/Projects/thesis-code/data/raw/COde-Dataset/Images/Radiographs/0391-004-01.jpg",
+              "exported_path": "/home/ubuntu/Projects/thesis-code/results/baseline/test_xray_strong_v2/xray_only_max_strength/error_analysis/label_caries/false_positives/0391-004__patient_391__view_01__0391-004-01.jpg"
+            }
+          ],
+          "rank": 13
+        },
+        {
+          "error_type": "false_positive",
+          "label": "label_caries",
+          "label_index": 0,
+          "dataset_index": 453,
+          "checkup_id": "3123-001",
+          "patient_id": "3123",
+          "score": 0.6711154580116272,
+          "threshold": 0.5,
+          "ground_truth": 0,
+          "predicted": 1,
+          "radiographs": [
+            {
+              "filename": "3123-001-01.jpg",
+              "source_path": "/home/ubuntu/Projects/thesis-code/data/raw/COde-Dataset/Images/Radiographs/3123-001-01.jpg",
+              "exported_path": "/home/ubuntu/Projects/thesis-code/results/baseline/test_xray_strong_v2/xray_only_max_strength/error_analysis/label_caries/false_positives/3123-001__patient_3123__view_01__3123-001-01.jpg"
+            },
+            {
+              "filename": "3123-001-02.jpg",
+              "source_path": "/home/ubuntu/Projects/thesis-code/data/raw/COde-Dataset/Images/Radiographs/3123-001-02.jpg",
+              "exported_path": "/home/ubuntu/Projects/thesis-code/results/baseline/test_xray_strong_v2/xray_only_max_strength/error_analysis/label_caries/false_positives/3123-001__patient_3123__view_02__3123-001-02.jpg"
+            }
+          ],
+          "rank": 14
+        },
+        {
+          "error_type": "false_positive",
+          "label": "label_caries",
+          "label_index": 0,
+          "dataset_index": 401,
+          "checkup_id": "2866-002",
+          "patient_id": "2866",
+          "score": 0.6310606002807617,
+          "threshold": 0.5,
+          "ground_truth": 0,
+          "predicted": 1,
+          "radiographs": [
+            {
+              "filename": "2866-002-01.jpg",
+              "source_path": "/home/ubuntu/Projects/thesis-code/data/raw/COde-Dataset/Images/Radiographs/2866-002-01.jpg",
+              "exported_path": "/home/ubuntu/Projects/thesis-code/results/baseline/test_xray_strong_v2/xray_only_max_strength/error_analysis/label_caries/false_positives/2866-002__patient_2866__view_01__2866-002-01.jpg"
+            },
+            {
+              "filename": "2866-002-02.jpg",
+              "source_path": "/home/ubuntu/Projects/thesis-code/data/raw/COde-Dataset/Images/Radiographs/2866-002-02.jpg",
+              "exported_path": "/home/ubuntu/Projects/thesis-code/results/baseline/test_xray_strong_v2/xray_only_max_strength/error_analysis/label_caries/false_positives/2866-002__patient_2866__view_02__2866-002-02.jpg"
+            }
+          ],
+          "rank": 15
+        }
+      ],
+      "false_negatives": [
+        {
+          "error_type": "false_negative",
+          "label": "label_caries",
+          "label_index": 0,
+          "dataset_index": 622,
+          "checkup_id": "4694-002",
+          "patient_id": "4694",
+          "score": 9.999997701015673e-07,
+          "threshold": 0.5,
+          "ground_truth": 1,
+          "predicted": 0,
+          "radiographs": [
+            {
+              "filename": "4694-002-01.jpg",
+              "source_path": "/home/ubuntu/Projects/thesis-code/data/raw/COde-Dataset/Images/Radiographs/4694-002-01.jpg",
+              "exported_path": "/home/ubuntu/Projects/thesis-code/results/baseline/test_xray_strong_v2/xray_only_max_strength/error_analysis/label_caries/false_negatives/4694-002__patient_4694__view_01__4694-002-01.jpg"
+            }
+          ],
+          "rank": 1
+        },
+        {
+          "error_type": "false_negative",
+          "label": "label_caries",
+          "label_index": 0,
+          "dataset_index": 554,
+          "checkup_id": "0877-003",
+          "patient_id": "877",
+          "score": 5.663689080392942e-06,
+          "threshold": 0.5,
+          "ground_truth": 1,
+          "predicted": 0,
+          "radiographs": [
+            {
+              "filename": "0877-003-01.jpg",
+              "source_path": "/home/ubuntu/Projects/thesis-code/data/raw/COde-Dataset/Images/Radiographs/0877-003-01.jpg",
+              "exported_path": "/home/ubuntu/Projects/thesis-code/results/baseline/test_xray_strong_v2/xray_only_max_strength/error_analysis/label_caries/false_negatives/0877-003__patient_877__view_01__0877-003-01.jpg"
+            },
+            {
+              "filename": "0877-003-02.jpg",
+              "source_path": "/home/ubuntu/Projects/thesis-code/data/raw/COde-Dataset/Images/Radiographs/0877-003-02.jpg",
+              "exported_path": "/home/ubuntu/Projects/thesis-code/results/baseline/test_xray_strong_v2/xray_only_max_strength/error_analysis/label_caries/false_negatives/0877-003__patient_877__view_02__0877-003-02.jpg"
+            }
+          ],
+          "rank": 2
+        },
+        {
+          "error_type": "false_negative",
+          "label": "label_caries",
+          "label_index": 0,
+          "dataset_index": 559,
+          "checkup_id": "1734-002",
+          "patient_id": "1734",
+          "score": 1.3369504813454114e-05,
+          "threshold": 0.5,
+          "ground_truth": 1,
+          "predicted": 0,
+          "radiographs": [
+            {
+              "filename": "1734-002-01.jpg",
+              "source_path": "/home/ubuntu/Projects/thesis-code/data/raw/COde-Dataset/Images/Radiographs/1734-002-01.jpg",
+              "exported_path": "/home/ubuntu/Projects/thesis-code/results/baseline/test_xray_strong_v2/xray_only_max_strength/error_analysis/label_caries/false_negatives/1734-002__patient_1734__view_01__1734-002-01.jpg"
+            },
+            {
+              "filename": "1734-002-02.jpg",
+              "source_path": "/home/ubuntu/Projects/thesis-code/data/raw/COde-Dataset/Images/Radiographs/1734-002-02.jpg",
+              "exported_path": "/home/ubuntu/Projects/thesis-code/results/baseline/test_xray_strong_v2/xray_only_max_strength/error_analysis/label_caries/false_negatives/1734-002__patient_1734__view_02__1734-002-02.jpg"
+            }
+          ],
+          "rank": 3
+        },
+        {
+          "error_type": "false_negative",
+          "label": "label_caries",
+          "label_index": 0,
+          "dataset_index": 104,
+          "checkup_id": "0764-004",
+          "patient_id": "764",
+          "score": 1.6474670701427385e-05,
+          "threshold": 0.5,
+          "ground_truth": 1,
+          "predicted": 0,
+          "radiographs": [
+            {
+              "filename": "0764-004-01.jpg",
+              "source_path": "/home/ubuntu/Projects/thesis-code/data/raw/COde-Dataset/Images/Radiographs/0764-004-01.jpg",
+              "exported_path": "/home/ubuntu/Projects/thesis-code/results/baseline/test_xray_strong_v2/xray_only_max_strength/error_analysis/label_caries/false_negatives/0764-004__patient_764__view_01__0764-004-01.jpg"
+            },
+            {
+              "filename": "0764-004-02.jpg",
+              "source_path": "/home/ubuntu/Projects/thesis-code/data/raw/COde-Dataset/Images/Radiographs/0764-004-02.jpg",
+              "exported_path": "/home/ubuntu/Projects/thesis-code/results/baseline/test_xray_strong_v2/xray_only_max_strength/error_analysis/label_caries/false_negatives/0764-004__patient_764__view_02__0764-004-02.jpg"
+            }
+          ],
+          "rank": 4
+        },
+        {
+          "error_type": "false_negative",
+          "label": "label_caries",
+          "label_index": 0,
+          "dataset_index": 571,
+          "checkup_id": "2974-002",
+          "patient_id": "2974",
+          "score": 5.366847472032532e-05,
+          "threshold": 0.5,
+          "ground_truth": 1,
+          "predicted": 0,
+          "radiographs": [
+            {
+              "filename": "2974-002-01.jpg",
+              "source_path": "/home/ubuntu/Projects/thesis-code/data/raw/COde-Dataset/Images/Radiographs/2974-002-01.jpg",
+              "exported_path": "/home/ubuntu/Projects/thesis-code/results/baseline/test_xray_strong_v2/xray_only_max_strength/error_analysis/label_caries/false_negatives/2974-002__patient_2974__view_01__2974-002-01.jpg"
+            },
+            {
+              "filename": "2974-002-02.jpg",
+              "source_path": "/home/ubuntu/Projects/thesis-code/data/raw/COde-Dataset/Images/Radiographs/2974-002-02.jpg",
+              "exported_path": "/home/ubuntu/Projects/thesis-code/results/baseline/test_xray_strong_v2/xray_only_max_strength/error_analysis/label_caries/false_negatives/2974-002__patient_2974__view_02__2974-002-02.jpg"
+            }
+          ],
+          "rank": 5
+        },
+        {
+          "error_type": "false_negative",
+          "label": "label_caries",
+          "label_index": 0,
+          "dataset_index": 560,
+          "checkup_id": "1963-003",
+          "patient_id": "1963",
+          "score": 0.00019091946887783706,
+          "threshold": 0.5,
+          "ground_truth": 1,
+          "predicted": 0,
+          "radiographs": [
+            {
+              "filename": "1963-003-01.jpg",
+              "source_path": "/home/ubuntu/Projects/thesis-code/data/raw/COde-Dataset/Images/Radiographs/1963-003-01.jpg",
+              "exported_path": "/home/ubuntu/Projects/thesis-code/results/baseline/test_xray_strong_v2/xray_only_max_strength/error_analysis/label_caries/false_negatives/1963-003__patient_1963__view_01__1963-003-01.jpg"
+            }
+          ],
+          "rank": 6
+        },
+        {
+          "error_type": "false_negative",
+          "label": "label_caries",
+          "label_index": 0,
+          "dataset_index": 441,
+          "checkup_id": "3047-002",
+          "patient_id": "3047",
+          "score": 0.0002062200364889577,
+          "threshold": 0.5,
+          "ground_truth": 1,
+          "predicted": 0,
+          "radiographs": [
+            {
+              "filename": "3047-002-01.jpg",
+              "source_path": "/home/ubuntu/Projects/thesis-code/data/raw/COde-Dataset/Images/Radiographs/3047-002-01.jpg",
+              "exported_path": "/home/ubuntu/Projects/thesis-code/results/baseline/test_xray_strong_v2/xray_only_max_strength/error_analysis/label_caries/false_negatives/3047-002__patient_3047__view_01__3047-002-01.jpg"
+            },
+            {
+              "filename": "3047-002-02.jpg",
+              "source_path": "/home/ubuntu/Projects/thesis-code/data/raw/COde-Dataset/Images/Radiographs/3047-002-02.jpg",
+              "exported_path": "/home/ubuntu/Projects/thesis-code/results/baseline/test_xray_strong_v2/xray_only_max_strength/error_analysis/label_caries/false_negatives/3047-002__patient_3047__view_02__3047-002-02.jpg"
+            }
+          ],
+          "rank": 7
+        },
+        {
+          "error_type": "false_negative",
+          "label": "label_caries",
+          "label_index": 0,
+          "dataset_index": 440,
+          "checkup_id": "3047-001",
+          "patient_id": "3047",
+          "score": 0.0002062200364889577,
+          "threshold": 0.5,
+          "ground_truth": 1,
+          "predicted": 0,
+          "radiographs": [
+            {
+              "filename": "3047-001-01.jpg",
+              "source_path": "/home/ubuntu/Projects/thesis-code/data/raw/COde-Dataset/Images/Radiographs/3047-001-01.jpg",
+              "exported_path": "/home/ubuntu/Projects/thesis-code/results/baseline/test_xray_strong_v2/xray_only_max_strength/error_analysis/label_caries/false_negatives/3047-001__patient_3047__view_01__3047-001-01.jpg"
+            },
+            {
+              "filename": "3047-001-02.jpg",
+              "source_path": "/home/ubuntu/Projects/thesis-code/data/raw/COde-Dataset/Images/Radiographs/3047-001-02.jpg",
+              "exported_path": "/home/ubuntu/Projects/thesis-code/results/baseline/test_xray_strong_v2/xray_only_max_strength/error_analysis/label_caries/false_negatives/3047-001__patient_3047__view_02__3047-001-02.jpg"
+            }
+          ],
+          "rank": 8
+        },
+        {
+          "error_type": "false_negative",
+          "label": "label_caries",
+          "label_index": 0,
+          "dataset_index": 623,
+          "checkup_id": "1008-002",
+          "patient_id": "1008",
+          "score": 0.00022231286857277155,
+          "threshold": 0.5,
+          "ground_truth": 1,
+          "predicted": 0,
+          "radiographs": [
+            {
+              "filename": "1008-002-01.jpg",
+              "source_path": "/home/ubuntu/Projects/thesis-code/data/raw/COde-Dataset/Images/Radiographs/1008-002-01.jpg",
+              "exported_path": "/home/ubuntu/Projects/thesis-code/results/baseline/test_xray_strong_v2/xray_only_max_strength/error_analysis/label_caries/false_negatives/1008-002__patient_1008__view_01__1008-002-01.jpg"
+            },
+            {
+              "filename": "1008-002-02.jpg",
+              "source_path": "/home/ubuntu/Projects/thesis-code/data/raw/COde-Dataset/Images/Radiographs/1008-002-02.jpg",
+              "exported_path": "/home/ubuntu/Projects/thesis-code/results/baseline/test_xray_strong_v2/xray_only_max_strength/error_analysis/label_caries/false_negatives/1008-002__patient_1008__view_02__1008-002-02.jpg"
+            }
+          ],
+          "rank": 9
+        },
+        {
+          "error_type": "false_negative",
+          "label": "label_caries",
+          "label_index": 0,
+          "dataset_index": 547,
+          "checkup_id": "4173-001",
+          "patient_id": "4173",
+          "score": 0.0002782157971523702,
+          "threshold": 0.5,
+          "ground_truth": 1,
+          "predicted": 0,
+          "radiographs": [
+            {
+              "filename": "4173-001-01.jpg",
+              "source_path": "/home/ubuntu/Projects/thesis-code/data/raw/COde-Dataset/Images/Radiographs/4173-001-01.jpg",
+              "exported_path": "/home/ubuntu/Projects/thesis-code/results/baseline/test_xray_strong_v2/xray_only_max_strength/error_analysis/label_caries/false_negatives/4173-001__patient_4173__view_01__4173-001-01.jpg"
+            },
+            {
+              "filename": "4173-001-02.jpg",
+              "source_path": "/home/ubuntu/Projects/thesis-code/data/raw/COde-Dataset/Images/Radiographs/4173-001-02.jpg",
+              "exported_path": "/home/ubuntu/Projects/thesis-code/results/baseline/test_xray_strong_v2/xray_only_max_strength/error_analysis/label_caries/false_negatives/4173-001__patient_4173__view_02__4173-001-02.jpg"
+            }
+          ],
+          "rank": 10
+        },
+        {
+          "error_type": "false_negative",
+          "label": "label_caries",
+          "label_index": 0,
+          "dataset_index": 588,
+          "checkup_id": "4398-001",
+          "patient_id": "4398",
+          "score": 0.00031487294472754,
+          "threshold": 0.5,
+          "ground_truth": 1,
+          "predicted": 0,
+          "radiographs": [
+            {
+              "filename": "4398-001-01.jpg",
+              "source_path": "/home/ubuntu/Projects/thesis-code/data/raw/COde-Dataset/Images/Radiographs/4398-001-01.jpg",
+              "exported_path": "/home/ubuntu/Projects/thesis-code/results/baseline/test_xray_strong_v2/xray_only_max_strength/error_analysis/label_caries/false_negatives/4398-001__patient_4398__view_01__4398-001-01.jpg"
+            },
+            {
+              "filename": "4398-001-02.jpg",
+              "source_path": "/home/ubuntu/Projects/thesis-code/data/raw/COde-Dataset/Images/Radiographs/4398-001-02.jpg",
+              "exported_path": "/home/ubuntu/Projects/thesis-code/results/baseline/test_xray_strong_v2/xray_only_max_strength/error_analysis/label_caries/false_negatives/4398-001__patient_4398__view_02__4398-001-02.jpg"
+            }
+          ],
+          "rank": 11
+        },
+        {
+          "error_type": "false_negative",
+          "label": "label_caries",
+          "label_index": 0,
+          "dataset_index": 218,
+          "checkup_id": "1468-003",
+          "patient_id": "1468",
+          "score": 0.00035892234882339835,
+          "threshold": 0.5,
+          "ground_truth": 1,
+          "predicted": 0,
+          "radiographs": [
+            {
+              "filename": "1468-003-01.jpg",
+              "source_path": "/home/ubuntu/Projects/thesis-code/data/raw/COde-Dataset/Images/Radiographs/1468-003-01.jpg",
+              "exported_path": "/home/ubuntu/Projects/thesis-code/results/baseline/test_xray_strong_v2/xray_only_max_strength/error_analysis/label_caries/false_negatives/1468-003__patient_1468__view_01__1468-003-01.jpg"
+            },
+            {
+              "filename": "1468-003-02.jpg",
+              "source_path": "/home/ubuntu/Projects/thesis-code/data/raw/COde-Dataset/Images/Radiographs/1468-003-02.jpg",
+              "exported_path": "/home/ubuntu/Projects/thesis-code/results/baseline/test_xray_strong_v2/xray_only_max_strength/error_analysis/label_caries/false_negatives/1468-003__patient_1468__view_02__1468-003-02.jpg"
+            }
+          ],
+          "rank": 12
+        },
+        {
+          "error_type": "false_negative",
+          "label": "label_caries",
+          "label_index": 0,
+          "dataset_index": 626,
+          "checkup_id": "2876-002",
+          "patient_id": "2876",
+          "score": 0.00042832785402424634,
+          "threshold": 0.5,
+          "ground_truth": 1,
+          "predicted": 0,
+          "radiographs": [
+            {
+              "filename": "2876-002-01.jpg",
+              "source_path": "/home/ubuntu/Projects/thesis-code/data/raw/COde-Dataset/Images/Radiographs/2876-002-01.jpg",
+              "exported_path": "/home/ubuntu/Projects/thesis-code/results/baseline/test_xray_strong_v2/xray_only_max_strength/error_analysis/label_caries/false_negatives/2876-002__patient_2876__view_01__2876-002-01.jpg"
+            },
+            {
+              "filename": "2876-002-02.jpg",
+              "source_path": "/home/ubuntu/Projects/thesis-code/data/raw/COde-Dataset/Images/Radiographs/2876-002-02.jpg",
+              "exported_path": "/home/ubuntu/Projects/thesis-code/results/baseline/test_xray_strong_v2/xray_only_max_strength/error_analysis/label_caries/false_negatives/2876-002__patient_2876__view_02__2876-002-02.jpg"
+            }
+          ],
+          "rank": 13
+        },
+        {
+          "error_type": "false_negative",
+          "label": "label_caries",
+          "label_index": 0,
+          "dataset_index": 283,
+          "checkup_id": "1923-001",
+          "patient_id": "1923",
+          "score": 0.0005720941117033362,
+          "threshold": 0.5,
+          "ground_truth": 1,
+          "predicted": 0,
+          "radiographs": [
+            {
+              "filename": "1923-001-01.jpg",
+              "source_path": "/home/ubuntu/Projects/thesis-code/data/raw/COde-Dataset/Images/Radiographs/1923-001-01.jpg",
+              "exported_path": "/home/ubuntu/Projects/thesis-code/results/baseline/test_xray_strong_v2/xray_only_max_strength/error_analysis/label_caries/false_negatives/1923-001__patient_1923__view_01__1923-001-01.jpg"
+            },
+            {
+              "filename": "1923-001-02.jpg",
+              "source_path": "/home/ubuntu/Projects/thesis-code/data/raw/COde-Dataset/Images/Radiographs/1923-001-02.jpg",
+              "exported_path": "/home/ubuntu/Projects/thesis-code/results/baseline/test_xray_strong_v2/xray_only_max_strength/error_analysis/label_caries/false_negatives/1923-001__patient_1923__view_02__1923-001-02.jpg"
+            }
+          ],
+          "rank": 14
+        },
+        {
+          "error_type": "false_negative",
+          "label": "label_caries",
+          "label_index": 0,
+          "dataset_index": 114,
+          "checkup_id": "0805-001",
+          "patient_id": "805",
+          "score": 0.0006254557520151138,
+          "threshold": 0.5,
+          "ground_truth": 1,
+          "predicted": 0,
+          "radiographs": [
+            {
+              "filename": "0805-001-01.jpg",
+              "source_path": "/home/ubuntu/Projects/thesis-code/data/raw/COde-Dataset/Images/Radiographs/0805-001-01.jpg",
+              "exported_path": "/home/ubuntu/Projects/thesis-code/results/baseline/test_xray_strong_v2/xray_only_max_strength/error_analysis/label_caries/false_negatives/0805-001__patient_805__view_01__0805-001-01.jpg"
+            },
+            {
+              "filename": "0805-001-02.jpg",
+              "source_path": "/home/ubuntu/Projects/thesis-code/data/raw/COde-Dataset/Images/Radiographs/0805-001-02.jpg",
+              "exported_path": "/home/ubuntu/Projects/thesis-code/results/baseline/test_xray_strong_v2/xray_only_max_strength/error_analysis/label_caries/false_negatives/0805-001__patient_805__view_02__0805-001-02.jpg"
+            }
+          ],
+          "rank": 15
+        }
+      ]
+    },
+    "label_tooth_loss": {
+      "false_positives_available": 16,
+      "false_negatives_available": 19,
+      "false_positives": [
+        {
+          "error_type": "false_positive",
+          "label": "label_tooth_loss",
+          "label_index": 4,
+          "dataset_index": 348,
+          "checkup_id": "2579-004",
+          "patient_id": "2579",
+          "score": 0.9946877956390381,
+          "threshold": 0.5,
+          "ground_truth": 0,
+          "predicted": 1,
+          "radiographs": [
+            {
+              "filename": "2579-004-01.jpg",
+              "source_path": "/home/ubuntu/Projects/thesis-code/data/raw/COde-Dataset/Images/Radiographs/2579-004-01.jpg",
+              "exported_path": "/home/ubuntu/Projects/thesis-code/results/baseline/test_xray_strong_v2/xray_only_max_strength/error_analysis/label_tooth_loss/false_positives/2579-004__patient_2579__view_01__2579-004-01.jpg"
+            }
+          ],
+          "rank": 1
+        },
+        {
+          "error_type": "false_positive",
+          "label": "label_tooth_loss",
+          "label_index": 4,
+          "dataset_index": 493,
+          "checkup_id": "3607-001",
+          "patient_id": "3607",
+          "score": 0.9892298579216003,
+          "threshold": 0.5,
+          "ground_truth": 0,
+          "predicted": 1,
+          "radiographs": [
+            {
+              "filename": "3607-001-01.jpg",
+              "source_path": "/home/ubuntu/Projects/thesis-code/data/raw/COde-Dataset/Images/Radiographs/3607-001-01.jpg",
+              "exported_path": "/home/ubuntu/Projects/thesis-code/results/baseline/test_xray_strong_v2/xray_only_max_strength/error_analysis/label_tooth_loss/false_positives/3607-001__patient_3607__view_01__3607-001-01.jpg"
+            }
+          ],
+          "rank": 2
+        },
+        {
+          "error_type": "false_positive",
+          "label": "label_tooth_loss",
+          "label_index": 4,
+          "dataset_index": 535,
+          "checkup_id": "4062-001",
+          "patient_id": "4062",
+          "score": 0.9892298579216003,
+          "threshold": 0.5,
+          "ground_truth": 0,
+          "predicted": 1,
+          "radiographs": [
+            {
+              "filename": "4062-001-01.jpg",
+              "source_path": "/home/ubuntu/Projects/thesis-code/data/raw/COde-Dataset/Images/Radiographs/4062-001-01.jpg",
+              "exported_path": "/home/ubuntu/Projects/thesis-code/results/baseline/test_xray_strong_v2/xray_only_max_strength/error_analysis/label_tooth_loss/false_positives/4062-001__patient_4062__view_01__4062-001-01.jpg"
+            }
+          ],
+          "rank": 3
+        },
+        {
+          "error_type": "false_positive",
+          "label": "label_tooth_loss",
+          "label_index": 4,
+          "dataset_index": 514,
+          "checkup_id": "3817-001",
+          "patient_id": "3817",
+          "score": 0.9795607924461365,
+          "threshold": 0.5,
+          "ground_truth": 0,
+          "predicted": 1,
+          "radiographs": [
+            {
+              "filename": "3817-001-01.jpg",
+              "source_path": "/home/ubuntu/Projects/thesis-code/data/raw/COde-Dataset/Images/Radiographs/3817-001-01.jpg",
+              "exported_path": "/home/ubuntu/Projects/thesis-code/results/baseline/test_xray_strong_v2/xray_only_max_strength/error_analysis/label_tooth_loss/false_positives/3817-001__patient_3817__view_01__3817-001-01.jpg"
+            },
+            {
+              "filename": "3817-001-02.jpg",
+              "source_path": "/home/ubuntu/Projects/thesis-code/data/raw/COde-Dataset/Images/Radiographs/3817-001-02.jpg",
+              "exported_path": "/home/ubuntu/Projects/thesis-code/results/baseline/test_xray_strong_v2/xray_only_max_strength/error_analysis/label_tooth_loss/false_positives/3817-001__patient_3817__view_02__3817-001-02.jpg"
+            },
+            {
+              "filename": "3817-001-03.jpg",
+              "source_path": "/home/ubuntu/Projects/thesis-code/data/raw/COde-Dataset/Images/Radiographs/3817-001-03.jpg",
+              "exported_path": "/home/ubuntu/Projects/thesis-code/results/baseline/test_xray_strong_v2/xray_only_max_strength/error_analysis/label_tooth_loss/false_positives/3817-001__patient_3817__view_03__3817-001-03.jpg"
+            },
+            {
+              "filename": "3817-001-04.jpg",
+              "source_path": "/home/ubuntu/Projects/thesis-code/data/raw/COde-Dataset/Images/Radiographs/3817-001-04.jpg",
+              "exported_path": "/home/ubuntu/Projects/thesis-code/results/baseline/test_xray_strong_v2/xray_only_max_strength/error_analysis/label_tooth_loss/false_positives/3817-001__patient_3817__view_04__3817-001-04.jpg"
+            },
+            {
+              "filename": "3817-001-05.jpg",
+              "source_path": "/home/ubuntu/Projects/thesis-code/data/raw/COde-Dataset/Images/Radiographs/3817-001-05.jpg",
+              "exported_path": "/home/ubuntu/Projects/thesis-code/results/baseline/test_xray_strong_v2/xray_only_max_strength/error_analysis/label_tooth_loss/false_positives/3817-001__patient_3817__view_05__3817-001-05.jpg"
+            },
+            {
+              "filename": "3817-001-06.jpg",
+              "source_path": "/home/ubuntu/Projects/thesis-code/data/raw/COde-Dataset/Images/Radiographs/3817-001-06.jpg",
+              "exported_path": "/home/ubuntu/Projects/thesis-code/results/baseline/test_xray_strong_v2/xray_only_max_strength/error_analysis/label_tooth_loss/false_positives/3817-001__patient_3817__view_06__3817-001-06.jpg"
+            },
+            {
+              "filename": "3817-001-07.jpg",
+              "source_path": "/home/ubuntu/Projects/thesis-code/data/raw/COde-Dataset/Images/Radiographs/3817-001-07.jpg",
+              "exported_path": "/home/ubuntu/Projects/thesis-code/results/baseline/test_xray_strong_v2/xray_only_max_strength/error_analysis/label_tooth_loss/false_positives/3817-001__patient_3817__view_07__3817-001-07.jpg"
+            }
+          ],
+          "rank": 4
+        },
+        {
+          "error_type": "false_positive",
+          "label": "label_tooth_loss",
+          "label_index": 4,
+          "dataset_index": 185,
+          "checkup_id": "1122-001",
+          "patient_id": "1122",
+          "score": 0.975521981716156,
+          "threshold": 0.5,
+          "ground_truth": 0,
+          "predicted": 1,
+          "radiographs": [
+            {
+              "filename": "1122-001-01.jpg",
+              "source_path": "/home/ubuntu/Projects/thesis-code/data/raw/COde-Dataset/Images/Radiographs/1122-001-01.jpg",
+              "exported_path": "/home/ubuntu/Projects/thesis-code/results/baseline/test_xray_strong_v2/xray_only_max_strength/error_analysis/label_tooth_loss/false_positives/1122-001__patient_1122__view_01__1122-001-01.jpg"
+            }
+          ],
+          "rank": 5
+        },
+        {
+          "error_type": "false_positive",
+          "label": "label_tooth_loss",
+          "label_index": 4,
+          "dataset_index": 246,
+          "checkup_id": "1621-001",
+          "patient_id": "1621",
+          "score": 0.9562170505523682,
+          "threshold": 0.5,
+          "ground_truth": 0,
+          "predicted": 1,
+          "radiographs": [
+            {
+              "filename": "1621-001-01.jpg",
+              "source_path": "/home/ubuntu/Projects/thesis-code/data/raw/COde-Dataset/Images/Radiographs/1621-001-01.jpg",
+              "exported_path": "/home/ubuntu/Projects/thesis-code/results/baseline/test_xray_strong_v2/xray_only_max_strength/error_analysis/label_tooth_loss/false_positives/1621-001__patient_1621__view_01__1621-001-01.jpg"
+            },
+            {
+              "filename": "1621-001-02.jpg",
+              "source_path": "/home/ubuntu/Projects/thesis-code/data/raw/COde-Dataset/Images/Radiographs/1621-001-02.jpg",
+              "exported_path": "/home/ubuntu/Projects/thesis-code/results/baseline/test_xray_strong_v2/xray_only_max_strength/error_analysis/label_tooth_loss/false_positives/1621-001__patient_1621__view_02__1621-001-02.jpg"
+            },
+            {
+              "filename": "1621-001-03.jpg",
+              "source_path": "/home/ubuntu/Projects/thesis-code/data/raw/COde-Dataset/Images/Radiographs/1621-001-03.jpg",
+              "exported_path": "/home/ubuntu/Projects/thesis-code/results/baseline/test_xray_strong_v2/xray_only_max_strength/error_analysis/label_tooth_loss/false_positives/1621-001__patient_1621__view_03__1621-001-03.jpg"
+            },
+            {
+              "filename": "1621-001-04.jpg",
+              "source_path": "/home/ubuntu/Projects/thesis-code/data/raw/COde-Dataset/Images/Radiographs/1621-001-04.jpg",
+              "exported_path": "/home/ubuntu/Projects/thesis-code/results/baseline/test_xray_strong_v2/xray_only_max_strength/error_analysis/label_tooth_loss/false_positives/1621-001__patient_1621__view_04__1621-001-04.jpg"
+            },
+            {
+              "filename": "1621-001-05.jpg",
+              "source_path": "/home/ubuntu/Projects/thesis-code/data/raw/COde-Dataset/Images/Radiographs/1621-001-05.jpg",
+              "exported_path": "/home/ubuntu/Projects/thesis-code/results/baseline/test_xray_strong_v2/xray_only_max_strength/error_analysis/label_tooth_loss/false_positives/1621-001__patient_1621__view_05__1621-001-05.jpg"
+            },
+            {
+              "filename": "1621-001-06.jpg",
+              "source_path": "/home/ubuntu/Projects/thesis-code/data/raw/COde-Dataset/Images/Radiographs/1621-001-06.jpg",
+              "exported_path": "/home/ubuntu/Projects/thesis-code/results/baseline/test_xray_strong_v2/xray_only_max_strength/error_analysis/label_tooth_loss/false_positives/1621-001__patient_1621__view_06__1621-001-06.jpg"
+            },
+            {
+              "filename": "1621-001-07.jpg",
+              "source_path": "/home/ubuntu/Projects/thesis-code/data/raw/COde-Dataset/Images/Radiographs/1621-001-07.jpg",
+              "exported_path": "/home/ubuntu/Projects/thesis-code/results/baseline/test_xray_strong_v2/xray_only_max_strength/error_analysis/label_tooth_loss/false_positives/1621-001__patient_1621__view_07__1621-001-07.jpg"
+            }
+          ],
+          "rank": 6
+        },
+        {
+          "error_type": "false_positive",
+          "label": "label_tooth_loss",
+          "label_index": 4,
+          "dataset_index": 556,
+          "checkup_id": "4223-001",
+          "patient_id": "4223",
+          "score": 0.8696939945220947,
+          "threshold": 0.5,
+          "ground_truth": 0,
+          "predicted": 1,
+          "radiographs": [
+            {
+              "filename": "4223-001-01.jpg",
+              "source_path": "/home/ubuntu/Projects/thesis-code/data/raw/COde-Dataset/Images/Radiographs/4223-001-01.jpg",
+              "exported_path": "/home/ubuntu/Projects/thesis-code/results/baseline/test_xray_strong_v2/xray_only_max_strength/error_analysis/label_tooth_loss/false_positives/4223-001__patient_4223__view_01__4223-001-01.jpg"
+            },
+            {
+              "filename": "4223-001-02.jpg",
+              "source_path": "/home/ubuntu/Projects/thesis-code/data/raw/COde-Dataset/Images/Radiographs/4223-001-02.jpg",
+              "exported_path": "/home/ubuntu/Projects/thesis-code/results/baseline/test_xray_strong_v2/xray_only_max_strength/error_analysis/label_tooth_loss/false_positives/4223-001__patient_4223__view_02__4223-001-02.jpg"
+            },
+            {
+              "filename": "4223-001-03.jpg",
+              "source_path": "/home/ubuntu/Projects/thesis-code/data/raw/COde-Dataset/Images/Radiographs/4223-001-03.jpg",
+              "exported_path": "/home/ubuntu/Projects/thesis-code/results/baseline/test_xray_strong_v2/xray_only_max_strength/error_analysis/label_tooth_loss/false_positives/4223-001__patient_4223__view_03__4223-001-03.jpg"
+            },
+            {
+              "filename": "4223-001-04.jpg",
+              "source_path": "/home/ubuntu/Projects/thesis-code/data/raw/COde-Dataset/Images/Radiographs/4223-001-04.jpg",
+              "exported_path": "/home/ubuntu/Projects/thesis-code/results/baseline/test_xray_strong_v2/xray_only_max_strength/error_analysis/label_tooth_loss/false_positives/4223-001__patient_4223__view_04__4223-001-04.jpg"
+            }
+          ],
+          "rank": 7
+        },
+        {
+          "error_type": "false_positive",
+          "label": "label_tooth_loss",
+          "label_index": 4,
+          "dataset_index": 614,
+          "checkup_id": "4638-001",
+          "patient_id": "4638",
+          "score": 0.8253561854362488,
+          "threshold": 0.5,
+          "ground_truth": 0,
+          "predicted": 1,
+          "radiographs": [
+            {
+              "filename": "4638-001-01.jpg",
+              "source_path": "/home/ubuntu/Projects/thesis-code/data/raw/COde-Dataset/Images/Radiographs/4638-001-01.jpg",
+              "exported_path": "/home/ubuntu/Projects/thesis-code/results/baseline/test_xray_strong_v2/xray_only_max_strength/error_analysis/label_tooth_loss/false_positives/4638-001__patient_4638__view_01__4638-001-01.jpg"
+            },
+            {
+              "filename": "4638-001-02.jpg",
+              "source_path": "/home/ubuntu/Projects/thesis-code/data/raw/COde-Dataset/Images/Radiographs/4638-001-02.jpg",
+              "exported_path": "/home/ubuntu/Projects/thesis-code/results/baseline/test_xray_strong_v2/xray_only_max_strength/error_analysis/label_tooth_loss/false_positives/4638-001__patient_4638__view_02__4638-001-02.jpg"
+            }
+          ],
+          "rank": 8
+        },
+        {
+          "error_type": "false_positive",
+          "label": "label_tooth_loss",
+          "label_index": 4,
+          "dataset_index": 139,
+          "checkup_id": "0900-001",
+          "patient_id": "900",
+          "score": 0.7697641253471375,
+          "threshold": 0.5,
+          "ground_truth": 0,
+          "predicted": 1,
+          "radiographs": [
+            {
+              "filename": "0900-001-01.jpg",
+              "source_path": "/home/ubuntu/Projects/thesis-code/data/raw/COde-Dataset/Images/Radiographs/0900-001-01.jpg",
+              "exported_path": "/home/ubuntu/Projects/thesis-code/results/baseline/test_xray_strong_v2/xray_only_max_strength/error_analysis/label_tooth_loss/false_positives/0900-001__patient_900__view_01__0900-001-01.jpg"
+            },
+            {
+              "filename": "0900-001-02.jpg",
+              "source_path": "/home/ubuntu/Projects/thesis-code/data/raw/COde-Dataset/Images/Radiographs/0900-001-02.jpg",
+              "exported_path": "/home/ubuntu/Projects/thesis-code/results/baseline/test_xray_strong_v2/xray_only_max_strength/error_analysis/label_tooth_loss/false_positives/0900-001__patient_900__view_02__0900-001-02.jpg"
+            }
+          ],
+          "rank": 9
+        },
+        {
+          "error_type": "false_positive",
+          "label": "label_tooth_loss",
+          "label_index": 4,
+          "dataset_index": 558,
+          "checkup_id": "4247-001",
+          "patient_id": "4247",
+          "score": 0.7170104384422302,
+          "threshold": 0.5,
+          "ground_truth": 0,
+          "predicted": 1,
+          "radiographs": [
+            {
+              "filename": "4247-001-01.jpg",
+              "source_path": "/home/ubuntu/Projects/thesis-code/data/raw/COde-Dataset/Images/Radiographs/4247-001-01.jpg",
+              "exported_path": "/home/ubuntu/Projects/thesis-code/results/baseline/test_xray_strong_v2/xray_only_max_strength/error_analysis/label_tooth_loss/false_positives/4247-001__patient_4247__view_01__4247-001-01.jpg"
+            },
+            {
+              "filename": "4247-001-02.jpg",
+              "source_path": "/home/ubuntu/Projects/thesis-code/data/raw/COde-Dataset/Images/Radiographs/4247-001-02.jpg",
+              "exported_path": "/home/ubuntu/Projects/thesis-code/results/baseline/test_xray_strong_v2/xray_only_max_strength/error_analysis/label_tooth_loss/false_positives/4247-001__patient_4247__view_02__4247-001-02.jpg"
+            }
+          ],
+          "rank": 10
+        },
+        {
+          "error_type": "false_positive",
+          "label": "label_tooth_loss",
+          "label_index": 4,
+          "dataset_index": 596,
+          "checkup_id": "4026-003",
+          "patient_id": "4026",
+          "score": 0.6805115938186646,
+          "threshold": 0.5,
+          "ground_truth": 0,
+          "predicted": 1,
+          "radiographs": [
+            {
+              "filename": "4026-003-01.jpg",
+              "source_path": "/home/ubuntu/Projects/thesis-code/data/raw/COde-Dataset/Images/Radiographs/4026-003-01.jpg",
+              "exported_path": "/home/ubuntu/Projects/thesis-code/results/baseline/test_xray_strong_v2/xray_only_max_strength/error_analysis/label_tooth_loss/false_positives/4026-003__patient_4026__view_01__4026-003-01.jpg"
+            }
+          ],
+          "rank": 11
+        },
+        {
+          "error_type": "false_positive",
+          "label": "label_tooth_loss",
+          "label_index": 4,
+          "dataset_index": 41,
+          "checkup_id": "0233-002",
+          "patient_id": "233",
+          "score": 0.626435399055481,
+          "threshold": 0.5,
+          "ground_truth": 0,
+          "predicted": 1,
+          "radiographs": [
+            {
+              "filename": "0233-002-01.jpg",
+              "source_path": "/home/ubuntu/Projects/thesis-code/data/raw/COde-Dataset/Images/Radiographs/0233-002-01.jpg",
+              "exported_path": "/home/ubuntu/Projects/thesis-code/results/baseline/test_xray_strong_v2/xray_only_max_strength/error_analysis/label_tooth_loss/false_positives/0233-002__patient_233__view_01__0233-002-01.jpg"
+            }
+          ],
+          "rank": 12
+        },
+        {
+          "error_type": "false_positive",
+          "label": "label_tooth_loss",
+          "label_index": 4,
+          "dataset_index": 11,
+          "checkup_id": "0057-002",
+          "patient_id": "57",
+          "score": 0.626435399055481,
+          "threshold": 0.5,
+          "ground_truth": 0,
+          "predicted": 1,
+          "radiographs": [
+            {
+              "filename": "0057-002-01.jpg",
+              "source_path": "/home/ubuntu/Projects/thesis-code/data/raw/COde-Dataset/Images/Radiographs/0057-002-01.jpg",
+              "exported_path": "/home/ubuntu/Projects/thesis-code/results/baseline/test_xray_strong_v2/xray_only_max_strength/error_analysis/label_tooth_loss/false_positives/0057-002__patient_57__view_01__0057-002-01.jpg"
+            }
+          ],
+          "rank": 13
+        },
+        {
+          "error_type": "false_positive",
+          "label": "label_tooth_loss",
+          "label_index": 4,
+          "dataset_index": 40,
+          "checkup_id": "0233-001",
+          "patient_id": "233",
+          "score": 0.626435399055481,
+          "threshold": 0.5,
+          "ground_truth": 0,
+          "predicted": 1,
+          "radiographs": [
+            {
+              "filename": "0233-001-01.jpg",
+              "source_path": "/home/ubuntu/Projects/thesis-code/data/raw/COde-Dataset/Images/Radiographs/0233-001-01.jpg",
+              "exported_path": "/home/ubuntu/Projects/thesis-code/results/baseline/test_xray_strong_v2/xray_only_max_strength/error_analysis/label_tooth_loss/false_positives/0233-001__patient_233__view_01__0233-001-01.jpg"
+            }
+          ],
+          "rank": 14
+        },
+        {
+          "error_type": "false_positive",
+          "label": "label_tooth_loss",
+          "label_index": 4,
+          "dataset_index": 10,
+          "checkup_id": "0057-001",
+          "patient_id": "57",
+          "score": 0.626435399055481,
+          "threshold": 0.5,
+          "ground_truth": 0,
+          "predicted": 1,
+          "radiographs": [
+            {
+              "filename": "0057-001-01.jpg",
+              "source_path": "/home/ubuntu/Projects/thesis-code/data/raw/COde-Dataset/Images/Radiographs/0057-001-01.jpg",
+              "exported_path": "/home/ubuntu/Projects/thesis-code/results/baseline/test_xray_strong_v2/xray_only_max_strength/error_analysis/label_tooth_loss/false_positives/0057-001__patient_57__view_01__0057-001-01.jpg"
+            }
+          ],
+          "rank": 15
+        }
+      ],
+      "false_negatives": [
+        {
+          "error_type": "false_negative",
+          "label": "label_tooth_loss",
+          "label_index": 4,
+          "dataset_index": 232,
+          "checkup_id": "1532-001",
+          "patient_id": "1532",
+          "score": 9.999997701015673e-07,
+          "threshold": 0.5,
+          "ground_truth": 1,
+          "predicted": 0,
+          "radiographs": [
+            {
+              "filename": "1532-001-01.jpg",
+              "source_path": "/home/ubuntu/Projects/thesis-code/data/raw/COde-Dataset/Images/Radiographs/1532-001-01.jpg",
+              "exported_path": "/home/ubuntu/Projects/thesis-code/results/baseline/test_xray_strong_v2/xray_only_max_strength/error_analysis/label_tooth_loss/false_negatives/1532-001__patient_1532__view_01__1532-001-01.jpg"
+            },
+            {
+              "filename": "1532-001-02.jpg",
+              "source_path": "/home/ubuntu/Projects/thesis-code/data/raw/COde-Dataset/Images/Radiographs/1532-001-02.jpg",
+              "exported_path": "/home/ubuntu/Projects/thesis-code/results/baseline/test_xray_strong_v2/xray_only_max_strength/error_analysis/label_tooth_loss/false_negatives/1532-001__patient_1532__view_02__1532-001-02.jpg"
+            }
+          ],
+          "rank": 1
+        },
+        {
+          "error_type": "false_negative",
+          "label": "label_tooth_loss",
+          "label_index": 4,
+          "dataset_index": 206,
+          "checkup_id": "1392-004",
+          "patient_id": "1392",
+          "score": 9.999997701015673e-07,
+          "threshold": 0.5,
+          "ground_truth": 1,
+          "predicted": 0,
+          "radiographs": [
+            {
+              "filename": "1392-004-01.jpg",
+              "source_path": "/home/ubuntu/Projects/thesis-code/data/raw/COde-Dataset/Images/Radiographs/1392-004-01.jpg",
+              "exported_path": "/home/ubuntu/Projects/thesis-code/results/baseline/test_xray_strong_v2/xray_only_max_strength/error_analysis/label_tooth_loss/false_negatives/1392-004__patient_1392__view_01__1392-004-01.jpg"
+            },
+            {
+              "filename": "1392-004-02.jpg",
+              "source_path": "/home/ubuntu/Projects/thesis-code/data/raw/COde-Dataset/Images/Radiographs/1392-004-02.jpg",
+              "exported_path": "/home/ubuntu/Projects/thesis-code/results/baseline/test_xray_strong_v2/xray_only_max_strength/error_analysis/label_tooth_loss/false_negatives/1392-004__patient_1392__view_02__1392-004-02.jpg"
+            }
+          ],
+          "rank": 2
+        },
+        {
+          "error_type": "false_negative",
+          "label": "label_tooth_loss",
+          "label_index": 4,
+          "dataset_index": 352,
+          "checkup_id": "2605-002",
+          "patient_id": "2605",
+          "score": 9.999997701015673e-07,
+          "threshold": 0.5,
+          "ground_truth": 1,
+          "predicted": 0,
+          "radiographs": [
+            {
+              "filename": "2605-002-01.jpg",
+              "source_path": "/home/ubuntu/Projects/thesis-code/data/raw/COde-Dataset/Images/Radiographs/2605-002-01.jpg",
+              "exported_path": "/home/ubuntu/Projects/thesis-code/results/baseline/test_xray_strong_v2/xray_only_max_strength/error_analysis/label_tooth_loss/false_negatives/2605-002__patient_2605__view_01__2605-002-01.jpg"
+            },
+            {
+              "filename": "2605-002-02.jpg",
+              "source_path": "/home/ubuntu/Projects/thesis-code/data/raw/COde-Dataset/Images/Radiographs/2605-002-02.jpg",
+              "exported_path": "/home/ubuntu/Projects/thesis-code/results/baseline/test_xray_strong_v2/xray_only_max_strength/error_analysis/label_tooth_loss/false_negatives/2605-002__patient_2605__view_02__2605-002-02.jpg"
+            }
+          ],
+          "rank": 3
+        },
+        {
+          "error_type": "false_negative",
+          "label": "label_tooth_loss",
+          "label_index": 4,
+          "dataset_index": 338,
+          "checkup_id": "2389-001",
+          "patient_id": "2389",
+          "score": 9.999997701015673e-07,
+          "threshold": 0.5,
+          "ground_truth": 1,
+          "predicted": 0,
+          "radiographs": [
+            {
+              "filename": "2389-001-01.jpg",
+              "source_path": "/home/ubuntu/Projects/thesis-code/data/raw/COde-Dataset/Images/Radiographs/2389-001-01.jpg",
+              "exported_path": "/home/ubuntu/Projects/thesis-code/results/baseline/test_xray_strong_v2/xray_only_max_strength/error_analysis/label_tooth_loss/false_negatives/2389-001__patient_2389__view_01__2389-001-01.jpg"
+            }
+          ],
+          "rank": 4
+        },
+        {
+          "error_type": "false_negative",
+          "label": "label_tooth_loss",
+          "label_index": 4,
+          "dataset_index": 603,
+          "checkup_id": "2539-002",
+          "patient_id": "2539",
+          "score": 9.999997701015673e-07,
+          "threshold": 0.5,
+          "ground_truth": 1,
+          "predicted": 0,
+          "radiographs": [
+            {
+              "filename": "2539-002-01.jpg",
+              "source_path": "/home/ubuntu/Projects/thesis-code/data/raw/COde-Dataset/Images/Radiographs/2539-002-01.jpg",
+              "exported_path": "/home/ubuntu/Projects/thesis-code/results/baseline/test_xray_strong_v2/xray_only_max_strength/error_analysis/label_tooth_loss/false_negatives/2539-002__patient_2539__view_01__2539-002-01.jpg"
+            },
+            {
+              "filename": "2539-002-02.jpg",
+              "source_path": "/home/ubuntu/Projects/thesis-code/data/raw/COde-Dataset/Images/Radiographs/2539-002-02.jpg",
+              "exported_path": "/home/ubuntu/Projects/thesis-code/results/baseline/test_xray_strong_v2/xray_only_max_strength/error_analysis/label_tooth_loss/false_negatives/2539-002__patient_2539__view_02__2539-002-02.jpg"
+            }
+          ],
+          "rank": 5
+        },
+        {
+          "error_type": "false_negative",
+          "label": "label_tooth_loss",
+          "label_index": 4,
+          "dataset_index": 617,
+          "checkup_id": "4010-003",
+          "patient_id": "4010",
+          "score": 1.5944640381349018e-06,
+          "threshold": 0.5,
+          "ground_truth": 1,
+          "predicted": 0,
+          "radiographs": [
+            {
+              "filename": "4010-003-01.jpg",
+              "source_path": "/home/ubuntu/Projects/thesis-code/data/raw/COde-Dataset/Images/Radiographs/4010-003-01.jpg",
+              "exported_path": "/home/ubuntu/Projects/thesis-code/results/baseline/test_xray_strong_v2/xray_only_max_strength/error_analysis/label_tooth_loss/false_negatives/4010-003__patient_4010__view_01__4010-003-01.jpg"
+            },
+            {
+              "filename": "4010-003-02.jpg",
+              "source_path": "/home/ubuntu/Projects/thesis-code/data/raw/COde-Dataset/Images/Radiographs/4010-003-02.jpg",
+              "exported_path": "/home/ubuntu/Projects/thesis-code/results/baseline/test_xray_strong_v2/xray_only_max_strength/error_analysis/label_tooth_loss/false_negatives/4010-003__patient_4010__view_02__4010-003-02.jpg"
+            }
+          ],
+          "rank": 6
+        },
+        {
+          "error_type": "false_negative",
+          "label": "label_tooth_loss",
+          "label_index": 4,
+          "dataset_index": 531,
+          "checkup_id": "4055-001",
+          "patient_id": "4055",
+          "score": 5.1132997214153875e-06,
+          "threshold": 0.5,
+          "ground_truth": 1,
+          "predicted": 0,
+          "radiographs": [
+            {
+              "filename": "4055-001-01.jpg",
+              "source_path": "/home/ubuntu/Projects/thesis-code/data/raw/COde-Dataset/Images/Radiographs/4055-001-01.jpg",
+              "exported_path": "/home/ubuntu/Projects/thesis-code/results/baseline/test_xray_strong_v2/xray_only_max_strength/error_analysis/label_tooth_loss/false_negatives/4055-001__patient_4055__view_01__4055-001-01.jpg"
+            },
+            {
+              "filename": "4055-001-02.jpg",
+              "source_path": "/home/ubuntu/Projects/thesis-code/data/raw/COde-Dataset/Images/Radiographs/4055-001-02.jpg",
+              "exported_path": "/home/ubuntu/Projects/thesis-code/results/baseline/test_xray_strong_v2/xray_only_max_strength/error_analysis/label_tooth_loss/false_negatives/4055-001__patient_4055__view_02__4055-001-02.jpg"
+            }
+          ],
+          "rank": 7
+        },
+        {
+          "error_type": "false_negative",
+          "label": "label_tooth_loss",
+          "label_index": 4,
+          "dataset_index": 599,
+          "checkup_id": "0778-002",
+          "patient_id": "778",
+          "score": 8.163659913407173e-06,
+          "threshold": 0.5,
+          "ground_truth": 1,
+          "predicted": 0,
+          "radiographs": [
+            {
+              "filename": "0778-002-01.jpg",
+              "source_path": "/home/ubuntu/Projects/thesis-code/data/raw/COde-Dataset/Images/Radiographs/0778-002-01.jpg",
+              "exported_path": "/home/ubuntu/Projects/thesis-code/results/baseline/test_xray_strong_v2/xray_only_max_strength/error_analysis/label_tooth_loss/false_negatives/0778-002__patient_778__view_01__0778-002-01.jpg"
+            },
+            {
+              "filename": "0778-002-02.jpg",
+              "source_path": "/home/ubuntu/Projects/thesis-code/data/raw/COde-Dataset/Images/Radiographs/0778-002-02.jpg",
+              "exported_path": "/home/ubuntu/Projects/thesis-code/results/baseline/test_xray_strong_v2/xray_only_max_strength/error_analysis/label_tooth_loss/false_negatives/0778-002__patient_778__view_02__0778-002-02.jpg"
+            },
+            {
+              "filename": "0778-002-03.jpg",
+              "source_path": "/home/ubuntu/Projects/thesis-code/data/raw/COde-Dataset/Images/Radiographs/0778-002-03.jpg",
+              "exported_path": "/home/ubuntu/Projects/thesis-code/results/baseline/test_xray_strong_v2/xray_only_max_strength/error_analysis/label_tooth_loss/false_negatives/0778-002__patient_778__view_03__0778-002-03.jpg"
+            }
+          ],
+          "rank": 8
+        },
+        {
+          "error_type": "false_negative",
+          "label": "label_tooth_loss",
+          "label_index": 4,
+          "dataset_index": 138,
+          "checkup_id": "0892-002",
+          "patient_id": "892",
+          "score": 1.2493639587773941e-05,
+          "threshold": 0.5,
+          "ground_truth": 1,
+          "predicted": 0,
+          "radiographs": [
+            {
+              "filename": "0892-002-01.jpg",
+              "source_path": "/home/ubuntu/Projects/thesis-code/data/raw/COde-Dataset/Images/Radiographs/0892-002-01.jpg",
+              "exported_path": "/home/ubuntu/Projects/thesis-code/results/baseline/test_xray_strong_v2/xray_only_max_strength/error_analysis/label_tooth_loss/false_negatives/0892-002__patient_892__view_01__0892-002-01.jpg"
+            },
+            {
+              "filename": "0892-002-02.jpg",
+              "source_path": "/home/ubuntu/Projects/thesis-code/data/raw/COde-Dataset/Images/Radiographs/0892-002-02.jpg",
+              "exported_path": "/home/ubuntu/Projects/thesis-code/results/baseline/test_xray_strong_v2/xray_only_max_strength/error_analysis/label_tooth_loss/false_negatives/0892-002__patient_892__view_02__0892-002-02.jpg"
+            }
+          ],
+          "rank": 9
+        },
+        {
+          "error_type": "false_negative",
+          "label": "label_tooth_loss",
+          "label_index": 4,
+          "dataset_index": 344,
+          "checkup_id": "2526-001",
+          "patient_id": "2526",
+          "score": 0.0005578086129389703,
+          "threshold": 0.5,
+          "ground_truth": 1,
+          "predicted": 0,
+          "radiographs": [
+            {
+              "filename": "2526-001-01.jpg",
+              "source_path": "/home/ubuntu/Projects/thesis-code/data/raw/COde-Dataset/Images/Radiographs/2526-001-01.jpg",
+              "exported_path": "/home/ubuntu/Projects/thesis-code/results/baseline/test_xray_strong_v2/xray_only_max_strength/error_analysis/label_tooth_loss/false_negatives/2526-001__patient_2526__view_01__2526-001-01.jpg"
+            },
+            {
+              "filename": "2526-001-02.jpg",
+              "source_path": "/home/ubuntu/Projects/thesis-code/data/raw/COde-Dataset/Images/Radiographs/2526-001-02.jpg",
+              "exported_path": "/home/ubuntu/Projects/thesis-code/results/baseline/test_xray_strong_v2/xray_only_max_strength/error_analysis/label_tooth_loss/false_negatives/2526-001__patient_2526__view_02__2526-001-02.jpg"
+            },
+            {
+              "filename": "2526-001-03.jpg",
+              "source_path": "/home/ubuntu/Projects/thesis-code/data/raw/COde-Dataset/Images/Radiographs/2526-001-03.jpg",
+              "exported_path": "/home/ubuntu/Projects/thesis-code/results/baseline/test_xray_strong_v2/xray_only_max_strength/error_analysis/label_tooth_loss/false_negatives/2526-001__patient_2526__view_03__2526-001-03.jpg"
+            },
+            {
+              "filename": "2526-001-04.jpg",
+              "source_path": "/home/ubuntu/Projects/thesis-code/data/raw/COde-Dataset/Images/Radiographs/2526-001-04.jpg",
+              "exported_path": "/home/ubuntu/Projects/thesis-code/results/baseline/test_xray_strong_v2/xray_only_max_strength/error_analysis/label_tooth_loss/false_negatives/2526-001__patient_2526__view_04__2526-001-04.jpg"
+            },
+            {
+              "filename": "2526-001-05.jpg",
+              "source_path": "/home/ubuntu/Projects/thesis-code/data/raw/COde-Dataset/Images/Radiographs/2526-001-05.jpg",
+              "exported_path": "/home/ubuntu/Projects/thesis-code/results/baseline/test_xray_strong_v2/xray_only_max_strength/error_analysis/label_tooth_loss/false_negatives/2526-001__patient_2526__view_05__2526-001-05.jpg"
+            }
+          ],
+          "rank": 10
+        },
+        {
+          "error_type": "false_negative",
+          "label": "label_tooth_loss",
+          "label_index": 4,
+          "dataset_index": 57,
+          "checkup_id": "0391-004",
+          "patient_id": "391",
+          "score": 0.0010302920127287507,
+          "threshold": 0.5,
+          "ground_truth": 1,
+          "predicted": 0,
+          "radiographs": [
+            {
+              "filename": "0391-004-01.jpg",
+              "source_path": "/home/ubuntu/Projects/thesis-code/data/raw/COde-Dataset/Images/Radiographs/0391-004-01.jpg",
+              "exported_path": "/home/ubuntu/Projects/thesis-code/results/baseline/test_xray_strong_v2/xray_only_max_strength/error_analysis/label_tooth_loss/false_negatives/0391-004__patient_391__view_01__0391-004-01.jpg"
+            }
+          ],
+          "rank": 11
+        },
+        {
+          "error_type": "false_negative",
+          "label": "label_tooth_loss",
+          "label_index": 4,
+          "dataset_index": 154,
+          "checkup_id": "0948-001",
+          "patient_id": "948",
+          "score": 0.006825839169323444,
+          "threshold": 0.5,
+          "ground_truth": 1,
+          "predicted": 0,
+          "radiographs": [
+            {
+              "filename": "0948-001-01.jpg",
+              "source_path": "/home/ubuntu/Projects/thesis-code/data/raw/COde-Dataset/Images/Radiographs/0948-001-01.jpg",
+              "exported_path": "/home/ubuntu/Projects/thesis-code/results/baseline/test_xray_strong_v2/xray_only_max_strength/error_analysis/label_tooth_loss/false_negatives/0948-001__patient_948__view_01__0948-001-01.jpg"
+            },
+            {
+              "filename": "0948-001-02.jpg",
+              "source_path": "/home/ubuntu/Projects/thesis-code/data/raw/COde-Dataset/Images/Radiographs/0948-001-02.jpg",
+              "exported_path": "/home/ubuntu/Projects/thesis-code/results/baseline/test_xray_strong_v2/xray_only_max_strength/error_analysis/label_tooth_loss/false_negatives/0948-001__patient_948__view_02__0948-001-02.jpg"
+            }
+          ],
+          "rank": 12
+        },
+        {
+          "error_type": "false_negative",
+          "label": "label_tooth_loss",
+          "label_index": 4,
+          "dataset_index": 597,
+          "checkup_id": "4481-002",
+          "patient_id": "4481",
+          "score": 0.012671605683863163,
+          "threshold": 0.5,
+          "ground_truth": 1,
+          "predicted": 0,
+          "radiographs": [
+            {
+              "filename": "4481-002-01.jpg",
+              "source_path": "/home/ubuntu/Projects/thesis-code/data/raw/COde-Dataset/Images/Radiographs/4481-002-01.jpg",
+              "exported_path": "/home/ubuntu/Projects/thesis-code/results/baseline/test_xray_strong_v2/xray_only_max_strength/error_analysis/label_tooth_loss/false_negatives/4481-002__patient_4481__view_01__4481-002-01.jpg"
+            }
+          ],
+          "rank": 13
+        },
+        {
+          "error_type": "false_negative",
+          "label": "label_tooth_loss",
+          "label_index": 4,
+          "dataset_index": 519,
+          "checkup_id": "3920-001",
+          "patient_id": "3920",
+          "score": 0.015719903632998466,
+          "threshold": 0.5,
+          "ground_truth": 1,
+          "predicted": 0,
+          "radiographs": [
+            {
+              "filename": "3920-001-01.jpg",
+              "source_path": "/home/ubuntu/Projects/thesis-code/data/raw/COde-Dataset/Images/Radiographs/3920-001-01.jpg",
+              "exported_path": "/home/ubuntu/Projects/thesis-code/results/baseline/test_xray_strong_v2/xray_only_max_strength/error_analysis/label_tooth_loss/false_negatives/3920-001__patient_3920__view_01__3920-001-01.jpg"
+            }
+          ],
+          "rank": 14
+        },
+        {
+          "error_type": "false_negative",
+          "label": "label_tooth_loss",
+          "label_index": 4,
+          "dataset_index": 600,
+          "checkup_id": "1424-002",
+          "patient_id": "1424",
+          "score": 0.021728135645389557,
+          "threshold": 0.5,
+          "ground_truth": 1,
+          "predicted": 0,
+          "radiographs": [
+            {
+              "filename": "1424-002-01.jpg",
+              "source_path": "/home/ubuntu/Projects/thesis-code/data/raw/COde-Dataset/Images/Radiographs/1424-002-01.jpg",
+              "exported_path": "/home/ubuntu/Projects/thesis-code/results/baseline/test_xray_strong_v2/xray_only_max_strength/error_analysis/label_tooth_loss/false_negatives/1424-002__patient_1424__view_01__1424-002-01.jpg"
+            },
+            {
+              "filename": "1424-002-02.jpg",
+              "source_path": "/home/ubuntu/Projects/thesis-code/data/raw/COde-Dataset/Images/Radiographs/1424-002-02.jpg",
+              "exported_path": "/home/ubuntu/Projects/thesis-code/results/baseline/test_xray_strong_v2/xray_only_max_strength/error_analysis/label_tooth_loss/false_negatives/1424-002__patient_1424__view_02__1424-002-02.jpg"
+            }
+          ],
+          "rank": 15
+        }
+      ]
+    },
+    "label_tooth_structure_loss": {
+      "false_positives_available": 17,
+      "false_negatives_available": 13,
+      "false_positives": [
+        {
+          "error_type": "false_positive",
+          "label": "label_tooth_structure_loss",
+          "label_index": 5,
+          "dataset_index": 61,
+          "checkup_id": "0420-002",
+          "patient_id": "420",
+          "score": 0.9895695447921753,
+          "threshold": 0.5,
+          "ground_truth": 0,
+          "predicted": 1,
+          "radiographs": [
+            {
+              "filename": "0420-002-01.jpg",
+              "source_path": "/home/ubuntu/Projects/thesis-code/data/raw/COde-Dataset/Images/Radiographs/0420-002-01.jpg",
+              "exported_path": "/home/ubuntu/Projects/thesis-code/results/baseline/test_xray_strong_v2/xray_only_max_strength/error_analysis/label_tooth_structure_loss/false_positives/0420-002__patient_420__view_01__0420-002-01.jpg"
+            }
+          ],
+          "rank": 1
+        },
+        {
+          "error_type": "false_positive",
+          "label": "label_tooth_structure_loss",
+          "label_index": 5,
+          "dataset_index": 69,
+          "checkup_id": "0645-001",
+          "patient_id": "645",
+          "score": 0.9860162138938904,
+          "threshold": 0.5,
+          "ground_truth": 0,
+          "predicted": 1,
+          "radiographs": [
+            {
+              "filename": "0645-001-01.jpg",
+              "source_path": "/home/ubuntu/Projects/thesis-code/data/raw/COde-Dataset/Images/Radiographs/0645-001-01.jpg",
+              "exported_path": "/home/ubuntu/Projects/thesis-code/results/baseline/test_xray_strong_v2/xray_only_max_strength/error_analysis/label_tooth_structure_loss/false_positives/0645-001__patient_645__view_01__0645-001-01.jpg"
+            },
+            {
+              "filename": "0645-001-02.jpg",
+              "source_path": "/home/ubuntu/Projects/thesis-code/data/raw/COde-Dataset/Images/Radiographs/0645-001-02.jpg",
+              "exported_path": "/home/ubuntu/Projects/thesis-code/results/baseline/test_xray_strong_v2/xray_only_max_strength/error_analysis/label_tooth_structure_loss/false_positives/0645-001__patient_645__view_02__0645-001-02.jpg"
+            }
+          ],
+          "rank": 2
+        },
+        {
+          "error_type": "false_positive",
+          "label": "label_tooth_structure_loss",
+          "label_index": 5,
+          "dataset_index": 11,
+          "checkup_id": "0057-002",
+          "patient_id": "57",
+          "score": 0.9502689838409424,
+          "threshold": 0.5,
+          "ground_truth": 0,
+          "predicted": 1,
+          "radiographs": [
+            {
+              "filename": "0057-002-01.jpg",
+              "source_path": "/home/ubuntu/Projects/thesis-code/data/raw/COde-Dataset/Images/Radiographs/0057-002-01.jpg",
+              "exported_path": "/home/ubuntu/Projects/thesis-code/results/baseline/test_xray_strong_v2/xray_only_max_strength/error_analysis/label_tooth_structure_loss/false_positives/0057-002__patient_57__view_01__0057-002-01.jpg"
+            }
+          ],
+          "rank": 3
+        },
+        {
+          "error_type": "false_positive",
+          "label": "label_tooth_structure_loss",
+          "label_index": 5,
+          "dataset_index": 41,
+          "checkup_id": "0233-002",
+          "patient_id": "233",
+          "score": 0.9502689838409424,
+          "threshold": 0.5,
+          "ground_truth": 0,
+          "predicted": 1,
+          "radiographs": [
+            {
+              "filename": "0233-002-01.jpg",
+              "source_path": "/home/ubuntu/Projects/thesis-code/data/raw/COde-Dataset/Images/Radiographs/0233-002-01.jpg",
+              "exported_path": "/home/ubuntu/Projects/thesis-code/results/baseline/test_xray_strong_v2/xray_only_max_strength/error_analysis/label_tooth_structure_loss/false_positives/0233-002__patient_233__view_01__0233-002-01.jpg"
+            }
+          ],
+          "rank": 4
+        },
+        {
+          "error_type": "false_positive",
+          "label": "label_tooth_structure_loss",
+          "label_index": 5,
+          "dataset_index": 598,
+          "checkup_id": "0722-003",
+          "patient_id": "722",
+          "score": 0.8514821529388428,
+          "threshold": 0.5,
+          "ground_truth": 0,
+          "predicted": 1,
+          "radiographs": [
+            {
+              "filename": "0722-003-01.jpg",
+              "source_path": "/home/ubuntu/Projects/thesis-code/data/raw/COde-Dataset/Images/Radiographs/0722-003-01.jpg",
+              "exported_path": "/home/ubuntu/Projects/thesis-code/results/baseline/test_xray_strong_v2/xray_only_max_strength/error_analysis/label_tooth_structure_loss/false_positives/0722-003__patient_722__view_01__0722-003-01.jpg"
+            },
+            {
+              "filename": "0722-003-02.jpg",
+              "source_path": "/home/ubuntu/Projects/thesis-code/data/raw/COde-Dataset/Images/Radiographs/0722-003-02.jpg",
+              "exported_path": "/home/ubuntu/Projects/thesis-code/results/baseline/test_xray_strong_v2/xray_only_max_strength/error_analysis/label_tooth_structure_loss/false_positives/0722-003__patient_722__view_02__0722-003-02.jpg"
+            },
+            {
+              "filename": "0722-003-03.jpg",
+              "source_path": "/home/ubuntu/Projects/thesis-code/data/raw/COde-Dataset/Images/Radiographs/0722-003-03.jpg",
+              "exported_path": "/home/ubuntu/Projects/thesis-code/results/baseline/test_xray_strong_v2/xray_only_max_strength/error_analysis/label_tooth_structure_loss/false_positives/0722-003__patient_722__view_03__0722-003-03.jpg"
+            },
+            {
+              "filename": "0722-003-04.jpg",
+              "source_path": "/home/ubuntu/Projects/thesis-code/data/raw/COde-Dataset/Images/Radiographs/0722-003-04.jpg",
+              "exported_path": "/home/ubuntu/Projects/thesis-code/results/baseline/test_xray_strong_v2/xray_only_max_strength/error_analysis/label_tooth_structure_loss/false_positives/0722-003__patient_722__view_04__0722-003-04.jpg"
+            }
+          ],
+          "rank": 5
+        },
+        {
+          "error_type": "false_positive",
+          "label": "label_tooth_structure_loss",
+          "label_index": 5,
+          "dataset_index": 89,
+          "checkup_id": "0722-002",
+          "patient_id": "722",
+          "score": 0.8514821529388428,
+          "threshold": 0.5,
+          "ground_truth": 0,
+          "predicted": 1,
+          "radiographs": [
+            {
+              "filename": "0722-002-01.jpg",
+              "source_path": "/home/ubuntu/Projects/thesis-code/data/raw/COde-Dataset/Images/Radiographs/0722-002-01.jpg",
+              "exported_path": "/home/ubuntu/Projects/thesis-code/results/baseline/test_xray_strong_v2/xray_only_max_strength/error_analysis/label_tooth_structure_loss/false_positives/0722-002__patient_722__view_01__0722-002-01.jpg"
+            },
+            {
+              "filename": "0722-002-02.jpg",
+              "source_path": "/home/ubuntu/Projects/thesis-code/data/raw/COde-Dataset/Images/Radiographs/0722-002-02.jpg",
+              "exported_path": "/home/ubuntu/Projects/thesis-code/results/baseline/test_xray_strong_v2/xray_only_max_strength/error_analysis/label_tooth_structure_loss/false_positives/0722-002__patient_722__view_02__0722-002-02.jpg"
+            },
+            {
+              "filename": "0722-002-03.jpg",
+              "source_path": "/home/ubuntu/Projects/thesis-code/data/raw/COde-Dataset/Images/Radiographs/0722-002-03.jpg",
+              "exported_path": "/home/ubuntu/Projects/thesis-code/results/baseline/test_xray_strong_v2/xray_only_max_strength/error_analysis/label_tooth_structure_loss/false_positives/0722-002__patient_722__view_03__0722-002-03.jpg"
+            },
+            {
+              "filename": "0722-002-04.jpg",
+              "source_path": "/home/ubuntu/Projects/thesis-code/data/raw/COde-Dataset/Images/Radiographs/0722-002-04.jpg",
+              "exported_path": "/home/ubuntu/Projects/thesis-code/results/baseline/test_xray_strong_v2/xray_only_max_strength/error_analysis/label_tooth_structure_loss/false_positives/0722-002__patient_722__view_04__0722-002-04.jpg"
+            }
+          ],
+          "rank": 6
+        },
+        {
+          "error_type": "false_positive",
+          "label": "label_tooth_structure_loss",
+          "label_index": 5,
+          "dataset_index": 65,
+          "checkup_id": "0552-001",
+          "patient_id": "552",
+          "score": 0.7376479506492615,
+          "threshold": 0.5,
+          "ground_truth": 0,
+          "predicted": 1,
+          "radiographs": [
+            {
+              "filename": "0552-001-01.jpg",
+              "source_path": "/home/ubuntu/Projects/thesis-code/data/raw/COde-Dataset/Images/Radiographs/0552-001-01.jpg",
+              "exported_path": "/home/ubuntu/Projects/thesis-code/results/baseline/test_xray_strong_v2/xray_only_max_strength/error_analysis/label_tooth_structure_loss/false_positives/0552-001__patient_552__view_01__0552-001-01.jpg"
+            }
+          ],
+          "rank": 7
+        },
+        {
+          "error_type": "false_positive",
+          "label": "label_tooth_structure_loss",
+          "label_index": 5,
+          "dataset_index": 615,
+          "checkup_id": "4643-001",
+          "patient_id": "4643",
+          "score": 0.6899923086166382,
+          "threshold": 0.5,
+          "ground_truth": 0,
+          "predicted": 1,
+          "radiographs": [
+            {
+              "filename": "4643-001-01.jpg",
+              "source_path": "/home/ubuntu/Projects/thesis-code/data/raw/COde-Dataset/Images/Radiographs/4643-001-01.jpg",
+              "exported_path": "/home/ubuntu/Projects/thesis-code/results/baseline/test_xray_strong_v2/xray_only_max_strength/error_analysis/label_tooth_structure_loss/false_positives/4643-001__patient_4643__view_01__4643-001-01.jpg"
+            },
+            {
+              "filename": "4643-001-02.jpg",
+              "source_path": "/home/ubuntu/Projects/thesis-code/data/raw/COde-Dataset/Images/Radiographs/4643-001-02.jpg",
+              "exported_path": "/home/ubuntu/Projects/thesis-code/results/baseline/test_xray_strong_v2/xray_only_max_strength/error_analysis/label_tooth_structure_loss/false_positives/4643-001__patient_4643__view_02__4643-001-02.jpg"
+            },
+            {
+              "filename": "4643-001-03.jpg",
+              "source_path": "/home/ubuntu/Projects/thesis-code/data/raw/COde-Dataset/Images/Radiographs/4643-001-03.jpg",
+              "exported_path": "/home/ubuntu/Projects/thesis-code/results/baseline/test_xray_strong_v2/xray_only_max_strength/error_analysis/label_tooth_structure_loss/false_positives/4643-001__patient_4643__view_03__4643-001-03.jpg"
+            },
+            {
+              "filename": "4643-001-04.jpg",
+              "source_path": "/home/ubuntu/Projects/thesis-code/data/raw/COde-Dataset/Images/Radiographs/4643-001-04.jpg",
+              "exported_path": "/home/ubuntu/Projects/thesis-code/results/baseline/test_xray_strong_v2/xray_only_max_strength/error_analysis/label_tooth_structure_loss/false_positives/4643-001__patient_4643__view_04__4643-001-04.jpg"
+            },
+            {
+              "filename": "4643-001-05.jpg",
+              "source_path": "/home/ubuntu/Projects/thesis-code/data/raw/COde-Dataset/Images/Radiographs/4643-001-05.jpg",
+              "exported_path": "/home/ubuntu/Projects/thesis-code/results/baseline/test_xray_strong_v2/xray_only_max_strength/error_analysis/label_tooth_structure_loss/false_positives/4643-001__patient_4643__view_05__4643-001-05.jpg"
+            },
+            {
+              "filename": "4643-001-06.jpg",
+              "source_path": "/home/ubuntu/Projects/thesis-code/data/raw/COde-Dataset/Images/Radiographs/4643-001-06.jpg",
+              "exported_path": "/home/ubuntu/Projects/thesis-code/results/baseline/test_xray_strong_v2/xray_only_max_strength/error_analysis/label_tooth_structure_loss/false_positives/4643-001__patient_4643__view_06__4643-001-06.jpg"
+            },
+            {
+              "filename": "4643-001-07.jpg",
+              "source_path": "/home/ubuntu/Projects/thesis-code/data/raw/COde-Dataset/Images/Radiographs/4643-001-07.jpg",
+              "exported_path": "/home/ubuntu/Projects/thesis-code/results/baseline/test_xray_strong_v2/xray_only_max_strength/error_analysis/label_tooth_structure_loss/false_positives/4643-001__patient_4643__view_07__4643-001-07.jpg"
+            }
+          ],
+          "rank": 8
+        },
+        {
+          "error_type": "false_positive",
+          "label": "label_tooth_structure_loss",
+          "label_index": 5,
+          "dataset_index": 208,
+          "checkup_id": "1400-003",
+          "patient_id": "1400",
+          "score": 0.6850694417953491,
+          "threshold": 0.5,
+          "ground_truth": 0,
+          "predicted": 1,
+          "radiographs": [
+            {
+              "filename": "1400-003-01.jpg",
+              "source_path": "/home/ubuntu/Projects/thesis-code/data/raw/COde-Dataset/Images/Radiographs/1400-003-01.jpg",
+              "exported_path": "/home/ubuntu/Projects/thesis-code/results/baseline/test_xray_strong_v2/xray_only_max_strength/error_analysis/label_tooth_structure_loss/false_positives/1400-003__patient_1400__view_01__1400-003-01.jpg"
+            }
+          ],
+          "rank": 9
+        },
+        {
+          "error_type": "false_positive",
+          "label": "label_tooth_structure_loss",
+          "label_index": 5,
+          "dataset_index": 176,
+          "checkup_id": "1051-003",
+          "patient_id": "1051",
+          "score": 0.6850694417953491,
+          "threshold": 0.5,
+          "ground_truth": 0,
+          "predicted": 1,
+          "radiographs": [
+            {
+              "filename": "1051-003-01.jpg",
+              "source_path": "/home/ubuntu/Projects/thesis-code/data/raw/COde-Dataset/Images/Radiographs/1051-003-01.jpg",
+              "exported_path": "/home/ubuntu/Projects/thesis-code/results/baseline/test_xray_strong_v2/xray_only_max_strength/error_analysis/label_tooth_structure_loss/false_positives/1051-003__patient_1051__view_01__1051-003-01.jpg"
+            }
+          ],
+          "rank": 10
+        },
+        {
+          "error_type": "false_positive",
+          "label": "label_tooth_structure_loss",
+          "label_index": 5,
+          "dataset_index": 313,
+          "checkup_id": "2167-001",
+          "patient_id": "2167",
+          "score": 0.6732140779495239,
+          "threshold": 0.5,
+          "ground_truth": 0,
+          "predicted": 1,
+          "radiographs": [
+            {
+              "filename": "2167-001-01.jpg",
+              "source_path": "/home/ubuntu/Projects/thesis-code/data/raw/COde-Dataset/Images/Radiographs/2167-001-01.jpg",
+              "exported_path": "/home/ubuntu/Projects/thesis-code/results/baseline/test_xray_strong_v2/xray_only_max_strength/error_analysis/label_tooth_structure_loss/false_positives/2167-001__patient_2167__view_01__2167-001-01.jpg"
+            }
+          ],
+          "rank": 11
+        },
+        {
+          "error_type": "false_positive",
+          "label": "label_tooth_structure_loss",
+          "label_index": 5,
+          "dataset_index": 341,
+          "checkup_id": "2429-001",
+          "patient_id": "2429",
+          "score": 0.5643829107284546,
+          "threshold": 0.5,
+          "ground_truth": 0,
+          "predicted": 1,
+          "radiographs": [
+            {
+              "filename": "2429-001-01.jpg",
+              "source_path": "/home/ubuntu/Projects/thesis-code/data/raw/COde-Dataset/Images/Radiographs/2429-001-01.jpg",
+              "exported_path": "/home/ubuntu/Projects/thesis-code/results/baseline/test_xray_strong_v2/xray_only_max_strength/error_analysis/label_tooth_structure_loss/false_positives/2429-001__patient_2429__view_01__2429-001-01.jpg"
+            },
+            {
+              "filename": "2429-001-02.jpg",
+              "source_path": "/home/ubuntu/Projects/thesis-code/data/raw/COde-Dataset/Images/Radiographs/2429-001-02.jpg",
+              "exported_path": "/home/ubuntu/Projects/thesis-code/results/baseline/test_xray_strong_v2/xray_only_max_strength/error_analysis/label_tooth_structure_loss/false_positives/2429-001__patient_2429__view_02__2429-001-02.jpg"
+            }
+          ],
+          "rank": 12
+        },
+        {
+          "error_type": "false_positive",
+          "label": "label_tooth_structure_loss",
+          "label_index": 5,
+          "dataset_index": 512,
+          "checkup_id": "3797-001",
+          "patient_id": "3797",
+          "score": 0.5626498460769653,
+          "threshold": 0.5,
+          "ground_truth": 0,
+          "predicted": 1,
+          "radiographs": [
+            {
+              "filename": "3797-001-01.jpg",
+              "source_path": "/home/ubuntu/Projects/thesis-code/data/raw/COde-Dataset/Images/Radiographs/3797-001-01.jpg",
+              "exported_path": "/home/ubuntu/Projects/thesis-code/results/baseline/test_xray_strong_v2/xray_only_max_strength/error_analysis/label_tooth_structure_loss/false_positives/3797-001__patient_3797__view_01__3797-001-01.jpg"
+            },
+            {
+              "filename": "3797-001-02.jpg",
+              "source_path": "/home/ubuntu/Projects/thesis-code/data/raw/COde-Dataset/Images/Radiographs/3797-001-02.jpg",
+              "exported_path": "/home/ubuntu/Projects/thesis-code/results/baseline/test_xray_strong_v2/xray_only_max_strength/error_analysis/label_tooth_structure_loss/false_positives/3797-001__patient_3797__view_02__3797-001-02.jpg"
+            },
+            {
+              "filename": "3797-001-03.jpg",
+              "source_path": "/home/ubuntu/Projects/thesis-code/data/raw/COde-Dataset/Images/Radiographs/3797-001-03.jpg",
+              "exported_path": "/home/ubuntu/Projects/thesis-code/results/baseline/test_xray_strong_v2/xray_only_max_strength/error_analysis/label_tooth_structure_loss/false_positives/3797-001__patient_3797__view_03__3797-001-03.jpg"
+            },
+            {
+              "filename": "3797-001-04.jpg",
+              "source_path": "/home/ubuntu/Projects/thesis-code/data/raw/COde-Dataset/Images/Radiographs/3797-001-04.jpg",
+              "exported_path": "/home/ubuntu/Projects/thesis-code/results/baseline/test_xray_strong_v2/xray_only_max_strength/error_analysis/label_tooth_structure_loss/false_positives/3797-001__patient_3797__view_04__3797-001-04.jpg"
+            }
+          ],
+          "rank": 13
+        },
+        {
+          "error_type": "false_positive",
+          "label": "label_tooth_structure_loss",
+          "label_index": 5,
+          "dataset_index": 4,
+          "checkup_id": "0032-001",
+          "patient_id": "32",
+          "score": 0.5580969452857971,
+          "threshold": 0.5,
+          "ground_truth": 0,
+          "predicted": 1,
+          "radiographs": [
+            {
+              "filename": "0032-001-01.jpg",
+              "source_path": "/home/ubuntu/Projects/thesis-code/data/raw/COde-Dataset/Images/Radiographs/0032-001-01.jpg",
+              "exported_path": "/home/ubuntu/Projects/thesis-code/results/baseline/test_xray_strong_v2/xray_only_max_strength/error_analysis/label_tooth_structure_loss/false_positives/0032-001__patient_32__view_01__0032-001-01.jpg"
+            },
+            {
+              "filename": "0032-001-02.jpg",
+              "source_path": "/home/ubuntu/Projects/thesis-code/data/raw/COde-Dataset/Images/Radiographs/0032-001-02.jpg",
+              "exported_path": "/home/ubuntu/Projects/thesis-code/results/baseline/test_xray_strong_v2/xray_only_max_strength/error_analysis/label_tooth_structure_loss/false_positives/0032-001__patient_32__view_02__0032-001-02.jpg"
+            }
+          ],
+          "rank": 14
+        },
+        {
+          "error_type": "false_positive",
+          "label": "label_tooth_structure_loss",
+          "label_index": 5,
+          "dataset_index": 85,
+          "checkup_id": "0676-001",
+          "patient_id": "676",
+          "score": 0.5472628474235535,
+          "threshold": 0.5,
+          "ground_truth": 0,
+          "predicted": 1,
+          "radiographs": [
+            {
+              "filename": "0676-001-01.jpg",
+              "source_path": "/home/ubuntu/Projects/thesis-code/data/raw/COde-Dataset/Images/Radiographs/0676-001-01.jpg",
+              "exported_path": "/home/ubuntu/Projects/thesis-code/results/baseline/test_xray_strong_v2/xray_only_max_strength/error_analysis/label_tooth_structure_loss/false_positives/0676-001__patient_676__view_01__0676-001-01.jpg"
+            },
+            {
+              "filename": "0676-001-02.jpg",
+              "source_path": "/home/ubuntu/Projects/thesis-code/data/raw/COde-Dataset/Images/Radiographs/0676-001-02.jpg",
+              "exported_path": "/home/ubuntu/Projects/thesis-code/results/baseline/test_xray_strong_v2/xray_only_max_strength/error_analysis/label_tooth_structure_loss/false_positives/0676-001__patient_676__view_02__0676-001-02.jpg"
+            },
+            {
+              "filename": "0676-001-03.jpg",
+              "source_path": "/home/ubuntu/Projects/thesis-code/data/raw/COde-Dataset/Images/Radiographs/0676-001-03.jpg",
+              "exported_path": "/home/ubuntu/Projects/thesis-code/results/baseline/test_xray_strong_v2/xray_only_max_strength/error_analysis/label_tooth_structure_loss/false_positives/0676-001__patient_676__view_03__0676-001-03.jpg"
+            },
+            {
+              "filename": "0676-001-04.jpg",
+              "source_path": "/home/ubuntu/Projects/thesis-code/data/raw/COde-Dataset/Images/Radiographs/0676-001-04.jpg",
+              "exported_path": "/home/ubuntu/Projects/thesis-code/results/baseline/test_xray_strong_v2/xray_only_max_strength/error_analysis/label_tooth_structure_loss/false_positives/0676-001__patient_676__view_04__0676-001-04.jpg"
+            }
+          ],
+          "rank": 15
+        }
+      ],
+      "false_negatives": [
+        {
+          "error_type": "false_negative",
+          "label": "label_tooth_structure_loss",
+          "label_index": 5,
+          "dataset_index": 114,
+          "checkup_id": "0805-001",
+          "patient_id": "805",
+          "score": 9.999997701015673e-07,
+          "threshold": 0.5,
+          "ground_truth": 1,
+          "predicted": 0,
+          "radiographs": [
+            {
+              "filename": "0805-001-01.jpg",
+              "source_path": "/home/ubuntu/Projects/thesis-code/data/raw/COde-Dataset/Images/Radiographs/0805-001-01.jpg",
+              "exported_path": "/home/ubuntu/Projects/thesis-code/results/baseline/test_xray_strong_v2/xray_only_max_strength/error_analysis/label_tooth_structure_loss/false_negatives/0805-001__patient_805__view_01__0805-001-01.jpg"
+            },
+            {
+              "filename": "0805-001-02.jpg",
+              "source_path": "/home/ubuntu/Projects/thesis-code/data/raw/COde-Dataset/Images/Radiographs/0805-001-02.jpg",
+              "exported_path": "/home/ubuntu/Projects/thesis-code/results/baseline/test_xray_strong_v2/xray_only_max_strength/error_analysis/label_tooth_structure_loss/false_negatives/0805-001__patient_805__view_02__0805-001-02.jpg"
+            }
+          ],
+          "rank": 1
+        },
+        {
+          "error_type": "false_negative",
+          "label": "label_tooth_structure_loss",
+          "label_index": 5,
+          "dataset_index": 364,
+          "checkup_id": "2746-001",
+          "patient_id": "2746",
+          "score": 9.999997701015673e-07,
+          "threshold": 0.5,
+          "ground_truth": 1,
+          "predicted": 0,
+          "radiographs": [
+            {
+              "filename": "2746-001-01.jpg",
+              "source_path": "/home/ubuntu/Projects/thesis-code/data/raw/COde-Dataset/Images/Radiographs/2746-001-01.jpg",
+              "exported_path": "/home/ubuntu/Projects/thesis-code/results/baseline/test_xray_strong_v2/xray_only_max_strength/error_analysis/label_tooth_structure_loss/false_negatives/2746-001__patient_2746__view_01__2746-001-01.jpg"
+            },
+            {
+              "filename": "2746-001-02.jpg",
+              "source_path": "/home/ubuntu/Projects/thesis-code/data/raw/COde-Dataset/Images/Radiographs/2746-001-02.jpg",
+              "exported_path": "/home/ubuntu/Projects/thesis-code/results/baseline/test_xray_strong_v2/xray_only_max_strength/error_analysis/label_tooth_structure_loss/false_negatives/2746-001__patient_2746__view_02__2746-001-02.jpg"
+            }
+          ],
+          "rank": 2
+        },
+        {
+          "error_type": "false_negative",
+          "label": "label_tooth_structure_loss",
+          "label_index": 5,
+          "dataset_index": 475,
+          "checkup_id": "3343-002",
+          "patient_id": "3343",
+          "score": 9.999997701015673e-07,
+          "threshold": 0.5,
+          "ground_truth": 1,
+          "predicted": 0,
+          "radiographs": [
+            {
+              "filename": "3343-002-01.jpg",
+              "source_path": "/home/ubuntu/Projects/thesis-code/data/raw/COde-Dataset/Images/Radiographs/3343-002-01.jpg",
+              "exported_path": "/home/ubuntu/Projects/thesis-code/results/baseline/test_xray_strong_v2/xray_only_max_strength/error_analysis/label_tooth_structure_loss/false_negatives/3343-002__patient_3343__view_01__3343-002-01.jpg"
+            }
+          ],
+          "rank": 3
+        },
+        {
+          "error_type": "false_negative",
+          "label": "label_tooth_structure_loss",
+          "label_index": 5,
+          "dataset_index": 169,
+          "checkup_id": "1018-001",
+          "patient_id": "1018",
+          "score": 2.2293172605714062e-06,
+          "threshold": 0.5,
+          "ground_truth": 1,
+          "predicted": 0,
+          "radiographs": [
+            {
+              "filename": "1018-001-01.jpg",
+              "source_path": "/home/ubuntu/Projects/thesis-code/data/raw/COde-Dataset/Images/Radiographs/1018-001-01.jpg",
+              "exported_path": "/home/ubuntu/Projects/thesis-code/results/baseline/test_xray_strong_v2/xray_only_max_strength/error_analysis/label_tooth_structure_loss/false_negatives/1018-001__patient_1018__view_01__1018-001-01.jpg"
+            },
+            {
+              "filename": "1018-001-02.jpg",
+              "source_path": "/home/ubuntu/Projects/thesis-code/data/raw/COde-Dataset/Images/Radiographs/1018-001-02.jpg",
+              "exported_path": "/home/ubuntu/Projects/thesis-code/results/baseline/test_xray_strong_v2/xray_only_max_strength/error_analysis/label_tooth_structure_loss/false_negatives/1018-001__patient_1018__view_02__1018-001-02.jpg"
+            }
+          ],
+          "rank": 4
+        },
+        {
+          "error_type": "false_negative",
+          "label": "label_tooth_structure_loss",
+          "label_index": 5,
+          "dataset_index": 489,
+          "checkup_id": "3553-001",
+          "patient_id": "3553",
+          "score": 1.554613481857814e-05,
+          "threshold": 0.5,
+          "ground_truth": 1,
+          "predicted": 0,
+          "radiographs": [
+            {
+              "filename": "3553-001-01.jpg",
+              "source_path": "/home/ubuntu/Projects/thesis-code/data/raw/COde-Dataset/Images/Radiographs/3553-001-01.jpg",
+              "exported_path": "/home/ubuntu/Projects/thesis-code/results/baseline/test_xray_strong_v2/xray_only_max_strength/error_analysis/label_tooth_structure_loss/false_negatives/3553-001__patient_3553__view_01__3553-001-01.jpg"
+            }
+          ],
+          "rank": 5
+        },
+        {
+          "error_type": "false_negative",
+          "label": "label_tooth_structure_loss",
+          "label_index": 5,
+          "dataset_index": 240,
+          "checkup_id": "1585-001",
+          "patient_id": "1585",
+          "score": 0.00012161781342001632,
+          "threshold": 0.5,
+          "ground_truth": 1,
+          "predicted": 0,
+          "radiographs": [
+            {
+              "filename": "1585-001-01.jpg",
+              "source_path": "/home/ubuntu/Projects/thesis-code/data/raw/COde-Dataset/Images/Radiographs/1585-001-01.jpg",
+              "exported_path": "/home/ubuntu/Projects/thesis-code/results/baseline/test_xray_strong_v2/xray_only_max_strength/error_analysis/label_tooth_structure_loss/false_negatives/1585-001__patient_1585__view_01__1585-001-01.jpg"
+            }
+          ],
+          "rank": 6
+        },
+        {
+          "error_type": "false_negative",
+          "label": "label_tooth_structure_loss",
+          "label_index": 5,
+          "dataset_index": 347,
+          "checkup_id": "2573-001",
+          "patient_id": "2573",
+          "score": 0.004073016811162233,
+          "threshold": 0.5,
+          "ground_truth": 1,
+          "predicted": 0,
+          "radiographs": [
+            {
+              "filename": "2573-001-01.jpg",
+              "source_path": "/home/ubuntu/Projects/thesis-code/data/raw/COde-Dataset/Images/Radiographs/2573-001-01.jpg",
+              "exported_path": "/home/ubuntu/Projects/thesis-code/results/baseline/test_xray_strong_v2/xray_only_max_strength/error_analysis/label_tooth_structure_loss/false_negatives/2573-001__patient_2573__view_01__2573-001-01.jpg"
+            }
+          ],
+          "rank": 7
+        },
+        {
+          "error_type": "false_negative",
+          "label": "label_tooth_structure_loss",
+          "label_index": 5,
+          "dataset_index": 57,
+          "checkup_id": "0391-004",
+          "patient_id": "391",
+          "score": 0.0139541020616889,
+          "threshold": 0.5,
+          "ground_truth": 1,
+          "predicted": 0,
+          "radiographs": [
+            {
+              "filename": "0391-004-01.jpg",
+              "source_path": "/home/ubuntu/Projects/thesis-code/data/raw/COde-Dataset/Images/Radiographs/0391-004-01.jpg",
+              "exported_path": "/home/ubuntu/Projects/thesis-code/results/baseline/test_xray_strong_v2/xray_only_max_strength/error_analysis/label_tooth_structure_loss/false_negatives/0391-004__patient_391__view_01__0391-004-01.jpg"
+            }
+          ],
+          "rank": 8
+        },
+        {
+          "error_type": "false_negative",
+          "label": "label_tooth_structure_loss",
+          "label_index": 5,
+          "dataset_index": 555,
+          "checkup_id": "1046-002",
+          "patient_id": "1046",
+          "score": 0.026136046275496483,
+          "threshold": 0.5,
+          "ground_truth": 1,
+          "predicted": 0,
+          "radiographs": [
+            {
+              "filename": "1046-002-01.jpg",
+              "source_path": "/home/ubuntu/Projects/thesis-code/data/raw/COde-Dataset/Images/Radiographs/1046-002-01.jpg",
+              "exported_path": "/home/ubuntu/Projects/thesis-code/results/baseline/test_xray_strong_v2/xray_only_max_strength/error_analysis/label_tooth_structure_loss/false_negatives/1046-002__patient_1046__view_01__1046-002-01.jpg"
+            }
+          ],
+          "rank": 9
+        },
+        {
+          "error_type": "false_negative",
+          "label": "label_tooth_structure_loss",
+          "label_index": 5,
+          "dataset_index": 346,
+          "checkup_id": "2567-001",
+          "patient_id": "2567",
+          "score": 0.03578850254416466,
+          "threshold": 0.5,
+          "ground_truth": 1,
+          "predicted": 0,
+          "radiographs": [
+            {
+              "filename": "2567-001-01.jpg",
+              "source_path": "/home/ubuntu/Projects/thesis-code/data/raw/COde-Dataset/Images/Radiographs/2567-001-01.jpg",
+              "exported_path": "/home/ubuntu/Projects/thesis-code/results/baseline/test_xray_strong_v2/xray_only_max_strength/error_analysis/label_tooth_structure_loss/false_negatives/2567-001__patient_2567__view_01__2567-001-01.jpg"
+            },
+            {
+              "filename": "2567-001-02.jpg",
+              "source_path": "/home/ubuntu/Projects/thesis-code/data/raw/COde-Dataset/Images/Radiographs/2567-001-02.jpg",
+              "exported_path": "/home/ubuntu/Projects/thesis-code/results/baseline/test_xray_strong_v2/xray_only_max_strength/error_analysis/label_tooth_structure_loss/false_negatives/2567-001__patient_2567__view_02__2567-001-02.jpg"
+            },
+            {
+              "filename": "2567-001-03.jpg",
+              "source_path": "/home/ubuntu/Projects/thesis-code/data/raw/COde-Dataset/Images/Radiographs/2567-001-03.jpg",
+              "exported_path": "/home/ubuntu/Projects/thesis-code/results/baseline/test_xray_strong_v2/xray_only_max_strength/error_analysis/label_tooth_structure_loss/false_negatives/2567-001__patient_2567__view_03__2567-001-03.jpg"
+            },
+            {
+              "filename": "2567-001-04.jpg",
+              "source_path": "/home/ubuntu/Projects/thesis-code/data/raw/COde-Dataset/Images/Radiographs/2567-001-04.jpg",
+              "exported_path": "/home/ubuntu/Projects/thesis-code/results/baseline/test_xray_strong_v2/xray_only_max_strength/error_analysis/label_tooth_structure_loss/false_negatives/2567-001__patient_2567__view_04__2567-001-04.jpg"
+            }
+          ],
+          "rank": 10
+        },
+        {
+          "error_type": "false_negative",
+          "label": "label_tooth_structure_loss",
+          "label_index": 5,
+          "dataset_index": 550,
+          "checkup_id": "0264-002",
+          "patient_id": "264",
+          "score": 0.03919503092765808,
+          "threshold": 0.5,
+          "ground_truth": 1,
+          "predicted": 0,
+          "radiographs": [
+            {
+              "filename": "0264-002-01.jpg",
+              "source_path": "/home/ubuntu/Projects/thesis-code/data/raw/COde-Dataset/Images/Radiographs/0264-002-01.jpg",
+              "exported_path": "/home/ubuntu/Projects/thesis-code/results/baseline/test_xray_strong_v2/xray_only_max_strength/error_analysis/label_tooth_structure_loss/false_negatives/0264-002__patient_264__view_01__0264-002-01.jpg"
+            }
+          ],
+          "rank": 11
+        },
+        {
+          "error_type": "false_negative",
+          "label": "label_tooth_structure_loss",
+          "label_index": 5,
+          "dataset_index": 519,
+          "checkup_id": "3920-001",
+          "patient_id": "3920",
+          "score": 0.15046538412570953,
+          "threshold": 0.5,
+          "ground_truth": 1,
+          "predicted": 0,
+          "radiographs": [
+            {
+              "filename": "3920-001-01.jpg",
+              "source_path": "/home/ubuntu/Projects/thesis-code/data/raw/COde-Dataset/Images/Radiographs/3920-001-01.jpg",
+              "exported_path": "/home/ubuntu/Projects/thesis-code/results/baseline/test_xray_strong_v2/xray_only_max_strength/error_analysis/label_tooth_structure_loss/false_negatives/3920-001__patient_3920__view_01__3920-001-01.jpg"
+            }
+          ],
+          "rank": 12
+        },
+        {
+          "error_type": "false_negative",
+          "label": "label_tooth_structure_loss",
+          "label_index": 5,
+          "dataset_index": 48,
+          "checkup_id": "0252-005",
+          "patient_id": "252",
+          "score": 0.2983947992324829,
+          "threshold": 0.5,
+          "ground_truth": 1,
+          "predicted": 0,
+          "radiographs": [
+            {
+              "filename": "0252-005-01.jpg",
+              "source_path": "/home/ubuntu/Projects/thesis-code/data/raw/COde-Dataset/Images/Radiographs/0252-005-01.jpg",
+              "exported_path": "/home/ubuntu/Projects/thesis-code/results/baseline/test_xray_strong_v2/xray_only_max_strength/error_analysis/label_tooth_structure_loss/false_negatives/0252-005__patient_252__view_01__0252-005-01.jpg"
+            },
+            {
+              "filename": "0252-005-02.jpg",
+              "source_path": "/home/ubuntu/Projects/thesis-code/data/raw/COde-Dataset/Images/Radiographs/0252-005-02.jpg",
+              "exported_path": "/home/ubuntu/Projects/thesis-code/results/baseline/test_xray_strong_v2/xray_only_max_strength/error_analysis/label_tooth_structure_loss/false_negatives/0252-005__patient_252__view_02__0252-005-02.jpg"
+            }
+          ],
+          "rank": 13
+        }
+      ]
+    }
+  }
+}

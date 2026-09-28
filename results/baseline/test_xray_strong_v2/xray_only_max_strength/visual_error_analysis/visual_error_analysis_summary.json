@@ -1,0 +1,39 @@
+{
+  "source_json": "/home/ubuntu/Projects/thesis-code/results/baseline/test_xray_strong_v2/xray_only_max_strength/error_analysis/error_analysis_test.json",
+  "output_root": "/home/ubuntu/Projects/thesis-code/results/baseline/test_xray_strong_v2/xray_only_max_strength/visual_error_analysis",
+  "top_cases_per_label_error_type": 15,
+  "max_views_per_case": 5,
+  "labels": [
+    "label_caries",
+    "label_tooth_loss",
+    "label_tooth_structure_loss"
+  ],
+  "generated_files": [
+    "/home/ubuntu/Projects/thesis-code/results/baseline/test_xray_strong_v2/xray_only_max_strength/visual_error_analysis/label_caries/false_positives_top15.png",
+    "/home/ubuntu/Projects/thesis-code/results/baseline/test_xray_strong_v2/xray_only_max_strength/visual_error_analysis/label_caries/false_negatives_top15.png",
+    "/home/ubuntu/Projects/thesis-code/results/baseline/test_xray_strong_v2/xray_only_max_strength/visual_error_analysis/label_tooth_loss/false_positives_top15.png",
+    "/home/ubuntu/Projects/thesis-code/results/baseline/test_xray_strong_v2/xray_only_max_strength/visual_error_analysis/label_tooth_loss/false_negatives_top15.png",
+    "/home/ubuntu/Projects/thesis-code/results/baseline/test_xray_strong_v2/xray_only_max_strength/visual_error_analysis/label_tooth_structure_loss/false_positives_top15.png",
+    "/home/ubuntu/Projects/thesis-code/results/baseline/test_xray_strong_v2/xray_only_max_strength/visual_error_analysis/label_tooth_structure_loss/false_negatives_top15.png"
+  ],
+  "cases": {
+    "label_caries": {
+      "false_positives_available": 24,
+      "false_negatives_available": 67,
+      "false_positives_visualized": 15,
+      "false_negatives_visualized": 15
+    },
+    "label_tooth_loss": {
+      "false_positives_available": 16,
+      "false_negatives_available": 19,
+      "false_positives_visualized": 15,
+      "false_negatives_visualized": 15
+    },
+    "label_tooth_structure_loss": {
+      "false_positives_available": 17,
+      "false_negatives_available": 13,
+      "false_positives_visualized": 15,
+      "false_negatives_visualized": 13
+    }
+  }
+}
