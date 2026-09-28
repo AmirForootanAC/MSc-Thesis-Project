@@ -1,0 +1,41 @@
+patient_id,checkup_id,label,matched_term,anomalies_en
+1,0001-003,label_tooth_loss,tooth loss,"Dental Fluorosis,Tooth Wear,Enamel Hypoplasia,Dental Caries"
+8,0008-001,label_tooth_loss,edentulous,Dental Caries
+175,0175-001,label_tooth_loss,missing teeth,"Convex Profile,Dental Crowding"
+224,0224-001,label_caries,caries,"Restoration Defect,Periapical Periodontitis,Pulpitis"
+251,0251-003,label_tooth_loss,tooth loss,"Dental Fluorosis,Tooth Wear,Enamel Hypoplasia,Dental Caries"
+311,0311-001,label_tooth_loss,missing tooth,"Class I Malocclusion,Class II Malocclusion,Congenitally Missing Tooth,Deep Overbite,Dental Crowding,Dental Crowding,Mesioangular Impaction"
+316,0316-001,label_tooth_loss,missing teeth,"Class III Malocclusion,Mandibular Skeletal Asymmetry,Convex Profile,Incisor Protrusion,Anterior Crossbite,Dental Crowding"
+317,0317-001,label_tooth_loss,missing teeth,"Class III Malocclusion,High-Angle Mandible,Convex Profile,Dental Crowding"
+421,0421-001,label_tooth_loss,missing teeth,"Periodontitis,Tooth Mobility,Gingivitis"
+452,0452-003,label_tooth_loss,tooth loss,"Dental Fluorosis,Tooth Wear,Enamel Hypoplasia,Dental Caries"
+665,0665-001,label_tooth_loss,tooth loss,"Class II Malocclusion,Retained Primary Tooth,Convex Profile,Deep Overbite,Deep Overjet,Dental Crowding"
+816,0816-001,label_tooth_loss,missing tooth,"Class I Malocclusion,Deep Overbite,Dental Crowding,Dental Crowding,Dental Caries"
+882,0882-001,label_tooth_loss,missing teeth,"Class II Malocclusion,Mandibular Skeletal Asymmetry,Deep Overbite,Dental Crowding,Dental Caries"
+900,0900-001,label_tooth_loss,missing teeth,"Class II Malocclusion,Mandibular Skeletal Asymmetry,High-Angle Mandible,Deep Overjet,Dental Crowding,Dental Caries"
+921,0921-002,label_tooth_loss,tooth loss,"Class III Malocclusion,High-Angle Mandible,Concave Profile,Anterior Crossbite,Dental Crowding"
+1084,1084-001,label_tooth_loss,missing teeth,"Class II Malocclusion,High-Angle Mandible,Dental Crowding"
+1137,1137-001,label_tooth_loss,missing teeth,"Class II Malocclusion,Mandibular Skeletal Asymmetry,High-Angle Mandible,Dental Crowding,Dental Caries"
+1167,1167-001,label_tooth_loss,missing teeth,Dental Crowding
+1199,1199-001,label_tooth_loss,missing teeth,"Periodontitis,Tooth Mobility,Gingivitis"
+1224,1224-001,label_tooth_loss,missing tooth,"Class II Malocclusion,Low-Angle Mandible,Convex Profile,Dental Crowding"
+1397,1397-003,label_tooth_loss,tooth loss,"Dental Fluorosis,Tooth Wear,Enamel Hypoplasia,Dental Caries"
+1536,1536-001,label_tooth_loss,tooth loss,"Class II Malocclusion,Retained Primary Tooth,Convex Profile,Deep Overbite,Dental Crowding"
+1549,1549-001,label_tooth_loss,missing tooth,"Class III Malocclusion,High-Angle Mandible,Convex Profile,Dental Crowding"
+1591,1591-001,label_tooth_loss,missing teeth,"Restoration Defect,Dental Caries"
+1740,1740-001,label_tooth_loss,missing teeth,Spacing
+2056,2056-001,label_tooth_loss,missing tooth,"Class I Malocclusion,Class II Malocclusion,Left Maxillary Midline Deviation,Right Mandibular Midline Deviation,Deep Curve Of Spee,Deep Overbite,Dental Crowding,Dental Crowding,Mesioangular Impaction"
+2333,2333-002,label_caries,caries,"Deep Overbite,Deep Overbite,Pigment Deposition"
+2387,2387-001,label_tooth_loss,missing tooth,"Class II Malocclusion,Convex Profile,Dental Crowding"
+2591,2591-001,label_tooth_loss,missing teeth,"Periodontitis,Tooth Mobility,Gingivitis"
+2593,2593-001,label_tooth_loss,missing teeth,"Restoration Defect,Tooth Structure Loss,Periodontitis,Tooth Mobility,Gingivitis,Dental Caries"
+2600,2600-001,label_caries,caries,Pulpitis
+2965,2965-001,label_tooth_loss,missing teeth,"Class II Malocclusion,Mandibular Retrusion,Convex Profile,Dental Crowding"
+3510,3510-001,label_tooth_loss,missing teeth,"Periodontitis,Gingivitis"
+3540,3540-002,label_tooth_loss,missing tooth,"Class II Malocclusion,Mandibular Skeletal Asymmetry,Deep Overbite,Dental Crowding"
+3775,3775-001,label_tooth_loss,teeth missing,Class I Malocclusion
+3807,3807-001,label_tooth_loss,missing teeth,"Periodontitis,Tooth Mobility,Gingivitis"
+3835,3835-003,label_caries,caries,Class II Malocclusion
+4085,4085-001,label_tooth_loss,missing teeth,"Periodontitis,Tooth Mobility,Gingivitis"
+4128,4128-001,label_tooth_loss,missing teeth,Class II Malocclusion
+579,0579-002,label_caries,caries,Pulpitis

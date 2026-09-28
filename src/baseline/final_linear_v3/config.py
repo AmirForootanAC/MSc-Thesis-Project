@@ -23,16 +23,16 @@ IMAGE_ROOT = (
 
 SCENARIOS = {
     "text_only": ("text",),#DONE
-    "image_only": ("photograph",),#DONE
-    "xray_only": ("radiograph",),#DONE
-    "image_text": ("photograph", "text"),
-    "image_xray": ("photograph", "radiograph"),
-    "text_xray": ("text", "radiograph"),
+    "image_only": ("photograph",),
+    "xray_only": ("radiograph",),
+    "image_text": ("photograph", "text"),#DONE
+    "image_xray": ("photograph", "radiograph"),#DONE
+    "text_xray": ("text", "radiograph"),#DONE
     "full_multimodal": ("photograph", "radiograph", "text"),#DONE
 }
 
 
-ACTIVE_SCENARIO = "full_multimodal"
+ACTIVE_SCENARIO = "image_only"
 ACTIVE_MODALITIES = SCENARIOS[ACTIVE_SCENARIO]
 
 

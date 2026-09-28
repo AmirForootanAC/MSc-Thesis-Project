@@ -1,0 +1,717 @@
+{
+  "experiment": "strong_supervised_multimodal_linear_v3",
+  "scenario": "full_multimodal",
+  "modalities": [
+    "photograph",
+    "radiograph",
+    "text"
+  ],
+  "dataset": "/kaggle/working/thesis-code/results/six_label_patient_level_dataset/labeled_dataset.csv",
+  "labels": [
+    "label_caries",
+    "label_gingivitis",
+    "label_malocclusion",
+    "label_pulpitis",
+    "label_tooth_loss",
+    "label_tooth_structure_loss"
+  ],
+  "seed": 42,
+  "train_samples": 2935,
+  "validation_samples": 627,
+  "test_samples": 633,
+  "sample_counts_expected": {
+    "train": 2935,
+    "validation": 627,
+    "test": 633
+  },
+  "checkpoint_selection": "validation_macro_f1_at_threshold_0.5_without_tta",
+  "best_epoch": 15,
+  "best_validation_macro_f1": 0.844133830530705,
+  "validation_default": {
+    "macro_f1": 0.8446467355883153,
+    "micro_f1": 0.8884578079534433,
+    "auroc": 0.953684544785698,
+    "accuracy": 0.8309409888357256,
+    "per_label": {
+      "label_caries": {
+        "f1": 0.7619047619047619,
+        "precision": 0.7777777777777778,
+        "recall": 0.7466666666666667,
+        "auroc": 0.9296014492753623
+      },
+      "label_gingivitis": {
+        "f1": 0.9740932642487047,
+        "precision": 0.9690721649484536,
+        "recall": 0.9791666666666666,
+        "auroc": 0.9983227401129944
+      },
+      "label_malocclusion": {
+        "f1": 0.9063032367972743,
+        "precision": 0.8896321070234113,
+        "recall": 0.9236111111111112,
+        "auroc": 0.9565255244182236
+      },
+      "label_pulpitis": {
+        "f1": 0.6857142857142857,
+        "precision": 0.6666666666666666,
+        "recall": 0.7058823529411765,
+        "auroc": 0.9706364513018322
+      },
+      "label_tooth_loss": {
+        "f1": 0.875,
+        "precision": 1.0,
+        "recall": 0.7777777777777778,
+        "auroc": 0.9368728334245575
+      },
+      "label_tooth_structure_loss": {
+        "f1": 0.8648648648648649,
+        "precision": 0.9411764705882353,
+        "recall": 0.8,
+        "auroc": 0.9301482701812192
+      }
+    }
+  },
+  "validation_optimized": {
+    "macro_f1": 0.8497833855910262,
+    "micro_f1": 0.8901960784313725,
+    "auroc": 0.953684544785698,
+    "accuracy": 0.8389154704944178,
+    "per_label": {
+      "label_caries": {
+        "f1": 0.7631578947368421,
+        "precision": 0.7532467532467533,
+        "recall": 0.7733333333333333,
+        "auroc": 0.9296014492753623
+      },
+      "label_gingivitis": {
+        "f1": 0.9740932642487047,
+        "precision": 0.9690721649484536,
+        "recall": 0.9791666666666666,
+        "auroc": 0.9983227401129944
+      },
+      "label_malocclusion": {
+        "f1": 0.9087719298245615,
+        "precision": 0.9184397163120568,
+        "recall": 0.8993055555555556,
+        "auroc": 0.9565255244182236
+      },
+      "label_pulpitis": {
+        "f1": 0.7058823529411765,
+        "precision": 0.7058823529411765,
+        "recall": 0.7058823529411765,
+        "auroc": 0.9706364513018322
+      },
+      "label_tooth_loss": {
+        "f1": 0.875,
+        "precision": 1.0,
+        "recall": 0.7777777777777778,
+        "auroc": 0.9368728334245575
+      },
+      "label_tooth_structure_loss": {
+        "f1": 0.8717948717948718,
+        "precision": 0.8947368421052632,
+        "recall": 0.85,
+        "auroc": 0.9301482701812192
+      }
+    }
+  },
+  "optimized_thresholds": [
+    0.1,
+    0.35000000000000003,
+    0.9500000000000001,
+    0.6500000000000001,
+    0.3,
+    0.15000000000000002
+  ],
+  "test_default": {
+    "macro_f1": 0.8377295508659238,
+    "micro_f1": 0.8954128440366973,
+    "auroc": 0.9595941452144533,
+    "accuracy": 0.8357030015797788,
+    "per_label": {
+      "label_caries": {
+        "f1": 0.8082191780821918,
+        "precision": 0.9076923076923077,
+        "recall": 0.7283950617283951,
+        "auroc": 0.8836553945249597
+      },
+      "label_gingivitis": {
+        "f1": 0.9523809523809523,
+        "precision": 0.9278350515463918,
+        "recall": 0.9782608695652174,
+        "auroc": 0.9953588362934983
+      },
+      "label_malocclusion": {
+        "f1": 0.9253731343283582,
+        "precision": 0.9147540983606557,
+        "recall": 0.9362416107382551,
+        "auroc": 0.968801963337674
+      },
+      "label_pulpitis": {
+        "f1": 0.8181818181818182,
+        "precision": 0.84375,
+        "recall": 0.7941176470588235,
+        "auroc": 0.9840420308357066
+      },
+      "label_tooth_loss": {
+        "f1": 0.8,
+        "precision": 0.9090909090909091,
+        "recall": 0.7142857142857143,
+        "auroc": 0.9415584415584415
+      },
+      "label_tooth_structure_loss": {
+        "f1": 0.7222222222222222,
+        "precision": 0.6842105263157895,
+        "recall": 0.7647058823529411,
+        "auroc": 0.98414820473644
+      }
+    }
+  },
+  "test_optimized": {
+    "macro_f1": 0.8211923618694815,
+    "micro_f1": 0.8774193548387097,
+    "auroc": 0.9595941452144533,
+    "accuracy": 0.8104265402843602,
+    "per_label": {
+      "label_caries": {
+        "f1": 0.7870967741935484,
+        "precision": 0.8243243243243243,
+        "recall": 0.7530864197530864,
+        "auroc": 0.8836553945249597
+      },
+      "label_gingivitis": {
+        "f1": 0.9473684210526315,
+        "precision": 0.9183673469387755,
+        "recall": 0.9782608695652174,
+        "auroc": 0.9953588362934983
+      },
+      "label_malocclusion": {
+        "f1": 0.905982905982906,
+        "precision": 0.9233449477351916,
+        "recall": 0.889261744966443,
+        "auroc": 0.968801963337674
+      },
+      "label_pulpitis": {
+        "f1": 0.8181818181818182,
+        "precision": 0.84375,
+        "recall": 0.7941176470588235,
+        "auroc": 0.9840420308357066
+      },
+      "label_tooth_loss": {
+        "f1": 0.7843137254901961,
+        "precision": 0.8695652173913043,
+        "recall": 0.7142857142857143,
+        "auroc": 0.9415584415584415
+      },
+      "label_tooth_structure_loss": {
+        "f1": 0.6842105263157895,
+        "precision": 0.6190476190476191,
+        "recall": 0.7647058823529411,
+        "auroc": 0.98414820473644
+      }
+    }
+  },
+  "parameter_counts": {
+    "total": 115548746,
+    "trainable": 115548746,
+    "frozen": 0
+  },
+  "top_k_checkpoints": [
+    {
+      "path": "/kaggle/working/thesis-code/results/baseline/final_linear_v3/full_multimodal/checkpoints/epoch_015.pt",
+      "epoch": 15,
+      "score": 0.844133830530705
+    },
+    {
+      "path": "/kaggle/working/thesis-code/results/baseline/final_linear_v3/full_multimodal/checkpoints/epoch_014.pt",
+      "epoch": 14,
+      "score": 0.8269585238805086
+    },
+    {
+      "path": "/kaggle/working/thesis-code/results/baseline/final_linear_v3/full_multimodal/checkpoints/epoch_023.pt",
+      "epoch": 23,
+      "score": 0.8251820059855776
+    }
+  ],
+  "history": [
+    {
+      "epoch": 1,
+      "train_loss": 0.9147008750873287,
+      "train_macro_f1": 0.39644354307581614,
+      "train_micro_f1": 0.5865412033076703,
+      "train_auroc": 0.8328437106370776,
+      "train_accuracy": 0.4698466780238501,
+      "validation_macro_f1": 0.527723035651927,
+      "validation_micro_f1": 0.686976389946687,
+      "validation_auroc": 0.9196794691293517,
+      "validation_accuracy": 0.5933014354066986,
+      "learning_rates": {
+        "backbone": 3.3333333333333333e-06,
+        "text": 6.666666666666667e-06,
+        "head": 3.3333333333333335e-05
+      }
+    },
+    {
+      "epoch": 2,
+      "train_loss": 0.6189795464328038,
+      "train_macro_f1": 0.5788847922286386,
+      "train_micro_f1": 0.7314097279472382,
+      "train_auroc": 0.9297756343067433,
+      "train_accuracy": 0.6432708688245315,
+      "validation_macro_f1": 0.5904992052359936,
+      "validation_micro_f1": 0.7479541734860884,
+      "validation_auroc": 0.9534184210661083,
+      "validation_accuracy": 0.6874003189792663,
+      "learning_rates": {
+        "backbone": 6.666666666666667e-06,
+        "text": 1.3333333333333333e-05,
+        "head": 6.666666666666667e-05
+      }
+    },
+    {
+      "epoch": 3,
+      "train_loss": 0.4451581720345268,
+      "train_macro_f1": 0.6972178652678926,
+      "train_micro_f1": 0.8083408884859474,
+      "train_auroc": 0.9645837687611668,
+      "train_accuracy": 0.7264054514480409,
+      "validation_macro_f1": 0.705545764987202,
+      "validation_micro_f1": 0.8166666666666667,
+      "validation_auroc": 0.9651017710678634,
+      "validation_accuracy": 0.7416267942583732,
+      "learning_rates": {
+        "backbone": 1e-05,
+        "text": 2e-05,
+        "head": 0.0001
+      }
+    },
+    {
+      "epoch": 4,
+      "train_loss": 0.2998675381812367,
+      "train_macro_f1": 0.8015106954547977,
+      "train_micro_f1": 0.8652239939255885,
+      "train_auroc": 0.9826890738355227,
+      "train_accuracy": 0.7942078364565588,
+      "validation_macro_f1": 0.6988694819200453,
+      "validation_micro_f1": 0.8220858895705522,
+      "validation_auroc": 0.962401177451428,
+      "validation_accuracy": 0.7304625199362041,
+      "learning_rates": {
+        "backbone": 1e-05,
+        "text": 2e-05,
+        "head": 0.0001
+      }
+    },
+    {
+      "epoch": 5,
+      "train_loss": 0.1864195388235672,
+      "train_macro_f1": 0.8710974099928738,
+      "train_micro_f1": 0.9037320574162679,
+      "train_auroc": 0.9898779728192245,
+      "train_accuracy": 0.8442930153321976,
+      "validation_macro_f1": 0.765606616689609,
+      "validation_micro_f1": 0.8579387186629527,
+      "validation_auroc": 0.9689041678628071,
+      "validation_accuracy": 0.7878787878787878,
+      "learning_rates": {
+        "backbone": 9.988946049184609e-06,
+        "text": 1.9977780442300377e-05,
+        "head": 9.988845558722652e-05
+      }
+    },
+    {
+      "epoch": 6,
+      "train_loss": 0.140159124712217,
+      "train_macro_f1": 0.9024090740317617,
+      "train_micro_f1": 0.9228976500291318,
+      "train_auroc": 0.9941060097900937,
+      "train_accuracy": 0.8729131175468484,
+      "validation_macro_f1": 0.7808251500464475,
+      "validation_micro_f1": 0.8698060941828255,
+      "validation_auroc": 0.9571604734188379,
+      "validation_accuracy": 0.7942583732057417,
+      "learning_rates": {
+        "backbone": 9.955833566366162e-06,
+        "text": 1.9911221007140065e-05,
+        "head": 9.955432053333127e-05
+      }
+    },
+    {
+      "epoch": 7,
+      "train_loss": 0.1007522671650048,
+      "train_macro_f1": 0.9344057488010665,
+      "train_micro_f1": 0.9375861390037409,
+      "train_auroc": 0.9959653624541175,
+      "train_accuracy": 0.8960817717206133,
+      "validation_macro_f1": 0.7903593595773257,
+      "validation_micro_f1": 0.8726235741444867,
+      "validation_auroc": 0.9502711252676698,
+      "validation_accuracy": 0.8006379585326954,
+      "learning_rates": {
+        "backbone": 9.900810439931104e-06,
+        "text": 1.980061896511404e-05,
+        "head": 9.899908716657751e-05
+      }
+    },
+    {
+      "epoch": 8,
+      "train_loss": 0.09027146350995366,
+      "train_macro_f1": 0.9515751627098901,
+      "train_micro_f1": 0.9544914918876137,
+      "train_auroc": 0.9972555942693049,
+      "train_accuracy": 0.9240204429301533,
+      "validation_macro_f1": 0.8052467101636114,
+      "validation_micro_f1": 0.8854667949951877,
+      "validation_auroc": 0.953564917061653,
+      "validation_accuracy": 0.8261562998405104,
+      "learning_rates": {
+        "backbone": 9.824122416519163e-06,
+        "text": 1.9646468291791048e-05,
+        "head": 9.82252352939661e-05
+      }
+    },
+    {
+      "epoch": 9,
+      "train_loss": 0.05795229872184118,
+      "train_macro_f1": 0.9673618241791896,
+      "train_micro_f1": 0.9689737470167065,
+      "train_auroc": 0.9988189378657673,
+      "train_accuracy": 0.9475298126064736,
+      "validation_macro_f1": 0.8004060706796926,
+      "validation_micro_f1": 0.8753623188405797,
+      "validation_auroc": 0.9567100632086714,
+      "validation_accuracy": 0.8118022328548644,
+      "learning_rates": {
+        "backbone": 9.726112003459197e-06,
+        "text": 1.9449457461498793e-05,
+        "head": 9.723622112581554e-05
+      }
+    },
+    {
+      "epoch": 10,
+      "train_loss": 0.05824131944630885,
+      "train_macro_f1": 0.9711996083552346,
+      "train_micro_f1": 0.970664538016364,
+      "train_auroc": 0.9986146809377922,
+      "train_accuracy": 0.9505962521294719,
+      "validation_macro_f1": 0.7959167057603787,
+      "validation_micro_f1": 0.8840864440078585,
+      "validation_auroc": 0.9647107933745901,
+      "validation_accuracy": 0.8261562998405104,
+      "learning_rates": {
+        "backbone": 9.607216939048322e-06,
+        "text": 1.921046637243047e-05,
+        "head": 9.603646183948762e-05
+      }
+    },
+    {
+      "epoch": 11,
+      "train_loss": 0.034502327751948975,
+      "train_macro_f1": 0.9807759835954504,
+      "train_micro_f1": 0.9807923169267707,
+      "train_auroc": 0.999524382446228,
+      "train_accuracy": 0.9679727427597956,
+      "validation_macro_f1": 0.7891138240486982,
+      "validation_micro_f1": 0.8683206106870229,
+      "validation_auroc": 0.9601865575135339,
+      "validation_accuracy": 0.8038277511961722,
+      "learning_rates": {
+        "backbone": 9.467968237506411e-06,
+        "text": 1.893056241680582e-05,
+        "head": 9.463131585120107e-05
+      }
+    },
+    {
+      "epoch": 12,
+      "train_loss": 0.0225919370504185,
+      "train_macro_f1": 0.9899731506794757,
+      "train_micro_f1": 0.9883720930232558,
+      "train_auroc": 0.9996114625356439,
+      "train_accuracy": 0.9805792163543441,
+      "validation_macro_f1": 0.788444525753754,
+      "validation_micro_f1": 0.8657276995305164,
+      "validation_auroc": 0.9552749969736746,
+      "validation_accuracy": 0.7894736842105263,
+      "learning_rates": {
+        "backbone": 9.30898781733769e-06,
+        "text": 1.861099571363839e-05,
+        "head": 9.302705888404396e-05
+      }
+    },
+    {
+      "epoch": 13,
+      "train_loss": 0.0168729605128611,
+      "train_macro_f1": 0.9941970848627991,
+      "train_micro_f1": 0.9911823647294589,
+      "train_auroc": 0.9998204785780628,
+      "train_accuracy": 0.9850085178875639,
+      "validation_macro_f1": 0.8044916555281402,
+      "validation_micro_f1": 0.8858800773694391,
+      "validation_auroc": 0.955576716335519,
+      "validation_accuracy": 0.8245614035087719,
+      "learning_rates": {
+        "backbone": 9.130985723691713e-06,
+        "text": 1.8253193525400518e-05,
+        "head": 9.123085593907093e-05
+      }
+    },
+    {
+      "epoch": 14,
+      "train_loss": 0.014296738307094487,
+      "train_macro_f1": 0.9922492825934638,
+      "train_micro_f1": 0.9917983596719344,
+      "train_auroc": 0.9998942976233947,
+      "train_accuracy": 0.98603066439523,
+      "validation_macro_f1": 0.8269585238805086,
+      "validation_micro_f1": 0.8858800773694391,
+      "validation_auroc": 0.9585085925985438,
+      "validation_accuracy": 0.8309409888357256,
+      "learning_rates": {
+        "backbone": 8.93475695712937e-06,
+        "text": 1.785875388352268e-05,
+        "head": 8.925072929466912e-05
+      }
+    },
+    {
+      "epoch": 15,
+      "train_loss": 0.011896285091182122,
+      "train_macro_f1": 0.9921274950542238,
+      "train_micro_f1": 0.994,
+      "train_auroc": 0.999895294088531,
+      "train_accuracy": 0.989778534923339,
+      "validation_macro_f1": 0.844133830530705,
+      "validation_micro_f1": 0.8867376573088093,
+      "validation_auroc": 0.9523101444297146,
+      "validation_accuracy": 0.8277511961722488,
+      "learning_rates": {
+        "backbone": 8.72117792295739e-06,
+        "text": 1.7429438451197182e-05,
+        "head": 8.709552267711549e-05
+      }
+    },
+    {
+      "epoch": 16,
+      "train_loss": 0.009598893309991769,
+      "train_macro_f1": 0.9939871360123466,
+      "train_micro_f1": 0.9961961961961961,
+      "train_auroc": 0.999963157845248,
+      "train_accuracy": 0.993526405451448,
+      "validation_macro_f1": 0.799067850820649,
+      "validation_micro_f1": 0.8777251184834123,
+      "validation_auroc": 0.9579702938957503,
+      "validation_accuracy": 0.810207336523126,
+      "learning_rates": {
+        "backbone": 8.49120251698948e-06,
+        "text": 1.6967164655362694e-05,
+        "head": 8.477486176234838e-05
+      }
+    },
+    {
+      "epoch": 17,
+      "train_loss": 0.00654135269848265,
+      "train_macro_f1": 0.9965084241261651,
+      "train_micro_f1": 0.9957957957957958,
+      "train_auroc": 0.999931369744255,
+      "train_accuracy": 0.9928449744463373,
+      "validation_macro_f1": 0.8177498597753972,
+      "validation_micro_f1": 0.8783269961977186,
+      "validation_auroc": 0.9490538666607894,
+      "validation_accuracy": 0.8086124401913876,
+      "learning_rates": {
+        "backbone": 8.245857865216072e-06,
+        "text": 1.6473997123010086e-05,
+        "head": 8.229911118536218e-05
+      }
+    },
+    {
+      "epoch": 18,
+      "train_loss": 0.008188725246600526,
+      "train_macro_f1": 0.9939824468848301,
+      "train_micro_f1": 0.9951923076923077,
+      "train_auroc": 0.9998964027295688,
+      "train_accuracy": 0.9918228279386712,
+      "validation_macro_f1": 0.8235417991020674,
+      "validation_micro_f1": 0.8864970645792564,
+      "validation_auroc": 0.9575781082325179,
+      "validation_accuracy": 0.8293460925039873,
+      "learning_rates": {
+        "backbone": 7.986239736410309e-06,
+        "text": 1.595213846005709e-05,
+        "head": 7.96793282492313e-05
+      }
+    },
+    {
+      "epoch": 19,
+      "train_loss": 0.00903341630747418,
+      "train_macro_f1": 0.9952189050136595,
+      "train_micro_f1": 0.9963942307692307,
+      "train_auroc": 0.9999813988797648,
+      "train_accuracy": 0.9938671209540034,
+      "validation_macro_f1": 0.8182210684005479,
+      "validation_micro_f1": 0.8760975609756098,
+      "validation_auroc": 0.9597363595210329,
+      "validation_accuracy": 0.8133971291866029,
+      "learning_rates": {
+        "backbone": 7.713507648158696e-06,
+        "text": 1.5403919413975564e-05,
+        "head": 7.692721354051047e-05
+      }
+    },
+    {
+      "epoch": 20,
+      "train_loss": 0.008301055658931147,
+      "train_macro_f1": 0.9959347992193573,
+      "train_micro_f1": 0.9951923076923077,
+      "train_auroc": 0.9999575830500507,
+      "train_accuracy": 0.9918228279386712,
+      "validation_macro_f1": 0.8186827260624319,
+      "validation_micro_f1": 0.8837656099903939,
+      "validation_auroc": 0.9490616268573727,
+      "validation_accuracy": 0.8245614035087719,
+      "learning_rates": {
+        "backbone": 7.428879688174086e-06,
+        "text": 1.4831788464107512e-05,
+        "head": 7.405505867157486e-05
+      }
+    },
+    {
+      "epoch": 21,
+      "train_loss": 0.003417620721001026,
+      "train_macro_f1": 0.9979591861792669,
+      "train_micro_f1": 0.9981967541574834,
+      "train_auroc": 0.9999923305614665,
+      "train_accuracy": 0.9969335604770017,
+      "validation_macro_f1": 0.8128313200121142,
+      "validation_micro_f1": 0.8803016022620169,
+      "validation_auroc": 0.9426448428785038,
+      "validation_accuracy": 0.8149920255183413,
+      "learning_rates": {
+        "backbone": 7.13362707402026e-06,
+        "text": 1.4238300886161941e-05,
+        "head": 7.107569138329535e-05
+      }
+    },
+    {
+      "epoch": 22,
+      "train_loss": 0.006477647185180054,
+      "train_macro_f1": 0.9987600001790745,
+      "train_micro_f1": 0.9981953078002808,
+      "train_auroc": 0.99998048511456,
+      "train_accuracy": 0.9969335604770017,
+      "validation_macro_f1": 0.8124057197362001,
+      "validation_micro_f1": 0.8821292775665399,
+      "validation_auroc": 0.9341818520126903,
+      "validation_accuracy": 0.8213716108452951,
+      "learning_rates": {
+        "backbone": 6.829068475545689e-06,
+        "text": 1.3626107339733259e-05,
+        "head": 6.800241825323377e-05
+      }
+    },
+    {
+      "epoch": 23,
+      "train_loss": 0.003209729176686975,
+      "train_macro_f1": 0.9976954278783547,
+      "train_micro_f1": 0.9985974754558204,
+      "train_auroc": 0.999996805032996,
+      "train_accuracy": 0.9976149914821124,
+      "validation_macro_f1": 0.8251820059855776,
+      "validation_micro_f1": 0.8895292987512008,
+      "validation_auroc": 0.9363107210564673,
+      "validation_accuracy": 0.8245614035087719,
+      "learning_rates": {
+        "backbone": 6.5165641253838895e-06,
+        "text": 1.2997942029812066e-05,
+        "head": 6.484896526523742e-05
+      }
+    },
+    {
+      "epoch": 24,
+      "train_loss": 0.012768195801769498,
+      "train_macro_f1": 0.9971049676761616,
+      "train_micro_f1": 0.99859691320906,
+      "train_auroc": 0.9999698988782532,
+      "train_accuracy": 0.9976149914821124,
+      "validation_macro_f1": 0.7940327672262653,
+      "validation_micro_f1": 0.8775894538606404,
+      "validation_auroc": 0.9482195293843044,
+      "validation_accuracy": 0.8070175438596491,
+      "learning_rates": {
+        "backbone": 6.197509743824265e-06,
+        "text": 1.2356610495161914e-05,
+        "head": 6.162941650586305e-05
+      }
+    },
+    {
+      "epoch": 25,
+      "train_loss": 0.0026950315361777264,
+      "train_macro_f1": 0.998183419728888,
+      "train_micro_f1": 0.9989973932223782,
+      "train_auroc": 0.9999992211044263,
+      "train_accuracy": 0.9982964224872232,
+      "validation_macro_f1": 0.7844632863967181,
+      "validation_micro_f1": 0.8715509039010466,
+      "validation_auroc": 0.9483639006520367,
+      "validation_accuracy": 0.8054226475279107,
+      "learning_rates": {
+        "backbone": 5.873330305186493e-06,
+        "text": 1.170497707810215e-05,
+        "head": 5.835815126142734e-05
+      }
+    }
+  ],
+  "elapsed_seconds": 13545.147655010223,
+  "config": {
+    "active_scenario": "full_multimodal",
+    "active_modalities": [
+      "photograph",
+      "radiograph",
+      "text"
+    ],
+    "dataset": "/kaggle/working/thesis-code/results/six_label_patient_level_dataset/labeled_dataset.csv",
+    "expected_counts": {
+      "train": 2935,
+      "validation": 627,
+      "test": 633
+    },
+    "image_size": 256,
+    "pretrained_image_encoder": true,
+    "freeze_image_encoder": false,
+    "batch_size": 8,
+    "gradient_accumulation_steps": 1,
+    "backbone_lr": 1e-05,
+    "classifier_lr": 0.0001,
+    "text_lr": 2e-05,
+    "weight_decay": 0.0001,
+    "warmup_epochs": 3,
+    "dropout": 0.5,
+    "gradient_clip_norm": 1.0,
+    "top_k_checkpoints": 3,
+    "tta": true,
+    "num_epochs": 50,
+    "early_stopping_patience": 10,
+    "default_threshold": 0.5,
+    "threshold_min": 0.05,
+    "threshold_max": 0.95,
+    "threshold_step": 0.05,
+    "seed": 42,
+    "device": "cuda",
+    "num_workers": 0,
+    "pin_memory": true,
+    "text_model_name": "distilbert-base-uncased",
+    "text_max_length": 256,
+    "text_columns": [
+      "chief_complaint",
+      "present_illness",
+      "past_medical_record",
+      "examination"
+    ],
+    "loss": "class_weighted_bce_with_logits",
+    "weighted_sampler": false,
+    "cbam": true,
+    "batchnorm_statistics_frozen": true,
+    "image_view_aggregation": "mean",
+    "resume_support": true,
+    "resume_checkpoint": "latest.pt"
+  }
+}

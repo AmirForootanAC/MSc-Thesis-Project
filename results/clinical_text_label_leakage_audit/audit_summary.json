@@ -1,0 +1,55 @@
+{
+    "dataset": "/home/ubuntu/Projects/thesis-code/results/six_label_patient_level_dataset/labeled_dataset.csv",
+    "num_rows": 8775,
+    "num_columns": 46,
+    "text_columns_audited": [
+        "chief_complaint",
+        "present_illness",
+        "past_medical_record",
+        "examination"
+    ],
+    "label_columns_audited": [
+        "label_caries",
+        "label_gingivitis",
+        "label_malocclusion",
+        "label_pulpitis",
+        "label_tooth_loss",
+        "label_tooth_structure_loss"
+    ],
+    "splits": [
+        "test",
+        "train",
+        "validation"
+    ],
+    "rows_with_any_direct_label_match": 754,
+    "rate_with_any_direct_label_match": 0.08592592592592592,
+    "rows_with_any_proxy_match": 4532,
+    "rate_with_any_proxy_match": 0.5164672364672365,
+    "direct_matches_by_label": {
+        "label_caries": {
+            "rows_with_direct_match": 428,
+            "rate": 0.048774928774928776
+        },
+        "label_gingivitis": {
+            "rows_with_direct_match": 254,
+            "rate": 0.028945868945868945
+        },
+        "label_malocclusion": {
+            "rows_with_direct_match": 7,
+            "rate": 0.0007977207977207978
+        },
+        "label_pulpitis": {
+            "rows_with_direct_match": 1,
+            "rate": 0.00011396011396011396
+        },
+        "label_tooth_loss": {
+            "rows_with_direct_match": 86,
+            "rate": 0.0098005698005698
+        },
+        "label_tooth_structure_loss": {
+            "rows_with_direct_match": 6,
+            "rate": 0.0006837606837606838
+        }
+    },
+    "interpretation": "Direct matches are explicit target-label terms or unambiguous textual equivalents. Proxy matches are clinical findings and are not automatically classified as leakage."
+}
