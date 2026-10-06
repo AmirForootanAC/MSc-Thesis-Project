@@ -1,0 +1,7 @@
+﻿,Overall,Train,Validation,Test
+Caries,482,326,75,81
+Gingivitis,594,406,96,92
+Malocclusion,2041,1455,288,298
+Pulpitis,183,132,17,34
+Tooth Loss,119,73,18,28
+Tooth Structure Loss,139,102,20,17

@@ -1,0 +1,160 @@
+================================================================================
+SAMPLE 1
+================================================================================
+
+[chief_complaint]
+The patient reports anterior teeth protrusion with spacing for several years.
+
+[present_illness]
+Post-exfoliation of primary teeth, the degree of anterior teeth protrusion and spacing has progressively worsened, affecting function and aesthetics.
+
+[past_medical_record]
+Underwent orthodontic treatment in middle school but did not maintain retention, leading to relapse. The patient reports no systemic diseases such as hypertension or diabetes, and no infectious diseases such as hepatitis or tuberculosis. The patient reports having or not having a history of rhinitis, adenoid hypertrophy, or tonsillar hypertrophy. The patient reports having or not having a history of drug allergies.
+
+[examination]
+1. Teeth and dental arch: Permanent dentition; oval arch form; mild crowding; dental chart 7-7, no congenital tooth absence; no fluorosis/tetracycline staining, enamel hypoplasia at dental chart 13+23. No premature loss or retention of primary teeth; upper anterior teeth are labially inclined. 2. Occlusion: Molar relationship: bilateral neutral; canine relationship: bilateral neutral. Normal anterior overbite and overjet; normal anterior open bite; normal midline. 3. Other oral soft and hard tissues: Moderate oral hygiene. Moderate periodontal status. High palatal vault. Normal labial frenum attachment. Normal lingual frenum. Macroglossia. No cleft lip, cleft palate, or cleft lip and palate. Bad habits: infantile swallowing. 4. Facial morphology and others: Symmetrical face. Convex profile. Normal lip competence/open lip posture/short upper lip. Shallow mentolabial sulcus. Nasal cavity: deviated turbinates. No tonsillar/adenoid hypertrophy.
+
+================================================================================
+SAMPLE 2
+================================================================================
+
+[chief_complaint]
+The patient reports pain in the upper left anterior tooth when exposed to hot and cold stimuli for several days.
+
+[present_illness]
+The patient has experienced pain in the upper left anterior tooth upon exposure to hot and cold for several days, with increasing duration of pain, and seeks treatment.
+
+[past_medical_record]
+The patient denies having cardiovascular diseases such as hypertension or coronary heart disease; metabolic diseases such as diabetes or gout. The patient denies having infectious diseases like hepatitis, syphilis, or HIV. The patient denies having autoimmune diseases such as lupus, rheumatoid arthritis, or Hashimoto's thyroiditis. The patient denies having hormonal disorders like hyperthyroidism or hypothyroidism. The patient denies having renal system diseases. The patient denies having psychiatric disorders. The patient denies any allergies to penicillin or metals. The patient denies any history of medication use. The patient denies a history of smoking.
+
+[examination]
+Tooth 13 shows a deep wedge-shaped groove at the cervical area with black extending 1mm subgingivally, reaching deep dentin; positive probing; positive cold test with prolonged pain; negative percussion. Generalized moderate gingival recession and bleeding on probing. Poor oral hygiene with a debris index (DI) of 1 and calculus index (Cl) of 1, indicating supragingival calculus covering less than 1/3 of the tooth surface, with detectable attachment loss and subgingival calculus. Bleeding index of 4, with gingival bleeding overflowing the sulcus, gingival redness, swelling, and loss of stippling.
+
+================================================================================
+SAMPLE 3
+================================================================================
+
+[chief_complaint]
+Mobility of the upper left posterior tooth for six months.
+
+[present_illness]
+The patient has experienced gradual mobility and displacement of the upper left teeth with weakened chewing over several years, bleeding during brushing, but no significant pain.
+
+[past_medical_record]
+The patient denies cardiovascular diseases such as hypertension or coronary artery disease; metabolic diseases such as diabetes or gout. The patient denies infectious diseases such as hepatitis, syphilis, or HIV. The patient denies autoimmune diseases such as lupus, rheumatoid arthritis, or Hashimoto's thyroiditis. The patient denies hormonal disorders such as hyperthyroidism or hypothyroidism. The patient denies renal or psychiatric disorders. The patient denies allergies to penicillin or metals. The patient denies any medication history. The patient denies smoking history.
+
+[examination]
+Teeth 11, 12, 13, 14, 15, 16, 17, 21, 22, 23, 24, 25, 31, 32, 33, 34, 35, 36, 37, 41, 42, 43, 44, 45, 46, 47 show moderate gingival recession, bleeding on probing, mobility grade I, periodontal pockets with a depth of 5mm. Overall oral hygiene is fair; Debris Index (DI): 1, Calculus Index (CI): 1 = supragingival calculus covering less than 1/3 of the tooth surface, detectable attachment loss, detectable subgingival calculus, Bleeding Index: 4 = bleeding fills and overflows the gingival sulcus upon probing, gingival redness and swelling, loss of stippling. Teeth 27, 28 show grade III mobility, severe gingival recession, excessive calculus.
+
+================================================================================
+SAMPLE 4
+================================================================================
+
+[chief_complaint]
+The patient reports weakened chewing ability and tooth mobility throughout the mouth for about a year.
+
+[present_illness]
+The patient has noticed gradual tooth mobility and displacement with weakened chewing over several months, bleeding during brushing, but no significant pain.
+
+[past_medical_record]
+The patient denies cardiovascular diseases such as hypertension or coronary artery disease; metabolic diseases such as diabetes or gout. The patient denies infectious diseases such as hepatitis, syphilis, or HIV. The patient denies autoimmune diseases such as lupus, rheumatoid arthritis, or Hashimoto's thyroiditis. The patient denies hormonal disorders such as hyperthyroidism or hypothyroidism. The patient denies renal or psychiatric disorders. The patient denies allergies to penicillin or metals. The patient denies any medication history. The patient denies smoking history.
+
+[examination]
+Moderate to severe gingival recession throughout the mouth, bleeding on probing, most teeth show mobility and displacement, mobility grade II, periodontal pockets with a depth of 5mm, tooth 31 has grade III mobility, extraction recommended. Overall oral hygiene is fair to poor; Debris Index (DI): 1, Calculus Index (CI): 1 = supragingival calculus covering less than 1/3 of the tooth surface, detectable attachment loss, detectable subgingival calculus, Bleeding Index: 4 = bleeding fills and overflows the gingival sulcus upon probing, gingival redness and swelling, loss of stippling.
+
+================================================================================
+SAMPLE 5
+================================================================================
+
+[chief_complaint]
+The patient reports pain in the upper left anterior teeth upon exposure to hot and cold stimuli for several days.
+
+[present_illness]
+The patient has experienced prolonged pain in the upper left anterior teeth when exposed to hot and cold stimuli for several days and seeks treatment.
+
+[past_medical_record]
+The patient denies cardiovascular diseases such as hypertension and coronary heart disease; metabolic diseases such as diabetes and gout; infectious diseases such as hepatitis, syphilis, and HIV; autoimmune diseases such as lupus, rheumatoid arthritis, and Hashimoto's thyroiditis; hormonal disorders such as hyperthyroidism and hypothyroidism; renal diseases; mental disorders; and allergies to penicillin or metals. No history of medication use or smoking.
+
+[examination]
+Tooth 23 has a deep wedge-shaped groove at the cervical area with black extending 1mm below the gingiva into the deep dentin. Positive response to probing and cold test with prolonged pain, negative percussion test. Generalized moderate gingival recession with bleeding on probing. Poor oral hygiene with a debris index (DI) of 1 and calculus index (Cl) of 1, indicating supragingival calculus covering less than one-third of the tooth surface, detectable attachment loss, and subgingival calculus with a bleeding index of 4, indicating profuse bleeding on probing. Gingiva is swollen and dark red with loss of stippling.
+
+================================================================================
+SAMPLE 6
+================================================================================
+
+[chief_complaint]
+The patient reports bleeding gums while brushing, chewing weakness, and tooth mobility and shifting for several months.
+
+[present_illness]
+The patient has experienced gradual tooth mobility and shifting, chewing weakness, and bleeding gums during brushing for several months, without significant pain.
+
+[past_medical_record]
+The patient denies cardiovascular diseases such as hypertension or coronary heart disease, metabolic diseases like diabetes or gout, infectious diseases such as hepatitis, syphilis, or HIV, autoimmune diseases like lupus, rheumatoid arthritis, or Hashimoto's thyroiditis, hormonal disorders like hyperthyroidism or hypothyroidism, renal diseases, psychiatric disorders, and allergies to penicillin or metals. The patient also denies any medication history or smoking history.
+
+[examination]
+Generalized moderate to severe gingival recession, bleeding on probing, periodontal pockets deeper than 5 mm. Poor oral hygiene with a Debris Index (DI) of 2 and a Calculus Index (CI) of 1, indicating supragingival calculus covering less than one-third of the tooth surface, detectable attachment loss, subgingival calculus, and a Bleeding Index of 4, indicating profuse bleeding on probing. Gingiva is swollen, dark red, with loss of stippling. Tooth 48 has Grade III mobility, and teeth 17 and 18 have a splinted crown restoration with Grade II mobility.
+
+================================================================================
+SAMPLE 7
+================================================================================
+
+[chief_complaint]
+The patient reports weakened chewing ability and tooth mobility for about a year.
+
+[present_illness]
+The patient has noticed gradual tooth mobility and displacement, weakened chewing ability, and bleeding while brushing for several months, without significant pain.
+
+[past_medical_record]
+Denies hypertension, coronary heart disease, diabetes, gout, infectious diseases (hepatitis, syphilis, HIV), autoimmune diseases (lupus, rheumatoid arthritis, Hashimoto's thyroiditis), hormonal disorders (hyperthyroidism, hypothyroidism), kidney diseases, mental disorders, and allergies to penicillin or metals. No history of medication use or smoking.
+
+[examination]
+Moderate to severe gingival recession with easy bleeding on probing, multiple teeth with mobility and displacement (mobility grade II), periodontal pockets of 5mm, and tooth 31 with grade III mobility, recommended for extraction and restoration. Oral hygiene is generally poor; debris index (DI): 1, calculus index (CI): 1 (supragingival calculus covering less than 1/3 of the tooth surface), attachment loss, subgingival calculus detected, bleeding index: 4 (bleeding fills and overflows the gingival sulcus), gingiva is swollen and dark red with loss of stippling. X-ray shows moderate to severe alveolar bone resorption throughout the mouth, with mesial vertical bone resorption reaching the apical third.
+
+================================================================================
+SAMPLE 8
+================================================================================
+
+[chief_complaint]
+The patient reports tooth mobility and displacement for several years.
+
+[present_illness]
+The patient has experienced gradual tooth mobility and displacement, along with chewing weakness for several years. There is bleeding when brushing, but no significant pain.
+
+[past_medical_record]
+The patient denies having cardiovascular diseases such as hypertension or coronary heart disease, metabolic diseases like diabetes or gout, infectious diseases such as hepatitis, syphilis, or HIV, autoimmune diseases like lupus, rheumatoid arthritis, or Hashimoto's thyroiditis, hormonal disorders such as hyperthyroidism or hypothyroidism, renal system diseases, psychiatric disorders, and allergies to penicillin or metals. The patient also denies any medication history and smoking history.
+
+[examination]
+Generalized moderate to severe gingival recession, bleeding on probing, mobility grade I for teeth 15, 16, 25, 45, 46; mobility grade II for teeth 14, 24, 34, 44, 46; mobility grade III for tooth 35. Probing depth exceeds 5 mm. : 17, 27, 36, 37. Poor oral hygiene; Debris Index (DI): 1, Calculus Index (CI): 1 with supragingival calculus covering less than 1/3 of the tooth surface, detectable attachment loss, subgingival calculus, Bleeding Index: 4 with profuse bleeding filling and overflowing the gingival sulcus, gingival redness, and loss of stippling.
+
+================================================================================
+SAMPLE 9
+================================================================================
+
+[chief_complaint]
+The patient reports tooth mobility, shifting, and for several years.
+
+[present_illness]
+The patient has noticed increasing tooth mobility and shifting, with difficulty chewing for several years. Multiple , and there is bleeding during brushing, but no significant pain.
+
+[past_medical_record]
+The patient denies cardiovascular diseases such as hypertension and coronary heart disease, metabolic diseases like diabetes and gout, infectious diseases such as hepatitis, syphilis, and HIV, autoimmune diseases like lupus, rheumatoid arthritis, and Hashimoto's thyroiditis, hormonal disorders such as hyperthyroidism and hypothyroidism, renal system diseases, mental health disorders, allergies to penicillin or metals, and any history of medication use or smoking.
+
+[examination]
+Generalized moderate to severe gingival recession, bleeding on probing, and periodontal pockets detected. Oral hygiene is average; soft plaque index (Dl): 1, calculus index (Cl): 1 = supragingival calculus covers less than 1/3 of the tooth surface, attachment loss and subgingival calculus present, bleeding index: 4 = bleeding fills and overflows the gingival sulcus upon probing. Gingiva is red, swollen, and dark red with loss of stippling. Teeth 14, 16, 17, 27, and 47 are missing. Teeth 26 and 38 have mobility grade III, and teeth 11 and 25 have mobility grade II.
+
+================================================================================
+SAMPLE 10
+================================================================================
+
+[chief_complaint]
+The patient reports anterior teeth protrusion with spacing for several years.
+
+[present_illness]
+Since the replacement of primary teeth, the protrusion and spacing have worsened, affecting function and aesthetics.
+
+[past_medical_record]
+The patient had previous orthodontic treatment in middle school but did not wear the retainer properly, leading to relapse. No history of hypertension, diabetes, hepatitis, tuberculosis, or drug allergies. The patient reports a history of rhinitis, adenoid, and tonsil hypertrophy.
+
+[examination]
+1. Teeth and arches: Permanent dentition; oval arch form; mild crowding; no congenital tooth absence; no fluorosis or tetracycline staining; enamel hypoplasia noted on teeth 13 and 23. No early loss or retention of primary teeth; labial inclination of upper incisors. 2. Occlusion: Molar relationship is neutral on both sides; canine relationship is neutral on both sides. Normal overbite and overjet; normal midline. 3. Oral soft and hard tissues: Moderate oral hygiene and periodontal condition. High palatal vault. Normal labial and lingual frenulum. Macroglossia. No cleft lip or palate. Infantile swallowing habit. 4. Facial morphology: Symmetrical face; convex profile; normal chin point; short upper lip; shallow mentolabial sulcus. Deviated nasal septum; no tonsil or adenoid hypertrophy.
+

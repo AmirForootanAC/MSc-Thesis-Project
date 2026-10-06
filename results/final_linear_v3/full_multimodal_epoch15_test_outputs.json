@@ -1,0 +1,49 @@
+{
+  "scenario": "full_multimodal",
+  "modalities": [
+    "photograph",
+    "radiograph",
+    "text"
+  ],
+  "checkpoint": "/home/ubuntu/Projects/thesis-code/results/baseline/final_linear_v3/full_multimodal/checkpoints/epoch_015.pt",
+  "checkpoint_epoch": 15,
+  "best_epoch": null,
+  "best_val_f1": null,
+  "checkpoint_val_macro_f1": 0.844133830530705,
+  "dataset": "/home/ubuntu/Projects/thesis-code/results/six_label_patient_level_dataset/labeled_dataset.csv",
+  "image_root": "/home/ubuntu/Projects/thesis-code/data/raw/COde-Dataset/Images",
+  "test_visits": 633,
+  "num_labels": 6,
+  "labels": [
+    "label_caries",
+    "label_gingivitis",
+    "label_malocclusion",
+    "label_pulpitis",
+    "label_tooth_loss",
+    "label_tooth_structure_loss"
+  ],
+  "threshold": 0.5,
+  "use_tta": true,
+  "inference_batch_size": 1,
+  "metrics": {
+    "macro_f1": 0.8377295508659238,
+    "micro_f1": 0.8954128440366973,
+    "auroc": 0.9596117301763701,
+    "accuracy": 0.8357030015797788
+  },
+  "expected_table_5_metrics": {
+    "macro_f1": 0.8377295508659238,
+    "micro_f1": 0.8954128440366973,
+    "auroc": 0.9595941452144533,
+    "accuracy": 0.8357030015797788
+  },
+  "absolute_differences": {
+    "macro_f1": 0.0,
+    "micro_f1": 0.0,
+    "auroc": 1.7584961916838893e-05,
+    "accuracy": 0.0
+  },
+  "outputs": {
+    "npz": "/home/ubuntu/Projects/thesis-code/results/final_linear_v3/full_multimodal_epoch15_test_outputs.npz"
+  }
+}

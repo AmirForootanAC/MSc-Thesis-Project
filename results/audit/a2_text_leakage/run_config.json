@@ -1,0 +1,63 @@
+{
+    "dataset_path": "/home/ubuntu/Projects/thesis-code/results/six_label_patient_level_dataset/labeled_dataset.csv",
+    "dataset_rows": 4195,
+    "split_counts": {
+        "train": 2935,
+        "validation": 627,
+        "test": 633
+    },
+    "text_fields": [
+        "chief_complaint",
+        "present_illness",
+        "past_medical_record",
+        "examination"
+    ],
+    "label_names": [
+        "label_caries",
+        "label_gingivitis",
+        "label_malocclusion",
+        "label_pulpitis",
+        "label_tooth_loss",
+        "label_tooth_structure_loss"
+    ],
+    "experiments": {
+        "all_four_fields": [
+            "chief_complaint",
+            "present_illness",
+            "past_medical_record",
+            "examination"
+        ],
+        "single_chief_complaint": [
+            "chief_complaint"
+        ],
+        "single_present_illness": [
+            "present_illness"
+        ],
+        "single_past_medical_record": [
+            "past_medical_record"
+        ],
+        "single_examination": [
+            "examination"
+        ]
+    },
+    "tfidf": {
+        "ngram_range": [
+            1,
+            2
+        ],
+        "min_df": 2,
+        "max_df": 0.95,
+        "sublinear_tf": true,
+        "max_features": 50000
+    },
+    "logistic_regression": {
+        "C": 1.0,
+        "max_iter": 2000,
+        "class_weight": "balanced",
+        "solver": "liblinear",
+        "random_state": 42
+    },
+    "threshold": 0.5,
+    "fit_policy": "TF-IDF and classifiers are fitted using training data only.",
+    "model_selection_policy": "No test-set model selection or threshold optimization."
+}
