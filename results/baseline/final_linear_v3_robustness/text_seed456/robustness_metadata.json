@@ -1,0 +1,27 @@
+{
+  "experiment": "final_linear_v3_random_seed_robustness",
+  "run_name": "text_seed456",
+  "base_scenario": "text_only",
+  "scenario_short_name": "text",
+  "seed": 456,
+  "modalities": [
+    "text"
+  ],
+  "reference_seed_42_used": false,
+  "checkpoint_source": null,
+  "resume": false,
+  "fresh_epoch_1": true,
+  "output_directory": "/home/ubuntu/Projects/thesis-code/results/baseline/final_linear_v3_robustness/text_seed456",
+  "dataset": "/home/ubuntu/Projects/thesis-code/results/six_label_patient_level_dataset/labeled_dataset.csv",
+  "expected_counts": {
+    "train": 2935,
+    "validation": 627,
+    "test": 633
+  },
+  "prediction_artifact": "test_predictions.npz",
+  "prediction_threshold": 0.5,
+  "tta": true,
+  "checkpoint_selection": "validation_macro_f1_at_threshold_0.5_without_tta",
+  "architecture": "final_linear_v3",
+  "protocol_note": "Only random seed, scenario, and output directory are intentionally changed relative to final_linear_v3. All model, preprocessing, optimization, loss, checkpoint-selection, and evaluation settings remain unchanged."
+}
