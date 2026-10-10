@@ -5,6 +5,7 @@ Supports crash-safe resume from the last completed epoch.
 
 import json
 import math
+import os
 import random
 import shutil
 import time
@@ -952,6 +953,24 @@ def predict(
 # ================================================================
 
 def scenario_output_root():
+    """
+    Return the active scenario output directory.
+
+    FINAL_LINEAR_V3_OUTPUT_SUFFIX optionally isolates reruns from
+    the canonical experiment results.
+    """
+    suffix = os.environ.get(
+        "FINAL_LINEAR_V3_OUTPUT_SUFFIX",
+        "",
+    ).strip()
+
+    if suffix:
+        return (
+            config.RESULT_ROOT
+            / suffix
+            / config.ACTIVE_SCENARIO
+        )
+
     return (
         config.RESULT_ROOT
         / config.ACTIVE_SCENARIO
@@ -1726,6 +1745,21 @@ def main():
             label_names=config.LABEL_NAMES,
         )
 
+        # Use the same class-weighted BCE criterion as training.
+        # These are the validation logits from this epoch, without TTA.
+        validation_loss = criterion(
+            torch.as_tensor(
+                validation_logits,
+                dtype=torch.float32,
+                device=device,
+            ),
+            torch.as_tensor(
+                validation_labels,
+                dtype=torch.float32,
+                device=device,
+            ),
+        ).item()
+
         current_lrs = (
             current_learning_rates(
                 optimizer
@@ -1760,6 +1794,9 @@ def main():
                 ),
                 "train_accuracy": float(
                     train_metrics["accuracy"]
+                ),
+                "validation_loss": float(
+                    validation_loss
                 ),
                 "validation_macro_f1": float(
                     validation_metrics[
@@ -1858,6 +1895,7 @@ def main():
         print(
             f"Epoch {epoch:02d} | "
             f"Train Loss {train_loss:.4f} | "
+            f"Val Loss {validation_loss:.4f} | "
             f"Train F1 {train_metrics['macro_f1']:.4f} | "
             f"Val F1 {validation_metrics['macro_f1']:.4f} | "
             f"Val AUROC {validation_metrics['auroc']:.4f} | "
