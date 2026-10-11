@@ -1,6 +1,5 @@
 """Configuration for strong complete-case supervised baselines."""
 
-import os
 from pathlib import Path
 
 
@@ -24,11 +23,11 @@ IMAGE_ROOT = (
 
 SCENARIOS = {
     "text_only": ("text",),#DONE
-    "image_only": ("photograph",),
-    "xray_only": ("radiograph",),
-    "image_text": ("photograph", "text"),#DONE
-    "image_xray": ("photograph", "radiograph"),#DONE
-    "text_xray": ("text", "radiograph"),#DONE
+    "image_only": ("photograph",),#DONE
+    "xray_only": ("radiograph",),#DONE
+    "image_text": ("photograph", "text"),
+    "image_xray": ("photograph", "radiograph"),
+    "text_xray": ("text", "radiograph"),
     "full_multimodal": ("photograph", "radiograph", "text"),#DONE
 }
 
@@ -37,16 +36,11 @@ ACTIVE_SCENARIO = "full_multimodal"
 ACTIVE_MODALITIES = SCENARIOS[ACTIVE_SCENARIO]
 
 
-RESULT_ROOT = Path(
-    os.environ.get(
-        "FINAL_LINEAR_V3_RESULT_ROOT",
-        str(
-            PROJECT_ROOT
-            / "results"
-            / "baseline"
-            / "final_linear_v3"
-        ),
-    )
+RESULT_ROOT = (
+    PROJECT_ROOT
+    / "results"
+    / "baseline"
+    / "final_linear_v3"
 )
 
 
