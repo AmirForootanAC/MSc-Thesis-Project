@@ -1,5 +1,6 @@
 """Configuration for strong complete-case supervised baselines."""
 
+import os
 from pathlib import Path
 
 
@@ -36,11 +37,16 @@ ACTIVE_SCENARIO = "full_multimodal"
 ACTIVE_MODALITIES = SCENARIOS[ACTIVE_SCENARIO]
 
 
-RESULT_ROOT = (
-    PROJECT_ROOT
-    / "results"
-    / "baseline"
-    / "final_linear_v3"
+RESULT_ROOT = Path(
+    os.environ.get(
+        "FINAL_LINEAR_V3_RESULT_ROOT",
+        str(
+            PROJECT_ROOT
+            / "results"
+            / "baseline"
+            / "final_linear_v3"
+        ),
+    )
 )
 
 
