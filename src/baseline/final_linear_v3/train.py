@@ -800,6 +800,34 @@ def train_one_epoch(
 # Evaluation / TTA
 # ================================================================
 
+@torch.no_grad()
+def compute_validation_loss(model, loader, criterion, device):
+    """Compute sample-weighted validation loss without TTA."""
+    model.eval()
+
+    total_loss = 0.0
+    sample_count = 0
+
+    for raw_batch in loader:
+        batch = move_batch_to_device(raw_batch, device)
+        labels = batch["labels"]
+
+        logits = model_forward(model, batch)
+
+        if logits.shape != labels.shape:
+            raise RuntimeError(
+                "Logit/label shape mismatch during validation loss."
+            )
+
+        loss = criterion(logits, labels)
+        batch_size = labels.shape[0]
+
+        total_loss += loss.detach().item() * batch_size
+        sample_count += batch_size
+
+    return total_loss / max(sample_count, 1)
+
+
 def probabilities_to_logits(
     probabilities,
 ):
@@ -1719,6 +1747,13 @@ def main():
             ),
         )
 
+        validation_loss = compute_validation_loss(
+            model,
+            validation_loader,
+            criterion,
+            device,
+        )
+
         validation_metrics = compute_metrics(
             validation_logits,
             validation_labels,
@@ -1748,6 +1783,9 @@ def main():
                 "epoch": epoch,
                 "train_loss": float(
                     train_loss
+                ),
+                "validation_loss": float(
+                    validation_loss
                 ),
                 "train_macro_f1": float(
                     train_metrics["macro_f1"]
@@ -1858,6 +1896,7 @@ def main():
         print(
             f"Epoch {epoch:02d} | "
             f"Train Loss {train_loss:.4f} | "
+            f"Val Loss {validation_loss:.4f} | "
             f"Train F1 {train_metrics['macro_f1']:.4f} | "
             f"Val F1 {validation_metrics['macro_f1']:.4f} | "
             f"Val AUROC {validation_metrics['auroc']:.4f} | "
