@@ -1,0 +1,38 @@
+{
+  "experiment": "full_multimodal",
+  "source_directory": "/kaggle/working/thesis-code/results/baseline/final_linear_v3/full_multimodal",
+  "test_metrics": {
+    "macro_f1_at_0.5": 0.8377,
+    "micro_f1_at_0.5": 0.8954,
+    "auroc": 0.9596,
+    "accuracy": 0.8357
+  },
+  "best_epoch": 15,
+  "best_validation_macro_f1": 0.8441,
+  "files": [
+    {
+      "path": "history.json",
+      "size_bytes": 14919
+    },
+    {
+      "path": "final_results.json",
+      "size_bytes": 24030
+    },
+    {
+      "path": "checkpoints/epoch_014.pt",
+      "size_bytes": 1387682777
+    },
+    {
+      "path": "checkpoints/epoch_015.pt",
+      "size_bytes": 1387682777
+    },
+    {
+      "path": "checkpoints/latest.pt",
+      "size_bytes": 1387681516
+    },
+    {
+      "path": "checkpoints/epoch_023.pt",
+      "size_bytes": 1387682777
+    }
+  ]
+}

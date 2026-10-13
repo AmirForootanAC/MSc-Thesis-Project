@@ -1719,6 +1719,19 @@ def main():
             ),
         )
 
+        validation_loss = criterion(
+            torch.as_tensor(
+                validation_logits,
+                dtype=torch.float32,
+                device=device,
+            ),
+            torch.as_tensor(
+                validation_labels,
+                dtype=torch.float32,
+                device=device,
+            ),
+        ).item()
+
         validation_metrics = compute_metrics(
             validation_logits,
             validation_labels,
@@ -1748,6 +1761,9 @@ def main():
                 "epoch": epoch,
                 "train_loss": float(
                     train_loss
+                ),
+                "validation_loss": float(
+                    validation_loss
                 ),
                 "train_macro_f1": float(
                     train_metrics["macro_f1"]
@@ -1858,6 +1874,7 @@ def main():
         print(
             f"Epoch {epoch:02d} | "
             f"Train Loss {train_loss:.4f} | "
+            f"Val Loss {validation_loss:.4f} | "
             f"Train F1 {train_metrics['macro_f1']:.4f} | "
             f"Val F1 {validation_metrics['macro_f1']:.4f} | "
             f"Val AUROC {validation_metrics['auroc']:.4f} | "
