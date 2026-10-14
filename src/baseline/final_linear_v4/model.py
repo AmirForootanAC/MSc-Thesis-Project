@@ -256,10 +256,154 @@ class StrongImageAggregator(nn.Module):
 # Final Linear V4
 # ================================================================
 
+# ================================================================
+# Cross-Modal Gated & Disease-Aware Fusion Head (CMG-DAF)
+# ================================================================
+
+class DiseaseAwareGatedFusionHead(nn.Module):
+    """
+    Lightweight Cross-Modal Gated & Disease-Aware Fusion Head.
+    1. Filters modality features per-patient via Cross-Modal Gated Units (GMU).
+    2. Computes synergistic cross-modal interaction features.
+    3. Routes modality contributions per-disease (6 labels) around the anchor modality.
+    """
+
+    def __init__(
+        self,
+        modalities,
+        modality_dims,
+        num_labels,
+        proj_dim=128,
+        dropout=0.45,
+    ):
+        super().__init__()
+
+        self.modalities = tuple(modalities)
+        self.modality_dims = list(modality_dims)
+        self.num_modalities = len(self.modalities)
+        self.num_labels = num_labels
+
+        # تعیین مدالیته لنگر (Anchor): اگر متن حضور دارد متن، در غیر این صورت مدالیته اول
+        self.anchor_idx = (
+            self.modalities.index("text")
+            if "text" in self.modalities
+            else 0
+        )
+
+        # 1. تصویرسازی هر مدالیته به فضای مشترک 128 بعدی برای استخراج زمینه متقاطع (Context)
+        self.align_projections = nn.ModuleList(
+            [
+                nn.Sequential(
+                    nn.Linear(dim, proj_dim),
+                    nn.LayerNorm(proj_dim),
+                    nn.GELU(),
+                )
+                for dim in self.modality_dims
+            ]
+        )
+
+        joint_context_dim = proj_dim * self.num_modalities
+
+        # 2. گیت فیلترکننده ویژگی در سطح بیمار (Cross-Modal Feature Gate - GMU)
+        self.feature_gates = nn.ModuleList()
+        for idx, dim in enumerate(self.modality_dims):
+            gate_linear = nn.Linear(joint_context_dim, dim)
+            # مقداردهی اولیه بایاس گیت: باز بودن کامل مسیر لنگر در شروع آموزش
+            bias_init = 2.0 if idx == self.anchor_idx else 0.0
+            nn.init.constant_(gate_linear.bias, bias_init)
+            self.feature_gates.append(gate_linear)
+
+        # 3. شاخه استخراج تعامل غیرخطی بین مدالیته‌ها (Cross-Modal Synergy Branch)
+        self.cross_interaction = nn.Sequential(
+            nn.Linear(joint_context_dim, proj_dim),
+            nn.LayerNorm(proj_dim),
+            nn.GELU(),
+            nn.Dropout(dropout * 0.5),
+        )
+
+        # 4. هدهای پیش‌بینی اختصاصی هر مدالیته + هد تعامل متقاطع
+        self.modality_classifiers = nn.ModuleList(
+            [
+                nn.Linear(dim, num_labels)
+                for dim in self.modality_dims
+            ]
+        )
+        self.cross_classifier = nn.Linear(proj_dim, num_labels)
+
+        # 5. مسیردهنده آگاه از نوع بیماری (Disease-Specific Modality Gate)
+        # به ازای هر مدالیته فرعی + شاخه تعاملی، یک وزن به ازای هر یک از 6 بیماری تولید می‌کند
+        self.num_aux_branches = self.num_modalities  # (M - 1) aux modalities + 1 cross branch
+        self.disease_gate_net = nn.Linear(
+            joint_context_dim,
+            self.num_aux_branches * num_labels,
+        )
+        # مقداردهی اولیه ملایم (-0.5 -> sigmoid ≈ 0.38) برای جلوگیری از شوک اولیه به مدالیته لنگر
+        nn.init.normal_(self.disease_gate_net.weight, std=0.01)
+        nn.init.constant_(self.disease_gate_net.bias, -0.5)
+
+    def forward(self, fused_features):
+        # تفکیک تانسور ورودی به بردارهای هر مدالیته
+        modality_feats = torch.split(
+            fused_features,
+            self.modality_dims,
+            dim=1,
+        )
+
+        # هم‌ترازسازی در فضای مشترک و ساخت بردار زمینه چندوجهی (Joint Context)
+        aligned_feats = [
+            proj(feat)
+            for proj, feat in zip(self.align_projections, modality_feats)
+        ]
+        joint_context = torch.cat(aligned_feats, dim=1)
+
+        # اعمال گیت متقاطع روی ویژگی‌های هر مدالیته
+        gated_feats = []
+        for idx, feat in enumerate(modality_feats):
+            gate = torch.sigmoid(self.feature_gates[idx](joint_context))
+            gated_feats.append(feat * gate)
+
+        # محاسبه Logit پایه از مدالیته لنگر (مثلاً متن) بدون تضعیف دامنه
+        anchor_logits = self.modality_classifiers[self.anchor_idx](
+            gated_feats[self.anchor_idx]
+        )
+
+        # جمع‌آوری Logitهای کمکی از سایر مدالیته‌ها و شاخه تعامل متقاطع
+        aux_logits_list = []
+        for idx, feat in enumerate(gated_feats):
+            if idx != self.anchor_idx:
+                aux_logits_list.append(
+                    self.modality_classifiers[idx](feat)
+                )
+
+        cross_feat = self.cross_interaction(joint_context)
+        cross_logits = self.cross_classifier(cross_feat)
+        aux_logits_list.append(cross_logits)
+
+        # تجمیع نهایی با وزن‌دهی اختصاصی به ازای هر بیماری (Disease-Aware Routing)
+        # ابعاد aux_stack: [Batch, Num_Aux_Branches, Num_Labels]
+        aux_stack = torch.stack(aux_logits_list, dim=1)
+
+        disease_gates = torch.sigmoid(
+            self.disease_gate_net(joint_context)
+        ).view(-1, self.num_aux_branches, self.num_labels)
+
+        final_logits = anchor_logits + torch.sum(
+            disease_gates * aux_stack,
+            dim=1,
+        )
+
+        return final_logits
+
+
+# ================================================================
+# Final Linear / Gated-Fusion V4
+# ================================================================
+
 class FinalLinearV4(nn.Module):
     """
-    Regularized end-to-end multimodal model with a strict
-    linear fusion classifier.
+    Regularized end-to-end multimodal model:
+    - Uses strict linear classifier for unimodal scenarios (preserving unimodal baselines).
+    - Uses Cross-Modal Gated & Disease-Aware Fusion (CMG-DAF) for multimodal scenarios.
     """
 
     def __init__(
@@ -278,10 +422,9 @@ class FinalLinearV4(nn.Module):
 
         self.modalities = tuple(modalities)
         self.num_labels = num_labels
-        self.has_text_and_vision = (
-            "text" in self.modalities
-            and len(self.modalities) > 1
-        )
+
+        modality_dims = []
+        active_order = []
 
         if "photograph" in self.modalities:
             self.photograph_aggregator = StrongImageAggregator(
@@ -289,11 +432,8 @@ class FinalLinearV4(nn.Module):
                 freeze_encoder=freeze_image_encoder,
                 dropout=dropout,
             )
-            if self.has_text_and_vision:
-                # ضریب مقیاس قابل یادگیری برای جلوگیری از تزریق نویز تصویر به شاخه قوی متن
-                self.photo_scale = nn.Parameter(
-                    torch.full((1, 128), 0.25)
-                )
+            modality_dims.append(128)
+            active_order.append("photograph")
 
         if "radiograph" in self.modalities:
             self.radiograph_aggregator = StrongImageAggregator(
@@ -301,10 +441,8 @@ class FinalLinearV4(nn.Module):
                 freeze_encoder=freeze_image_encoder,
                 dropout=dropout,
             )
-            if self.has_text_and_vision:
-                self.radio_scale = nn.Parameter(
-                    torch.full((1, 128), 0.25)
-                )
+            modality_dims.append(128)
+            active_order.append("radiograph")
 
         if "text" in self.modalities:
             text_config = AutoConfig.from_pretrained(
@@ -333,17 +471,10 @@ class FinalLinearV4(nn.Module):
                         param.requires_grad = False
 
             self.text_norm = nn.LayerNorm(768)
+            modality_dims.append(768)
+            active_order.append("text")
 
-        input_dim = 0
-
-        if "photograph" in self.modalities:
-            input_dim += 128
-
-        if "radiograph" in self.modalities:
-            input_dim += 128
-
-        if "text" in self.modalities:
-            input_dim += 768
+        input_dim = sum(modality_dims)
 
         if input_dim <= 0:
             raise ValueError(
@@ -352,11 +483,20 @@ class FinalLinearV4(nn.Module):
 
         self.fusion_dropout = nn.Dropout(dropout)
 
-        # Strict linear fusion classifier
-        self.classifier = nn.Linear(
-            input_dim,
-            num_labels,
-        )
+        # در حالت تک‌وجهی دقیقاً همان لایه خطی سابق، و در حالت چندوجهی ماژول فیوژن هوشمند
+        if len(active_order) == 1:
+            self.classifier = nn.Linear(
+                input_dim,
+                num_labels,
+            )
+        else:
+            self.classifier = DiseaseAwareGatedFusionHead(
+                modalities=active_order,
+                modality_dims=modality_dims,
+                num_labels=num_labels,
+                proj_dim=128,
+                dropout=dropout,
+            )
 
     def forward(
         self,
@@ -377,10 +517,6 @@ class FinalLinearV4(nn.Module):
             photograph_features = self.photograph_aggregator(
                 images
             )
-            if self.has_text_and_vision:
-                photograph_features = (
-                    photograph_features * self.photo_scale
-                )
             features.append(photograph_features)
 
         if "radiograph" in self.modalities:
@@ -393,10 +529,6 @@ class FinalLinearV4(nn.Module):
             radiograph_features = self.radiograph_aggregator(
                 radiographs
             )
-            if self.has_text_and_vision:
-                radiograph_features = (
-                    radiograph_features * self.radio_scale
-                )
             features.append(radiograph_features)
 
         if "text" in self.modalities:
