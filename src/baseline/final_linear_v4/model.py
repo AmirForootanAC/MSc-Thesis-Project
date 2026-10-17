@@ -1,5 +1,273 @@
+import torch
+import torch.nn as nn
 import math
 import torch.nn.functional as F
+from transformers import AutoConfig, AutoModel
+
+from torchvision.models import (
+    ResNet50_Weights,
+    resnet50,
+)
+
+
+# ================================================================
+# CBAM
+# ================================================================
+
+class ChannelAttention(nn.Module):
+    def __init__(
+        self,
+        channels,
+        reduction=16,
+    ):
+        super().__init__()
+
+        hidden = max(
+            channels // reduction,
+            1,
+        )
+
+        self.avg_pool = nn.AdaptiveAvgPool2d(1)
+        self.max_pool = nn.AdaptiveMaxPool2d(1)
+
+        self.mlp = nn.Sequential(
+            nn.Conv2d(
+                channels,
+                hidden,
+                kernel_size=1,
+                bias=False,
+            ),
+            nn.ReLU(inplace=True),
+            nn.Conv2d(
+                hidden,
+                channels,
+                kernel_size=1,
+                bias=False,
+            ),
+        )
+
+        self.activation = nn.Sigmoid()
+
+    def forward(self, x):
+        avg_attention = self.mlp(
+            self.avg_pool(x)
+        )
+
+        max_attention = self.mlp(
+            self.max_pool(x)
+        )
+
+        attention = (
+            avg_attention
+            + max_attention
+        )
+
+        return x * self.activation(
+            attention
+        )
+
+
+class SpatialAttention(nn.Module):
+    def __init__(
+        self,
+        kernel_size=7,
+    ):
+        super().__init__()
+
+        padding = kernel_size // 2
+
+        self.conv = nn.Conv2d(
+            2,
+            1,
+            kernel_size=kernel_size,
+            padding=padding,
+            bias=False,
+        )
+
+        self.activation = nn.Sigmoid()
+
+    def forward(self, x):
+        avg_attention = torch.mean(
+            x,
+            dim=1,
+            keepdim=True,
+        )
+
+        max_attention = torch.max(
+            x,
+            dim=1,
+            keepdim=True,
+        ).values
+
+        attention = torch.cat(
+            [
+                avg_attention,
+                max_attention,
+            ],
+            dim=1,
+        )
+
+        attention = self.conv(
+            attention
+        )
+
+        return x * self.activation(
+            attention
+        )
+
+
+class CBAM(nn.Module):
+    def __init__(
+        self,
+        channels,
+        reduction=16,
+        spatial_kernel_size=7,
+    ):
+        super().__init__()
+
+        self.channel_attention = (
+            ChannelAttention(
+                channels=channels,
+                reduction=reduction,
+            )
+        )
+
+        self.spatial_attention = (
+            SpatialAttention(
+                kernel_size=spatial_kernel_size,
+            )
+        )
+
+    def forward(self, x):
+        x = self.channel_attention(x)
+        x = self.spatial_attention(x)
+        return x
+
+
+# ================================================================
+# Image Aggregator
+# ================================================================
+
+class StrongImageAggregator(nn.Module):
+    def __init__(
+        self,
+        pretrained=True,
+        freeze_encoder=True,
+        dropout=0.50,
+    ):
+        super().__init__()
+
+        weights = (
+            ResNet50_Weights.DEFAULT
+            if pretrained
+            else None
+        )
+
+        backbone = resnet50(
+            weights=weights
+        )
+
+        self.layer0 = nn.Sequential(
+            backbone.conv1,
+            backbone.bn1,
+            backbone.relu,
+            backbone.maxpool,
+        )
+
+        self.layer1 = backbone.layer1
+        self.layer2 = backbone.layer2
+        self.layer3 = backbone.layer3
+        self.layer4 = backbone.layer4
+
+        self.cbam = CBAM(
+            channels=2048
+        )
+
+        self.avg_pool = nn.AdaptiveAvgPool2d((1, 1))
+        self.max_pool = nn.AdaptiveMaxPool2d((1, 1))
+
+        self.projection = nn.Sequential(
+            nn.LayerNorm(2048),
+            nn.Dropout(dropout),
+            nn.Linear(2048, 256),
+            nn.LayerNorm(256),
+            nn.GELU(),
+            nn.Dropout(dropout * 0.6),
+            nn.Linear(256, 128),
+            nn.LayerNorm(128),
+            nn.Dropout(0.25),
+        )
+
+        if freeze_encoder:
+            for module in [
+                self.layer0,
+                self.layer1,
+                self.layer2,
+                self.layer3[:3],
+            ]:
+                for parameter in module.parameters():
+                    parameter.requires_grad = False
+
+    def encode_views(self, flat_images):
+        x = self.layer0(flat_images)
+        x = self.layer1(x)
+        x = self.layer2(x)
+        x = self.layer3(x)
+        x = self.layer4(x)
+
+        x = self.cbam(x)
+
+        avg_feat = self.avg_pool(x).flatten(1)
+        max_feat = self.max_pool(x).flatten(1)
+        return 0.5 * avg_feat + 0.5 * max_feat
+
+    def forward(self, image_lists):
+        view_counts = [len(images) for images in image_lists]
+        if any(count == 0 for count in view_counts):
+            raise RuntimeError(
+                "Encountered a sample with zero images."
+            )
+
+        flat_images = torch.cat(
+            [torch.stack(images, dim=0) for images in image_lists],
+            dim=0,
+        )
+
+        flat_features = self.encode_views(flat_images)
+
+        patient_views = torch.split(
+            flat_features,
+            view_counts,
+            dim=0,
+        )
+
+        sample_features = []
+        for views in patient_views:
+            if views.size(0) == 1:
+                sample_feature = views.squeeze(0)
+            else:
+                sample_feature = (
+                    0.5 * views.mean(dim=0)
+                    + 0.5 * views.max(dim=0).values
+                )
+            sample_features.append(sample_feature)
+
+        stacked_patients = torch.stack(sample_features, dim=0)
+        return self.projection(stacked_patients)
+
+# ================================================================
+# Final Linear V4 (With Gradient-Preserving Modality Balancing)
+# ================================================================
+
+def scale_with_full_gradient(features, scale_param):
+    """
+    Scales feature amplitude in the forward pass by `scale_param` to prevent
+    initial noise injection into the text anchor, while preserving 100% of
+    the gradient magnitude for the visual encoder in the backward pass
+    (resolving Multimodal Gradient Starvation).
+    """
+    scale = torch.sigmoid(scale_param)  # bounded in (0, 1)
+    return features * scale + (features - features.detach()) * (1.0 - scale)
 
 
 class FinalLinearV4(nn.Module):
