@@ -18,21 +18,22 @@ IMAGE_ROOT = (
     / "raw"
     / "COde-Dataset"
     / "Images"
+    
 )
 
 
 SCENARIOS = {
     "text_only": ("text",),#DONE
-    "image_only": ("photograph",),
+    "image_only": ("photograph",),#DONE
     "xray_only": ("radiograph",),#DONE
-    "image_text": ("photograph", "text"),
+    "image_text": ("photograph", "text"),#DONE
     "image_xray": ("photograph", "radiograph"),
     "text_xray": ("text", "radiograph"),#DONE
     "full_multimodal": ("photograph", "radiograph", "text"),
 }
 
 
-ACTIVE_SCENARIO = "text_xray"
+ACTIVE_SCENARIO = "xray_only"
 ACTIVE_MODALITIES = SCENARIOS[ACTIVE_SCENARIO]
 
 

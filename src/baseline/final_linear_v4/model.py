@@ -269,8 +269,8 @@ def scale_with_full_gradient(features, scale_param):
 
 class FinalLinearV4(nn.Module):
     """
-    Regularized end-to-end multimodal model with a strict
-    linear fusion classifier and gradient-preserving modality balancing.
+    Regularized end-to-end multimodal model with a strict controlled linear
+    classifier and Max-Pooling Visual Synergy for full multimodal scenarios.
     """
 
     def __init__(
@@ -301,7 +301,6 @@ class FinalLinearV4(nn.Module):
                 dropout=dropout,
             )
             if self.has_text_and_vision:
-                # sigmoid(-0.85) ≈ 0.30 initial forward scale, 1.0 backward gradient
                 self.photo_scale = nn.Parameter(
                     torch.full((1, 128), -0.85)
                 )
@@ -318,9 +317,7 @@ class FinalLinearV4(nn.Module):
                 )
 
         if "text" in self.modalities:
-            text_config = AutoConfig.from_pretrained(
-                text_model_name
-            )
+            text_config = AutoConfig.from_pretrained(text_model_name)
             if hasattr(text_config, "dropout"):
                 text_config.dropout = float(text_internal_dropout)
             if hasattr(text_config, "attention_dropout"):
@@ -345,25 +342,26 @@ class FinalLinearV4(nn.Module):
 
             self.text_norm = nn.LayerNorm(768)
 
+        # کنترل ابعاد لایه خطی برای حفظ عدالت در مقایسه (Controlled Comparison)
         input_dim = 0
-
-        if "photograph" in self.modalities:
-            input_dim += 128
-
-        if "radiograph" in self.modalities:
-            input_dim += 128
-
         if "text" in self.modalities:
             input_dim += 768
 
+        self.has_both_visual = ("photograph" in self.modalities and "radiograph" in self.modalities)
+        
+        if self.has_both_visual:
+            input_dim += 128  # ترکیب Max-Pool شده هر دو مدالیته بصری
+        else:
+            if "photograph" in self.modalities:
+                input_dim += 128
+            if "radiograph" in self.modalities:
+                input_dim += 128
+
         if input_dim <= 0:
-            raise ValueError(
-                "At least one modality must be enabled."
-            )
+            raise ValueError("At least one modality must be enabled.")
 
         self.fusion_dropout = nn.Dropout(dropout)
 
-        # Strict linear fusion classifier
         self.classifier = nn.Linear(
             input_dim,
             num_labels,
@@ -376,66 +374,54 @@ class FinalLinearV4(nn.Module):
         input_ids=None,
         attention_mask=None,
     ):
-        features = []
+        photograph_features = None
+        radiograph_features = None
+        text_features = None
 
         if "photograph" in self.modalities:
             if images is None:
-                raise RuntimeError(
-                    "Photograph modality is enabled "
-                    "but images were not provided."
-                )
-
-            photograph_features = self.photograph_aggregator(
-                images
-            )
+                raise RuntimeError("Images were not provided.")
+            photograph_features = self.photograph_aggregator(images)
             if self.has_text_and_vision:
                 photograph_features = scale_with_full_gradient(
-                    photograph_features,
-                    self.photo_scale,
+                    photograph_features, self.photo_scale
                 )
-            features.append(photograph_features)
 
         if "radiograph" in self.modalities:
             if radiographs is None:
-                raise RuntimeError(
-                    "Radiograph modality is enabled "
-                    "but radiographs were not provided."
-                )
-
-            radiograph_features = self.radiograph_aggregator(
-                radiographs
-            )
+                raise RuntimeError("Radiographs were not provided.")
+            radiograph_features = self.radiograph_aggregator(radiographs)
             if self.has_text_and_vision:
                 radiograph_features = scale_with_full_gradient(
-                    radiograph_features,
-                    self.radio_scale,
+                    radiograph_features, self.radio_scale
                 )
-            features.append(radiograph_features)
 
         if "text" in self.modalities:
             if input_ids is None:
-                raise RuntimeError(
-                    "Text modality is enabled "
-                    "but input_ids were not provided."
-                )
-
+                raise RuntimeError("Input_ids were not provided.")
             outputs = self.text_encoder(
-                input_ids=input_ids,
-                attention_mask=attention_mask,
+                input_ids=input_ids, attention_mask=attention_mask
             )
-
-            text_features = self.text_norm(
-                outputs.last_hidden_state[:, 0]
-            )
+            text_features = self.text_norm(outputs.last_hidden_state[:, 0])
             text_features = self.fusion_dropout(text_features)
 
-            features.append(text_features)
+        # ادغام هوشمند (Visual Synergy) برای سناریوی چندوجهی کامل
+        features_to_cat = []
+        
+        if self.has_both_visual:
+            # انتخاب قوی‌ترین ویژگی بصری به صورت پیکسلی (Max-Pooling)
+            visual_synergy = torch.max(photograph_features, radiograph_features)
+            features_to_cat.append(visual_synergy)
+        else:
+            if photograph_features is not None:
+                features_to_cat.append(photograph_features)
+            if radiograph_features is not None:
+                features_to_cat.append(radiograph_features)
+                
+        if text_features is not None:
+            features_to_cat.append(text_features)
 
-        fused = torch.cat(
-            features,
-            dim=1,
-        )
-
+        fused = torch.cat(features_to_cat, dim=1)
         logits = self.classifier(fused)
 
         return logits
