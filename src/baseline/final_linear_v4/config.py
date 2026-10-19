@@ -27,13 +27,13 @@ SCENARIOS = {
     "image_only": ("photograph",),#DONE
     "xray_only": ("radiograph",),#DONE
     "image_text": ("photograph", "text"),#DONE
-    "image_xray": ("photograph", "radiograph"),
+    "image_xray": ("photograph", "radiograph"),#DONE
     "text_xray": ("text", "radiograph"),#DONE
-    "full_multimodal": ("photograph", "radiograph", "text"),
+    "full_multimodal": ("photograph", "radiograph", "text"),#DONE
 }
 
 
-ACTIVE_SCENARIO = "xray_only"
+ACTIVE_SCENARIO = "text_only"
 ACTIVE_MODALITIES = SCENARIOS[ACTIVE_SCENARIO]
 
 
@@ -87,7 +87,7 @@ TEXT_INTERNAL_DROPOUT = 0.20
 BATCH_SIZE = 8
 GRADIENT_ACCUMULATION_STEPS = 1
 
-NUM_EPOCHS = 25
+NUM_EPOCHS = 40
 EARLY_STOPPING_PATIENCE = 7
 
 

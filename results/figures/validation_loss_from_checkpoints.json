@@ -1,0 +1,63 @@
+{
+  "text_only": {
+    "9": {
+      "epoch": 9,
+      "checkpoint": "epoch_009.pt",
+      "validation_loss": 0.882219718763669
+    },
+    "17": {
+      "epoch": 17,
+      "checkpoint": "epoch_017.pt",
+      "validation_loss": 1.210328056214484
+    },
+    "18": {
+      "epoch": 18,
+      "checkpoint": "epoch_018.pt",
+      "validation_loss": 1.2156504913351074
+    },
+    "19": {
+      "epoch": 19,
+      "checkpoint": "latest.pt",
+      "validation_loss": 1.114719804471604
+    }
+  },
+  "image_xray": {
+    "11": {
+      "epoch": 11,
+      "checkpoint": "epoch_011.pt",
+      "validation_loss": 1.1981005413744426
+    },
+    "19": {
+      "epoch": 19,
+      "checkpoint": "epoch_019.pt",
+      "validation_loss": 1.5970413967925907
+    },
+    "21": {
+      "epoch": 21,
+      "checkpoint": "epoch_021.pt",
+      "validation_loss": 2.032343911479269
+    }
+  },
+  "full_multimodal": {
+    "14": {
+      "epoch": 14,
+      "checkpoint": "epoch_014.pt",
+      "validation_loss": 1.1991409194575924
+    },
+    "15": {
+      "epoch": 15,
+      "checkpoint": "epoch_015.pt",
+      "validation_loss": 1.204444029505311
+    },
+    "23": {
+      "epoch": 23,
+      "checkpoint": "epoch_023.pt",
+      "validation_loss": 1.500114024675422
+    },
+    "25": {
+      "epoch": 25,
+      "checkpoint": "latest.pt",
+      "validation_loss": 1.3727155108171354
+    }
+  }
+}
