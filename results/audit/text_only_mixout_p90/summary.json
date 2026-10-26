@@ -1,0 +1,12 @@
+{
+  "experiment": "text_only_distilbert_mixout",
+  "mixout_probability": 0.9,
+  "seed": 42,
+  "train_samples": 2935,
+  "validation_samples": 627,
+  "test_evaluated": false,
+  "mixout_linear_layers": 36,
+  "best_epoch": 15,
+  "best_val_macro_f1": 0.8078175873241662,
+  "output_dir": "results/audit/text_only_mixout_p90"
+}

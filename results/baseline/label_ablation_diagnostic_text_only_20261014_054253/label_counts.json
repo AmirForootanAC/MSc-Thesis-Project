@@ -1,0 +1,98 @@
+{
+  "train": {
+    "label_caries": {
+      "positive": 326,
+      "negative": 2609,
+      "total": 2935
+    },
+    "label_gingivitis": {
+      "positive": 406,
+      "negative": 2529,
+      "total": 2935
+    },
+    "label_malocclusion": {
+      "positive": 1455,
+      "negative": 1480,
+      "total": 2935
+    },
+    "label_pulpitis": {
+      "positive": 132,
+      "negative": 2803,
+      "total": 2935
+    },
+    "label_tooth_loss": {
+      "positive": 73,
+      "negative": 2862,
+      "total": 2935
+    },
+    "label_tooth_structure_loss": {
+      "positive": 102,
+      "negative": 2833,
+      "total": 2935
+    }
+  },
+  "validation": {
+    "label_caries": {
+      "positive": 75,
+      "negative": 552,
+      "total": 627
+    },
+    "label_gingivitis": {
+      "positive": 96,
+      "negative": 531,
+      "total": 627
+    },
+    "label_malocclusion": {
+      "positive": 288,
+      "negative": 339,
+      "total": 627
+    },
+    "label_pulpitis": {
+      "positive": 17,
+      "negative": 610,
+      "total": 627
+    },
+    "label_tooth_loss": {
+      "positive": 18,
+      "negative": 609,
+      "total": 627
+    },
+    "label_tooth_structure_loss": {
+      "positive": 20,
+      "negative": 607,
+      "total": 627
+    }
+  },
+  "test_counts_only": {
+    "label_caries": {
+      "positive": 81,
+      "negative": 552,
+      "total": 633
+    },
+    "label_gingivitis": {
+      "positive": 92,
+      "negative": 541,
+      "total": 633
+    },
+    "label_malocclusion": {
+      "positive": 298,
+      "negative": 335,
+      "total": 633
+    },
+    "label_pulpitis": {
+      "positive": 34,
+      "negative": 599,
+      "total": 633
+    },
+    "label_tooth_loss": {
+      "positive": 28,
+      "negative": 605,
+      "total": 633
+    },
+    "label_tooth_structure_loss": {
+      "positive": 17,
+      "negative": 616,
+      "total": 633
+    }
+  }
+}

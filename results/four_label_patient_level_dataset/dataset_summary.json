@@ -1,0 +1,87 @@
+{
+    "dataset": {
+        "source": "results/six_label_patient_level_dataset/labeled_dataset.csv",
+        "total_visits": 8775,
+        "total_complete_case_visits": 4195,
+        "total_patients": 4800,
+        "number_of_labels": 4,
+        "labels": [
+            "label_caries",
+            "label_gingivitis",
+            "label_malocclusion",
+            "label_pulpitis"
+        ],
+        "dropped_labels": [
+            "label_tooth_loss",
+            "label_tooth_structure_loss"
+        ]
+    },
+    "expected_total_visits": {
+        "train": 6129,
+        "validation": 1330,
+        "test": 1316
+    },
+    "expected_complete_case_visits": {
+        "train": 2935,
+        "validation": 627,
+        "test": 633
+    },
+    "label_distribution": [
+        {
+            "rank": 1,
+            "column": "label_caries",
+            "label": "Caries",
+            "all_train_visits": 660,
+            "all_val_visits": 139,
+            "all_test_visits": 156,
+            "all_total_visits": 955,
+            "complete_case_train": 326,
+            "complete_case_val": 75,
+            "complete_case_test": 81,
+            "complete_case_total": 482,
+            "total_patients": 810
+        },
+        {
+            "rank": 2,
+            "column": "label_gingivitis",
+            "label": "Gingivitis",
+            "all_train_visits": 1357,
+            "all_val_visits": 328,
+            "all_test_visits": 302,
+            "all_total_visits": 1987,
+            "complete_case_train": 406,
+            "complete_case_val": 96,
+            "complete_case_test": 92,
+            "complete_case_total": 594,
+            "total_patients": 1691
+        },
+        {
+            "rank": 3,
+            "column": "label_malocclusion",
+            "label": "Malocclusion",
+            "all_train_visits": 1833,
+            "all_val_visits": 370,
+            "all_test_visits": 385,
+            "all_total_visits": 2588,
+            "complete_case_train": 1455,
+            "complete_case_val": 288,
+            "complete_case_test": 298,
+            "complete_case_total": 2041,
+            "total_patients": 2023
+        },
+        {
+            "rank": 4,
+            "column": "label_pulpitis",
+            "label": "Pulpitis",
+            "all_train_visits": 323,
+            "all_val_visits": 45,
+            "all_test_visits": 75,
+            "all_total_visits": 443,
+            "complete_case_train": 132,
+            "complete_case_val": 17,
+            "complete_case_test": 34,
+            "complete_case_total": 183,
+            "total_patients": 364
+        }
+    ]
+}

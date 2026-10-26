@@ -1,0 +1,5 @@
+rank,column,label,all_train_visits,all_val_visits,all_test_visits,all_total_visits,complete_case_train,complete_case_val,complete_case_test,complete_case_total,total_patients
+1,label_caries,Caries,660,139,156,955,326,75,81,482,810
+2,label_gingivitis,Gingivitis,1357,328,302,1987,406,96,92,594,1691
+3,label_malocclusion,Malocclusion,1833,370,385,2588,1455,288,298,2041,2023
+4,label_pulpitis,Pulpitis,323,45,75,443,132,17,34,183,364

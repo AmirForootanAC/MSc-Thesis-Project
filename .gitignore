@@ -27,3 +27,7 @@ results/ssl_pretraining/**/*.pth
 results/ssl_pretraining/**/*.ckpt
 # Final supervised V3 checkpoints
 results/baseline/final_linear_v3/**/checkpoints/
+
+*:Zone.Identifier
+*.pt
+*.pth

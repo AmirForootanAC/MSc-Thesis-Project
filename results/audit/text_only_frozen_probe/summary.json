@@ -1,0 +1,13 @@
+{
+  "experiment": "frozen_distilbert_dropout_linear_probe",
+  "train_samples": 2935,
+  "validation_samples": 627,
+  "test_evaluated": false,
+  "dropout": 0.3,
+  "learning_rate": 0.001,
+  "weight_decay": 0.01,
+  "best_epoch": 4,
+  "best_val_macro_f1": 0.4725808176668458,
+  "history_file": "results/audit/text_only_frozen_probe/history.json",
+  "checkpoint_file": "results/audit/text_only_frozen_probe/best_probe.pt"
+}
