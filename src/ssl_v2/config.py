@@ -151,8 +151,8 @@ MAX_RADIO_VIEWS_EVAL = 16
 # SSL v2 Pretraining Hyperparameters (Optimized for Dual T4)
 # ============================================================
 
-SSL_BATCH_SIZE = 8           # 4 per GPU across 2 T4 GPUs
-SSL_GRAD_ACCUM_STEPS = 4     # Effective batch size = 32 visits
+SSL_BATCH_SIZE = 24          # 4 per GPU across 2 T4 GPUs
+SSL_GRAD_ACCUM_STEPS = 1     # Effective batch size = 32 visits
 SSL_EPOCHS = 40
 SSL_WARMUP_EPOCHS = 3
 
