@@ -36,12 +36,12 @@ DATASET_PATH = (
     else DATASET_FALLBACK_SIX_LABEL_PATH
 )
 
+KAGGLE_IMAGE_ROOT = Path("/kaggle/input/datasets/ahforootan/code-dataset/Images")
+
 IMAGE_ROOT = (
-    PROJECT_ROOT
-    / "data"
-    / "raw"
-    / "COde-Dataset"
-    / "Images"
+    KAGGLE_IMAGE_ROOT
+    if KAGGLE_IMAGE_ROOT.exists()
+    else (PROJECT_ROOT / "data" / "raw" / "COde-Dataset" / "Images")
 )
 
 SSL_OUTPUT_DIR = (

@@ -12,7 +12,7 @@ Features:
     - Loads pretrained SSL v2 weights from best_ssl_model.pt
     - Multi-GPU execution across 2x T4 GPUs via nn.DataParallel + AMP FP16
     - Multi-View Test-Time Augmentation (horizontal flip across all views)
-    - Validation-only threshold optimization + crash-safe resume
+    - Validation-only threshold optimization + crash-safe resume + Cloud/GitHub Sync
 """
 
 import argparse
@@ -37,6 +37,7 @@ from src.baseline.final_linear_v4.metrics import (
 )
 
 from . import config
+from .cloud_sync import KagglePersistenceManager
 from .dataset import MultiViewDownstreamDataset, pad_and_collate_multiview
 from .fusion_model import MultimodalScenarioClassifier
 
@@ -114,25 +115,36 @@ def build_optimizer(model: MultimodalScenarioClassifier) -> AdamW:
     return AdamW(groups, weight_decay=config.WEIGHT_DECAY)
 
 
-def forward_batch(model: nn.Module, batch: dict, device: torch.device, flip_views: bool = False):
+def forward_batch(
+    model: nn.Module,
+    batch: dict,
+    device: torch.device,
+    flip_views: bool = False,
+):
     kwargs = {}
     if "photo_images" in batch:
         imgs = batch["photo_images"].to(device, non_blocking=True)
         if flip_views:
-            imgs = imgs.flip(dims=[-1])  # Horizontal flip on width dimension
+            imgs = imgs.flip(dims=[-1])
         kwargs["photo_images"] = imgs
-        kwargs["photo_view_mask"] = batch["photo_view_mask"].to(device, non_blocking=True)
+        kwargs["photo_view_mask"] = batch["photo_view_mask"].to(
+            device, non_blocking=True
+        )
 
     if "radio_images" in batch:
         r_imgs = batch["radio_images"].to(device, non_blocking=True)
         if flip_views:
             r_imgs = r_imgs.flip(dims=[-1])
         kwargs["radio_images"] = r_imgs
-        kwargs["radio_view_mask"] = batch["radio_view_mask"].to(device, non_blocking=True)
+        kwargs["radio_view_mask"] = batch["radio_view_mask"].to(
+            device, non_blocking=True
+        )
 
     if "input_ids" in batch:
         kwargs["input_ids"] = batch["input_ids"].to(device, non_blocking=True)
-        kwargs["attention_mask"] = batch["attention_mask"].to(device, non_blocking=True)
+        kwargs["attention_mask"] = batch["attention_mask"].to(
+            device, non_blocking=True
+        )
 
     return model(**kwargs)
 
@@ -152,7 +164,9 @@ def evaluate_split(
     total_loss = 0.0
     total_samples = 0
 
-    has_visual = any(m in ("photograph", "radiograph") for m in loader.dataset.modalities)
+    has_visual = any(
+        m in ("photograph", "radiograph") for m in loader.dataset.modalities
+    )
 
     for batch in tqdm(loader, desc=desc, leave=False):
         labels = batch["labels"].to(device, non_blocking=True)
@@ -161,8 +175,12 @@ def evaluate_split(
             logits = forward_batch(model, batch, device, flip_views=False)
 
             if use_tta and has_visual:
-                logits_flipped = forward_batch(model, batch, device, flip_views=True)
-                probs = 0.5 * (torch.sigmoid(logits) + torch.sigmoid(logits_flipped))
+                logits_flipped = forward_batch(
+                    model, batch, device, flip_views=True
+                )
+                probs = 0.5 * (
+                    torch.sigmoid(logits) + torch.sigmoid(logits_flipped)
+                )
                 probs = torch.clamp(probs, 1e-6, 1.0 - 1.0e-6)
                 logits = torch.log(probs / (1.0 - probs))
 
@@ -183,6 +201,7 @@ def evaluate_split(
 def run_scenario(
     scenario_name: str,
     ssl_checkpoint_path: Path,
+    sync_mgr: KagglePersistenceManager,
     force_rerun: bool = False,
 ) -> dict:
     set_seed(config.SEED)
@@ -192,11 +211,15 @@ def run_scenario(
     out_dir = config.DOWNSTREAM_OUTPUT_DIR / scenario_name
     out_dir.mkdir(parents=True, exist_ok=True)
     final_results_path = out_dir / "final_results.json"
+    history_json_path = out_dir / "history.json"
     best_model_path = out_dir / "best_model.pt"
     latest_ckpt_path = out_dir / "latest.pt"
 
     if final_results_path.exists() and not force_rerun:
-        print(f"\n[Skip] Scenario '{scenario_name}' already completed at {final_results_path}")
+        print(
+            f"\n[Skip] Scenario '{scenario_name}' already completed at "
+            f"{final_results_path}"
+        )
         return json.loads(final_results_path.read_text(encoding="utf-8"))
 
     print("\n" + "=" * 75)
@@ -274,8 +297,12 @@ def run_scenario(
     history = []
 
     if latest_ckpt_path.exists() and not force_rerun:
-        print(f"[Resume] Restoring scenario '{scenario_name}' from {latest_ckpt_path}")
-        ckpt = torch.load(latest_ckpt_path, map_location=device, weights_only=False)
+        print(
+            f"[Resume] Restoring scenario '{scenario_name}' from {latest_ckpt_path}"
+        )
+        ckpt = torch.load(
+            latest_ckpt_path, map_location=device, weights_only=False
+        )
         base_model.load_state_dict(ckpt["model_state_dict"])
         optimizer.load_state_dict(ckpt["optimizer_state_dict"])
         scheduler.load_state_dict(ckpt["scheduler_state_dict"])
@@ -311,7 +338,9 @@ def run_scenario(
         for step, batch in enumerate(pbar):
             labels = batch["labels"].to(device, non_blocking=True)
 
-            with torch.amp.autocast(device_type=device.type, enabled=config.USE_AMP):
+            with torch.amp.autocast(
+                device_type=device.type, enabled=config.USE_AMP
+            ):
                 logits = forward_batch(model, batch, device, flip_views=False)
                 loss = criterion(logits, labels)
                 scaled_loss = loss / config.DOWNSTREAM_GRAD_ACCUM_STEPS
@@ -333,7 +362,9 @@ def run_scenario(
             bs = labels.size(0)
             train_loss_sum += loss.item() * bs
             train_samples += bs
-            pbar.set_postfix(loss=f"{train_loss_sum / max(train_samples, 1):.4f}")
+            pbar.set_postfix(
+                loss=f"{train_loss_sum / max(train_samples, 1):.4f}"
+            )
 
         if epoch > config.WARMUP_EPOCHS:
             scheduler.step()
@@ -393,6 +424,9 @@ def run_scenario(
             },
             latest_ckpt_path,
         )
+        history_json_path.write_text(
+            json.dumps(history, indent=2), encoding="utf-8"
+        )
 
         print(
             f"Epoch {epoch:02d} | Train Loss: {train_loss:.4f} | "
@@ -401,16 +435,33 @@ def run_scenario(
             f"Patience: {patience}/{config.EARLY_STOPPING_PATIENCE}"
         )
 
+        # Live Cloud Backup & GitHub Sync after each epoch
+        if improved:
+            sync_mgr.backup_file(best_model_path)
+        if epoch % 2 == 0 or epoch == config.DOWNSTREAM_EPOCHS:
+            sync_mgr.backup_file(latest_ckpt_path)
+        sync_mgr.backup_file(history_json_path)
+        sync_mgr.push_jsons_to_github(
+            f"Downstream v2 {scenario_name} epoch {epoch} history"
+        )
+
         if patience >= config.EARLY_STOPPING_PATIENCE:
             print(f"Early stopping triggered at epoch {epoch}.")
             break
 
     # Load best checkpoint for final evaluation
-    best_ckpt = torch.load(best_model_path, map_location=device, weights_only=False)
+    best_ckpt = torch.load(
+        best_model_path, map_location=device, weights_only=False
+    )
     base_model.load_state_dict(best_ckpt["model_state_dict"])
 
     _, val_logits_tta, val_labels_tta = evaluate_split(
-        model, val_loader, criterion, device, use_tta=config.USE_TTA, desc="[Val TTA]"
+        model,
+        val_loader,
+        criterion,
+        device,
+        use_tta=config.USE_TTA,
+        desc="[Val TTA]",
     )
     val_default = compute_metrics(
         val_logits_tta,
@@ -433,7 +484,12 @@ def run_scenario(
     )
 
     _, test_logits_tta, test_labels_tta = evaluate_split(
-        model, test_loader, criterion, device, use_tta=config.USE_TTA, desc="[Test TTA]"
+        model,
+        test_loader,
+        criterion,
+        device,
+        use_tta=config.USE_TTA,
+        desc="[Test TTA]",
     )
     test_default = compute_metrics(
         test_logits_tta,
@@ -465,10 +521,20 @@ def run_scenario(
         "history": history,
     }
 
-    final_results_path.write_text(json.dumps(results, indent=2), encoding="utf-8")
+    final_results_path.write_text(
+        json.dumps(results, indent=2), encoding="utf-8"
+    )
+
+    # Final backup of completed scenario results
+    sync_mgr.backup_file(final_results_path)
+    sync_mgr.push_jsons_to_github(
+        f"Downstream v2 {scenario_name} final test results"
+    )
 
     print("\n" + "-" * 75)
-    print(f"FINAL TEST RESULTS — {scenario_name.upper()} (Best Epoch: {best_epoch})")
+    print(
+        f"FINAL TEST RESULTS — {scenario_name.upper()} (Best Epoch: {best_epoch})"
+    )
     print("-" * 75)
     print(f"Test Macro F1 (@0.5) : {test_default['macro_f1']:.4f}")
     print(f"Test Macro F1 (Opt)  : {test_optimized['macro_f1']:.4f}")
@@ -488,7 +554,13 @@ def parse_args():
         "--scenario",
         type=str,
         default="all",
-        choices=["image_only", "xray_only", "text_only", "full_multimodal", "all"],
+        choices=[
+            "image_only",
+            "xray_only",
+            "text_only",
+            "full_multimodal",
+            "all",
+        ],
         help="Which scenario to train and evaluate.",
     )
     parser.add_argument(
@@ -507,6 +579,11 @@ def parse_args():
 
 def main():
     args = parse_args()
+
+    # Restore any existing checkpoints from Cloud / Kaggle Input at session start
+    sync_mgr = KagglePersistenceManager(config.PROJECT_ROOT)
+    sync_mgr.restore_all_from_backup()
+
     ssl_ckpt = Path(args.ssl_checkpoint)
 
     scenarios_to_run = (
@@ -517,7 +594,9 @@ def main():
 
     summary_table = {}
     for scen in scenarios_to_run:
-        res = run_scenario(scen, ssl_ckpt, force_rerun=args.force)
+        res = run_scenario(
+            scen, ssl_ckpt, sync_mgr=sync_mgr, force_rerun=args.force
+        )
         summary_table[scen] = {
             "test_macro_f1_0.5": res["test_default"]["macro_f1"],
             "test_macro_f1_opt": res["test_optimized"]["macro_f1"],
@@ -527,8 +606,17 @@ def main():
         }
 
     if len(summary_table) > 1:
-        summary_path = config.DOWNSTREAM_OUTPUT_DIR / "all_4scenarios_summary.json"
-        summary_path.write_text(json.dumps(summary_table, indent=2), encoding="utf-8")
+        summary_path = (
+            config.DOWNSTREAM_OUTPUT_DIR / "all_4scenarios_summary.json"
+        )
+        summary_path.write_text(
+            json.dumps(summary_table, indent=2), encoding="utf-8"
+        )
+        sync_mgr.backup_file(summary_path)
+        sync_mgr.push_jsons_to_github(
+            "Complete 4-scenario SSL v2 benchmark summary"
+        )
+
         print("\n" + "=" * 75)
         print("4-SCENARIO BENCHMARK SUMMARY (TEST SET)")
         print("=" * 75)

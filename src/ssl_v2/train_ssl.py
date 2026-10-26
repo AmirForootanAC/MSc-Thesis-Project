@@ -7,28 +7,26 @@ Features:
    then gathers embeddings to compute the full-batch contrastive matrix!
 2. Evaluates validation SSL loss and cross-modal positive vs. negative
    cosine similarity gap at the end of every epoch.
-3. Crash-safe resume via latest_ssl_checkpoint.pt.
+3. Crash-safe resume via latest_ssl_checkpoint.pt + Live Cloud & GitHub Sync.
 """
 
 import json
-import math
 import random
-import time
 from pathlib import Path
 
 import numpy as np
 import torch
 import torch.nn as nn
-import torch.nn.functional as F
 from torch.optim import AdamW
 from torch.optim.lr_scheduler import CosineAnnealingLR
 from torch.utils.data import DataLoader
 from tqdm.auto import tqdm
 
 from . import config
-from .dataset import MultiViewSSLDataset, pad_and_collate_multiview
-from .encoders import MultiViewVisionEncoder, ClinicalTextEncoder
+from .cloud_sync import KagglePersistenceManager
 from .contrastive_v2 import DynamicMultimodalSSLV2Loss
+from .dataset import MultiViewSSLDataset, pad_and_collate_multiview
+from .encoders import ClinicalTextEncoder, MultiViewVisionEncoder
 
 
 def seed_everything(seed: int = 42):
@@ -110,7 +108,11 @@ def build_ssl_optimizer(system: MultimodalSSLV2System) -> AdamW:
             continue
         if "text_encoder.transformer" in name:
             text_params.append(param)
-        elif "mil_aggregator" in name or "text_encoder.projector" in name or "token_attn" in name:
+        elif (
+            "mil_aggregator" in name
+            or "text_encoder.projector" in name
+            or "token_attn" in name
+        ):
             head_params.append(param)
         else:
             vision_params.append(param)
@@ -193,7 +195,6 @@ def evaluate_ssl_validation(
             total_loss += loss.item()
             valid_batches += 1
 
-        # Compute positive vs negative cosine similarity on photo-text pairs
         mask_pt = has_photo & has_text
         if mask_pt.sum() >= 2:
             zp = criterion.photo_proj(photo_out["visit_embedding"][mask_pt])
@@ -201,7 +202,9 @@ def evaluate_ssl_validation(
             sim_mat = zp @ zt.T
             diag = torch.diag(sim_mat)
             pos_sims.append(diag.mean().item())
-            off_diag = sim_mat[~torch.eye(sim_mat.size(0), dtype=torch.bool, device=device)]
+            off_diag = sim_mat[
+                ~torch.eye(sim_mat.size(0), dtype=torch.bool, device=device)
+            ]
             neg_sims.append(off_diag.mean().item())
 
     avg_val_loss = total_loss / max(valid_batches, 1)
@@ -222,15 +225,30 @@ def main():
     device = torch.device(config.DEVICE)
     config.SSL_OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 
+    # 1. Restore any existing checkpoints from Cloud / Kaggle Input at session start
+    sync_mgr = KagglePersistenceManager(config.PROJECT_ROOT)
+    sync_mgr.restore_all_from_backup()
+
     print("=" * 70)
     print("SSL v2 MULTI-VIEW PRETRAINING (NO AVERAGING | 2x T4 OPTIMIZED)")
     print("=" * 70)
     print(f"Device       : {device} (GPUs available: {config.NUM_GPUS})")
     print(f"Dataset      : {config.DATASET_PATH}")
-    print(f"Photo Model  : {config.PHOTO_BACKBONE} (max {config.MAX_PHOTO_VIEWS_TRAIN} views/visit)")
-    print(f"Radio Model  : {config.RADIO_BACKBONE} + CLAHE (max {config.MAX_RADIO_VIEWS_TRAIN} views/visit)")
+    print(f"Image Root   : {config.IMAGE_ROOT}")
+    print(
+        f"Photo Model  : {config.PHOTO_BACKBONE} "
+        f"(max {config.MAX_PHOTO_VIEWS_TRAIN} views/visit)"
+    )
+    print(
+        f"Radio Model  : {config.RADIO_BACKBONE} + CLAHE "
+        f"(max {config.MAX_RADIO_VIEWS_TRAIN} views/visit)"
+    )
     print(f"Text Model   : {config.TEXT_MODEL_NAME}")
-    print(f"Batch Size   : {config.SSL_BATCH_SIZE} (Grad Accum: {config.SSL_GRAD_ACCUM_STEPS} -> Effective: {config.SSL_BATCH_SIZE * config.SSL_GRAD_ACCUM_STEPS})")
+    print(
+        f"Batch Size   : {config.SSL_BATCH_SIZE} "
+        f"(Grad Accum: {config.SSL_GRAD_ACCUM_STEPS} -> "
+        f"Effective: {config.SSL_BATCH_SIZE * config.SSL_GRAD_ACCUM_STEPS})"
+    )
     print("=" * 70)
 
     train_dataset = MultiViewSSLDataset(split="train", is_train=True)
@@ -257,7 +275,10 @@ def main():
     system = MultimodalSSLV2System().to(device)
 
     if config.USE_MULTI_GPU:
-        print(f"[Multi-GPU] Wrapping MultimodalEncodersV2 in DataParallel across {config.NUM_GPUS} GPUs.")
+        print(
+            f"[Multi-GPU] Wrapping MultimodalEncodersV2 in DataParallel "
+            f"across {config.NUM_GPUS} GPUs."
+        )
         encoder_runner = nn.DataParallel(system.encoders)
     else:
         encoder_runner = system.encoders
@@ -290,7 +311,6 @@ def main():
         history = ckpt.get("history", [])
 
     for epoch in range(start_epoch, config.SSL_EPOCHS + 1):
-        # Linear Warmup
         if epoch <= config.SSL_WARMUP_EPOCHS:
             warmup_factor = epoch / config.SSL_WARMUP_EPOCHS
             for group in optimizer.param_groups:
@@ -309,7 +329,9 @@ def main():
             "intra_multiview": 0.0,
         }
 
-        pbar = tqdm(train_loader, desc=f"SSL Epoch {epoch:02d}/{config.SSL_EPOCHS}")
+        pbar = tqdm(
+            train_loader, desc=f"SSL Epoch {epoch:02d}/{config.SSL_EPOCHS}"
+        )
         num_batches = len(train_loader)
 
         for step, batch in enumerate(pbar):
@@ -318,13 +340,17 @@ def main():
             radio_images = batch["radio_images"].to(device, non_blocking=True)
             radio_mask = batch["radio_view_mask"].to(device, non_blocking=True)
             input_ids = batch["input_ids"].to(device, non_blocking=True)
-            attention_mask = batch["attention_mask"].to(device, non_blocking=True)
+            attention_mask = batch["attention_mask"].to(
+                device, non_blocking=True
+            )
 
             has_photo = batch["has_photo"].to(device, non_blocking=True)
             has_radio = batch["has_radio"].to(device, non_blocking=True)
             has_text = batch["has_text"].to(device, non_blocking=True)
 
-            with torch.amp.autocast(device_type=device.type, enabled=config.USE_AMP):
+            with torch.amp.autocast(
+                device_type=device.type, enabled=config.USE_AMP
+            ):
                 photo_out, radio_out, text_out = encoder_runner(
                     photo_images,
                     photo_mask,
@@ -350,7 +376,10 @@ def main():
 
             scaler.scale(scaled_loss).backward()
 
-            if (step + 1) % config.SSL_GRAD_ACCUM_STEPS == 0 or (step + 1) == num_batches:
+            if (
+                (step + 1) % config.SSL_GRAD_ACCUM_STEPS == 0
+                or (step + 1) == num_batches
+            ):
                 scaler.unscale_(optimizer)
                 torch.nn.utils.clip_grad_norm_(system.parameters(), 1.0)
                 scaler.step(optimizer)
@@ -393,10 +422,12 @@ def main():
             f"Epoch {epoch:02d} | Train Loss: {train_avg_loss:.4f} | "
             f"Val Loss: {val_stats['val_loss']:.4f} | "
             f"CosSim Gap: +{val_stats['alignment_gap']:.4f} "
-            f"(Pos: {val_stats['pos_cosine_sim']:.3f}, Neg: {val_stats['neg_cosine_sim']:.3f})"
+            f"(Pos: {val_stats['pos_cosine_sim']:.3f}, "
+            f"Neg: {val_stats['neg_cosine_sim']:.3f})"
         )
 
-        if val_stats["val_loss"] < best_val_loss:
+        is_new_best = val_stats["val_loss"] < best_val_loss
+        if is_new_best:
             best_val_loss = val_stats["val_loss"]
             torch.save(
                 {
@@ -408,7 +439,9 @@ def main():
                 },
                 best_path,
             )
-            print(f"  -> Saved new best SSL model (Val Loss = {best_val_loss:.4f})")
+            print(
+                f"  -> Saved new best SSL model (Val Loss = {best_val_loss:.4f})"
+            )
 
         torch.save(
             {
@@ -423,6 +456,14 @@ def main():
             latest_path,
         )
         history_path.write_text(json.dumps(history, indent=2), encoding="utf-8")
+
+        # 2. Live Cloud Backup (.pt + .json) and GitHub Push (.json only)
+        if is_new_best:
+            sync_mgr.backup_file(best_path)
+        if epoch % 2 == 0 or epoch == config.SSL_EPOCHS:
+            sync_mgr.backup_file(latest_path)
+        sync_mgr.backup_file(history_path)
+        sync_mgr.push_jsons_to_github(f"SSL v2 Epoch {epoch} metrics")
 
 
 if __name__ == "__main__":
