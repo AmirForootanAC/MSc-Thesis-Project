@@ -151,8 +151,8 @@ MAX_RADIO_VIEWS_EVAL = 16
 # SSL v2 Pretraining Hyperparameters (Optimized for Dual T4)
 # ============================================================
 
-SSL_BATCH_SIZE = 24          # 4 per GPU across 2 T4 GPUs
-SSL_GRAD_ACCUM_STEPS = 1     # Effective batch size = 32 visits
+SSL_BATCH_SIZE = 24          # 12 per GPU across 2 T4 GPUs
+SSL_GRAD_ACCUM_STEPS = 1     # Effective batch size = 24 visits
 SSL_EPOCHS = 40
 SSL_WARMUP_EPOCHS = 3
 
@@ -212,6 +212,6 @@ NUM_GPUS = torch.cuda.device_count() if torch.cuda.is_available() else 0
 USE_MULTI_GPU = NUM_GPUS > 1
 USE_AMP = DEVICE == "cuda"
 
-# تنظیم num_workers روی 2 برای جلوگیری از اشغال بیش از حد RAM و فریز شدن CPU
-NUM_WORKERS = 2 if DEVICE == "cuda" else 0
+# تنظیم num_workers روی 0 برای جلوگیری از Deadlock در DataParallel روی کگل
+NUM_WORKERS = 0
 PIN_MEMORY = DEVICE == "cuda"
