@@ -28,20 +28,19 @@ DATASET_FALLBACK_SIX_LABEL_PATH = (
     / "labeled_dataset.csv"
 )
 
-# Use the 4-label dataset if generated; otherwise read the 6-label CSV
-# and filter the 4 target columns on the fly.
 DATASET_PATH = (
     DATASET_FOUR_LABEL_PATH
     if DATASET_FOUR_LABEL_PATH.exists()
     else DATASET_FALLBACK_SIX_LABEL_PATH
 )
 
-KAGGLE_IMAGE_ROOT = Path("/kaggle/input/datasets/ahforootan/code-dataset/Images")
+KAGGLE_IMAGE_ROOT = Path("/kaggle/input/datasets/code-dataset/Images")
+LOCAL_IMAGE_ROOT = PROJECT_ROOT / "data" / "raw" / "COde-Dataset" / "Images"
 
 IMAGE_ROOT = (
     KAGGLE_IMAGE_ROOT
     if KAGGLE_IMAGE_ROOT.exists()
-    else (PROJECT_ROOT / "data" / "raw" / "COde-Dataset" / "Images")
+    else LOCAL_IMAGE_ROOT
 )
 
 SSL_OUTPUT_DIR = (
@@ -82,7 +81,7 @@ ACTIVE_MODALITIES = SCENARIOS[ACTIVE_SCENARIO]
 
 
 # ============================================================
-# 4 Canonical Clinical Labels & Authoritative Counts
+# 4 Canonical Clinical Labels
 # ============================================================
 
 LABEL_NAMES = [
@@ -118,35 +117,29 @@ EXPECTED_COMPLETE_CASE_COUNTS = {
 # Specialized Backbones & Dimensions
 # ============================================================
 
-# 1. Intraoral Photographs -> ConvNeXt-Tiny (768-d)
 PHOTO_BACKBONE = "convnext_tiny"
 PHOTO_FEATURE_DIM = 768
 
-# 2. Dental Radiographs -> DenseNet121 (1024-d) + CLAHE preprocessing
 RADIO_BACKBONE = "densenet121"
 RADIO_FEATURE_DIM = 1024
-USE_CLAHE_FOR_XRAY = True
 
-# 3. Clinical Text -> Bio_ClinicalBERT (768-d)
+# بهینه‌سازی سرعت: خاموش کردن CLAHE در مرحله پیش‌آموزش SSL برای جلوگیری از فشار روی CPU
+USE_CLAHE_FOR_XRAY = False
+
 TEXT_MODEL_NAME = "emilyalsentzer/Bio_ClinicalBERT"
 TEXT_FEATURE_DIM = 768
 TEXT_MAX_LENGTH = 256
 
-# Shared SSL latent & attention space
 SHARED_EMBED_DIM = 256
 PROJECTION_DIM = 128
 
 
 # ============================================================
-# Multi-View (No-Averaging) Configuration for 2x T4 GPUs
+# Multi-View Configuration for 2x T4 GPUs (Optimized for Speed)
 # ============================================================
 
 IMAGE_SIZE = 256
 
-# P75 of photographs is 8; P95 of radiographs is 3.
-# During training, we sample up to MAX_VIEWS without replacement
-# so every view is processed at full resolution without OOM.
-# During evaluation/extraction, ALL views of the visit are processed.
 MAX_PHOTO_VIEWS_TRAIN = 8
 MAX_RADIO_VIEWS_TRAIN = 3
 
@@ -155,11 +148,11 @@ MAX_RADIO_VIEWS_EVAL = 16
 
 
 # ============================================================
-# SSL v2 Pretraining Hyperparameters
+# SSL v2 Pretraining Hyperparameters (Optimized for Dual T4)
 # ============================================================
 
-SSL_BATCH_SIZE = 16          # 8 per T4 GPU across 2 GPUs
-SSL_GRAD_ACCUM_STEPS = 2     # Effective batch size = 32 visits (~250 images/step)
+SSL_BATCH_SIZE = 8           # 4 per GPU across 2 T4 GPUs
+SSL_GRAD_ACCUM_STEPS = 4     # Effective batch size = 32 visits
 SSL_EPOCHS = 40
 SSL_WARMUP_EPOCHS = 3
 
@@ -169,22 +162,19 @@ SSL_HEAD_LR = 3e-4
 SSL_WEIGHT_DECAY = 1e-2
 
 SSL_TEMPERATURE = 0.07
-SSL_SOFT_TARGET_ALPHA = 0.25   # Weight for MedCLIP-style clinical semantic soft target
-SSL_LOCAL_VIEW_WEIGHT = 0.35   # Weight for GLoRIA-style view-to-visit alignment
-SSL_INTRA_VIEW_WEIGHT = 0.30   # Weight for multi-view intra-visit consistency
+SSL_SOFT_TARGET_ALPHA = 0.25
+SSL_LOCAL_VIEW_WEIGHT = 0.35
+SSL_INTRA_VIEW_WEIGHT = 0.30
 
 
 # ============================================================
-# Downstream / Fusion v2 Hyperparameters (4 Scenarios)
+# Downstream / Fusion v2 Hyperparameters
 # ============================================================
 
-# Mode can be:
-#   - "end_to_end_finetune": fine-tunes SSL encoders + Gated Cross-Modal Fusion
-#   - "frozen_ssl_fusion"  : trains Gated Cross-Modal Fusion on pre-extracted SSL features
 DOWNSTREAM_MODE = "end_to_end_finetune"
 
 DOWNSTREAM_BATCH_SIZE = 8
-DOWNSTREAM_GRAD_ACCUM_STEPS = 2  # Effective batch size = 16
+DOWNSTREAM_GRAD_ACCUM_STEPS = 2
 DOWNSTREAM_EPOCHS = 35
 EARLY_STOPPING_PATIENCE = 7
 WARMUP_EPOCHS = 2
@@ -194,9 +184,9 @@ TEXT_LR = 1.2e-5
 FUSION_HEAD_LR = 8e-5
 WEIGHT_DECAY = 1e-2
 
-FREEZE_PHOTO_STAGES = 2      # Freeze early stages 0 & 1 of ConvNeXt-Tiny
-FREEZE_RADIO_BLOCKS = 2      # Freeze denseblock1 & denseblock2 of DenseNet121
-FREEZE_TEXT_LAYERS = 4       # Freeze bottom 4 layers of Bio_ClinicalBERT (out of 12)
+FREEZE_PHOTO_STAGES = 2
+FREEZE_RADIO_BLOCKS = 2
+FREEZE_TEXT_LAYERS = 4
 
 DROPOUT = 0.35
 MODALITY_DROPOUT = 0.15
@@ -213,7 +203,7 @@ TOP_K_CHECKPOINTS = 3
 
 
 # ============================================================
-# Hardware & Reproducibility (Kaggle 2x T4)
+# Hardware & Reproducibility (Kaggle 2x T4 Optimized)
 # ============================================================
 
 SEED = 42
@@ -222,6 +212,6 @@ NUM_GPUS = torch.cuda.device_count() if torch.cuda.is_available() else 0
 USE_MULTI_GPU = NUM_GPUS > 1
 USE_AMP = DEVICE == "cuda"
 
-# 4 workers significantly speeds up multi-view image loading on Kaggle
-NUM_WORKERS = 4 if DEVICE == "cuda" else 0
+# تنظیم num_workers روی 2 برای جلوگیری از اشغال بیش از حد RAM و فریز شدن CPU
+NUM_WORKERS = 2 if DEVICE == "cuda" else 0
 PIN_MEMORY = DEVICE == "cuda"
