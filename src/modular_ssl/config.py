@@ -10,7 +10,6 @@ Stage 3 : 4-Scenario Gated Cross-Modal Attention Fusion (image_only, xray_only, 
 from pathlib import Path
 import torch
 
-
 PROJECT_ROOT = Path(__file__).resolve().parents[2]
 
 # ============================================================
@@ -39,7 +38,7 @@ DATASET_PATH = (
 
 # If copied to /tmp/COde_Images on Kaggle for fast local SSD I/O, prioritize it
 FAST_TMP_IMAGE_ROOT = Path("/tmp/COde_Images")
-KAGGLE_MOUNT_IMAGE_ROOT = Path("/kaggle/input/datasets/code-dataset/Images")
+KAGGLE_MOUNT_IMAGE_ROOT = Path("/kaggle/input/datasets/ahforootan/code-dataset/Images")
 LOCAL_SYMLINK_IMAGE_ROOT = PROJECT_ROOT / "data" / "raw" / "COde-Dataset" / "Images"
 
 if FAST_TMP_IMAGE_ROOT.exists():
@@ -95,6 +94,35 @@ EXPECTED_COMPLETE_CASE_COUNTS = {
 
 
 # ============================================================
+# Hardware Detection & Adaptive Load Balancing
+# ============================================================
+
+SEED = 42
+DEVICE = "cuda" if torch.cuda.is_available() else "cpu"
+NUM_GPUS = torch.cuda.device_count() if torch.cuda.is_available() else 0
+USE_MULTI_GPU = NUM_GPUS > 1
+USE_AMP = DEVICE == "cuda"
+
+# Detect VRAM to dynamically set batch sizes to avoid OOM
+_VRAM_GB = 0
+if torch.cuda.is_available():
+    _VRAM_GB = torch.cuda.get_device_properties(0).total_memory / (1024**3)
+
+if _VRAM_GB > 0 and _VRAM_GB < 8:
+    # شرایط لپ‌تاپ (۴ گیگابایت گرافیک): تست نقطه طلایی
+    _ADAPTIVE_BATCH_SIZE = 4         # تغییر از 2 به 4
+    _ADAPTIVE_GRAD_ACCUM = 12        # تغییر از 24 به 12 (4 * 12 = 48)
+    NUM_WORKERS = 2
+else:
+    # Kaggle environment (2x T4 16GB GPUs)
+    _ADAPTIVE_BATCH_SIZE = 8
+    _ADAPTIVE_GRAD_ACCUM = 6   # 8 * 6 = 48 effective batch
+    NUM_WORKERS = 2            # Keep it safe at 2 to avoid system RAM crashes
+
+PIN_MEMORY = DEVICE == "cuda"
+
+
+# ============================================================
 # Backbones & High-Resolution Multi-View Settings
 # ============================================================
 
@@ -116,11 +144,11 @@ PROJECTION_DIM = 128
 
 
 # ============================================================
-# Modular SSL Pretraining Hyperparameters (Per-Modality)
+# Modular SSL Pretraining Hyperparameters (Adaptive)
 # ============================================================
 
-SSL_BATCH_SIZE = 8            # 4 per T4 GPU due to 384x384 image size
-SSL_GRAD_ACCUM_STEPS = 6      # Effective batch size = 48
+SSL_BATCH_SIZE = _ADAPTIVE_BATCH_SIZE
+SSL_GRAD_ACCUM_STEPS = _ADAPTIVE_GRAD_ACCUM
 SSL_EPOCHS_PHOTO = 25
 SSL_EPOCHS_RADIO = 30
 SSL_WARMUP_EPOCHS = 2
@@ -157,17 +185,3 @@ DEFAULT_THRESHOLD = 0.50
 THRESHOLD_MIN = 0.30
 THRESHOLD_MAX = 0.70
 THRESHOLD_STEP = 0.05
-
-
-# ============================================================
-# Hardware & DataLoader (Optimized for 2x T4 on Kaggle)
-# ============================================================
-
-SEED = 42
-DEVICE = "cuda" if torch.cuda.is_available() else "cpu"
-NUM_GPUS = torch.cuda.device_count() if torch.cuda.is_available() else 0
-USE_MULTI_GPU = NUM_GPUS > 1
-USE_AMP = DEVICE == "cuda"
-
-NUM_WORKERS = 4 if DEVICE == "cuda" else 0
-PIN_MEMORY = DEVICE == "cuda"

@@ -101,12 +101,13 @@ def evaluate_ssl(
             steps += 1
 
         if has_txt.sum() >= 2:
-            zv = out["z_vis"][has_txt]
-            zt = out["z_txt"][has_txt]
-            sim = zv @ zt.T
-            pos_sims.append(torch.diag(sim).mean().item())
-            eye = torch.eye(sim.size(0), dtype=torch.bool, device=device)
-            neg_sims.append(sim[~eye].mean().item())
+                    zv = out["z_vis"][has_txt]
+                    zt = out["z_txt"][has_txt]
+                    sim = zv @ zt.T
+                    # Ensure tensors are detached to prevent memory leak
+                    pos_sims.append(torch.diag(sim).mean().detach().item())
+                    eye = torch.eye(sim.size(0), dtype=torch.bool, device=device)
+                    neg_sims.append(sim[~eye].mean().detach().item())
 
     pos_m = float(np.mean(pos_sims)) if pos_sims else 0.0
     neg_m = float(np.mean(neg_sims)) if neg_sims else 0.0
@@ -279,6 +280,8 @@ def main():
             scheduler.step()
 
         train_loss = train_loss_sum / max(valid_steps, 1)
+        if torch.cuda.is_available():
+            torch.cuda.empty_cache()
         val_stats = evaluate_ssl(runner, criterion, val_loader, device)
 
         record = {
