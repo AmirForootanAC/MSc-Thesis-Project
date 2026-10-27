@@ -39,7 +39,7 @@ DATASET_PATH = (
 
 # If copied to /tmp/COde_Images on Kaggle for fast local SSD I/O, prioritize it
 FAST_TMP_IMAGE_ROOT = Path("/tmp/COde_Images")
-KAGGLE_MOUNT_IMAGE_ROOT = Path("/kaggle/input/datasets/ahforootan/code-dataset/Images")
+KAGGLE_MOUNT_IMAGE_ROOT = Path("/kaggle/input/datasets/code-dataset/Images")
 LOCAL_SYMLINK_IMAGE_ROOT = PROJECT_ROOT / "data" / "raw" / "COde-Dataset" / "Images"
 
 if FAST_TMP_IMAGE_ROOT.exists():
@@ -71,7 +71,7 @@ LABEL_NAMES = [
     "label_malocclusion",
     "label_pulpitis",
 ]
-NUM_LABELS = len(LABEL_NAMES)  # 4
+NUM_LABELS = len(LABEL_NAMES)
 
 TEXT_COLUMNS = [
     "chief_complaint",
@@ -95,22 +95,21 @@ EXPECTED_COMPLETE_CASE_COUNTS = {
 
 
 # ============================================================
-# Backbones & Multi-View Settings (No Averaging)
+# Backbones & High-Resolution Multi-View Settings
 # ============================================================
 
-PHOTO_BACKBONE = "convnext_tiny"      # 768-d spatial features
-RADIO_BACKBONE = "densenet121"        # 1024-d spatial features
-TEXT_MODEL_NAME = "emilyalsentzer/Bio_ClinicalBERT"  # 768-d token features
+PHOTO_BACKBONE = "convnext_tiny"
+RADIO_BACKBONE = "densenet121"
+TEXT_MODEL_NAME = "emilyalsentzer/Bio_ClinicalBERT"
 
 TEXT_MAX_LENGTH = 256
-IMAGE_SIZE = 224                      # 224x224 is 35% faster than 256x256 with identical accuracy
+IMAGE_SIZE = 384  # High-resolution to capture fine clinical details
 
-# Keep all views without pixel averaging:
-MAX_PHOTO_VIEWS_TRAIN = 6             # Median photo count per visit is 6
-MAX_RADIO_VIEWS_TRAIN = 3             # 95th percentile of radiographs per visit is 3
+MAX_PHOTO_VIEWS_TRAIN = 6
+MAX_RADIO_VIEWS_TRAIN = 3
 
-MAX_PHOTO_VIEWS_EXTRACT = 12          # Up to 12 views stored per visit for Cross-Modal Attention
-MAX_RADIO_VIEWS_EXTRACT = 4           # Up to 4 radiographs stored per visit
+MAX_PHOTO_VIEWS_EXTRACT = 12
+MAX_RADIO_VIEWS_EXTRACT = 4
 
 SHARED_EMBED_DIM = 256
 PROJECTION_DIM = 128
@@ -120,7 +119,8 @@ PROJECTION_DIM = 128
 # Modular SSL Pretraining Hyperparameters (Per-Modality)
 # ============================================================
 
-SSL_BATCH_SIZE = 32                   # Single visual branch fits B=32 easily in FP16!
+SSL_BATCH_SIZE = 8            # 4 per T4 GPU due to 384x384 image size
+SSL_GRAD_ACCUM_STEPS = 6      # Effective batch size = 48
 SSL_EPOCHS_PHOTO = 25
 SSL_EPOCHS_RADIO = 30
 SSL_WARMUP_EPOCHS = 2
@@ -130,7 +130,6 @@ SSL_TEXT_LR = 2e-5
 SSL_HEAD_LR = 3e-4
 SSL_WEIGHT_DECAY = 1e-2
 
-# Freeze bottom 10 layers of Bio_ClinicalBERT during SSL so text encoding is 5x faster
 SSL_FREEZE_TEXT_LAYERS = 10
 SSL_FREEZE_VISION_STAGES = 1
 
@@ -161,7 +160,7 @@ THRESHOLD_STEP = 0.05
 
 
 # ============================================================
-# Hardware & DataLoader
+# Hardware & DataLoader (Optimized for 2x T4 on Kaggle)
 # ============================================================
 
 SEED = 42
@@ -170,6 +169,5 @@ NUM_GPUS = torch.cuda.device_count() if torch.cuda.is_available() else 0
 USE_MULTI_GPU = NUM_GPUS > 1
 USE_AMP = DEVICE == "cuda"
 
-# Use 2 workers with persistent_workers=True when running single-modality SSL
-NUM_WORKERS = 2 if DEVICE == "cuda" else 0
+NUM_WORKERS = 4 if DEVICE == "cuda" else 0
 PIN_MEMORY = DEVICE == "cuda"
