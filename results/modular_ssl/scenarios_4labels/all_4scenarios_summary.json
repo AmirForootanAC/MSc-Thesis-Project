@@ -1,0 +1,54 @@
+{
+  "image_only": {
+    "macro_f1_0.5": 0.23973542057559166,
+    "macro_f1_opt": 0.23973542057559166,
+    "micro_f1": 0.5368421052631579,
+    "auroc": 0.5428195933321482,
+    "accuracy": 0.4439178515007899,
+    "per_label_f1": {
+      "label_caries": 0.022988505747126436,
+      "label_gingivitis": 0.042105263157894736,
+      "label_malocclusion": 0.6499454743729552,
+      "label_pulpitis": 0.24390243902439024
+    }
+  },
+  "xray_only": {
+    "macro_f1_0.5": 0.16004296455424274,
+    "macro_f1_opt": 0.16004296455424274,
+    "micro_f1": 0.523725834797891,
+    "auroc": 0.49307653915449345,
+    "accuracy": 0.43285939968404424,
+    "per_label_f1": {
+      "label_caries": 0.0,
+      "label_gingivitis": 0.0,
+      "label_malocclusion": 0.640171858216971,
+      "label_pulpitis": 0.0
+    }
+  },
+  "text_only": {
+    "macro_f1_0.5": 0.8373674763646113,
+    "macro_f1_opt": 0.8401590655596727,
+    "micro_f1": 0.8706811451135242,
+    "auroc": 0.9653091008112501,
+    "accuracy": 0.8041074249605056,
+    "per_label_f1": {
+      "label_caries": 0.7058823529411765,
+      "label_gingivitis": 0.946236559139785,
+      "label_malocclusion": 0.8973509933774835,
+      "label_pulpitis": 0.8
+    }
+  },
+  "full_multimodal": {
+    "macro_f1_0.5": 0.8119637541995505,
+    "macro_f1_opt": 0.8084806176775897,
+    "micro_f1": 0.862298195631529,
+    "auroc": 0.9580249061258423,
+    "accuracy": 0.7819905213270142,
+    "per_label_f1": {
+      "label_caries": 0.6582278481012658,
+      "label_gingivitis": 0.9444444444444444,
+      "label_malocclusion": 0.9023255813953488,
+      "label_pulpitis": 0.7428571428571429
+    }
+  }
+}
