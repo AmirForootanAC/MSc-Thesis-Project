@@ -1,0 +1,68 @@
+{
+ "format_version": 1,
+ "files": {
+  ".gitattributes": {
+   "size": 1519,
+   "blob_id": "a6344aac8c09253b3b630fb776ae94478aa0275b"
+  },
+  "representations/test_multiview_rep.pt": {
+   "size": 14303982,
+   "blob_id": "ebb9714f76cfb0237ea53d50adf009f5e4424f41",
+   "lfs_sha256": "b74da4e205389085925ebca0dcd5f22edf32e0b05c5ffeffa0d8627d256e26aa",
+   "lfs_size": 14303982,
+   "xet_hash": "fa0a83c2e4e64a41cee874fdacebf6f88b40a11676f362ecbbd45136fa24a041"
+  },
+  "representations/train_multiview_rep.pt": {
+   "size": 66310141,
+   "blob_id": "5cae1e5153d2bad052f192d1cda83b4b6380f9fe",
+   "lfs_sha256": "50282bdefadd711c95d30a1541b96e7d6dba4481d1fd1800ffbeb0587a8dec78",
+   "lfs_size": 66310141,
+   "xet_hash": "5d807589fe020d882f52be6995284b6f39ad2bf548b9a338cd1b844db8b93a2c"
+  },
+  "representations/validation_multiview_rep.pt": {
+   "size": 14168712,
+   "blob_id": "25404ef15f4360f1d4a1645dbc6d7960d27b16a0",
+   "lfs_sha256": "5570f62cd73469d509724bce655a5b74a7df9e9213349929d88d7c7c3b9a866e",
+   "lfs_size": 14168712,
+   "xet_hash": "a9a3f486a4f1a451585c8b2f588a9cde30b56257954d915b593f72c9b7bea8c7"
+  },
+  "scenarios_4labels/all_4scenarios_summary.json": {
+   "size": 1612,
+   "blob_id": "fd7528705f09e2df537e651d940d7023996f6c24"
+  },
+  "scenarios_4labels/full_multimodal/final_results.json": {
+   "size": 8843,
+   "blob_id": "4435bdf809b2946419436fe0b32388d0f6141c1c"
+  },
+  "scenarios_4labels/image_only/final_results.json": {
+   "size": 7691,
+   "blob_id": "0f02da9664d0d4ed3b8380ca6a167380885b500b"
+  },
+  "scenarios_4labels/text_only/final_results.json": {
+   "size": 10429,
+   "blob_id": "4ad06c9bda914914756c9c372a28c18d57ab9bba"
+  },
+  "scenarios_4labels/xray_only/final_results.json": {
+   "size": 7140,
+   "blob_id": "7e51fe1bb3c2b7d34a5f21d9f6e6e3797af5a709"
+  },
+  "ssl_radiograph/best_radiograph_ssl.pt": {
+   "size": 479477217,
+   "blob_id": "f6c7856467add97304766bcbcdd7b806a3f70aa4",
+   "lfs_sha256": "4f3bcf44c10871cf659a3a5a6d1d233cccd3212ad02024acfdf887981b1cbd01",
+   "lfs_size": 479477217,
+   "xet_hash": "24bd5e59f369ecbfb6a97c67088bff7e81a78c17a371852df4c634540c56b135"
+  },
+  "ssl_radiograph/latest_radiograph_ssl.pt": {
+   "size": 685354537,
+   "blob_id": "1e5d231f49ecb04ffa6c2e378c750e2f47844304",
+   "lfs_sha256": "d4ab7e48ef041286c120ddac9fe2986b209efe555dd4dd375de7df25f4ab7f43",
+   "lfs_size": 685354537,
+   "xet_hash": "8e037b71fd6b4aaaadd9ba9576e6b70283ce501db4430a58128817004729aae6"
+  },
+  "ssl_radiograph/radiograph_ssl_history.json": {
+   "size": 619,
+   "blob_id": "68bd47910ef0742b5ac27997857fda89329c1e63"
+  }
+ }
+}
