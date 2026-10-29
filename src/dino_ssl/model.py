@@ -6,7 +6,6 @@ import torchvision.models as models
 
 
 class DINOHead(nn.Module):
-    """سرِ پروجکشن اختصاصی DINO با Weight Normalization روی لایه آخر"""
     def __init__(self, in_dim, out_dim=8192, hidden_dim=2048, bottleneck_dim=256, nlayers=3):
         super().__init__()
         layers = [nn.Linear(in_dim, hidden_dim), nn.GELU()]
@@ -16,10 +15,9 @@ class DINOHead(nn.Module):
         self.mlp = nn.Sequential(*layers)
         self.apply(self._init_weights)
 
-        linear_layer = nn.Linear(bottleneck_dim, out_dim, bias=False)
-        self.last_layer = nn.utils.parametrizations.weight_norm(linear_layer, name="weight")
-        self.last_layer.parametrizations.weight.original1.data.fill_(1.0)
-        self.last_layer.parametrizations.weight.original1.requires_grad = False
+        # اصلاح این بخش برای جریان درست گرادیان در DINO Head
+        self.last_layer = nn.Linear(bottleneck_dim, out_dim, bias=False)
+        self.last_layer.weight.data.normal_(mean=0.0, std=0.01)
 
     def _init_weights(self, m):
         if isinstance(m, nn.Linear):
