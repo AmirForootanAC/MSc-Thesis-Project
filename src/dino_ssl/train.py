@@ -1,5 +1,6 @@
 import math
 import torch
+import torch.nn as nn
 from torch.utils.data import DataLoader
 from torch.optim import AdamW
 from tqdm.auto import tqdm
@@ -23,6 +24,7 @@ def main():
     device = torch.device(config.DEVICE)
     print(f"🚀 Starting Pure DINO Pretraining on Radiographs | Device: {device}")
 
+    # لود کردن دیتای رادیوگرافی
     dataset = UnlabeledRadiographDataset(split="train", enhance=True)
     loader = DataLoader(
         dataset,
@@ -33,7 +35,15 @@ def main():
         drop_last=True,
     )
 
+    # ساخت مدل‌های Student و Teacher
     student, teacher = build_dino_models(arch=config.BACKBONE, out_dim=config.OUT_DIM)
+
+    # ⚡ فعال‌سازی هر دو کارت گرافیک (Multi-GPU) در کگل
+    if torch.cuda.device_count() > 1:
+        print(f"🔥 Awesome! Using {torch.cuda.device_count()} GPUs simultaneously with DataParallel.")
+        student = nn.DataParallel(student)
+        teacher = nn.DataParallel(teacher)
+
     student, teacher = student.to(device), teacher.to(device)
 
     dino_loss = DINOLoss(
@@ -50,7 +60,6 @@ def main():
     optimizer = AdamW(student.parameters(), lr=config.LR, weight_decay=config.WEIGHT_DECAY)
     scaler = torch.amp.GradScaler(device="cuda", enabled=(device.type == "cuda"))
 
-    # زمان‌بندی‌های Cosine برای نرخ یادگیری، Weight Decay و Momentum
     niter_per_ep = len(loader)
     lr_schedule = cosine_scheduler(config.LR, config.MIN_LR, config.EPOCHS, niter_per_ep, config.WARMUP_EPOCHS)
     wd_schedule = cosine_scheduler(config.WEIGHT_DECAY, config.WEIGHT_DECAY_END, config.EPOCHS, niter_per_ep)
@@ -74,9 +83,9 @@ def main():
             crops = [c.to(device, non_blocking=True) for c in crops]
 
             with torch.amp.autocast(device_type=device.type, enabled=(device.type == "cuda")):
-                # Teacher فقط ۲ کراپ سراسری (Global) اول را می‌بیند
+                # Teacher فقط ۲ کراپ سراسری اول را می‌بیند
                 teacher_output = teacher(crops[:2])
-                # Student تمام ۶ کراپ (۲ سراسری + ۴ محلی) را می‌بیند
+                # Student تمام ۶ کراپ را می‌بیند
                 student_output = student(crops)
                 loss = dino_loss(student_output, teacher_output, epoch) / config.ACCUMULATION_STEPS
 
@@ -89,10 +98,14 @@ def main():
                 scaler.update()
                 optimizer.zero_grad()
 
-                # آپدیت وزن‌های Teacher به روش EMA از روی Student
+                # آپدیت وزن‌های Teacher از روی Student (EMA)
                 with torch.no_grad():
                     m = momentum_schedule[it]
-                    for param_q, param_k in zip(student.parameters(), teacher.parameters()):
+                    # اگر از DataParallel استفاده شده باشد، باید به .module دسترسی داشته باشیم
+                    s_module = student.module if isinstance(student, nn.DataParallel) else student
+                    t_module = teacher.module if isinstance(teacher, nn.DataParallel) else teacher
+                    
+                    for param_q, param_k in zip(s_module.parameters(), t_module.parameters()):
                         param_k.data.mul_(m).add_((1 - m) * param_q.detach().data)
 
             step_loss = loss.item() * config.ACCUMULATION_STEPS
@@ -102,18 +115,21 @@ def main():
         avg_loss = total_loss / len(loader)
         print(f"👉 Epoch {epoch+1:02d} | Avg DINO Loss: {avg_loss:.4f}")
 
-        # ذخیره چک‌پوینت‌ها (در DINO معمولاً بک‌بونِ Teacher قوی‌ترین ویژگی‌ها را دارد)
+        # ذخیره وزن‌ها
+        s_module = student.module if isinstance(student, nn.DataParallel) else student
+        t_module = teacher.module if isinstance(teacher, nn.DataParallel) else teacher
         ckpt = {
             "epoch": epoch + 1,
             "arch": config.BACKBONE,
-            "teacher_backbone": teacher.backbone.state_dict(),
-            "student_backbone": student.backbone.state_dict(),
+            "teacher_backbone": t_module.backbone.state_dict(),
+            "student_backbone": s_module.backbone.state_dict(),
             "loss": avg_loss,
         }
         torch.save(ckpt, config.OUTPUT_DIR / "latest_dino_xray.pt")
         if avg_loss < best_loss:
             best_loss = avg_loss
             torch.save(ckpt, config.OUTPUT_DIR / "best_dino_xray.pt")
+            print(f"🌟 New best DINO model saved!")
 
 if __name__ == "__main__":
     main()
